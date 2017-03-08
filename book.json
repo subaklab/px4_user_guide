@@ -4,7 +4,8 @@
     "plugins": [
         "youtube",
         "richquotes",
-        "language-picker"
+        "language-picker",
+        "collapsible-chapters"
     ]
 }
 
