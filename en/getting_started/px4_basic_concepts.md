@@ -1,9 +1,3 @@
----
-Title: PX4 Basic Concepts
-Author: VasilPetrov
-Status: published
----
-
 # PX4 Basic Concepts
 
 In this chapter we will introduce you to the most basic concepts of

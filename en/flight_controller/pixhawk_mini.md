@@ -1,8 +1,5 @@
 ---
-Title: Pixhawk Mini Overview
 Date: 2017-03-01 07:06
-Author: HamishWillee
-Slug: pixhawk-mini-overview
 Status: draft
 ---
 

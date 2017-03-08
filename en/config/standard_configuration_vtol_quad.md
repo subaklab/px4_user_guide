@@ -1,9 +1,3 @@
----
-Title: Standard VTOL wiring and configuration
-Author: sanderux
-Status: published
----
-
 # Standard VTOL Wiring and Configuration
 
 This is the wiring and configuration documentation for a standard VTOL

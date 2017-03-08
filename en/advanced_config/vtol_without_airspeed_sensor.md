@@ -1,10 +1,3 @@
----
-Title: VTOL's without an airspeed sensor
-Author: sanderux
-Slug: vtols-without-airspeed-sensor
-Status: published
----
-
 # VTOL Without an Airspeed Sensor
 
 > **Warning** Warning: the use of an airspeed sensor is advised.

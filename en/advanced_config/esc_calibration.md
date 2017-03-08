@@ -1,10 +1,3 @@
----
-Title: ESC calibration
-Author: LorenzMeier
-Slug: esc-calibration
-Status: published
----
-
 # ESC calibration
 
 Electronic speed controllers translate the input from the RC or the

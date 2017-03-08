@@ -1,10 +1,3 @@
----
-Title: FrSky Telemetry
-Author: LorenzMeier
-Slug: frsky-telemetry
-Status: published
----
-
 # FrSky Telemetry
 
 PX4 supports D (old) and S (new) FrSky telemetry. FMUv4 based boards

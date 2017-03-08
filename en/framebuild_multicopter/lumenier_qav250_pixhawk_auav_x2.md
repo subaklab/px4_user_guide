@@ -1,10 +1,4 @@
----
-Title: Lumenier QAV250 Pixhawk/AUAV-X2 Builds
-Author: HamishWillee
-Status: published
----
-
-# Lumenier QAV250 Pixhawk/AUAV-X2 Builds
+# Lumenier QAV250 Pixhawk & AUAV-X2 Builds
 
 The [Lumenier QAV250 Mini FPV Quadcopter](http://www.lumenier.com/products/multirotors/qav250)
 is a small but fully functional FPV multicopter frame. This topic provides
@@ -20,12 +14,12 @@ Key information:
 -   **Flight controller:** Pixhawk or AUAV-X2
 -   **Assembly time (approx.):** -
 
-## Frame assembly
+## Frame Assembly
 
 The frame assembly guide is here: [Build
 Manual](http://www.lumenier.com/products/multirotors/qav250/build-manual)
 
-## Pixhawk guidance
+## Pixhawk Guidance
 
 There wasn't quite enough room to orient the Pixhawk lengthwise, so I
 rotated it 90 degrees and positioned the 4 foam mounting pads as far
@@ -45,7 +39,7 @@ camera, but no FPV gear is 547g and hover throttle is about 50%.
 
 ![QAV250 Pixhawk Build showing power module](../../images/qav250_pixhawk_power_module.jpg)
 
-## AUAV-X2 guidance
+## AUAV-X2 Guidance
 
 The photo below shows the QAV250 with the smaller form-factor AUAV-X2
 instead of a Pixhawk.

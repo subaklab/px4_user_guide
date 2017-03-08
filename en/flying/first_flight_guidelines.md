@@ -1,10 +1,3 @@
----
-Title: First Flight
-Author: px4wpadmin
-Slug: selecting-the-right-location
-Status: published
----
-
 # First Flight
 
 ## Selecting the Right Location

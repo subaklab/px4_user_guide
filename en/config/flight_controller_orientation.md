@@ -1,9 +1,3 @@
----
-Title: Flight Controller Orientation
-Author: VasilPetrov
-Status: published
----
-
 # Flight Controller Orientation
 
 ## Heading and Flight Controller Orientation

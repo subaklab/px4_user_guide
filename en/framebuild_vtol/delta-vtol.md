@@ -1,10 +1,3 @@
----
-Title: Delta VTOL
-Author: LorenzMeier
-Slug: delta-vtol
-Status: published
----
-
 # Delta VTOL
 
 > **Caution** This guide is still under construction.

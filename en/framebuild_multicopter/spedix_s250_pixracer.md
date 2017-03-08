@@ -1,9 +1,3 @@
----
-Title: Spedix S250
-Author: LorenzMeier
-Status: published
----
-
 # Spedix S250
 
 The Spedix S250 is a complete wide-arm racing quadcopter perfectly

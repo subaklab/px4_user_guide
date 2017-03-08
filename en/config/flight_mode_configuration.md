@@ -1,9 +1,3 @@
----
-Title: Flight Mode Configuration
-Author: LorenzMeier
-Status: published
----
-
 # Flight Mode Configuration
 
 Flight modes define how to flight controller interprets user input.

@@ -1,9 +1,3 @@
----
-Title: Wing Wing Z-84
-Author: LorenzMeier
-Status: published
----
-
 # Wing Wing Z-84
 
 The Wing Wing Z-84 is our gold standard airframe: Small, rugged and just

@@ -1,10 +1,3 @@
----
-Title: RTK GPS
-Author: bkueng
-Slug: rtk-gps
-Status: published
----
-
 # RTK GPS
 
 RTK (Real Time Kinematik) increases the GPS accuracy to a

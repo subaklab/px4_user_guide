@@ -1,10 +1,3 @@
----
-Title: QuadRanger VTOL
-Author: sanderux
-Slug: quadranger-vtol
-Status: published
----
-
 # QuadRanger VTOL (Pixhawk)
 
 The QuadRanger is a VTOL conversion of the Volantex Ranger-Ex. It's a

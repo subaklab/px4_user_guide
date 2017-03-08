@@ -1,10 +1,3 @@
----
-Title: FunCub Quad Plane
-Author: LorenzMeier
-Slug: quad-plane-configuration
-Status: published
----
-
 # FunCub Quad Plane (Pixhawk)
 
 A quad plane is one of our VTOL types which essentially is a normal

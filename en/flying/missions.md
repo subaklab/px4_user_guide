@@ -1,10 +1,3 @@
----
-Title: Missions
-Author: px4wpadmin
-Slug: missions
-Status: published
----
-
 # Missions
 
 ## Planning Missions

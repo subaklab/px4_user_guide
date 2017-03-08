@@ -1,9 +1,3 @@
----
-Title: Autopilot Configuration
-Author: px4wpadmin
-Status: published
----
-
 # Autopilot Configuration
 
 The initial configuration is explained in detail in the video below.

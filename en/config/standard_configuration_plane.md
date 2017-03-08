@@ -1,9 +1,3 @@
----
-Title: Standard Plane wiring and configuration
-Author: px4wpadmin
-Status: published
----
-
 # Standard Plane Wiring and Configuration
 
 A standard plane is a plane with aileron, elevator, rudder and throttle.

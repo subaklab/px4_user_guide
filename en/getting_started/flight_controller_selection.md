@@ -1,9 +1,3 @@
----
-Title: Flight Controller Selection
-Author: VasilPetrov
-Status: published
----
-
 # Flight Controller Selection
 
 ### Pixhawk Flight Controller

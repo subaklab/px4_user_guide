@@ -1,9 +1,3 @@
----
-Title: Sensor Selection
-Author: VasilPetrov
-Status: published
----
-
 # Sensor Selection
 
 PX4 autopilot is capable of flying without any additional external

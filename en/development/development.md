@@ -1,10 +1,3 @@
----
-Title: Development Guide
-Author: px4wpadmin
-Slug: development
-Status: published
----
-
 # Development Guide
 
 The PX4 development environment is documented on the

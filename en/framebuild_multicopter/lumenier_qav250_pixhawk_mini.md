@@ -1,9 +1,3 @@
----
-Title: Lumenier QAV250 Pixhawk Mini Build
-Author: HamishWillee
-Status: published
----
-
 # Lumenier QAV250 Pixhawk Mini Build
 
 The [Lumenier QAV250 Mini FPV

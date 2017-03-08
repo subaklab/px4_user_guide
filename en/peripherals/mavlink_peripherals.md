@@ -1,10 +1,3 @@
----
-Title: MAVLink (OSD / Telemetry)
-Author: LorenzMeier
-Slug: mavlink-peripherals
-Status: published
----
-
 # MAVLink (OSD/Telemetry)
 
 ## TELEM1 Port

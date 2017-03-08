@@ -1,9 +1,3 @@
----
-Title: Robocat 270
-Author: gervais
-Status: published
----
-
 # Robocat 270
 
 ## Intro

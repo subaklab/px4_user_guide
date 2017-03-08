@@ -1,11 +1,3 @@
----
-Title: Follow Me Mode
-Date: 2016-05-05 18:24
-Author: catch22
-Slug: follow-target-mode
-Status: published
----
-
 # Follow Me Mode
 
 Follow me mode allows a multicopter to autonomously follow and track a

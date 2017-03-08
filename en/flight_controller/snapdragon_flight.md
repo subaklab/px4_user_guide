@@ -1,10 +1,3 @@
----
-Title: Snapdragon Flight
-Author: px4wpadmin
-Slug: snapdragon-flight
-Status: published
----
-
 # Snapdragon Flight
 
 ![Snapdragon Flight](../../images/snapdragon_flight_hero.jpg)

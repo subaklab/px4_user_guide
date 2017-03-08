@@ -1,10 +1,3 @@
----
-Title: Flight Mode Selection
-Author: px4wpadmin
-Slug: flight-mode-selection
-Status: published
----
-
 # Flight Mode Selection
 
 A flight mode defines how the system operates. It can either be flown by

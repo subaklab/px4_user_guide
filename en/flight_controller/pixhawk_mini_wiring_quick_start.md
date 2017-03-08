@@ -1,7 +1,5 @@
 ---
-Title: Pixhawk Mini Wiring Quick Start
 Author: HamishWillee
-Slug: pixhawk-mini-wiring-quick-start
 Status: draft
 ---
 

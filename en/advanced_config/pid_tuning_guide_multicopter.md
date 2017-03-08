@@ -1,14 +1,6 @@
----
-Title: Multicopter PID Tuning Guide
-Author: VasilPetrov
-Slug: multicopter-pid-tuning-guide
-Status: published
----
-
 # Multicopter PID Tuning Guide
 
 ## Multicopter Flight Controller Tuning Guide
-
 
 > **Warning** This guide is for advanced users / experts only. If you don’t understand
   what a PID tuning is you might crash your aircraft.

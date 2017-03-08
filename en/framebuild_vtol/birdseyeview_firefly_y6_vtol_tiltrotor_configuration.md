@@ -1,10 +1,3 @@
----
-Title: BirdsEyeView FireFly Y6 Configuration
-Author: px4wpadmin
-slug: tiltrotor-configuration
-Status: published
----
-
 # BirdsEyeView FireFly Y6 Configuration
 
 > **Caution** This guide is still under construction.

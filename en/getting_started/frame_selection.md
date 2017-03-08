@@ -1,10 +1,3 @@
----
-Title: Frame Selection
-Date: 2015-12-27 20:34
-Author: px4wpadmin
-Status: published
----
-
 # Frame Selection
 
 ## Air vehicles

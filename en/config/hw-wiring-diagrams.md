@@ -1,9 +1,3 @@
----
-Title: H/W wiring diagrams
-Author: VasilPetrov
-Status: published
----
-
 # Hardware Wiring Diagrams
 
 ## Pixhawk

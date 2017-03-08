@@ -1,11 +1,3 @@
----
-Title: Pixracer
-Date: 2015-12-31 15:14
-Author: px4wpadmin
-Slug: pixracer
-Status: published
----
-
 # Pixracer
 
 ![pixracer + 8266 grey](../../images/pixracer_hero_grey.jpg)

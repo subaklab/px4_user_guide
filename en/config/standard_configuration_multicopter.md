@@ -1,12 +1,6 @@
----
-Title: Standard Multicopter wiring and configuration
-Author: VasilPetrov
-Status: published
----
+# Standard Multicopter Wiring and Configuration
 
-# Standard Multicopter wiring and configuration
-
-## PixRacer wiring guide
+## PixRacer Wiring Guide
 
 ![Grau setup pixracer top](../../images/grau_setup_pixracer_top.jpg)
 
@@ -16,7 +10,7 @@ Status: published
 
 ![Grau b Pixracer FrSkyS.Port Connection](../../images/grau_b_pixracer_frskys.port_connection.jpg)
 
-## AUAV-X2 wiring guide
+## AUAV-X2 Wiring Guide
 
 ![AUAV-X2-basic-setup 3](../../images/auav_x2_basic_setup_3.png)
 

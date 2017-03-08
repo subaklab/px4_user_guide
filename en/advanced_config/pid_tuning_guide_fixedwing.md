@@ -1,10 +1,3 @@
----
-Title: Fixedwing PID Tuning Guide
-Author: VasilPetrov
-Slug: fixedwing-pid-tuning-guide
-Status: published
----
-
 # Fixedwing PID Tuning Guide
 
 ### Fixedwing Flight Controller Tuning Guide {#fixedwing_aircraft_controller_tuning_guide .sectionedit1}
