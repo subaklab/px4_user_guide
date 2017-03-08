@@ -3,9 +3,7 @@
     "title": "PX4 User Guide",
     "plugins": [
         "youtube",
-        "richquotes",
-        "validate-links",
-        "edit-link",
+        "richquotes"
     ],
     "pluginsConfig": {
             "edit-link": {
