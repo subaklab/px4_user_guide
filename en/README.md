@@ -11,4 +11,4 @@ Use the navigation pane on the left to walk through the documentation.
 
 ## License
 
-The *PX4 User Guide* is available under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) license. XX
+The *PX4 User Guide* is available under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) license. XXXZ

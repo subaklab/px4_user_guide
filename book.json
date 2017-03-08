@@ -4,14 +4,8 @@
     "plugins": [
         "youtube",
         "richquotes",
-        "edit-link",
-    ],
-    "pluginsConfig": {
-            "edit-link": {
-                "base": "https://github.com/hamishwillee/px4_user_guide/edit/master/",
-                "label": ""
-            }
-    }
+        "language-picker"
+    ]
 }
 
 
