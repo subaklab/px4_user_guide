@@ -6,7 +6,6 @@
         "richquotes",
         "validate-links",
         "edit-link",
-        "language-picker"
     ],
     "pluginsConfig": {
             "edit-link": {
