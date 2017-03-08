@@ -3,7 +3,17 @@
     "title": "PX4 User Guide",
     "plugins": [
         "youtube",
-        "richquotes"
-    ]
+        "richquotes",
+        "validate-links",
+        "edit-link",
+        "language-picker"
+    ],
+    "pluginsConfig": {
+            "edit-link": {
+                "base": "https://github.com/hamishwillee/px4_user_guide/edit/master/",
+                "label": ""
+            }
+    }
 }
+
 
