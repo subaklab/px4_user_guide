@@ -6,7 +6,7 @@ Here you will find all the information necessary to setup and fly your PX4 drone
 
 Use the navigation pane on the left to walk through the documentation.
 
-> **Note** This guide is brand new. It is suitable to get started, but does not yet cover all of PX4. X
+> **Note** This guide is brand new. It is suitable to get started, but does not yet cover all of PX4.
 
 
 ## License
