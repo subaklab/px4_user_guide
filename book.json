@@ -4,7 +4,7 @@
     "plugins": [
         "youtube",
         "richquotes",
-        "validate-links"
+        "edit-link",
     ],
     "pluginsConfig": {
             "edit-link": {
