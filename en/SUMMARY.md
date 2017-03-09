@@ -48,8 +48,5 @@
     * [Pixracer](flight_controller/pixracer.md)
     * [Pixhawk](flight_controller/pixhawk.md)
   * [Snapdragon Series](flight_controller/snapdragon_flight_series.md)
-
-## Untitled
-
 * [Development](development/development.md)
 
