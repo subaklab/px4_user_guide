@@ -6,7 +6,15 @@
         "richquotes",
         "language-picker",
         "collapsible-menu",
-        "page-toc-button"
-    ]
+        "page-toc-button",
+        "page-footer-ex"
+    ],
+    "pluginsConfig": {       
+        "page-footer-ex":{
+            "copyright":"© PX4 Dev Team. Licence:   <a href='https://creativecommons.org/licenses/by/4.0/'>CC BY 4.0</a>",
+            "update_label":"Updated: ",
+            "update_format":"YYYY-MM-DD HH:mm:ss"
+        }       
+    } 
 }
 

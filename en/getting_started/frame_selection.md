@@ -1,6 +1,6 @@
 # Frame Selection
 
-## Air vehicles
+## Air Vehicles
 
 If you plan using PX4 for flying aircraft the most important question
 you should answer is, what will be the application. Is it for fun or for
@@ -24,8 +24,8 @@ process](../config/autopilot_configuration.md).
 
 ![Frame Selection](../../images/frame_selection.png)
 
-## Ground vehicles
+## Ground Vehicles
 
-## Sea vehicles
+## Sea Vehicles
 
 
