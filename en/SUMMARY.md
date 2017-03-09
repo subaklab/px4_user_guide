@@ -6,7 +6,6 @@
     * [Flight Controller Selection](getting_started/flight_controller_selection.md)
     * [Sensor Selection](getting_started/sensor_selection.md)
 
-
 * [Basic Configuration](config/README.md)
     * [Flight Controller Orientation](config/flight_controller_orientation.md)
     * [Autopilot](config/autopilot_configuration.md)
@@ -15,7 +14,6 @@
     * [Multicopter Wiring](config/standard_configuration_multicopter.md)  
     * [Plane Wiring](config/standard_configuration_plane.md)
     * [VTOL Wiring](config/standard_configuration_vtol_quad.md)
-
     
 * [Specific Vehicle Builds](framebuild_README.md)
 
@@ -33,29 +31,24 @@
         * [QuadRanger VTOL (Pixhawk)](framebuild_vtol/volantex_ranger_ex_quadranger_vtol_pixhawk.md)  
         * [BirdsEyeView FireFly Y6](framebuild_vtol/birdseyeview_firefly_y6_vtol_tiltrotor_configuration.md)
         * [Delta VTOL](framebuild_vtol/delta-vtol.md)
-
         
 * [Flying](flying/README.md)
     * [First Flight](flying/first_flight_guidelines.md)
     * [Flight Mode Selection](flying/flight_mode_selection.md)
     * [Missions](flying/missions.md)
-
     
 * [Advanced Features](advanced_features/README.md)
     * [RTK GPS](advanced_features/rtk-gps.md)
-
     
 * [Advanced Configuration](advanced_config/README.md)
     * [VTOL w/o Airspeed Sensor](advanced_config/vtol_without_airspeed_sensor.md)
     * [ESC Calibration](advanced_config/esc_calibration.md)
     * [Multicopter PID Tuning Guide](advanced_config/pid_tuning_guide_multicopter.md)
     * [Fixedwing PID Tuning Guide](advanced_config/pid_tuning_guide_fixedwing.md)
-
     
 * [Peripherals](peripherals/README.md)
     * [MAVLink (OSD / Telemetry)](peripherals/mavlink_peripherals.md)
     * [FrSky Telemetry](peripherals/frsky_telemetry.md)
-
     
 * [Flight Controllers](flight_controller/README.md)
     * [Pixhawk Series](flight_controller/pixhawk_series.md)

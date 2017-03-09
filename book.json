@@ -5,8 +5,15 @@
         "youtube",
         "richquotes",
         "language-picker",
-        "collapsible-menu"
-    ]
+        "collapsible-menu",
+        "navigator"
+    ],
+    "pluginsConfig": {
+      "etoc": {
+        "mindepth": 2,
+        "maxdepth": 2,
+        "notoc": false
+        }
+     }
 }
-
 

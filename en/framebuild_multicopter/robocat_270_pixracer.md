@@ -1,7 +1,5 @@
 # Robocat 270
 
-## Intro
-
 The Robocat 270 is a small quadcopter design, rather meant for cruising
 than for racing, still a perfect trial base for the
 [Pixracer](../flight_controller/pixracer.md) autopilot. It is heavier than a
