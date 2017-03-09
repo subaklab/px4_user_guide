@@ -7,13 +7,6 @@
         "language-picker",
         "collapsible-menu",
         "navigator"
-    ],
-    "pluginsConfig": {
-      "etoc": {
-        "mindepth": 2,
-        "maxdepth": 2,
-        "notoc": false
-        }
-     }
+    ]
 }
 
