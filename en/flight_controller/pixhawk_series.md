@@ -21,7 +21,7 @@ with new evolutions already being planned.
 The following section lists the project architectures (in reverse order) and some of the associated 
 products.
 
-#### FMUv4
+## FMUv4
 
 - [Pixhawk Mini](pixhawk_mini.md)
 
@@ -31,14 +31,14 @@ products.
 
   ![Pixracer + WiFi](../../images/pixracer_wifi.jpg)
 
-#### FMUv3
+## FMUv3
 
 - [Pixhawk 2](https://pixhawk.org/modules/pixhawk2) ("The Cube")
 
   ![Pixhawk 2](../../images/pixhawk2_cube_hero.jpg)
 
 
-#### FMUv2
+## FMUv2
 
 > **Note** At time of writing this is the most popular Pixhawk architecture.
 
@@ -60,7 +60,7 @@ products.
   ![AUAVX2_case2](../../images/auavx2_case2.jpg)
   
 
-#### FMUv1 (first generation)
+## FMUv1 (first generation)
 
 The first architecture had a two components: PX4FMU+PX4IO. 
 

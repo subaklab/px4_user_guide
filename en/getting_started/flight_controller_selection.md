@@ -1,8 +1,8 @@
 # Flight Controller Selection
 
-### Pixhawk Flight Controller
+## Pixhawk Flight Controller
 
-#### First Generation Pixhawk
+### First Generation Pixhawk
 
 Pixhawk is the first flight controller created specifically to be loaded
 with PX4 autopilot software (PX4 flight stack). The first architecture
@@ -20,7 +20,7 @@ Sometimes this architecture is called FMUv1.
   ![px4iov1.3_bottom](../../images/px4iov1.3_bottom.png)
 
   
-#### Second Generation Pixhawk
+### Second Generation Pixhawk
 
 After the success of FMUv1 there was a second architecture created named
 Pixhawk v2 or sometimes called FMUv2. This architecture combines the
@@ -33,7 +33,7 @@ PX4FMU and PX4IO in one hardware controller.
 This is the most popular Pixhawk architecture so far.
 
 
-#### Third Generation Pixhawk
+### Third Generation Pixhawk
 
 Just recently a third generation of architecture was released,
 referred as FMUv4 and PixRacer is the first board with this
@@ -44,7 +44,7 @@ available on the market.
 
   ![Pixracer + WiFi](../../images/pixracer_wifi.jpg)
 
-### Open Hardware Concept
+## Open Hardware Concept
 
 Pixhawk is an Open Hardware architecture so there are many producers of
 Pixhawk controller with a different brand names released by different
@@ -74,7 +74,7 @@ popular ArduPilot Flight Stack or APM. Thus many people get confused and
 identify Pixhawk with APM which is wrong. Remember Pixhawk is HARDWARE,
 while PX4 and APM are Open Source Autopilot Software or Flight Stacks. 
 
-### Snapdragon Flight Controller
+## Snapdragon Flight Controller
 
 There are numerous tasks that people need to perform with their aircraft
 while in flight - like image analysis, obstacle avoidance as well as
