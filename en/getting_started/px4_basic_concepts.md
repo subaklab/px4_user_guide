@@ -23,7 +23,7 @@ QGroundControl you can load (flash) the PX4 on to the
 setup the vehicle, change different parameters, get real-time flight
 information and create and execute fully autonomous missions.
 
-![QGC Main Screen](../../images/qgc_main_screen.png)
+![QGC Main Screen](../../images/qgc_main_screen.jpg)
 
 
 ## Heading and Directions

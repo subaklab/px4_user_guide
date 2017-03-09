@@ -19,5 +19,5 @@ Once the mission is uploaded, switch to the flight view. It generally
 does not allow to modify the mission, but is optimized to track its
 progress.
 
-![flying-mission](../../images/flying_mission.png)
+![flying-mission](../../images/flying_mission.jpg)
 
