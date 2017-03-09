@@ -58,7 +58,7 @@ factors. Here are some Pixhawk controllers available.
 
 - Pixfalcon
 
-  ![Pixhfalcon](../../images/pixfalcon_flight_controller_high.jpg)
+  ![Pixfalcon](../../images/pixfalcon_flight_controller_high.jpg)
 
 - AUAV-X2
 
