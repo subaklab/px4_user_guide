@@ -24,13 +24,7 @@ the manufacturers for the flight controller and frame.
 
 - **Flight controller:** Pixhawk Mini ([3DR Store](https://store.3dr.com/t/pixhawk))
 - **Power module:** 3DR 10s ([3DR Store](https://store.3dr.com/products/10s-power-module))
-- **ESC:**Lumenier 12 amp ESC w/ SimonK AutoShot (2-4s N-FET) ([getfpv.com](http://www.getfpv.com/lumenier-12a-esc-w-simonk-autoshot-2-4s-n-fet.html)).
-
-  > **Warning** The build actually uses the ESCs that were included with the motors: *Lumenier f390 with Blheli*
-    ([getfpv.com](http://www.getfpv.com/electronics/electronic-speed-controllers-esc/lumenier-f390-30a-blheli-esc-opto-2-4s.html)).
-    This ESC uses Blheli firmware, which must be updated to SimonK
-    firmware for Pixhawk compatibility reasons. We highly recommend just
-    using the recommended ESC, which uses SimonK firmware.
+- **ESC:** Lumenier f390 with Blheli ([getfpv.com](http://www.getfpv.com/electronics/electronic-speed-controllers-esc/lumenier-f390-30a-blheli-esc-opto-2-4s.html)). These come with the motors.
 - **Motors:** Lumenier RX2204 -14 2300KV ([getfpv.com](http://www.getfpv.com/motors/lumenier-rx2204-14-2300kv.html))
 - **Propellers:** Lumenier 5x4.5 2 blade ([getfpv.com](http://www.getfpv.com/propellers/lumenier-5x3-5-2-blade-propeller-set-of-4-black.html))
 - **Frame:** Lumenier QAV250 - CF ([getfpv.com](http://www.getfpv.com/multi-rotor-frames/qav250-mini-fpv-quad/qav250-mini-fpv-quadcopter-carbon-fiber-edition.html))
@@ -42,9 +36,7 @@ Notes:
 - The 4S Power Module that comes with the *Pixhawk Mini* can be used
   for the battery size above (instead of the 10S Power Module).
   Assembly is the same with either power module.
-- We have used the ESC listed because it was supplied with the
-  motors. A recommended alternative is: [Lumenier F390 30A BLHeli ESC
-  OPTO (2-4s)](http://www.getfpv.com/electronics/electronic-speed-controllers-esc/lumenier-f390-30a-blheli-esc-opto-2-4s.html).
+- We also recommend these ESC: Lumenier 12 amp ESC w/ SimonK AutoShot (2-4s N-FET) ([getfpv.com](http://www.getfpv.com/lumenier-12a-esc-w-simonk-autoshot-2-4s-n-fet.html)).
 
 ## Hardware
 
