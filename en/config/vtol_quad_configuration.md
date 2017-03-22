@@ -1,39 +1,12 @@
-# Standard VTOL Wiring and Configuration
+# Standard VTOL Configuration & Tuning
 
-This is the wiring and configuration documentation for a standard VTOL
-setup. This is also referred to as a QuadPlane. For airframe specific
-documentation and build instructions please refer to the appropriate
-documentation. Currently supported airframes are the
-[QuadRanger](../framebuild_vtol/volantex_ranger_ex_quadranger_vtol_pixhawk.md) and the [Fun Cub
-VTOL](../framebuild_vtol/fun_cub_quad_plane_vtol_pixhawk.md).
-
-## Pixhawk Connections
-
-Pixhawk Port | Connection
---- | ---
-MAIN 1   | Quad motor 1
-MAIN 2   | Quad motor 2
-MAIN 3   | Quad motor 3
-MAIN 4   | Quad motor 4
-AUX 1    | Left aileron
-AUX 2    | Right aileron
-AUX 3    | Elevator
-AUX 4    | Rudder
-AUX 5    | Throttle (motor)
-
-
-> **Caution** It is assumed that your pusher/puller motor uses an ESC with an
-  integrated BEC which means power will be supplied to the Pixhawk on
-  AUX5. If not, you will need to setup a 5V BEC to connect to one of the
-  free Pixhawk ports. Failure to do so will result in nonfunctional servos.
-
+This is the configuration documentation for a standard VTOL setup (also referred to as a QuadPlane). For airframe specific documentation and build instructions see [VTOL Framebuilds](../framebuild_vtol/README.md).
 
 ## Firmware & Basic Settings
 
 1. Run QGroundControl
 2. Flash the master firmware
-3. In the Setup tab select the appropriate VTOL airframe, if your
-   airframe is not listed select the Fun Cub VTOL airframe. 
+3. In the Setup tab select the appropriate VTOL airframe, if your airframe is not listed select the Fun Cub VTOL airframe. 
 
 
 ### Flight / Transition Mode Switch

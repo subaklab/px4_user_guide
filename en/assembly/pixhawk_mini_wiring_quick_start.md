@@ -5,17 +5,17 @@ Status: draft
 
 # Pixhawk Mini Wiring Quick Start
 
-> **Warning** Under construction.
+This quick start guide shows how power the [Pixhawk Mini](pixhawk_mini.md) and connect its most important peripherals.
 
-This quick start guide shows how power the [Pixhawk Mini](pixhawk_mini.md)
-and connect its most important peripherals.
+> **Warning** Under construction.
 
 ## Standard Wiring Chart
 
 The image below shows standard Quadcopter wiring using the *Pixhawk Mini
 Kit* and 3DR Telemetry Radios (along with ESC, motor, battery and a
-ground control station running on a phone. We'll go through each main
-part in the following sections.
+ground control station running on a phone). We'll go through each main part in the following sections.
+
+> **Note** The wiring is slightly different for other vehicles. This is covered in more detail below for VTOL, Plane, Multicopter.
 
 ![Pixhawk Mini Electronics Wiring for QAV250 (off frame)](../../images/qav250_wiring_image_pixhawk_mini.jpg)
  
@@ -125,17 +125,6 @@ external safety button, as shown below.
 
 [IMAGE PLACEHOLDER - GOOD IMAGE of SIDE PORTS + CONNECTED SWITCH]
 
-## Motors
-
-![Pixhawk Mini - port for motors/servos](../../images/pixhawk_mini_port_main_out.png)
-
-
-### Copter
-
-### Plane
-
-### VTOL
-
 
 
 ## Telemetry Radios
@@ -143,15 +132,78 @@ external safety button, as shown below.
 
 ## Other Peripherals
 
+## Motors
+
+![Pixhawk Mini - port for motors/servos](../../images/pixhawk_mini_port_main_out.png)
+
+
+### Copter
+
+There is a 1:1 mapping between pin-out and motor (obviously the actual number of motors used depends on the vehicle).
+
+Pixhawk Port | Connection
+--- | ---
+MAIN 1   | Motor 1
+MAIN 2   | Motor 2
+MAIN 3   | Motor 3
+MAIN 4   | Motor 4
+MAIN 5   | Motor 5
+MAIN 6   | Motor 6 
+MAIN 7   | Motor 7
+MAIN 8   | Motor 8
+
+### Plane
+
+Pixhawk Port | Connection
+--- | ---
+MAIN 1   | Aileron (assuming a Y cable)
+MAIN 2   | Elevator
+MAIN 3   | Throttle
+MAIN 4   | Rudder
+MAIN 5   | 
+MAIN 6   | 
+MAIN 7   | 
+MAIN 8   | 
+
+
+### VTOL
+
+#### Standard/QuadPlane VTOL
+
+The Pixhawk connections for a standard VTOL (QuadPlane) are shown below. 
+
+> **Warning** Under construction: Pixhawk Mini does not have AUX ports, so this needs to be updated.
+
+
+Pixhawk Port | Connection
+--- | ---
+MAIN 1   | Quad motor 1
+MAIN 2   | Quad motor 2
+MAIN 3   | Quad motor 3
+MAIN 4   | Quad motor 4
+AUX 1    | Left aileron
+AUX 2    | Right aileron
+AUX 3    | Elevator
+AUX 4    | Rudder
+AUX 5    | Throttle (motor)
+
+
+> **Caution** It is assumed that your pusher/puller motor uses an ESC with an
+  integrated BEC so that power will be supplied to the Pixhawk on
+  AUX5. If not, you will need to setup a 5V BEC to connect to one of the
+  free Pixhawk ports. Failure to do so will result in nonfunctional servos.
+
  
 
-## Configuring Pixhawk
+## Configuration
 
-GENERAL CONFIG INSTRUCTIONS - LINK TO [Autopilot Configuration](../config/autopilot_configuration.md)
+General configuration information is covered in: [Autopilot Configuration](../config/autopilot_configuration.md)
+
+VTOL-specific configuration is covered here: [VTOL Configuration](../config/vtol_quad_configuration.md)
 
 ## Further information
 
-- - [Pixhawk Mini Quick Start Guide (3DR)](https://3drobotics.zendesk.com/hc/en-us/article_attachments/115000349564/PixhawkMiniQuickStartGuide.pdf)
+- [Pixhawk Mini Quick Start Guide (3DR)](https://3drobotics.zendesk.com/hc/en-us/article_attachments/115000349564/PixhawkMiniQuickStartGuide.pdf)
 
  
 
