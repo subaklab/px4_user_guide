@@ -91,6 +91,7 @@ elimination circuit). The included breakout board allows one channel to
 provide power on the other outputs. [Show a diagram of this?]
 
 
+
 ## Radio/Remote Control
 
 Pixhawk Mini supports many different radio receiver models:
@@ -168,11 +169,11 @@ MAIN 8   |
 
 ### VTOL
 
-#### Standard/QuadPlane VTOL
+#### QuadPlane
 
-The Pixhawk connections for a standard VTOL (QuadPlane) are shown below. 
+> **Warning** Pixhawk Mini cannot be used for QuadPlane it does not have the required number or type of outputs.
 
-> **Warning** Under construction: Pixhawk Mini does not have AUX ports, so this needs to be updated.
+The *Pixhawk* connections for a VTOL QuadPlane) are shown below. 
 
 
 Pixhawk Port | Connection
@@ -187,11 +188,14 @@ AUX 3    | Elevator
 AUX 4    | Rudder
 AUX 5    | Throttle (motor)
 
-
 > **Caution** It is assumed that your pusher/puller motor uses an ESC with an
   integrated BEC so that power will be supplied to the Pixhawk on
   AUX5. If not, you will need to setup a 5V BEC to connect to one of the
   free Pixhawk ports. Failure to do so will result in nonfunctional servos.
+
+#### Tiltroter
+
+#### Tailsitter
 
  
 
@@ -199,7 +203,7 @@ AUX 5    | Throttle (motor)
 
 General configuration information is covered in: [Autopilot Configuration](../config/autopilot_configuration.md)
 
-VTOL-specific configuration is covered here: [VTOL Configuration](../config/vtol_quad_configuration.md)
+QuadPlane specific configuration is covered here: [QuadPlane VTOL Configuration](../config/vtol_quad_configuration.md)
 
 ## Further information
 

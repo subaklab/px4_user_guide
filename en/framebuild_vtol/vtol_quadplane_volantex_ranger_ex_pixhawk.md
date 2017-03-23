@@ -1,4 +1,4 @@
-# QuadRanger VTOL (Pixhawk)
+# Volantex Ranger-Ex QuadPlane VTOL (Pixhawk)
 
 The QuadRanger is a VTOL conversion of the Volantex Ranger-Ex. It's a
 1980mm wingspan plane that is capable of vertical takeoff and land.

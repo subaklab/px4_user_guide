@@ -1,6 +1,6 @@
-# Standard VTOL Configuration & Tuning
+# QuadPlane VTOL Configuration & Tuning
 
-This is the configuration documentation for a standard VTOL setup (also referred to as a QuadPlane). For airframe specific documentation and build instructions see [VTOL Framebuilds](../framebuild_vtol/README.md).
+This is the configuration documentation for a QuadPlane VTOL setup (Plane combined with Quadcopter). For airframe specific documentation and build instructions see [VTOL Framebuilds](../framebuild_vtol/README.md).
 
 ## Firmware & Basic Settings
 

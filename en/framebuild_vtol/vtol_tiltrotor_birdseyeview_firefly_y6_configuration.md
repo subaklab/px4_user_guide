@@ -1,4 +1,4 @@
-# BirdsEyeView FireFly Y6 Configuration
+# BirdsEyeView FireFly Y6 Tiltrotor VTOL Configuration
 
 > **Caution** This guide is still under construction.
 

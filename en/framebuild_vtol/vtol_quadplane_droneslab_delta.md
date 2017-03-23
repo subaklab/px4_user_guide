@@ -1,4 +1,4 @@
-# Delta VTOL
+# Delta QuadPlane VTOL
 
 > **Caution** This guide is still under construction.
 

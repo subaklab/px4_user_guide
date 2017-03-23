@@ -1,6 +1,6 @@
-# FunCub Quad Plane (Pixhawk)
+# FunCub QuadPlane (Pixhawk)
 
-A quad plane is one of our VTOL types which essentially is a normal
+A QuadPlane is one of our VTOL types which essentially is a normal
 plane combined with a standard quad airframe. 
 
 ![Fun cub VTOL](../../images/fun_cub_vtol_complete.jpg)
