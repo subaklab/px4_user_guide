@@ -32,7 +32,6 @@
     * [Ranger QuadPlane (Pixhawk)](framebuild_vtol/vtol_quadplane_volantex_ranger_ex_pixhawk.md)
     * [FireFly Y6 Tiltrotor (Pixfalcon)](framebuild_vtol/vtol_tiltrotor_birdseyeview_firefly_y6_pixfalcon.md)
     * [Convergence Tiltrotor (Pixfalcon)](framebuild_vtol/vtol_tiltrotor_eflite_convergence_pixfalcon.md)    
-    * [Delta QuadPlane](framebuild_vtol/vtol_quadplane_droneslab_delta.md)
 * [Flying](flying/README.md)
   * [First Flight](flying/first_flight_guidelines.md)
   * [Flight Mode Selection](flying/flight_mode_selection.md)
