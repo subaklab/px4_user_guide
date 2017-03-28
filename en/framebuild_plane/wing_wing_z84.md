@@ -1,7 +1,12 @@
-# Wing Wing Z-84
+# Wing Wing Z-84 Pixracer Build
 
 The Wing Wing Z-84 is our gold standard airframe: Small, rugged and just
 large enough to host a [Pixracer](../flight_controller/pixracer.md).
+
+Key information:
+
+- **Frame:** Wing Wing Z-84
+- **Flight controller:** Pixracer
 
 ![Wing Wing Z-84 build](../../images/wing_wing_build11.jpg)
 
@@ -40,11 +45,13 @@ The wiring below is valid for Pixhawk and Pixracer. Use the main
 outputs, not the ones labeled with AUX. The motor controller needs to
 have an in-built BEC, as the autopilot is not powering the servo rail.
 
--   RC IN: PPM or S.BUS / S.BUS2 input
--   MAIN1: Left Aileron
--   MAIN2: Right Aileron
--   MAIN3: Empty
--   MAIN4: Throttle
+Port | Connection
+--- | ---
+RC IN    | PPM or S.BUS / S.BUS2 input
+MAIN 1   | Left Aileron
+MAIN 2   | Right Aileron
+MAIN 3   | Empty
+MAIN 4   | Throttle
 
 
 ## Build Log

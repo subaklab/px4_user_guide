@@ -94,15 +94,18 @@ wire.
 The outputs of Pixhawk should be wired like this (orientation as seen
 like "sitting in the plane").
 
--   MAIN1: Front right motor, CCW
--   MAIN2: Back left motor, CCW
--   MAIN3: Front left motor, CW
--   MAIN4: Back right motor, CW
--   AUX1: Left aileron
--   AUX2: Right aileron
--   AUX3: Elevator
--   AUX4: Rudder
--   AUX5: Throttle
+Port | Connection
+--- | ---
+MAIN 1   | Front right motor, CCW
+MAIN 2   | Back left motor, CCW
+MAIN 3   | Front left motor, CW
+MAIN 4   | Back right motor, CW
+AUX  1   | Left aileron
+AUX  2   | Right aileron 
+AUX  3   | Elevator
+AUX  4   | Rudder
+AUX  5   | Throttle
+
 
 > **Success** The servo direction can be reversed using the
   PWM\_REV parameters in the PWM\_OUTPUT group of QGroundControl (cogwheel

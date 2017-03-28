@@ -26,7 +26,7 @@
     * [Spedix 250 \(Pixracer\)  ](framebuild_multicopter/spedix_s250_pixracer.md)
     * [Robocat 270 \(Pixracer\)  ](framebuild_multicopter/robocat_270_pixracer.md)
   * [Planes](framebuild_plane/README.md)
-    * [West Wing Z84  ](framebuild_plane/wing_wing_z84.md)
+    * [West Wing Z84 (Pixracer)](framebuild_plane/wing_wing_z84.md)
   * [VTOL](framebuild_vtol/README.md)
     * [FunCub QuadPlane (Pixhawk)](framebuild_vtol/vtol_quadplane_fun_cub_vtol_pixhawk.md)
     * [Ranger QuadPlane (Pixhawk)](framebuild_vtol/vtol_quadplane_volantex_ranger_ex_pixhawk.md)
