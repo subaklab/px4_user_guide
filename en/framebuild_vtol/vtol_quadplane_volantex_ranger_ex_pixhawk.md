@@ -1,10 +1,26 @@
 # Volantex Ranger-Ex QuadPlane VTOL (Pixhawk)
 
-The QuadRanger is a VTOL conversion of the Volantex Ranger-Ex. It's a
-1980mm wingspan plane that is capable of vertical takeoff and land.
+The QuadRanger VTOL is a standard tailplane aircraft based on the Volantex Ranger-Ex that has been retrofitted with a QuadCopter system. The Ranger-Ex is an easy to fly FPV platform that is widely available. It is also available from HobbyKing where it is rebranded as the Quanum Observer. The plasic fuselage and 2 meter EPO wing makes it a rugged airframe with a lot of payload capacity.
+
+Key information:
+
+- **Frame:** Volantex Ranger-Ex or  [Quanum Observer]()
+- **Flight controller:** Pixhawk
 
 ![QuadRanger](../../images/quadranger_vtol_complete_build.jpg)
 
+The VTOL conversion makes the plane a bit heavier (around 3.5kg including LiPo). With this conversion the plane will cruise at approximately 65% throttle. The suggested quad setup provides a thrust of 7.5kg and the airframe can fly with a total weight of around 4.5kg. This leaves enough payload capacity for payloads like FPV gear and cameras.
+
+The conversion is designed to minimize impact on the aerodynamics and provide additional strength minimize wing flexing.
+
+
+## Bill of Materials
+
+- Volantex Ranger-Ex or Quanum Observer
+- 1200KV 530W motors
+- 30A Speed Controllers
+- 4s battery
+- APC Electric 11x5 propellers
 
 ## Conversion kit
 
@@ -14,14 +30,12 @@ The QuadRanger is a VTOL conversion of the Volantex Ranger-Ex. It's a
 -   3DR Power module or compatible
 -   GPS
 
-For a full parts list with links to Hobbyking EU and International
-warehouse see:
+For a full parts list with links to Hobbyking EU and International warehouse see:
 [QuadRanger-VTOL-partslist](http://px4.io/wp-content/uploads/2016/01/QuadRanger-VTOL-partslist-1.xlsx)
 
 The image below depicts the parts required for one wing.
 
-![QuadRanger
-Parts](../../images/quadranger_vtol_parts_for_one_wing.jpg)
+![QuadRanger Parts](../../images/quadranger_vtol_parts_for_one_wing.jpg)
 
  
 The tools required for the conversion are;
