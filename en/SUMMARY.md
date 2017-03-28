@@ -30,7 +30,7 @@
   * [VTOL](framebuild_vtol/README.md)
     * [FunCub QuadPlane (Pixhawk)](framebuild_vtol/vtol_quadplane_fun_cub_vtol_pixhawk.md)
     * [Ranger QuadPlane (Pixhawk)](framebuild_vtol/vtol_quadplane_volantex_ranger_ex_pixhawk.md)
-    * [BirdsEyeView FireFly Y6 Titlrotor VTOL](framebuild_vtol/vtol_tiltrotor_birdseyeview_firefly_y6_configuration.md)
+    * [BirdsEyeView FireFly Y6 Titlrotor VTOL](framebuild_vtol/vtol_tiltrotor_birdseyeview_firefly_y6_pixfalcon.md)
     * [Delta QuadPlane](framebuild_vtol/vtol_quadplane_droneslab_delta.md)
 * [Flying](flying/README.md)
   * [First Flight](flying/first_flight_guidelines.md)
