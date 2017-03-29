@@ -1,10 +1,21 @@
-# Standard VTOL Connections
+# VTOL Motor/Servo Connections
 
-This document shows the connections for a standard VTOL setup (also referred to as a QuadPlane). For airframe specific documentation and build instructions see [VTOL Framebuilds](./framebuild_vtol/README.md).
+This topic defines the standard motor/and servo output connections for various types of VTOL vehicle supported by PX4.
 
-## Pixhawk Connections
+> **Caution** It is assumed that your pusher/puller motor uses an ESC with an
+  integrated BEC which means power will be supplied to the Pixhawk on
+  AUX5. If not, you will need to setup a 5V BEC to connect to one of the
+  free Pixhawk ports. Failure to do so will result in nonfunctional servos.
+  
+For airframe-specific documentation and build instructions see [VTOL Framebuilds](./framebuild_vtol/README.md).
 
-Pixhawk Port | Connection
+## QuadPlane
+
+The connections for a QuadPlane VTOL are listed below. For airframe specific documentation and build instructions see [VTOL Framebuilds](./framebuild_vtol/README.md).
+
+### Pixhawk Connections
+
+Port | Connection
 --- | ---
 MAIN 1   | Quad motor 1
 MAIN 2   | Quad motor 2
@@ -17,15 +28,40 @@ AUX 4    | Rudder
 AUX 5    | Throttle (motor)
 
 
-> **Caution** It is assumed that your pusher/puller motor uses an ESC with an
-  integrated BEC which means power will be supplied to the Pixhawk on
-  AUX5. If not, you will need to setup a 5V BEC to connect to one of the
-  free Pixhawk ports. Failure to do so will result in nonfunctional servos.
-
-## Configuration
+### Configuration
 
 * [VTOL Configuration](../config/vtol_quad_configuration.md)
 * [VTOL Configuration (without an Airspeed Sensor)](../advanced_config/vtol_without_airspeed_sensor.md)
+
+## Tiltrotor
+
+The connections for a Tiltrotor VTOL are listed below. 
+
+### Pixhawk Connections
+
+Port | Connection
+--- | --- 
+MAIN 1 | Motor right
+MAIN 2 | Motor left
+MAIN 3 | Motor back
+MAIN 4 | empty
+MAIN 5 | Tilt servo right
+MAIN 6 | Tilt servo left
+MAIN 7 | Elevon right
+MAIN 8 | Elevon left
+
+## Tailsitter
+
+Port | Rate | Actuator
+--- | --- 
+MAIN1 | 400 Hz | Left motor controller
+MAIN2 | 400 Hz | Right motor controller
+MAIN3 | 400 Hz | Empty
+MAIN4 | 400 Hz | Empty
+MAIN5 | 50 Hz  | Left aileron servo
+MAIN6 | 50 Hz  | Right aileron servo
+
+
 
 ## Support
 

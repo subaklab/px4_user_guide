@@ -17,14 +17,14 @@ left/right seen looking from behind the plane):
 
 Port | Connection
 --- | --- 
-Port 1 | Motor right
-Port 2 | Motor left
-Port 3 | Motor back
-Port 4 | empty
-Port 5 | Tilt servo right
-Port 6 | Tilt servo left
-Port 7 | Elevon right
-Port 8 | Elevon left
+MAIN 1 | Motor right
+MAIN 2 | Motor left
+MAIN 3 | Motor back
+MAIN 4 | empty
+MAIN 5 | Tilt servo right
+MAIN 6 | Tilt servo left
+MAIN 7 | Elevon right
+MAIN 8 | Elevon left
 
 The Pixfalcon can be mounted at the same place the original autopilot was.
 
