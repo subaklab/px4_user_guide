@@ -1,28 +1,27 @@
 # Pixhawk Mini Wiring Quick Start
 
-This quick start guide shows how power the [Pixhawk Mini](pixhawk_mini.md) and connect its most important peripherals.
+This quick start guide shows how power the [Pixhawk Mini](pixhawk_mini.md) and connect its most important peripherals
+(including output connections for copter, plane, and VTOL vehicles).
 
 > **Warning** Under construction.
 
 ## Standard Wiring Chart
 
-The image below shows standard Quadcopter wiring using the *Pixhawk Mini
+The image below shows standard *quadcopter* wiring using the *Pixhawk Mini
 Kit* and 3DR Telemetry Radios (along with ESC, motor, battery and a
 ground control station running on a phone). We'll go through each main part in the following sections.
 
-> **Note** The wiring is slightly different for other vehicles. This is covered in more detail below for VTOL, Plane, Multicopter.
-
 ![Pixhawk Mini Electronics Wiring for QAV250 (off frame)](../../images/qav250_wiring_image_pixhawk_mini.jpg)
  
+> **Note** The output wiring/powering is slightly different for other types of vehicles. This is covered in more detail below for VTOL, Plane, Copter.
+
 
 ## Mount and Orient Controller
 
 The *Pixhawk Mini* should be mounted on the frame using
 vibration-damping foam pads (included in the kit). It should be
-positioned as close to your vehicle’s center of gravity as possible .
-
-The controller should be placed on the frame top-side up, oriented so
-that the arrow points towards the front of the vehicle.
+positioned as close to your vehicle’s center of gravity as possible, oriented top-side up 
+with the arrow points towards the front of the vehicle.
 
 ![Pixhawk Mini recommended orientation](../../images/pixhawk_mini_mounting_arrow.png)
 ![Mounting foam](../../images/3dr_anti_vibration_mounting_foam.png)
@@ -30,7 +29,8 @@ that the arrow points towards the front of the vehicle.
 > **Note** If the controller cannot be mounted in the
   recommended/default orientation (e.g. due to space constraints) you will
   need to configure the autopilot software with the orientation that you
-  actually used: LINK TO: Flight Controller Orientation.
+  actually used: [Flight Controller Orientation](../config/flight_controller_orientation.md).
+
 
 ## GPS + Compass
 

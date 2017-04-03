@@ -7,7 +7,7 @@ This topic defines the standard Pixhawk motor/and servo output connections for v
   AUX5. If not, you will need to setup a 5V BEC to connect to one of the
   free Pixhawk ports. Failure to do so will result in nonfunctional servos.
   
-For airframe-specific documentation and build instructions see [VTOL Framebuilds](./framebuild_vtol/README.md).
+For airframe-specific documentation and build instructions see [VTOL Framebuilds](../framebuild_vtol/README.md).
 
 
 ## QuadPlane
@@ -26,11 +26,6 @@ AUX 3    | Elevator
 AUX 4    | Rudder
 AUX 5    | Throttle (motor)
 
-
-### Configuration
-
-* [VTOL Configuration](../config/vtol_quad_configuration.md)
-* [VTOL Configuration (without an Airspeed Sensor)](../advanced_config/vtol_without_airspeed_sensor.md)
 
 ## Tiltrotor
 
@@ -58,7 +53,12 @@ MAIN4 | Empty
 MAIN5 | Left aileron servo
 MAIN6 | Right aileron servo
 
+## Configuration
 
+QuadPlane
+
+* [VTOL Configuration](../config/vtol_quad_configuration.md)
+* [VTOL Configuration (without an Airspeed Sensor)](../advanced_config/vtol_without_airspeed_sensor.md)
 
 ## Support
 

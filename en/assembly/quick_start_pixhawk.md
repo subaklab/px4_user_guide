@@ -1,110 +1,84 @@
 # Pixhawk Wiring Quick Start
 
-This quick start guide shows how power the Pixhawk and connect its most important peripherals.
-
-> **Warning** Under construction.
-
-## Standard Wiring Chart
-
-![Pixhawk](../../images/pixhawk_infographic2.jpg)
+This quick start guide shows how power the 3DR Pixhawk flight controller and connect its most important peripherals
+(including output connections for copter, plane, and VTOL vehicles).
+  
+![Pixhawk Image](../../images/pixhawk_logo_view.jpg) 
 
 
-----
+## About Pixhawk
 
-The image below shows standard Quadcopter wiring using the *Pixhawk Mini
-Kit* and 3DR Telemetry Radios (along with ESC, motor, battery and a
-ground control station running on a phone). We'll go through each main part in the following sections.
+The *3DR Pixhawk* is a well regarded flight controller based on the [Pixhawk Project's](https://pixhawk.org/) FMUv2 architecture. 
 
-> **Note** The wiring is slightly different for other vehicles. This is covered in more detail below for VTOL, Plane, Multicopter.
+* [Pixhawk Series](../flight_controller/pixhawk_series.md)
+* [3DR Pixhawk](https://dev.px4.io/hardware-pixhawk.html) (PX4 DevGuide)
 
-![Pixhawk Mini Electronics Wiring for QAV250 (off frame)](../../images/qav250_wiring_image_pixhawk_mini.jpg)
+> **Note** The Pixhawk is no longer available from 3DR. Other flight controllers based on the Pixhawk FMUv2 architecture are available from other companies (these share the same connections, outputs, functions, etc. and are wired in a similar way).
+
+
+## Wiring Chart Overview
+
+The image below shows standard Pixhawk connections (excepting the motor and servo outputs). We'll go through each main part in the following sections.
+
+![Pixhawk Wiring Overview](../../images/pixhawk_wiring_overview.jpg)
  
+> **Note** More detailed wiring information is shown in this [QuadCopter Pixhawk Wiring Infographic](../../images/../../images/pixhawk_infographic2.jpg).
+
 
 ## Mount and Orient Controller
 
-The *Pixhawk Mini* should be mounted on the frame using
-vibration-damping foam pads (included in the kit). It should be
-positioned as close to your vehicle’s center of gravity as possible .
+The *Pixhawk* should be mounted on the frame using vibration-damping foam pads (included in the kit). It should be
+positioned as close to your vehicle’s center of gravity as possible, oriented top-side up 
+with the arrow points towards the front of the vehicle.
 
-The controller should be placed on the frame top-side up, oriented so
-that the arrow points towards the front of the vehicle.
-
-![Pixhawk Mini recommended orientation](../../images/pixhawk_mini_mounting_arrow.png)
-![Mounting foam](../../images/3dr_anti_vibration_mounting_foam.png)
+![Pixhawk mounting and orientation](../../images/pixhawk_3dr_mounting_and_foam.jpg)
 
 > **Note** If the controller cannot be mounted in the
   recommended/default orientation (e.g. due to space constraints) you will
   need to configure the autopilot software with the orientation that you
-  actually used: LINK TO: Flight Controller Orientation.
+  actually used: [Flight Controller Orientation](../config/flight_controller_orientation.md).
+
+## Buzzer and Safety Switch
+
+Connect the included buzzer and safety switch as shown below (these are mandatory).
+
+![Pixhawk mounting and orientation](../../images/pixhawk_3dr_buzzer_and_safety_switch.jpg)
+
 
 ## GPS + Compass
 
-Attach the 3DR GPS + Compass to the Pixhawk Mini's **GPS&I2C** port (top
-right) using the supplied 6 pin cable. The GPS/Compass should be mounted
-on the frame as far away from other electronics as possible, facing the
-front of the vehicle (separating the compass from other electronics will
-reduce interference).
+Attach a GPS (required) to the GPS port using the 6-wire cable supplied in the kit. Optionally attach a compass to the I2C port using a 4-wire cable (the Pixhawk has an internal compass, than can be used if necessary).
 
-![Connecting compass/GPS to Pixhawk Mini](../../images/pixhawk_mini_with_compass.jpg)
+> **Note** The diagram shows a combined GPS and Compass.  The GPS/Compass should be mounted on the frame as far away from other electronics as possible, with the direction marker towards the front of the vehicle (separating the compass from other electronics will reduce interference).
 
-NOTE - INSERT IMAGE SHOWING BOTH PORTS? OR FRONT-FACING image of GPS&I2C
+![Connect compass/GPS to Pixhawk](../../images/pixhawk_3dr_compass_gps.jpg)
 
-[IN CALIBRATION, IS ORIENTATION TO VEHICLE FRONT or RELATIVE TO
-PIXHAWK?]
-
-The compass must be calibrated before it is first used. For more
-information see: [COMPASS CALIBRATION LINK]
 
 ## Power
 
-The image below shows typical power-supply wiring when using *Pixhawk
-Mini* in a Quadcopter. This uses the *Quad Power Distribution
-Board* that comes in the kit to supply both the Pixhawk Mini and the
-ESC/Motor from the battery (and can also power other accessories).
+Connect the output of a *Power module* (PM) to the **POWER** port using a 6-wire cable as shown. The PM input will be connected to your LiPo batter, while the main output will supply vehicle ESCs/motors (possibly via a power distribution board).
 
-> **Note** The *Quad Power Distribution Board* includes a power
-  module (PM) that is suitable for batteries <= 4S. 
-  The [3DR 10S Power Module](https://store.3dr.com/products/10s-power-module) 
-  is recommended if you need more power.
+The power module supplies the flight controller with power from the battery and also sends information about the analog current and voltage supplied via the module (including both power to the flight controller and to motors etc). 
 
-[PLACHOLDER IMAGE - need more detail and consistent name for power
-board]
+![Pixhawk - Power Module](../../images/pixhawk_3dr_power_module.jpg)
 
-![Pixhawk Mini - Powering](../../images/pixhawk_mini_powering_quad_board.jpg)
+> **Warning** The power module supplies the flight controller itself, but cannot power servos and other hardware connected to the controller's output ports (rail). For copter this does not matter because the motors are separately powered. 
 
-The *Pixhawk Mini* is powered through the **PM** port. When using a
-power module (as in this case) the port will also read analog voltage
-and current measurements.
+For planes and VTOL the output rail will need to be separately powered in order to drive servos for rudders, elevons etc. Often the main pusher/puller motor uses an ESC with an integrated [BEC](https://en.wikipedia.org/wiki/Battery_eliminator_circuit) that can be connected to the AUX5 pin to power the Pixhawk output rail. If not, you will need to setup a 5V BEC to connect to one of the free Pixhawk ports (without power, the servos will not work).
 
-Up to 4 ESCs can be separately powered from the power distribution board
-(though in this case we only have one connected).
+<!-- It would be good to have real example of this powering --> 
 
-The control signals come from MAIN OUT. In this case there is only one
-control channel, which is connected to the ESC via the *8 Channel PWM
-Breakout Board*.
+## Radio Control
 
-The Pixhawk Mini output rail (MAIN OUT) cannot power attached devices
-(and does not need to in the circuit as shown). For vehicles where MAIN
-OUT is attached to devices that draw power (e.g. a servo used in a
-plane) then you will need to power the rail using a BEC (battery
-elimination circuit). The included breakout board allows one channel to
-provide power on the other outputs. [Show a diagram of this?]
+A radio transmitter can be used to control movement, set the [flight mode](../flying/flight_mode_selection.md), and otherwise communicate with the vehicle. The transmitter sends messages to a radio receiver on the vehicle that is connected to the flight controller.
 
+You will need to select a compatible transmitter/receiver combination and then *bind* them so that they communicate (read the instructions that come with your specific transmitter/receiver). 
 
+> **Note** Conveniently, compatible systems are often sold together. For example, this [Taranis X9D and FrSky X8R](https://hobbyking.com/en_us/frsky-2-4ghz-accst-taranis-x9d-plus-and-x8r-combo-digital-telemetry-radio-system-mode-2.html?___store=en_us) is a popular combination.
 
-## Radio/Remote Control
+### Receivers
 
-Pixhawk Mini supports many different radio receiver models:
-
-- PPM and S.BUS receivers must connect to the **RCIN** port.
-  ![Pixhawk Mini - Radio port for PPM receivers](../../images/pixhawk_mini_port_rcin.png)
-- PWM receivers (with individual cables for each channel) must connect
-  to the RCIN channel *via* a PPM encoder 
-  [like this one](http://www.getfpv.com/radios/radio-accessories/holybro-ppm-encoder-module.html).
-- Spektrum and DSM receivers must connect to the **SPKT/DSM** input.
-  ![Pixhawk Mini - Radio port for Spektrum receivers](../../images/pixhawk_mini_port_spkt_dsm.png)
-
-*PX4* and *Pixhawk Mini* is have been validated with:
+Pixhawk supports many different radio receiver models. *PX4* and *Pixhawk* have been validated with:
 
 - All Spektrum DSM RC receivers
 - All Futaba S.BUS and S.BUS2 RC receivers
@@ -112,30 +86,42 @@ Pixhawk Mini supports many different radio receiver models:
 - Graupner HoTT
 - All PPM models from other manufacturers
 
-> **Note** ADD SOMETHING ON BINDING TO RECIEVER TO BIND
-> **Note** ADD SOMETHING ON DIFFERENT TRANSMITTERS. We PERHAPS NEED A COMPATIBILITY PAGE  
+The appropriate connection for each type of receiver is described below:
 
-## Safety switch (optional)
-
-The controller has an integrated safety switch that you can use for
-motor activation once the autopilot is ready to take off. If this switch
-is hard to access on a particular vehicle you can attach the (optional)
-external safety button, as shown below.
-
-![Pixhawk Mini - Optional Switch](../../images/pixhawk_mini_safety_switch_wiring.jpg) 
-
-[IMAGE PLACEHOLDER - GOOD IMAGE of SIDE PORTS + CONNECTED SWITCH]
+- PPM and S.BUS receivers must connect to the **RC** ground, power and signal pins as shown.
+  ![Pixhawk - Radio port for PPM/S.BUS receivers](../../images/pixhawk_3dr_receiver_ppm_sbus.jpg)
+- PWM receivers must connect to the RCIN channel *via* a PPM encoder 
+  [like this one](http://www.getfpv.com/radios/radio-accessories/holybro-ppm-encoder-module.html) (PPM receivers use a single signal wire for all channels, while PWM receivers have an individual wire for each channe).
+- Spektrum and DSM receivers must connect to the **SPKT/DSM** input.
+  ![Pixhawk - Radio port for Spektrum receivers](../../images/pixhawk_3dr_receiver_spektrum.jpg)
 
 
+### Transmitters
 
-## Telemetry Radios
+One of the most popular radio systems is the open source *FrSky Taranis PPM-Sum Compatible Transmitter*. This is compatible with many high quality FrSky PPM-Sum compatible receivers.
+
+![Taranis X9D Transmitter](../../images/frsky_taranis_x9d_transmitter.jpg)
+
+Other popular transmitter/receiver combinations include:
+
+* Turnigy transmitters (with the FrSky Transmitter Module) and compatible PPM-Sum receivers.
+* Futaba Transmitters and compatible Futaba S-Bus receivers.
 
 
-## Other Peripherals
+## Telemetry Radios (Optional)
+
+Telemetry radios may be used to communicate and control a vehicle in flight from a ground station (for example, you can direct the UAV to a particular position, or upload a new mission). One radio must be connected to your vehicle as shown below. The other is connected to your ground station computer or mobile device (usually by USB).
+
+![Pixhawk/Telemetry Radio](../../images/pixhawk_3dr_telemetry_radio.jpg)
+
+<!-- what configuration is required once you've set up a radio) -->
+
+
+## Motor/Actuator Outputs 
 
 ### Copter
 
-There is a 1:1 mapping between pin-out and motor (obviously the actual number of motors used depends on the vehicle).
+There is a 1:1 mapping between pin-out and motor. The actual number of motors and how they are wired up depends on the type of multicopter. For more information see the [Copter Motor Map](../assembly/copter_motor_map.md).
 
 Output | Connection
 --- | ---
@@ -147,7 +133,6 @@ MAIN 5   | Motor 5
 MAIN 6   | Motor 6 
 MAIN 7   | Motor 7
 MAIN 8   | Motor 8
-
 
 
 ### Plane
@@ -163,15 +148,12 @@ MAIN 6   |
 MAIN 7   | 
 MAIN 8   | 
 
+> **Caution** The output rail must be separately powered, as discussed in the "Powering" section above.
+
 
 ### VTOL
 
 #### QuadPlane
-
-> **Warning** Pixhawk Mini cannot be used for QuadPlane it does not have the required number or type of outputs.
-
-The *Pixhawk* connections for a VTOL QuadPlane) are shown below. 
-
 
 Output | Connection
 --- | ---
@@ -185,10 +167,8 @@ AUX 3    | Elevator
 AUX 4    | Rudder
 AUX 5    | Throttle (motor)
 
-> **Caution** It is assumed that your pusher/puller motor uses an ESC with an
-  integrated BEC so that power will be supplied to the Pixhawk on
-  AUX5. If not, you will need to setup a 5V BEC to connect to one of the
-  free Pixhawk ports. Failure to do so will result in nonfunctional servos.
+> **Caution** The output rail must be separately powered, as discussed in the "Power" section above.
+
 
 #### Tiltrotor
 
@@ -203,9 +183,9 @@ MAIN 6 | Tilt servo left
 MAIN 7 | Elevon right
 MAIN 8 | Elevon left
 
+> **Caution** The output rail must be separately powered, as discussed in the "Power" section above.
 
 #### Tailsitter
-
 
 Output | Actuator
 --- | --- 
@@ -216,6 +196,8 @@ MAIN4 | Empty
 MAIN5 | Left aileron servo
 MAIN6 | Right aileron servo
 
+> **Caution** The output rail must be separately powered, as discussed in the "Powering" section above.
+
 
 ## Configuration
 
@@ -223,9 +205,9 @@ General configuration information is covered in: [Autopilot Configuration](../co
 
 QuadPlane specific configuration is covered here: [QuadPlane VTOL Configuration](../config/vtol_quad_configuration.md)
 
+<!-- what about config of other vtol types and plane. Do the instructions in these ones above apply for tailsitters etc? -->
+
+
 ## Further information
 
-- [Pixhawk Mini Quick Start Guide (3DR)](https://3drobotics.zendesk.com/hc/en-us/article_attachments/115000349564/PixhawkMiniQuickStartGuide.pdf)
-
- 
-
+- [Pixhawk Quick Start Guide (3DR)](https://3dr.com/wp-content/uploads/2014/03/pixhawk-manual-rev7.pdf)
