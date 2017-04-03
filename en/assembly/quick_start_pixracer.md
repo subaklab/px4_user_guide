@@ -11,3 +11,8 @@
 ![Grau ACSP4 2 roh](../../images/grau_acsp4_2_roh.jpg)
 
 ![Grau b Pixracer FrSkyS.Port Connection](../../images/grau_b_pixracer_frskys.port_connection.jpg)
+
+
+![Grau pixracer double](../../images/grau_pixracer_double.jpg)
+
+

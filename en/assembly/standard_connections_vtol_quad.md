@@ -1,6 +1,6 @@
-# VTOL Motor/Servo Connections
+# Pixhawk VTOL Connections
 
-This topic defines the standard motor/and servo output connections for various types of VTOL vehicle supported by PX4.
+This topic defines the standard Pixhawk motor/and servo output connections for various types of VTOL vehicle supported by PX4.
 
 > **Caution** It is assumed that your pusher/puller motor uses an ESC with an
   integrated BEC which means power will be supplied to the Pixhawk on
@@ -9,13 +9,12 @@ This topic defines the standard motor/and servo output connections for various t
   
 For airframe-specific documentation and build instructions see [VTOL Framebuilds](./framebuild_vtol/README.md).
 
+
 ## QuadPlane
 
 The connections for a QuadPlane VTOL are listed below. For airframe specific documentation and build instructions see [VTOL Framebuilds](./framebuild_vtol/README.md).
 
-### Pixhawk Connections
-
-Port | Connection
+Output | Connection
 --- | ---
 MAIN 1   | Quad motor 1
 MAIN 2   | Quad motor 2
@@ -37,9 +36,7 @@ AUX 5    | Throttle (motor)
 
 The connections for a Tiltrotor VTOL are listed below. 
 
-### Pixhawk Connections
-
-Port | Connection
+Output | Connection
 --- | --- 
 MAIN 1 | Motor right
 MAIN 2 | Motor left
@@ -52,14 +49,14 @@ MAIN 8 | Elevon left
 
 ## Tailsitter
 
-Port | Rate | Actuator
+Output | Actuator
 --- | --- 
-MAIN1 | 400 Hz | Left motor controller
-MAIN2 | 400 Hz | Right motor controller
-MAIN3 | 400 Hz | Empty
-MAIN4 | 400 Hz | Empty
-MAIN5 | 50 Hz  | Left aileron servo
-MAIN6 | 50 Hz  | Right aileron servo
+MAIN1 | Left motor controller
+MAIN2 | Right motor controller
+MAIN3 | Empty
+MAIN4 | Empty
+MAIN5 | Left aileron servo
+MAIN6 | Right aileron servo
 
 
 

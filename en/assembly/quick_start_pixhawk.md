@@ -1,10 +1,15 @@
-# Pixhawk Mini Wiring Quick Start
+# Pixhawk Wiring Quick Start
 
-This quick start guide shows how power the [Pixhawk Mini](pixhawk_mini.md) and connect its most important peripherals.
+This quick start guide shows how power the Pixhawk and connect its most important peripherals.
 
 > **Warning** Under construction.
 
 ## Standard Wiring Chart
+
+![Pixhawk](../../images/pixhawk_infographic2.jpg)
+
+
+----
 
 The image below shows standard Quadcopter wiring using the *Pixhawk Mini
 Kit* and 3DR Telemetry Radios (along with ESC, motor, battery and a
@@ -128,11 +133,6 @@ external safety button, as shown below.
 
 ## Other Peripherals
 
-## Motors
-
-![Pixhawk Mini - port for motors/servos](../../images/pixhawk_mini_port_main_out.png)
-
-
 ### Copter
 
 There is a 1:1 mapping between pin-out and motor (obviously the actual number of motors used depends on the vehicle).
@@ -163,16 +163,32 @@ MAIN 6   |
 MAIN 7   | 
 MAIN 8   | 
 
-> **Caution** It is assumed that your pusher/puller motor uses an ESC with an
-  integrated BEC so that power will be supplied to the Pixhawk on
-  AUX5. If not, you will need to setup a 5V BEC to connect to one of the
-  free Pixhawk ports. Failure to do so will result in nonfunctional servos.
 
 ### VTOL
 
 #### QuadPlane
 
-> **Warning** Pixhawk Mini cannot be used for QuadPlane. This is because QuadPlane requires 9 outputs (4 Main, 5 AUX) and the Pixhawk Mini only has 8 outputs (8 Main).
+> **Warning** Pixhawk Mini cannot be used for QuadPlane it does not have the required number or type of outputs.
+
+The *Pixhawk* connections for a VTOL QuadPlane) are shown below. 
+
+
+Output | Connection
+--- | ---
+MAIN 1   | Quad motor 1
+MAIN 2   | Quad motor 2
+MAIN 3   | Quad motor 3
+MAIN 4   | Quad motor 4
+AUX 1    | Left aileron
+AUX 2    | Right aileron
+AUX 3    | Elevator
+AUX 4    | Rudder
+AUX 5    | Throttle (motor)
+
+> **Caution** It is assumed that your pusher/puller motor uses an ESC with an
+  integrated BEC so that power will be supplied to the Pixhawk on
+  AUX5. If not, you will need to setup a 5V BEC to connect to one of the
+  free Pixhawk ports. Failure to do so will result in nonfunctional servos.
 
 #### Tiltrotor
 
@@ -189,6 +205,7 @@ MAIN 8 | Elevon left
 
 
 #### Tailsitter
+
 
 Output | Actuator
 --- | --- 

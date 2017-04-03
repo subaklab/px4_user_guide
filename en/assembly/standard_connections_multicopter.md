@@ -1,11 +1,11 @@
-# Standard Multicopter Wiring and Configuration
+# Pixhawk Standard Multicopter Wiring and Configuration
 
-Port | Rate | Actuator
+Output | Actuator
 --- | --- 
-MAIN 1 | 400 Hz | Front right (CCW)
-MAIN 2 | 400 Hz | Back left (CCW)
-MAIN 3 | 400 Hz | Front left (CW)
-MAIN 4 | 400 Hz | Back right (CW)
-AUX 1 | 50 Hz | RC AUX1
-AUX 2 | 50 Hz | RC AUX2
-AUX 3 | 50 Hz | RC AUX3
+MAIN 1 | Front right (CCW)
+MAIN 2 | Back left (CCW)
+MAIN 3 | Front left (CW)
+MAIN 4 | Back right (CW)
+AUX 1 | RC AUX1
+AUX 2 | RC AUX2
+AUX 3 | RC AUX3
