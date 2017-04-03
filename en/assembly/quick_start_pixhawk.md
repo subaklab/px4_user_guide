@@ -5,16 +5,7 @@ This quick start guide shows how power the 3DR Pixhawk flight controller and con
   
 ![Pixhawk Image](../../images/pixhawk_logo_view.jpg) 
 
-
-## About Pixhawk
-
-The *3DR Pixhawk* is a well regarded flight controller based on the [Pixhawk Project's](https://pixhawk.org/) FMUv2 architecture. 
-
-* [Pixhawk Series](../flight_controller/pixhawk_series.md)
-* [3DR Pixhawk](https://dev.px4.io/hardware-pixhawk.html) (PX4 DevGuide)
-
-> **Note** The Pixhawk is no longer available from 3DR. Other flight controllers based on the Pixhawk FMUv2 architecture are available from other companies (these share the same connections, outputs, functions, etc. and are wired in a similar way).
-
+> **Note** The [3DR Pixhawk](https://dev.px4.io/hardware-pixhawk.html) is no longer available from 3DR. Other flight controllers based on the [Pixhawk FMUv2 architecture](../flight_controller/pixhawk_series.md) are available from other companies (these share the same connections, outputs, functions, etc. and are wired in a similar way).
 
 ## Wiring Chart Overview
 
@@ -211,3 +202,5 @@ QuadPlane specific configuration is covered here: [QuadPlane VTOL Configuration]
 ## Further information
 
 - [Pixhawk Quick Start Guide (3DR)](https://3dr.com/wp-content/uploads/2014/03/pixhawk-manual-rev7.pdf)
+- [Pixhawk Series](../flight_controller/pixhawk_series.md)
+- [3DR Pixhawk](https://dev.px4.io/hardware-pixhawk.html) (PX4 DevGuide)
