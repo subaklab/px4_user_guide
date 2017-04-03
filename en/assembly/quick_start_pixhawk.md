@@ -1,7 +1,7 @@
 # Pixhawk Wiring Quick Start
 
-This quick start guide shows how power the 3DR Pixhawk flight controller and connect its most important peripherals
-(including output connections for copter, plane, and VTOL vehicles).
+This quick start guide shows how power the *3DR Pixhawk flight controller and connect its most important peripherals
+(including output connections for [copter](#copter), [plane](#plane), and [VTOL](#vtol) vehicles).
   
 ![Pixhawk Image](../../images/pixhawk_logo_view.jpg) 
 
@@ -139,7 +139,7 @@ MAIN 6   |
 MAIN 7   | 
 MAIN 8   | 
 
-> **Caution** The output rail must be separately powered, as discussed in the "Powering" section above.
+> **Caution** The output rail must be separately powered, as discussed in the [Power](#power) section above.
 
 
 ### VTOL
@@ -158,7 +158,7 @@ AUX 3    | Elevator
 AUX 4    | Rudder
 AUX 5    | Throttle (motor)
 
-> **Caution** The output rail must be separately powered, as discussed in the "Power" section above.
+> **Caution** The output rail must be separately powered, as discussed in the [Power](#power) section above.
 
 
 #### Tiltrotor
@@ -174,7 +174,7 @@ MAIN 6 | Tilt servo left
 MAIN 7 | Elevon right
 MAIN 8 | Elevon left
 
-> **Caution** The output rail must be separately powered, as discussed in the "Power" section above.
+> **Caution** The output rail must be separately powered, as discussed in the [Power](#power) section above.
 
 #### Tailsitter
 
@@ -187,7 +187,7 @@ MAIN4 | Empty
 MAIN5 | Left aileron servo
 MAIN6 | Right aileron servo
 
-> **Caution** The output rail must be separately powered, as discussed in the "Powering" section above.
+> **Caution** The output rail must be separately powered, as discussed in the [Power](#power) section above.
 
 
 ## Configuration
