@@ -2,6 +2,7 @@
 
 * [Introduction](README.md)
 * [Getting Started](getting_started/README.md)
+  // * [Introduction to Drones](getting_started/uav_intro.md)
   * [PX4 Basic Concepts](getting_started/px4_basic_concepts.md)
   * [Frame Selection](getting_started/frame_selection.md)
   * [Flight Controller Selection](getting_started/flight_controller_selection.md)
@@ -36,7 +37,8 @@
     * [FireFly Y6 Tiltrotor (Pixfalcon)](framebuild_vtol/vtol_tiltrotor_birdseyeview_firefly_y6_pixfalcon.md)
     * [Convergence Tiltrotor (Pixfalcon)](framebuild_vtol/vtol_tiltrotor_eflite_convergence_pixfalcon.md)    
 * [Flying](flying/README.md)
-  * [First Flight](flying/first_flight_guidelines.md)
+  * [First Flight Guidelines](flying/first_flight_guidelines.md)
+  * [Flying 101](flying/basic_flying.md)
   * [Flight Mode Selection](flying/flight_mode_selection.md)
     * [Follow-me Mode](flying/flight_mode_follow_me.md)
   * [Missions](flying/missions.md)
