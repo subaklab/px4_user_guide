@@ -1,6 +1,6 @@
 # Pixhawk Wiring Quick Start
 
-This quick start guide shows how power the *3DR Pixhawk flight controller and connect its most important peripherals
+This quick start guide shows how power the *3DR Pixhawk* flight controller and connect its most important peripherals
 (including output connections for [copter](#copter), [plane](#plane), and [VTOL](#vtol) vehicles).
   
 ![Pixhawk Image](../../images/pixhawk_logo_view.jpg) 
@@ -61,23 +61,11 @@ For planes and VTOL the output rail will need to be separately powered in order 
 
 ## Radio Control
 
-A radio transmitter can be used to control movement, set the [flight mode](../flying/flight_mode_selection.md), and otherwise communicate with the vehicle. The transmitter sends messages to a radio receiver on the vehicle that is connected to the flight controller.
+A remote control (RC) radio system is required if you want to *manually* control your vehicle (PX4 does not require a radio system for autonomous flight modes). 
 
-You will need to select a compatible transmitter/receiver combination and then *bind* them so that they communicate (read the instructions that come with your specific transmitter/receiver). 
+You will need to [select a compatible transmitter/receiver](../getting_started/rc_transmitter_receiver.md) and then *bind* them so that they communicate (read the instructions that come with your specific transmitter/receiver). 
 
-> **Note** Conveniently, compatible systems are often sold together. For example, this [Taranis X9D and FrSky X8R](https://hobbyking.com/en_us/frsky-2-4ghz-accst-taranis-x9d-plus-and-x8r-combo-digital-telemetry-radio-system-mode-2.html?___store=en_us) is a popular combination.
-
-### Receivers
-
-Pixhawk supports many different radio receiver models. *PX4* and *Pixhawk* have been validated with:
-
-- All Spektrum DSM RC receivers
-- All Futaba S.BUS and S.BUS2 RC receivers
-- All FrSky PPM and S.Bus models
-- Graupner HoTT
-- All PPM models from other manufacturers
-
-The appropriate connection for each type of receiver is described below:
+The instructions below show how to connect the different types of receivers to Pixhawk:
 
 - PPM and S.BUS receivers must connect to the **RC** ground, power and signal pins as shown.
   ![Pixhawk - Radio port for PPM/S.BUS receivers](../../images/pixhawk_3dr_receiver_ppm_sbus.jpg)
@@ -86,17 +74,7 @@ The appropriate connection for each type of receiver is described below:
 - Spektrum and DSM receivers must connect to the **SPKT/DSM** input.
   ![Pixhawk - Radio port for Spektrum receivers](../../images/pixhawk_3dr_receiver_spektrum.jpg)
 
-
-### Transmitters
-
-One of the most popular radio systems is the open source *FrSky Taranis PPM-Sum Compatible Transmitter*. This is compatible with many high quality FrSky PPM-Sum compatible receivers.
-
-![Taranis X9D Transmitter](../../images/frsky_taranis_x9d_transmitter.jpg)
-
-Other popular transmitter/receiver combinations include:
-
-* Turnigy transmitters (with the FrSky Transmitter Module) and compatible PPM-Sum receivers.
-* Futaba Transmitters and compatible Futaba S-Bus receivers.
+For more information about selecting a radio system and receiver compatibility see: [Remote Control Transmitters & Receivers](../getting_started/rc_transmitter_receiver.md).
 
 
 ## Telemetry Radios (Optional)
