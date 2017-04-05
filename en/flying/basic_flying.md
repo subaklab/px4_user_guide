@@ -1,31 +1,16 @@
 # Flying 101
 
-This topic explains the basics of flying a vehicle using your Radio Control (RC) Transmitter in a manual or autopilot-assisted flight mode (for autonomous flight see: [Missions](../flying/missions.md)). 
+This topic explains the basics of flying a vehicle using an [RC Transmitter](../getting_started/rc_transmitter_receiver.md) in a manual or autopilot-assisted flight mode (for autonomous flight see: [Missions](../flying/missions.md)). 
 
 > **Note** Before you fly for the first time you should read our [First Flight Guidelines](../flying/first_flight_guidelines.md).
-
-
-## Remote Control Transmitter
-
-UAVs are manually controlled with an RC Transmitter. The transmitter sends movement and other commands (for example to change flight modes, or return to the home position) over a radio link to a receiver based on the vehicle.
-
-There are many different types of RC transmitters. The most popular form of transmitter for aircraft is shown below. It has separate control sticks for controlling roll/pitch and for throttle/yaw as shown.
-
-![RC Basic Commands](../../images/rc_basic_commands.png)
-
-> **Note** This type of transmitter is available in a number of modes. *Mode 1* and *Mode 2* transmitters differ only in the placement of the throttle. 
-  The choice is largely one of taste, and must be made before you buy the transmitter.
-  ![Mode1-Mode2](../../images/mode1_mode2.png)
-
 
 ## Flight Controls/Commands
 
 All flying, including takeoff and landing, is controlled using the 4 basic commands: roll, yaw, pitch and throttle. 
 
-In order to control your aircraft you need to understand how the basic Roll, Pitch, Yaw and Throttle commands affect movement in 3D space. This differs depending on whether you're controlling a forward-flying aircraft like a plane, or a "hover aircraft" like a multicopter.
-
 ![RC Basic Commands](../../images/rc_basic_commands.png)
 
+In order to control your aircraft you need to understand how the basic Roll, Pitch, Yaw and Throttle commands affect movement in 3D space. This differs depending on whether you're controlling a forward-flying aircraft like a plane, or a "hover aircraft" like a multicopter.
 
 ### Hover aircraft
 

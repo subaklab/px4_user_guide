@@ -36,6 +36,8 @@ You can follow the links to see detailed explanation on each connection type.
 
 ## Remote Control
 
-UAVs are manually controlled with an RC Transmitter. The transmitter sends yaw, pitch, roll, throttle and other commands over a radio link to a receiver based on the vehicle. The way these commands affect movement depends on whether the vehicle is forward moving like a plane or hovering.
+A remote control (RC) radio system is required if you want to *manually* control your vehicle (PX4 does not require a radio system for autonomous flight modes). A radio system consists of a transmitter with the operator that communicates with a receiver based on the vehicle. 
 
-You can find out more about remote controls in [Flying 101](flying/basic_flying.md).
+![Taranis X9D Transmitter](../../images/frsky_taranis_x9d_transmitter.jpg)
+
+To pick an radio system see: [RC System Selection](../getting_started/rc_transmitter_receiver.md). To learn more about flying with an RC transmitter see: [Flying 101](../flying/basic_flying.md).
