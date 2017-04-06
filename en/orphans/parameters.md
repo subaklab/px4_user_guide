@@ -7,8 +7,8 @@
 The module where these parameters are defined is: *src/examples/attitude_estimator_ekf*.
 
 <table style="width: 100%; table-layout:fixed; font-size:1.5rem;">
-<colgroup><col style="width: 20%"><col style="width: 45%"><col style="width: 10%"><col style="width: 10%"><col style="width: 7%"><col style="width: 8%"></colgroup>
-<thead><tr><th>Name</th><th>Description</th><th>Min /Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
+<colgroup><col style="width: 20%"><col style="width: 44%"><col style="width: 10%"><col style="width: 11%"><col style="width: 7%"><col style="width: 8%"></colgroup>
+<thead><tr><th>Name</th><th>Description</th><th>Min/ Max</th><th>Default</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
 <tr><td style="vertical-align: top;"><strong id="EKF_ATT_V3_Q0">EKF_ATT_V3_Q0</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Body angular rate process noise</p>
@@ -53,8 +53,8 @@ The module where these parameters are defined is: *src/examples/attitude_estimat
 The module where these parameters are defined is: *src/modules/attitude_estimator_q*.
 
 <table style="width: 100%; table-layout:fixed; font-size:1.5rem;">
-<colgroup><col style="width: 20%"><col style="width: 45%"><col style="width: 10%"><col style="width: 10%"><col style="width: 7%"><col style="width: 8%"></colgroup>
-<thead><tr><th>Name</th><th>Description</th><th>Min /Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
+<colgroup><col style="width: 20%"><col style="width: 44%"><col style="width: 10%"><col style="width: 11%"><col style="width: 7%"><col style="width: 8%"></colgroup>
+<thead><tr><th>Name</th><th>Description</th><th>Min/ Max</th><th>Default</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
 <tr><td style="vertical-align: top;"><strong id="ATT_W_ACC">ATT_W_ACC</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Complimentary filter accelerometer weight</p>
@@ -99,8 +99,8 @@ velocity</p>
 ## Battery Calibration
 
 <table style="width: 100%; table-layout:fixed; font-size:1.5rem;">
-<colgroup><col style="width: 20%"><col style="width: 45%"><col style="width: 10%"><col style="width: 10%"><col style="width: 7%"><col style="width: 8%"></colgroup>
-<thead><tr><th>Name</th><th>Description</th><th>Min /Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
+<colgroup><col style="width: 20%"><col style="width: 44%"><col style="width: 10%"><col style="width: 11%"><col style="width: 7%"><col style="width: 8%"></colgroup>
+<thead><tr><th>Name</th><th>Description</th><th>Min/ Max</th><th>Default</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
 <tr><td style="vertical-align: top;"><strong id="BAT_V_SCALE_IO">BAT_V_SCALE_IO</strong> (INT32)</td><td style="vertical-align: top;"><p>Scaling factor for battery voltage sensor on PX4IO</p>
@@ -235,8 +235,8 @@ velocity</p>
 The module where these parameters are defined is: *src/drivers/camera_trigger*.
 
 <table style="width: 100%; table-layout:fixed; font-size:1.5rem;">
-<colgroup><col style="width: 20%"><col style="width: 45%"><col style="width: 10%"><col style="width: 10%"><col style="width: 7%"><col style="width: 8%"></colgroup>
-<thead><tr><th>Name</th><th>Description</th><th>Min /Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
+<colgroup><col style="width: 20%"><col style="width: 44%"><col style="width: 10%"><col style="width: 11%"><col style="width: 7%"><col style="width: 8%"></colgroup>
+<thead><tr><th>Name</th><th>Description</th><th>Min/ Max</th><th>Default</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
 <tr><td style="vertical-align: top;"><strong id="TRIG_INTERFACE">TRIG_INTERFACE</strong> (INT32)</td><td style="vertical-align: top;"><p>Camera trigger Interface</p><p><strong>Comment:</strong> Selects the trigger interface</p>
@@ -297,8 +297,8 @@ The module where these parameters are defined is: *src/drivers/camera_trigger*.
 The module where these parameters are defined is: *src/modules/systemlib*.
 
 <table style="width: 100%; table-layout:fixed; font-size:1.5rem;">
-<colgroup><col style="width: 20%"><col style="width: 45%"><col style="width: 10%"><col style="width: 10%"><col style="width: 7%"><col style="width: 8%"></colgroup>
-<thead><tr><th>Name</th><th>Description</th><th>Min /Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
+<colgroup><col style="width: 20%"><col style="width: 44%"><col style="width: 10%"><col style="width: 11%"><col style="width: 7%"><col style="width: 8%"></colgroup>
+<thead><tr><th>Name</th><th>Description</th><th>Min/ Max</th><th>Default</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
 <tr><td style="vertical-align: top;"><strong id="CBRK_SUPPLY_CHK">CBRK_SUPPLY_CHK</strong> (INT32)</td><td style="vertical-align: top;"><p>Circuit breaker for power supply check</p><p><strong>Comment:</strong> Setting this parameter to 894281 will disable the power valid checks in the commander. WARNING: ENABLING THIS CIRCUIT BREAKER IS AT OWN RISK</p>
@@ -354,8 +354,8 @@ The module where these parameters are defined is: *src/modules/systemlib*.
 The module where these parameters are defined is: *src/modules/commander*.
 
 <table style="width: 100%; table-layout:fixed; font-size:1.5rem;">
-<colgroup><col style="width: 20%"><col style="width: 45%"><col style="width: 10%"><col style="width: 10%"><col style="width: 7%"><col style="width: 8%"></colgroup>
-<thead><tr><th>Name</th><th>Description</th><th>Min /Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
+<colgroup><col style="width: 20%"><col style="width: 44%"><col style="width: 10%"><col style="width: 11%"><col style="width: 7%"><col style="width: 8%"></colgroup>
+<thead><tr><th>Name</th><th>Description</th><th>Min/ Max</th><th>Default</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
 <tr><td style="vertical-align: top;"><strong id="COM_DL_LOSS_T">COM_DL_LOSS_T</strong> (INT32)</td><td style="vertical-align: top;"><p>Datalink loss time threshold</p><p><strong>Comment:</strong> After this amount of seconds without datalink the data link lost mode triggers</p>
@@ -476,8 +476,8 @@ See COM_OBL_ACT and COM_OBL_RC_ACT to configure action</p>
 The module where these parameters are defined is: *src/modules/navigator*.
 
 <table style="width: 100%; table-layout:fixed; font-size:1.5rem;">
-<colgroup><col style="width: 20%"><col style="width: 45%"><col style="width: 10%"><col style="width: 10%"><col style="width: 7%"><col style="width: 8%"></colgroup>
-<thead><tr><th>Name</th><th>Description</th><th>Min /Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
+<colgroup><col style="width: 20%"><col style="width: 44%"><col style="width: 10%"><col style="width: 11%"><col style="width: 7%"><col style="width: 8%"></colgroup>
+<thead><tr><th>Name</th><th>Description</th><th>Min/ Max</th><th>Default</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
 <tr><td style="vertical-align: top;"><strong id="NAV_DLL_CH_T">NAV_DLL_CH_T</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Comms hold wait time</p><p><strong>Comment:</strong> The amount of time in seconds the system should wait at the comms hold waypoint</p>
@@ -528,8 +528,8 @@ The module where these parameters are defined is: *src/modules/navigator*.
 The module where these parameters are defined is: *src/modules/ekf2*.
 
 <table style="width: 100%; table-layout:fixed; font-size:1.5rem;">
-<colgroup><col style="width: 20%"><col style="width: 45%"><col style="width: 10%"><col style="width: 10%"><col style="width: 7%"><col style="width: 8%"></colgroup>
-<thead><tr><th>Name</th><th>Description</th><th>Min /Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
+<colgroup><col style="width: 20%"><col style="width: 44%"><col style="width: 10%"><col style="width: 11%"><col style="width: 7%"><col style="width: 8%"></colgroup>
+<thead><tr><th>Name</th><th>Description</th><th>Min/ Max</th><th>Default</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
 <tr><td style="vertical-align: top;"><strong id="EKF2_MIN_OBS_DT">EKF2_MIN_OBS_DT</strong> (INT32)</td><td style="vertical-align: top;"><p>Minimum time of arrival delta between non-IMU observations before data is downsampled.
@@ -830,8 +830,8 @@ value will determine the minimum airspeed which will still be fused</p>
 The module where these parameters are defined is: *src/modules/fw_att_control*.
 
 <table style="width: 100%; table-layout:fixed; font-size:1.5rem;">
-<colgroup><col style="width: 20%"><col style="width: 45%"><col style="width: 10%"><col style="width: 10%"><col style="width: 7%"><col style="width: 8%"></colgroup>
-<thead><tr><th>Name</th><th>Description</th><th>Min /Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
+<colgroup><col style="width: 20%"><col style="width: 44%"><col style="width: 10%"><col style="width: 11%"><col style="width: 7%"><col style="width: 8%"></colgroup>
+<thead><tr><th>Name</th><th>Description</th><th>Min/ Max</th><th>Default</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
 <tr><td style="vertical-align: top;"><strong id="FW_R_TC">FW_R_TC</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Attitude Roll Time Constant</p><p><strong>Comment:</strong> This defines the latency between a roll step input and the achieved setpoint (inverse to a P gain). Half a second is a good start value and fits for most average systems. Smaller systems may require smaller values, but as this will wear out servos faster, the value should only be decreased as needed.</p>
@@ -1017,8 +1017,8 @@ The module where these parameters are defined is: *src/modules/fw_att_control*.
 The module where these parameters are defined is: *src/modules/fw_pos_control_l1*.
 
 <table style="width: 100%; table-layout:fixed; font-size:1.5rem;">
-<colgroup><col style="width: 20%"><col style="width: 45%"><col style="width: 10%"><col style="width: 10%"><col style="width: 7%"><col style="width: 8%"></colgroup>
-<thead><tr><th>Name</th><th>Description</th><th>Min /Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
+<colgroup><col style="width: 20%"><col style="width: 44%"><col style="width: 10%"><col style="width: 11%"><col style="width: 7%"><col style="width: 8%"></colgroup>
+<thead><tr><th>Name</th><th>Description</th><th>Min/ Max</th><th>Default</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
 <tr><td style="vertical-align: top;"><strong id="FW_L1_PERIOD">FW_L1_PERIOD</strong> (FLOAT)</td><td style="vertical-align: top;"><p>L1 period</p><p><strong>Comment:</strong> This is the L1 distance and defines the tracking point ahead of the aircraft its following. A value of 18-25 meters works for most aircraft. Shorten slowly during tuning until response is sharp without oscillation.</p>
@@ -1105,8 +1105,8 @@ The module where these parameters are defined is: *src/modules/fw_pos_control_l1
 ## FW TECS
 
 <table style="width: 100%; table-layout:fixed; font-size:1.5rem;">
-<colgroup><col style="width: 20%"><col style="width: 45%"><col style="width: 10%"><col style="width: 10%"><col style="width: 7%"><col style="width: 8%"></colgroup>
-<thead><tr><th>Name</th><th>Description</th><th>Min /Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
+<colgroup><col style="width: 20%"><col style="width: 44%"><col style="width: 10%"><col style="width: 11%"><col style="width: 7%"><col style="width: 8%"></colgroup>
+<thead><tr><th>Name</th><th>Description</th><th>Min/ Max</th><th>Default</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
 <tr><td style="vertical-align: top;"><strong id="FW_AIRSPD_MIN">FW_AIRSPD_MIN</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Minimum Airspeed</p><p><strong>Comment:</strong> If the airspeed falls below this value, the TECS controller will try to increase airspeed more aggressively.</p>
@@ -1209,8 +1209,8 @@ The module where these parameters are defined is: *src/modules/fw_pos_control_l1
 The module where these parameters are defined is: *src/modules/navigator*.
 
 <table style="width: 100%; table-layout:fixed; font-size:1.5rem;">
-<colgroup><col style="width: 20%"><col style="width: 45%"><col style="width: 10%"><col style="width: 10%"><col style="width: 7%"><col style="width: 8%"></colgroup>
-<thead><tr><th>Name</th><th>Description</th><th>Min /Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
+<colgroup><col style="width: 20%"><col style="width: 44%"><col style="width: 10%"><col style="width: 11%"><col style="width: 7%"><col style="width: 8%"></colgroup>
+<thead><tr><th>Name</th><th>Description</th><th>Min/ Max</th><th>Default</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
 <tr><td style="vertical-align: top;"><strong id="NAV_MIN_FT_HT">NAV_MIN_FT_HT</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Minimum follow target altitude</p><p><strong>Comment:</strong> The minimum height in meters relative to home for following a target</p>
@@ -1238,8 +1238,8 @@ but also ignore less noise</p>
 The module where these parameters are defined is: *src/drivers/gps*.
 
 <table style="width: 100%; table-layout:fixed; font-size:1.5rem;">
-<colgroup><col style="width: 20%"><col style="width: 45%"><col style="width: 10%"><col style="width: 10%"><col style="width: 7%"><col style="width: 8%"></colgroup>
-<thead><tr><th>Name</th><th>Description</th><th>Min /Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
+<colgroup><col style="width: 20%"><col style="width: 44%"><col style="width: 10%"><col style="width: 11%"><col style="width: 7%"><col style="width: 8%"></colgroup>
+<thead><tr><th>Name</th><th>Description</th><th>Min/ Max</th><th>Default</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
 <tr><td style="vertical-align: top;"><strong id="GPS_DUMP_COMM">GPS_DUMP_COMM</strong> (INT32)</td><td style="vertical-align: top;"><p>Dump GPS communication to a file</p><p><strong>Comment:</strong> If this is set to 1, all GPS communication data will be published via uORB, and written to the log file as gps_dump message.</p>
@@ -1258,8 +1258,8 @@ The module where these parameters are defined is: *src/drivers/gps*.
 The module where these parameters are defined is: *src/modules/navigator*.
 
 <table style="width: 100%; table-layout:fixed; font-size:1.5rem;">
-<colgroup><col style="width: 20%"><col style="width: 45%"><col style="width: 10%"><col style="width: 10%"><col style="width: 7%"><col style="width: 8%"></colgroup>
-<thead><tr><th>Name</th><th>Description</th><th>Min /Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
+<colgroup><col style="width: 20%"><col style="width: 44%"><col style="width: 10%"><col style="width: 11%"><col style="width: 7%"><col style="width: 8%"></colgroup>
+<thead><tr><th>Name</th><th>Description</th><th>Min/ Max</th><th>Default</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
 <tr><td style="vertical-align: top;"><strong id="NAV_GPSF_LT">NAV_GPSF_LT</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Loiter time</p><p><strong>Comment:</strong> The amount of time in seconds the system should do open loop loiter and wait for gps recovery before it goes into flight termination.</p>
@@ -1286,8 +1286,8 @@ The module where these parameters are defined is: *src/modules/navigator*.
 The module where these parameters are defined is: *src/modules/navigator*.
 
 <table style="width: 100%; table-layout:fixed; font-size:1.5rem;">
-<colgroup><col style="width: 20%"><col style="width: 45%"><col style="width: 10%"><col style="width: 10%"><col style="width: 7%"><col style="width: 8%"></colgroup>
-<thead><tr><th>Name</th><th>Description</th><th>Min /Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
+<colgroup><col style="width: 20%"><col style="width: 44%"><col style="width: 10%"><col style="width: 11%"><col style="width: 7%"><col style="width: 8%"></colgroup>
+<thead><tr><th>Name</th><th>Description</th><th>Min/ Max</th><th>Default</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
 <tr><td style="vertical-align: top;"><strong id="GF_ACTION">GF_ACTION</strong> (INT32)</td><td style="vertical-align: top;"><p>Geofence violation action</p><p><strong>Comment:</strong> Note: Setting this value to 4 enables flight termination, which will kill the vehicle on violation of the fence. Due to the inherent danger of this, this function is disabled using a software circuit breaker, which needs to be reset to 0 to really shut down the system.</p>
@@ -1340,8 +1340,8 @@ The module where these parameters are defined is: *src/modules/navigator*.
 The module where these parameters are defined is: *src/drivers/iridiumsbd*.
 
 <table style="width: 100%; table-layout:fixed; font-size:1.5rem;">
-<colgroup><col style="width: 20%"><col style="width: 45%"><col style="width: 10%"><col style="width: 10%"><col style="width: 7%"><col style="width: 8%"></colgroup>
-<thead><tr><th>Name</th><th>Description</th><th>Min /Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
+<colgroup><col style="width: 20%"><col style="width: 44%"><col style="width: 10%"><col style="width: 11%"><col style="width: 7%"><col style="width: 8%"></colgroup>
+<thead><tr><th>Name</th><th>Description</th><th>Min/ Max</th><th>Default</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
 <tr><td style="vertical-align: top;"><strong id="ISBD_READINT">ISBD_READINT</strong> (INT32)</td><td style="vertical-align: top;"><p>Satellite radio read interval</p>
@@ -1355,8 +1355,8 @@ The module where these parameters are defined is: *src/drivers/iridiumsbd*.
 The module where these parameters are defined is: *src/modules/land_detector*.
 
 <table style="width: 100%; table-layout:fixed; font-size:1.5rem;">
-<colgroup><col style="width: 20%"><col style="width: 45%"><col style="width: 10%"><col style="width: 10%"><col style="width: 7%"><col style="width: 8%"></colgroup>
-<thead><tr><th>Name</th><th>Description</th><th>Min /Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
+<colgroup><col style="width: 20%"><col style="width: 44%"><col style="width: 10%"><col style="width: 11%"><col style="width: 7%"><col style="width: 8%"></colgroup>
+<thead><tr><th>Name</th><th>Description</th><th>Min/ Max</th><th>Default</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
 <tr><td style="vertical-align: top;"><strong id="LNDMC_Z_VEL_MAX">LNDMC_Z_VEL_MAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Multicopter max climb rate</p><p><strong>Comment:</strong> Maximum vertical velocity allowed in the landed state (m/s up and down)</p>
@@ -1426,8 +1426,8 @@ The module where these parameters are defined is: *src/modules/land_detector*.
 The module where these parameters are defined is: *src/lib/launchdetection*.
 
 <table style="width: 100%; table-layout:fixed; font-size:1.5rem;">
-<colgroup><col style="width: 20%"><col style="width: 45%"><col style="width: 10%"><col style="width: 10%"><col style="width: 7%"><col style="width: 8%"></colgroup>
-<thead><tr><th>Name</th><th>Description</th><th>Min /Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
+<colgroup><col style="width: 20%"><col style="width: 44%"><col style="width: 10%"><col style="width: 11%"><col style="width: 7%"><col style="width: 8%"></colgroup>
+<thead><tr><th>Name</th><th>Description</th><th>Min/ Max</th><th>Default</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
 <tr><td style="vertical-align: top;"><strong id="LAUN_ALL_ON">LAUN_ALL_ON</strong> (INT32)</td><td style="vertical-align: top;"><p>Launch detection</p>
@@ -1457,8 +1457,8 @@ The module where these parameters are defined is: *src/lib/launchdetection*.
 The module where these parameters are defined is: *src/modules/local_position_estimator*.
 
 <table style="width: 100%; table-layout:fixed; font-size:1.5rem;">
-<colgroup><col style="width: 20%"><col style="width: 45%"><col style="width: 10%"><col style="width: 10%"><col style="width: 7%"><col style="width: 8%"></colgroup>
-<thead><tr><th>Name</th><th>Description</th><th>Min /Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
+<colgroup><col style="width: 20%"><col style="width: 44%"><col style="width: 10%"><col style="width: 11%"><col style="width: 7%"><col style="width: 8%"></colgroup>
+<thead><tr><th>Name</th><th>Description</th><th>Min/ Max</th><th>Default</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
 <tr><td style="vertical-align: top;"><strong id="LPE_FLW_OFF_Z">LPE_FLW_OFF_Z</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Optical flow z offset from center</p>
@@ -1602,8 +1602,8 @@ by initializing the estimator to the LPE_LAT/LON parameters when global informat
 The module where these parameters are defined is: *src/modules/mavlink*.
 
 <table style="width: 100%; table-layout:fixed; font-size:1.5rem;">
-<colgroup><col style="width: 20%"><col style="width: 45%"><col style="width: 10%"><col style="width: 10%"><col style="width: 7%"><col style="width: 8%"></colgroup>
-<thead><tr><th>Name</th><th>Description</th><th>Min /Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
+<colgroup><col style="width: 20%"><col style="width: 44%"><col style="width: 10%"><col style="width: 11%"><col style="width: 7%"><col style="width: 8%"></colgroup>
+<thead><tr><th>Name</th><th>Description</th><th>Min/ Max</th><th>Default</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
 <tr><td style="vertical-align: top;"><strong id="MAV_SYS_ID">MAV_SYS_ID</strong> (INT32)</td><td style="vertical-align: top;"><p>MAVLink system ID</p>
@@ -1656,8 +1656,8 @@ The module where these parameters are defined is: *src/modules/mavlink*.
 The module where these parameters are defined is: *src/drivers/mkblctrl*.
 
 <table style="width: 100%; table-layout:fixed; font-size:1.5rem;">
-<colgroup><col style="width: 20%"><col style="width: 45%"><col style="width: 10%"><col style="width: 10%"><col style="width: 7%"><col style="width: 8%"></colgroup>
-<thead><tr><th>Name</th><th>Description</th><th>Min /Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
+<colgroup><col style="width: 20%"><col style="width: 44%"><col style="width: 10%"><col style="width: 11%"><col style="width: 7%"><col style="width: 8%"></colgroup>
+<thead><tr><th>Name</th><th>Description</th><th>Min/ Max</th><th>Default</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
 <tr><td style="vertical-align: top;"><strong id="MKBLCTRL_TEST">MKBLCTRL_TEST</strong> (INT32)</td><td style="vertical-align: top;"><p>Test mode (Identify) of MKBLCTRL Driver</p>
@@ -1671,8 +1671,8 @@ The module where these parameters are defined is: *src/drivers/mkblctrl*.
 The module where these parameters are defined is: *src/platforms/qurt/fc_addon/mpu_spi*.
 
 <table style="width: 100%; table-layout:fixed; font-size:1.5rem;">
-<colgroup><col style="width: 20%"><col style="width: 45%"><col style="width: 10%"><col style="width: 10%"><col style="width: 7%"><col style="width: 8%"></colgroup>
-<thead><tr><th>Name</th><th>Description</th><th>Min /Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
+<colgroup><col style="width: 20%"><col style="width: 44%"><col style="width: 10%"><col style="width: 11%"><col style="width: 7%"><col style="width: 8%"></colgroup>
+<thead><tr><th>Name</th><th>Description</th><th>Min/ Max</th><th>Default</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
 <tr><td style="vertical-align: top;"><strong id="MPU_GYRO_LPF_ENM">MPU_GYRO_LPF_ENM</strong> (INT32)</td><td style="vertical-align: top;"><p>Low pass filter frequency for Gyro</p>
@@ -1729,8 +1729,8 @@ The module where these parameters are defined is: *src/platforms/qurt/fc_addon/m
 ## Mission
 
 <table style="width: 100%; table-layout:fixed; font-size:1.5rem;">
-<colgroup><col style="width: 20%"><col style="width: 45%"><col style="width: 10%"><col style="width: 10%"><col style="width: 7%"><col style="width: 8%"></colgroup>
-<thead><tr><th>Name</th><th>Description</th><th>Min /Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
+<colgroup><col style="width: 20%"><col style="width: 44%"><col style="width: 10%"><col style="width: 11%"><col style="width: 7%"><col style="width: 8%"></colgroup>
+<thead><tr><th>Name</th><th>Description</th><th>Min/ Max</th><th>Default</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
 <tr><td style="vertical-align: top;"><strong id="COM_OBL_ACT">COM_OBL_ACT</strong> (INT32)</td><td style="vertical-align: top;"><p>Set offboard loss failsafe mode</p><p><strong>Comment:</strong> The offboard loss failsafe will only be entered after a timeout, set by COM_OF_LOSS_T in seconds.</p>
@@ -1892,8 +1892,8 @@ The module where these parameters are defined is: *src/platforms/qurt/fc_addon/m
 The module where these parameters are defined is: *src/drivers/vmount*.
 
 <table style="width: 100%; table-layout:fixed; font-size:1.5rem;">
-<colgroup><col style="width: 20%"><col style="width: 45%"><col style="width: 10%"><col style="width: 10%"><col style="width: 7%"><col style="width: 8%"></colgroup>
-<thead><tr><th>Name</th><th>Description</th><th>Min /Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
+<colgroup><col style="width: 20%"><col style="width: 44%"><col style="width: 10%"><col style="width: 11%"><col style="width: 7%"><col style="width: 8%"></colgroup>
+<thead><tr><th>Name</th><th>Description</th><th>Min/ Max</th><th>Default</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
 <tr><td style="vertical-align: top;"><strong id="MNT_MODE_IN">MNT_MODE_IN</strong> (INT32)</td><td style="vertical-align: top;"><p>Mount input mode
@@ -1988,8 +1988,8 @@ if required for the gimbal (only in AUX output mode)</p>
 ## Multicopter Attitude Control
 
 <table style="width: 100%; table-layout:fixed; font-size:1.5rem;">
-<colgroup><col style="width: 20%"><col style="width: 45%"><col style="width: 10%"><col style="width: 10%"><col style="width: 7%"><col style="width: 8%"></colgroup>
-<thead><tr><th>Name</th><th>Description</th><th>Min /Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
+<colgroup><col style="width: 20%"><col style="width: 44%"><col style="width: 10%"><col style="width: 11%"><col style="width: 7%"><col style="width: 8%"></colgroup>
+<thead><tr><th>Name</th><th>Description</th><th>Min/ Max</th><th>Default</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
 <tr><td style="vertical-align: top;"><strong id="MP_ROLL_P">MP_ROLL_P</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Roll P gain</p><p><strong>Comment:</strong> Roll proportional gain, i.e. desired angular speed in rad/s for error 1 rad.</p>
@@ -2268,8 +2268,8 @@ if required for the gimbal (only in AUX output mode)</p>
 ## Multicopter Position Control
 
 <table style="width: 100%; table-layout:fixed; font-size:1.5rem;">
-<colgroup><col style="width: 20%"><col style="width: 45%"><col style="width: 10%"><col style="width: 10%"><col style="width: 7%"><col style="width: 8%"></colgroup>
-<thead><tr><th>Name</th><th>Description</th><th>Min /Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
+<colgroup><col style="width: 20%"><col style="width: 44%"><col style="width: 10%"><col style="width: 11%"><col style="width: 7%"><col style="width: 8%"></colgroup>
+<thead><tr><th>Name</th><th>Description</th><th>Min/ Max</th><th>Default</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
 <tr><td style="vertical-align: top;"><strong id="MPP_THR_MIN">MPP_THR_MIN</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Minimum thrust</p><p><strong>Comment:</strong> Minimum vertical thrust. It's recommended to set it > 0 to avoid free fall with zero thrust.</p>
@@ -2539,8 +2539,8 @@ if required for the gimbal (only in AUX output mode)</p>
 ## PWM Outputs
 
 <table style="width: 100%; table-layout:fixed; font-size:1.5rem;">
-<colgroup><col style="width: 20%"><col style="width: 45%"><col style="width: 10%"><col style="width: 10%"><col style="width: 7%"><col style="width: 8%"></colgroup>
-<thead><tr><th>Name</th><th>Description</th><th>Min /Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
+<colgroup><col style="width: 20%"><col style="width: 44%"><col style="width: 10%"><col style="width: 11%"><col style="width: 7%"><col style="width: 8%"></colgroup>
+<thead><tr><th>Name</th><th>Description</th><th>Min/ Max</th><th>Default</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
 <tr><td style="vertical-align: top;"><strong id="PWM_AUX_REV1">PWM_AUX_REV1</strong> (INT32)</td><td style="vertical-align: top;"><p>Invert direction of aux output channel 1</p><p><strong>Comment:</strong> Set to 1 to invert the channel, 0 for default direction.</p>
@@ -2762,8 +2762,8 @@ if required for the gimbal (only in AUX output mode)</p>
 The module where these parameters are defined is: *src/modules/bottle_drop*.
 
 <table style="width: 100%; table-layout:fixed; font-size:1.5rem;">
-<colgroup><col style="width: 20%"><col style="width: 45%"><col style="width: 10%"><col style="width: 10%"><col style="width: 7%"><col style="width: 8%"></colgroup>
-<thead><tr><th>Name</th><th>Description</th><th>Min /Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
+<colgroup><col style="width: 20%"><col style="width: 44%"><col style="width: 10%"><col style="width: 11%"><col style="width: 7%"><col style="width: 8%"></colgroup>
+<thead><tr><th>Name</th><th>Description</th><th>Min/ Max</th><th>Default</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
 <tr><td style="vertical-align: top;"><strong id="BD_GPROPERTIES">BD_GPROPERTIES</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Ground drag property</p><p><strong>Comment:</strong> This parameter encodes the ground drag coefficient and the corresponding decrease in wind speed from the plane altitude to ground altitude.</p>
@@ -2798,8 +2798,8 @@ The module where these parameters are defined is: *src/modules/bottle_drop*.
 The module where these parameters are defined is: *src/examples/ekf_att_pos_estimator*.
 
 <table style="width: 100%; table-layout:fixed; font-size:1.5rem;">
-<colgroup><col style="width: 20%"><col style="width: 45%"><col style="width: 10%"><col style="width: 10%"><col style="width: 7%"><col style="width: 8%"></colgroup>
-<thead><tr><th>Name</th><th>Description</th><th>Min /Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
+<colgroup><col style="width: 20%"><col style="width: 44%"><col style="width: 10%"><col style="width: 11%"><col style="width: 7%"><col style="width: 8%"></colgroup>
+<thead><tr><th>Name</th><th>Description</th><th>Min/ Max</th><th>Default</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
 <tr><td style="vertical-align: top;"><strong id="PE_VEL_DELAY_MS">PE_VEL_DELAY_MS</strong> (INT32)</td><td style="vertical-align: top;"><p>Velocity estimate delay</p><p><strong>Comment:</strong> The delay in milliseconds of the velocity estimate from GPS.</p>
@@ -2898,8 +2898,8 @@ The module where these parameters are defined is: *src/examples/ekf_att_pos_esti
 The module where these parameters are defined is: *src/modules/position_estimator_inav*.
 
 <table style="width: 100%; table-layout:fixed; font-size:1.5rem;">
-<colgroup><col style="width: 20%"><col style="width: 45%"><col style="width: 10%"><col style="width: 10%"><col style="width: 7%"><col style="width: 8%"></colgroup>
-<thead><tr><th>Name</th><th>Description</th><th>Min /Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
+<colgroup><col style="width: 20%"><col style="width: 44%"><col style="width: 10%"><col style="width: 11%"><col style="width: 7%"><col style="width: 8%"></colgroup>
+<thead><tr><th>Name</th><th>Description</th><th>Min/ Max</th><th>Default</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
 <tr><td style="vertical-align: top;"><strong id="INAV_W_Z_BARO">INAV_W_Z_BARO</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Z axis weight for barometer</p><p><strong>Comment:</strong> Weight (cutoff frequency) for barometer altitude measurements.</p>
@@ -3022,8 +3022,8 @@ The module where these parameters are defined is: *src/modules/position_estimato
 The module where these parameters are defined is: *src/platforms/qurt/fc_addon/rc_receiver*.
 
 <table style="width: 100%; table-layout:fixed; font-size:1.5rem;">
-<colgroup><col style="width: 20%"><col style="width: 45%"><col style="width: 10%"><col style="width: 10%"><col style="width: 7%"><col style="width: 8%"></colgroup>
-<thead><tr><th>Name</th><th>Description</th><th>Min /Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
+<colgroup><col style="width: 20%"><col style="width: 44%"><col style="width: 10%"><col style="width: 11%"><col style="width: 7%"><col style="width: 8%"></colgroup>
+<thead><tr><th>Name</th><th>Description</th><th>Min/ Max</th><th>Default</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
 <tr><td style="vertical-align: top;"><strong id="RC_RECEIVER_TYPE">RC_RECEIVER_TYPE</strong> (INT32)</td><td style="vertical-align: top;"><p>RC receiver type</p><p><strong>Comment:</strong> Acceptable values: - RC_RECEIVER_SPEKTRUM = 1, - RC_RECEIVER_LEMONRX = 2,</p>
@@ -3035,8 +3035,8 @@ The module where these parameters are defined is: *src/platforms/qurt/fc_addon/r
 ## Radio Calibration
 
 <table style="width: 100%; table-layout:fixed; font-size:1.5rem;">
-<colgroup><col style="width: 20%"><col style="width: 45%"><col style="width: 10%"><col style="width: 10%"><col style="width: 7%"><col style="width: 8%"></colgroup>
-<thead><tr><th>Name</th><th>Description</th><th>Min /Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
+<colgroup><col style="width: 20%"><col style="width: 44%"><col style="width: 10%"><col style="width: 11%"><col style="width: 7%"><col style="width: 8%"></colgroup>
+<thead><tr><th>Name</th><th>Description</th><th>Min/ Max</th><th>Default</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
 <tr><td style="vertical-align: top;"><strong id="TRIM_ROLL">TRIM_ROLL</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Roll trim</p><p><strong>Comment:</strong> The trim value is the actuator control value the system needs for straight and level flight. It can be calibrated by flying manually straight and level using the RC trims and copying them using the GCS.</p>
@@ -4122,8 +4122,8 @@ The module where these parameters are defined is: *src/platforms/qurt/fc_addon/r
 The module where these parameters are defined is: *src/modules/navigator*.
 
 <table style="width: 100%; table-layout:fixed; font-size:1.5rem;">
-<colgroup><col style="width: 20%"><col style="width: 45%"><col style="width: 10%"><col style="width: 10%"><col style="width: 7%"><col style="width: 8%"></colgroup>
-<thead><tr><th>Name</th><th>Description</th><th>Min /Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
+<colgroup><col style="width: 20%"><col style="width: 44%"><col style="width: 10%"><col style="width: 11%"><col style="width: 7%"><col style="width: 8%"></colgroup>
+<thead><tr><th>Name</th><th>Description</th><th>Min/ Max</th><th>Default</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
 <tr><td style="vertical-align: top;"><strong id="NAV_RCL_LT">NAV_RCL_LT</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Loiter Time</p><p><strong>Comment:</strong> The amount of time in seconds the system should loiter at current position before termination Set to -1 to make the system skip loitering</p>
@@ -4138,8 +4138,8 @@ The module where these parameters are defined is: *src/modules/navigator*.
 The module where these parameters are defined is: *src/modules/sensors*.
 
 <table style="width: 100%; table-layout:fixed; font-size:1.5rem;">
-<colgroup><col style="width: 20%"><col style="width: 45%"><col style="width: 10%"><col style="width: 10%"><col style="width: 7%"><col style="width: 8%"></colgroup>
-<thead><tr><th>Name</th><th>Description</th><th>Min /Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
+<colgroup><col style="width: 20%"><col style="width: 44%"><col style="width: 10%"><col style="width: 11%"><col style="width: 7%"><col style="width: 8%"></colgroup>
+<thead><tr><th>Name</th><th>Description</th><th>Min/ Max</th><th>Default</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
 <tr><td style="vertical-align: top;"><strong id="RC_MAP_FLTMODE">RC_MAP_FLTMODE</strong> (INT32)</td><td style="vertical-align: top;"><p>Single channel flight mode selection</p><p><strong>Comment:</strong> If this parameter is non-zero, flight modes are only selected by this channel and are assigned to six slots.</p>
@@ -4823,8 +4823,8 @@ The module where these parameters are defined is: *src/modules/sensors*.
 The module where these parameters are defined is: *src/modules/navigator*.
 
 <table style="width: 100%; table-layout:fixed; font-size:1.5rem;">
-<colgroup><col style="width: 20%"><col style="width: 45%"><col style="width: 10%"><col style="width: 10%"><col style="width: 7%"><col style="width: 8%"></colgroup>
-<thead><tr><th>Name</th><th>Description</th><th>Min /Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
+<colgroup><col style="width: 20%"><col style="width: 44%"><col style="width: 10%"><col style="width: 11%"><col style="width: 7%"><col style="width: 8%"></colgroup>
+<thead><tr><th>Name</th><th>Description</th><th>Min/ Max</th><th>Default</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
 <tr><td style="vertical-align: top;"><strong id="RTL_RETURN_ALT">RTL_RETURN_ALT</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RTL altitude</p><p><strong>Comment:</strong> Altitude to fly back in RTL in meters</p>
@@ -4851,8 +4851,8 @@ The module where these parameters are defined is: *src/modules/navigator*.
 The module where these parameters are defined is: *src/lib/runway_takeoff*.
 
 <table style="width: 100%; table-layout:fixed; font-size:1.5rem;">
-<colgroup><col style="width: 20%"><col style="width: 45%"><col style="width: 10%"><col style="width: 10%"><col style="width: 7%"><col style="width: 8%"></colgroup>
-<thead><tr><th>Name</th><th>Description</th><th>Min /Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
+<colgroup><col style="width: 20%"><col style="width: 44%"><col style="width: 10%"><col style="width: 11%"><col style="width: 7%"><col style="width: 8%"></colgroup>
+<thead><tr><th>Name</th><th>Description</th><th>Min/ Max</th><th>Default</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
 <tr><td style="vertical-align: top;"><strong id="RWTO_TKOFF">RWTO_TKOFF</strong> (INT32)</td><td style="vertical-align: top;"><p>Runway takeoff with landing gear</p>
@@ -4902,8 +4902,8 @@ FW_AIRSPD_MIN * RWTO_AIRSPD_SCL</p>
 ## SD Logging
 
 <table style="width: 100%; table-layout:fixed; font-size:1.5rem;">
-<colgroup><col style="width: 20%"><col style="width: 45%"><col style="width: 10%"><col style="width: 10%"><col style="width: 7%"><col style="width: 8%"></colgroup>
-<thead><tr><th>Name</th><th>Description</th><th>Min /Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
+<colgroup><col style="width: 20%"><col style="width: 44%"><col style="width: 10%"><col style="width: 11%"><col style="width: 7%"><col style="width: 8%"></colgroup>
+<thead><tr><th>Name</th><th>Description</th><th>Min/ Max</th><th>Default</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
 <tr><td style="vertical-align: top;"><strong id="SDLOG_UTC_OFFSET">SDLOG_UTC_OFFSET</strong> (INT32)</td><td style="vertical-align: top;"><p>UTC offset (unit: min)</p><p><strong>Comment:</strong> the difference in hours and minutes from Coordinated Universal Time (UTC) for a your place and date. for example, In case of South Korea(UTC+09:00), UTC offset is 540 min (9*60) refer to https://en.wikipedia.org/wiki/List_of_UTC_time_offsets</p>
@@ -4973,8 +4973,8 @@ This is used for gathering replay logs for the ekf2 module</p><p><strong>Comment
 The module where these parameters are defined is: *src/modules/sensors*.
 
 <table style="width: 100%; table-layout:fixed; font-size:1.5rem;">
-<colgroup><col style="width: 20%"><col style="width: 45%"><col style="width: 10%"><col style="width: 10%"><col style="width: 7%"><col style="width: 8%"></colgroup>
-<thead><tr><th>Name</th><th>Description</th><th>Min /Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
+<colgroup><col style="width: 20%"><col style="width: 44%"><col style="width: 10%"><col style="width: 11%"><col style="width: 7%"><col style="width: 8%"></colgroup>
+<thead><tr><th>Name</th><th>Description</th><th>Min/ Max</th><th>Default</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
 <tr><td style="vertical-align: top;"><strong id="CAL_BOARD_ID">CAL_BOARD_ID</strong> (INT32)</td><td style="vertical-align: top;"><p>ID of the board this parameter set was calibrated on</p>
@@ -5540,8 +5540,8 @@ The module where these parameters are defined is: *src/modules/sensors*.
 The module where these parameters are defined is: *src/modules/sensors*.
 
 <table style="width: 100%; table-layout:fixed; font-size:1.5rem;">
-<colgroup><col style="width: 20%"><col style="width: 45%"><col style="width: 10%"><col style="width: 10%"><col style="width: 7%"><col style="width: 8%"></colgroup>
-<thead><tr><th>Name</th><th>Description</th><th>Min /Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
+<colgroup><col style="width: 20%"><col style="width: 44%"><col style="width: 10%"><col style="width: 11%"><col style="width: 7%"><col style="width: 8%"></colgroup>
+<thead><tr><th>Name</th><th>Description</th><th>Min/ Max</th><th>Default</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
 <tr><td style="vertical-align: top;"><strong id="SENS_EN_LL40LS">SENS_EN_LL40LS</strong> (INT32)</td><td style="vertical-align: top;"><p>Lidar-Lite (LL40LS) PWM</p>
@@ -5601,8 +5601,8 @@ The module where these parameters are defined is: *src/modules/sensors*.
 The module where these parameters are defined is: *src/modules/sensors*.
 
 <table style="width: 100%; table-layout:fixed; font-size:1.5rem;">
-<colgroup><col style="width: 20%"><col style="width: 45%"><col style="width: 10%"><col style="width: 10%"><col style="width: 7%"><col style="width: 8%"></colgroup>
-<thead><tr><th>Name</th><th>Description</th><th>Min /Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
+<colgroup><col style="width: 20%"><col style="width: 44%"><col style="width: 10%"><col style="width: 11%"><col style="width: 7%"><col style="width: 8%"></colgroup>
+<thead><tr><th>Name</th><th>Description</th><th>Min/ Max</th><th>Default</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
 <tr><td style="vertical-align: top;"><strong id="TC_A_ENABLE">TC_A_ENABLE</strong> (INT32)</td><td style="vertical-align: top;"><p>Set to 1 to enable thermal compensation for accelerometer sensors. Set to 0 to disable</p>
@@ -6063,8 +6063,8 @@ The module where these parameters are defined is: *src/modules/sensors*.
 The module where these parameters are defined is: *src/platforms/qurt/fc_addon/uart_esc*.
 
 <table style="width: 100%; table-layout:fixed; font-size:1.5rem;">
-<colgroup><col style="width: 20%"><col style="width: 45%"><col style="width: 10%"><col style="width: 10%"><col style="width: 7%"><col style="width: 8%"></colgroup>
-<thead><tr><th>Name</th><th>Description</th><th>Min /Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
+<colgroup><col style="width: 20%"><col style="width: 44%"><col style="width: 10%"><col style="width: 11%"><col style="width: 7%"><col style="width: 8%"></colgroup>
+<thead><tr><th>Name</th><th>Description</th><th>Min/ Max</th><th>Default</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
 <tr><td style="vertical-align: top;"><strong id="UART_ESC_MODEL">UART_ESC_MODEL</strong> (INT32)</td><td style="vertical-align: top;"><p>ESC model</p><p><strong>Comment:</strong> See esc_model_t enum definition in uart_esc_dev.h for all supported ESC model enum values.</p>
@@ -6101,8 +6101,8 @@ The module where these parameters are defined is: *src/platforms/qurt/fc_addon/u
 The module where these parameters are defined is: *src/examples/subscriber*.
 
 <table style="width: 100%; table-layout:fixed; font-size:1.5rem;">
-<colgroup><col style="width: 20%"><col style="width: 45%"><col style="width: 10%"><col style="width: 10%"><col style="width: 7%"><col style="width: 8%"></colgroup>
-<thead><tr><th>Name</th><th>Description</th><th>Min /Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
+<colgroup><col style="width: 20%"><col style="width: 44%"><col style="width: 10%"><col style="width: 11%"><col style="width: 7%"><col style="width: 8%"></colgroup>
+<thead><tr><th>Name</th><th>Description</th><th>Min/ Max</th><th>Default</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
 <tr><td style="vertical-align: top;"><strong id="SUB_INTERV">SUB_INTERV</strong> (INT32)</td><td style="vertical-align: top;"><p>Interval of one subscriber in the example in ms</p>
@@ -6119,8 +6119,8 @@ The module where these parameters are defined is: *src/examples/subscriber*.
 The module where these parameters are defined is: *src/modules/syslink*.
 
 <table style="width: 100%; table-layout:fixed; font-size:1.5rem;">
-<colgroup><col style="width: 20%"><col style="width: 45%"><col style="width: 10%"><col style="width: 10%"><col style="width: 7%"><col style="width: 8%"></colgroup>
-<thead><tr><th>Name</th><th>Description</th><th>Min /Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
+<colgroup><col style="width: 20%"><col style="width: 44%"><col style="width: 10%"><col style="width: 11%"><col style="width: 7%"><col style="width: 8%"></colgroup>
+<thead><tr><th>Name</th><th>Description</th><th>Min/ Max</th><th>Default</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
 <tr><td style="vertical-align: top;"><strong id="SLNK_RADIO_CHAN">SLNK_RADIO_CHAN</strong> (INT32)</td><td style="vertical-align: top;"><p>Operating channel of the NRF51</p>
@@ -6140,8 +6140,8 @@ The module where these parameters are defined is: *src/modules/syslink*.
 ## System
 
 <table style="width: 100%; table-layout:fixed; font-size:1.5rem;">
-<colgroup><col style="width: 20%"><col style="width: 45%"><col style="width: 10%"><col style="width: 10%"><col style="width: 7%"><col style="width: 8%"></colgroup>
-<thead><tr><th>Name</th><th>Description</th><th>Min /Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
+<colgroup><col style="width: 20%"><col style="width: 44%"><col style="width: 10%"><col style="width: 11%"><col style="width: 7%"><col style="width: 8%"></colgroup>
+<thead><tr><th>Name</th><th>Description</th><th>Min/ Max</th><th>Default</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
 <tr><td style="vertical-align: top;"><strong id="LED_RGB_MAXBRT">LED_RGB_MAXBRT</strong> (INT32)</td><td style="vertical-align: top;"><p>RGB Led brightness limit</p><p><strong>Comment:</strong> Set to 0 to disable, 1 for minimum brightness up to 15 (max)</p>
@@ -6275,8 +6275,8 @@ The module where these parameters are defined is: *src/modules/syslink*.
 ## Testing
 
 <table style="width: 100%; table-layout:fixed; font-size:1.5rem;">
-<colgroup><col style="width: 20%"><col style="width: 45%"><col style="width: 10%"><col style="width: 10%"><col style="width: 7%"><col style="width: 8%"></colgroup>
-<thead><tr><th>Name</th><th>Description</th><th>Min /Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
+<colgroup><col style="width: 20%"><col style="width: 44%"><col style="width: 10%"><col style="width: 11%"><col style="width: 7%"><col style="width: 8%"></colgroup>
+<thead><tr><th>Name</th><th>Description</th><th>Min/ Max</th><th>Default</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
 <tr><td style="vertical-align: top;"><strong id="TEST_MIN">TEST_MIN</strong> (FLOAT)</td><td style="vertical-align: top;"><p></p>
@@ -6336,8 +6336,8 @@ The module where these parameters are defined is: *src/modules/syslink*.
 ## UAVCAN
 
 <table style="width: 100%; table-layout:fixed; font-size:1.5rem;">
-<colgroup><col style="width: 20%"><col style="width: 45%"><col style="width: 10%"><col style="width: 10%"><col style="width: 7%"><col style="width: 8%"></colgroup>
-<thead><tr><th>Name</th><th>Description</th><th>Min /Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
+<colgroup><col style="width: 20%"><col style="width: 44%"><col style="width: 10%"><col style="width: 11%"><col style="width: 7%"><col style="width: 8%"></colgroup>
+<thead><tr><th>Name</th><th>Description</th><th>Min/ Max</th><th>Default</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
 <tr><td style="vertical-align: top;"><strong id="UAVCAN_ENABLE">UAVCAN_ENABLE</strong> (INT32)</td><td style="vertical-align: top;"><p>UAVCAN mode</p><p><strong>Comment:</strong> 0 - UAVCAN disabled. 1 - Basic support for UAVCAN actuators and sensors. 2 - Full support for dynamic node ID allocation and firmware update. 3 - Sets the motor control outputs to UAVCAN and enables support for dynamic node ID allocation and firmware update.</p>
@@ -6391,8 +6391,8 @@ The module where these parameters are defined is: *src/modules/syslink*.
 The module where these parameters are defined is: *src/modules/vtol_att_control*.
 
 <table style="width: 100%; table-layout:fixed; font-size:1.5rem;">
-<colgroup><col style="width: 20%"><col style="width: 45%"><col style="width: 10%"><col style="width: 10%"><col style="width: 7%"><col style="width: 8%"></colgroup>
-<thead><tr><th>Name</th><th>Description</th><th>Min /Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
+<colgroup><col style="width: 20%"><col style="width: 44%"><col style="width: 10%"><col style="width: 11%"><col style="width: 7%"><col style="width: 8%"></colgroup>
+<thead><tr><th>Name</th><th>Description</th><th>Min/ Max</th><th>Default</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
 <tr><td style="vertical-align: top;"><strong id="VT_TRANS_THR">VT_TRANS_THR</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Target throttle value for pusher/puller motor during the transition to fw mode</p>
@@ -6537,8 +6537,8 @@ to accelerate forward if necessary</p>
 The module where these parameters are defined is: *src/modules/fw_pos_control_l1/mtecs*.
 
 <table style="width: 100%; table-layout:fixed; font-size:1.5rem;">
-<colgroup><col style="width: 20%"><col style="width: 45%"><col style="width: 10%"><col style="width: 10%"><col style="width: 7%"><col style="width: 8%"></colgroup>
-<thead><tr><th>Name</th><th>Description</th><th>Min /Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
+<colgroup><col style="width: 20%"><col style="width: 44%"><col style="width: 10%"><col style="width: 11%"><col style="width: 7%"><col style="width: 8%"></colgroup>
+<thead><tr><th>Name</th><th>Description</th><th>Min/ Max</th><th>Default</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
 <tr><td style="vertical-align: top;"><strong id="MT_ENABLED">MT_ENABLED</strong> (INT32)</td><td style="vertical-align: top;"><p>mTECS enabled</p>
@@ -6679,8 +6679,8 @@ Maps the change of airspeed error to the acceleration setpoint</p>
 ## Miscellaneous
 
 <table style="width: 100%; table-layout:fixed; font-size:1.5rem;">
-<colgroup><col style="width: 20%"><col style="width: 45%"><col style="width: 10%"><col style="width: 10%"><col style="width: 7%"><col style="width: 8%"></colgroup>
-<thead><tr><th>Name</th><th>Description</th><th>Min /Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
+<colgroup><col style="width: 20%"><col style="width: 44%"><col style="width: 10%"><col style="width: 11%"><col style="width: 7%"><col style="width: 8%"></colgroup>
+<thead><tr><th>Name</th><th>Description</th><th>Min/ Max</th><th>Default</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
 <tr><td style="vertical-align: top;"><strong id="EXFW_HDNG_P">EXFW_HDNG_P</strong> (FLOAT)</td><td style="vertical-align: top;"><p></p>
