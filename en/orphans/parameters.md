@@ -4,7 +4,7 @@
 ## Attitude EKF estimator
 
 
-Scope (for all values) is: *src/examples/attitude_estimator_ekf*.
+The module where these parameters are defined is: *src/examples/attitude_estimator_ekf*.
 
 <table style="width: 100%;">
 <colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
@@ -50,7 +50,7 @@ Scope (for all values) is: *src/examples/attitude_estimator_ekf*.
 ## Attitude Q estimator
 
 
-Scope (for all values) is: *src/modules/attitude_estimator_q*.
+The module where these parameters are defined is: *src/modules/attitude_estimator_q*.
 
 <table style="width: 100%;">
 <colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
@@ -59,23 +59,19 @@ Scope (for all values) is: *src/modules/attitude_estimator_q*.
 <tbody>
 <tr><td style="vertical-align: top;"><strong id="ATT_W_ACC">ATT_W_ACC</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Complimentary filter accelerometer weight</p>
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">1</td><td style="vertical-align: top;">0.2</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="ATT_W_MAG">ATT_W_MAG</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Complimentary filter magnetometer weight</p>
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">1</td><td style="vertical-align: top;">0.1</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="ATT_W_EXT_HDG">ATT_W_EXT_HDG</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Complimentary filter external heading weight</p>
 
      </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">1</td><td style="vertical-align: top;">0.1</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="ATT_W_GYRO_BIAS">ATT_W_GYRO_BIAS</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Complimentary filter gyroscope bias weight</p>
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">1</td><td style="vertical-align: top;">0.1</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="ATT_MAG_DECL">ATT_MAG_DECL</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Magnetic declination, in degrees</p><p><strong>Comment:</strong> This parameter is not used in normal operation, as the declination is looked up based on the GPS coordinates of the vehicle.</p>
 
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">deg</td></tr>
 <tr><td style="vertical-align: top;"><strong id="ATT_MAG_DECL_A">ATT_MAG_DECL_A</strong> (INT32)</td><td style="vertical-align: top;"><p>Automatic GPS based declination compensation</p>
 
@@ -97,7 +93,6 @@ velocity</p>
      </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">1</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="ATT_BIAS_MAX">ATT_BIAS_MAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Gyro bias limit</p>
 
-<p><b>Decimal:</b> 3</p>
      </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">2</td><td style="vertical-align: top;">0.05</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">rad/s</td></tr>
 </tbody></table>
 
@@ -110,37 +105,32 @@ velocity</p>
 <tbody>
 <tr><td style="vertical-align: top;"><strong id="BAT_V_SCALE_IO">BAT_V_SCALE_IO</strong> (INT32)</td><td style="vertical-align: top;"><p>Scaling factor for battery voltage sensor on PX4IO</p>
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">1</td><td style="vertical-align: top;">100000</td><td style="vertical-align: top;">10000</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="BAT_CNT_V_VOLT">BAT_CNT_V_VOLT</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Scaling from ADC counts to volt on the ADC input (battery voltage)</p><p><strong>Comment:</strong> This is not the battery voltage, but the intermediate ADC voltage. A value of -1 signifies that the board defaults are used, which is highly recommended.</p>
 
 
-<p><b>Decimal:</b> 8</p>
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">-1.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="BAT_CNT_V_CURR">BAT_CNT_V_CURR</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Scaling from ADC counts to volt on the ADC input (battery current)</p><p><strong>Comment:</strong> This is not the battery current, but the intermediate ADC voltage. A value of -1 signifies that the board defaults are used, which is highly recommended.</p>
 
 
-<p><b>Decimal:</b> 8</p>
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">-1.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="BAT_V_OFFS_CURR">BAT_V_OFFS_CURR</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Offset in volt as seen by the ADC input of the current sensor</p><p><strong>Comment:</strong> This offset will be subtracted before calculating the battery current based on the voltage.</p>
 
 
-<p><b>Decimal:</b> 8</p>
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="BAT_V_DIV">BAT_V_DIV</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Battery voltage divider (V divider)</p><p><strong>Comment:</strong> This is the divider from battery voltage to 3.3V ADC voltage. If using e.g. Mauch power modules the value from the datasheet can be applied straight here. A value of -1 means to use the board default.</p>
 
 
-<p><b>Decimal:</b> 8</p>
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">-1.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="BAT_A_PER_V">BAT_A_PER_V</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Battery current per volt (A/V)</p><p><strong>Comment:</strong> The voltage seen by the 3.3V ADC multiplied by this factor will determine the battery current. A value of -1 means to use the board default.</p>
 
 
-<p><b>Decimal:</b> 8</p>
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">-1.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="BAT_SOURCE">BAT_SOURCE</strong> (INT32)</td><td style="vertical-align: top;"><p>Battery monitoring source</p><p><strong>Comment:</strong> This parameter controls the source of battery data. The value 'Power Module' means that measurements are expected to come from a power module. If the value is set to 'External' then the system expects to receive mavlink battery status messages.</p>
 
@@ -149,55 +139,49 @@ velocity</p>
 
 <li><strong>1:</strong> External</li> 
 </ul>
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">1</td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="BAT_V_EMPTY">BAT_V_EMPTY</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Empty cell voltage (5C load)</p><p><strong>Comment:</strong> Defines the voltage where a single cell of the battery is considered empty. The voltage should be chosen before the steep dropoff to 2.8V. A typical lithium battery can only be discharged down to 10% before it drops off to a voltage level damaging the cells.</p>
 
 
-<p><b>Decimal:</b> 2</p>
  <p><b>Reboot required:</b> true</p>
-  <p><b>Scope:</b> src/modules/systemlib</p>
+  <p><b>Module:</b> src/modules/systemlib</p>
   </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">3.4</td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;">V</td></tr>
 <tr><td style="vertical-align: top;"><strong id="BAT_V_CHARGED">BAT_V_CHARGED</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Full cell voltage (5C load)</p><p><strong>Comment:</strong> Defines the voltage where a single cell of the battery is considered full under a mild load. This will never be the nominal voltage of 4.2V</p>
 
 
-<p><b>Decimal:</b> 2</p>
  <p><b>Reboot required:</b> true</p>
-  <p><b>Scope:</b> src/modules/systemlib</p>
+  <p><b>Module:</b> src/modules/systemlib</p>
   </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">4.05</td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;">V</td></tr>
 <tr><td style="vertical-align: top;"><strong id="BAT_LOW_THR">BAT_LOW_THR</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Low threshold</p><p><strong>Comment:</strong> Sets the threshold when the battery will be reported as low. This has to be higher than the critical threshold.</p>
 
 
-<p><b>Decimal:</b> 2</p>
  <p><b>Reboot required:</b> true</p>
-  <p><b>Scope:</b> src/modules/systemlib</p>
+  <p><b>Module:</b> src/modules/systemlib</p>
   </td><td style="vertical-align: top;">0.12</td><td style="vertical-align: top;">0.4</td><td style="vertical-align: top;">0.15</td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;">norm</td></tr>
 <tr><td style="vertical-align: top;"><strong id="BAT_CRIT_THR">BAT_CRIT_THR</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Critical threshold</p><p><strong>Comment:</strong> Sets the threshold when the battery will be reported as critically low. This has to be lower than the low threshold. This threshold commonly will trigger RTL.</p>
 
 
-<p><b>Decimal:</b> 2</p>
  <p><b>Reboot required:</b> true</p>
-  <p><b>Scope:</b> src/modules/systemlib</p>
+  <p><b>Module:</b> src/modules/systemlib</p>
   </td><td style="vertical-align: top;">0.05</td><td style="vertical-align: top;">0.1</td><td style="vertical-align: top;">0.07</td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;">norm</td></tr>
 <tr><td style="vertical-align: top;"><strong id="BAT_EMERGEN_THR">BAT_EMERGEN_THR</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Emergency threshold</p><p><strong>Comment:</strong> Sets the threshold when the battery will be reported as dangerously low. This has to be lower than the critical threshold. This threshold commonly will trigger landing.</p>
 
 
-<p><b>Decimal:</b> 2</p>
  <p><b>Reboot required:</b> true</p>
-  <p><b>Scope:</b> src/modules/systemlib</p>
+  <p><b>Module:</b> src/modules/systemlib</p>
   </td><td style="vertical-align: top;">0.03</td><td style="vertical-align: top;">0.07</td><td style="vertical-align: top;">0.05</td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;">norm</td></tr>
 <tr><td style="vertical-align: top;"><strong id="BAT_V_LOAD_DROP">BAT_V_LOAD_DROP</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Voltage drop per cell on full throttle</p><p><strong>Comment:</strong> This implicitely defines the internal resistance to maximum current ratio and assumes linearity. A good value to use is the difference between the 5C and 20-25C load. Not used if BAT_R_INTERNAL is set.</p>
 
 
-<p><b>Decimal:</b> 2</p>
  <p><b>Reboot required:</b> true</p>
-  <p><b>Scope:</b> src/modules/systemlib</p>
+  <p><b>Module:</b> src/modules/systemlib</p>
   </td><td style="vertical-align: top;">0.07</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">0.3</td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;">V</td></tr>
 <tr><td style="vertical-align: top;"><strong id="BAT_R_INTERNAL">BAT_R_INTERNAL</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Explicitly defines the per cell internal resistance</p><p><strong>Comment:</strong> If non-negative, then this will be used in place of BAT_V_LOAD_DROP for all calculations.</p>
 
 
  <p><b>Reboot required:</b> true</p>
-  <p><b>Scope:</b> src/modules/systemlib</p>
+  <p><b>Module:</b> src/modules/systemlib</p>
   </td><td style="vertical-align: top;">-1.0</td><td style="vertical-align: top;">0.2</td><td style="vertical-align: top;">-1.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">Ohms</td></tr>
 <tr><td style="vertical-align: top;"><strong id="BAT_N_CELLS">BAT_N_CELLS</strong> (INT32)</td><td style="vertical-align: top;"><p>Number of cells</p><p><strong>Comment:</strong> Defines the number of cells the attached battery consists of.</p>
 
@@ -235,21 +219,20 @@ velocity</p>
 <li><strong>16:</strong> 16S Battery</li> 
 </ul>
  <p><b>Reboot required:</b> true</p>
-  <p><b>Scope:</b> src/modules/systemlib</p>
+  <p><b>Module:</b> src/modules/systemlib</p>
   </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">S</td></tr>
 <tr><td style="vertical-align: top;"><strong id="BAT_CAPACITY">BAT_CAPACITY</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Battery capacity</p><p><strong>Comment:</strong> Defines the capacity of the attached battery.</p>
 
 
-<p><b>Decimal:</b> 0</p>
  <p><b>Reboot required:</b> true</p>
-  <p><b>Scope:</b> src/modules/systemlib</p>
+  <p><b>Module:</b> src/modules/systemlib</p>
   </td><td style="vertical-align: top;">-1.0</td><td style="vertical-align: top;">100000</td><td style="vertical-align: top;">-1.0</td><td style="vertical-align: top;">50</td><td style="vertical-align: top;">mA</td></tr>
 </tbody></table>
 
 ## Camera trigger
 
 
-Scope (for all values) is: *src/drivers/camera_trigger*.
+The module where these parameters are defined is: *src/drivers/camera_trigger*.
 
 <table style="width: 100%;">
 <colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
@@ -270,7 +253,6 @@ Scope (for all values) is: *src/drivers/camera_trigger*.
 <tr><td style="vertical-align: top;"><strong id="TRIG_INTERVAL">TRIG_INTERVAL</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Camera trigger interval</p><p><strong>Comment:</strong> This parameter sets the time between two consecutive trigger events</p>
 
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;">4.0</td><td style="vertical-align: top;">10000.0</td><td style="vertical-align: top;">40.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">ms</td></tr>
 <tr><td style="vertical-align: top;"><strong id="TRIG_POLARITY">TRIG_POLARITY</strong> (INT32)</td><td style="vertical-align: top;"><p>Camera trigger polarity</p><p><strong>Comment:</strong> This parameter sets the polarity of the trigger (0 = active low, 1 = active high )</p>
 
@@ -283,7 +265,6 @@ Scope (for all values) is: *src/drivers/camera_trigger*.
 <tr><td style="vertical-align: top;"><strong id="TRIG_ACT_TIME">TRIG_ACT_TIME</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Camera trigger activation time</p><p><strong>Comment:</strong> This parameter sets the time the trigger needs to pulled high or low.</p>
 
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;">0.1</td><td style="vertical-align: top;">3000</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">ms</td></tr>
 <tr><td style="vertical-align: top;"><strong id="TRIG_MODE">TRIG_MODE</strong> (INT32)</td><td style="vertical-align: top;"><p>Camera trigger mode</p>
 <strong>Values:</strong><ul>
@@ -302,20 +283,18 @@ Scope (for all values) is: *src/drivers/camera_trigger*.
 <tr><td style="vertical-align: top;"><strong id="TRIG_PINS">TRIG_PINS</strong> (INT32)</td><td style="vertical-align: top;"><p>Camera trigger pin</p><p><strong>Comment:</strong> Selects which pin is used, ranges from 1 to 6 (AUX1-AUX6 on px4fmu-v2 and the rail pins on px4fmu-v4). The PWM interface takes two pins per camera, while relay triggers on every pin individually. Example: Value 56 would trigger on pins 5 and 6.</p>
 
 
-<p><b>Decimal:</b> 0</p>
  <p><b>Reboot required:</b> true</p>
     </td><td style="vertical-align: top;">1</td><td style="vertical-align: top;">123456</td><td style="vertical-align: top;">56</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="TRIG_DISTANCE">TRIG_DISTANCE</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Camera trigger distance</p><p><strong>Comment:</strong> Sets the distance at which to trigger the camera.</p>
 
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">25.0</td><td style="vertical-align: top;">1</td><td style="vertical-align: top;">m</td></tr>
 </tbody></table>
 
 ## Circuit Breaker
 
 
-Scope (for all values) is: *src/modules/systemlib*.
+The module where these parameters are defined is: *src/modules/systemlib*.
 
 <table style="width: 100%;">
 <colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
@@ -372,7 +351,7 @@ Scope (for all values) is: *src/modules/systemlib*.
 ## Commander
 
 
-Scope (for all values) is: *src/modules/commander*.
+The module where these parameters are defined is: *src/modules/commander*.
 
 <table style="width: 100%;">
 <colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
@@ -382,42 +361,34 @@ Scope (for all values) is: *src/modules/commander*.
 <tr><td style="vertical-align: top;"><strong id="COM_DL_LOSS_T">COM_DL_LOSS_T</strong> (INT32)</td><td style="vertical-align: top;"><p>Datalink loss time threshold</p><p><strong>Comment:</strong> After this amount of seconds without datalink the data link lost mode triggers</p>
 
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;">5</td><td style="vertical-align: top;">300</td><td style="vertical-align: top;">10</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="COM_DL_REG_T">COM_DL_REG_T</strong> (INT32)</td><td style="vertical-align: top;"><p>Datalink regain time threshold</p><p><strong>Comment:</strong> After a data link loss: after this this amount of seconds with a healthy datalink the 'datalink loss' flag is set back to false</p>
 
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">3</td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="COM_EF_THROT">COM_EF_THROT</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Engine Failure Throttle Threshold</p><p><strong>Comment:</strong> Engine failure triggers only above this throttle value</p>
 
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;">norm</td></tr>
 <tr><td style="vertical-align: top;"><strong id="COM_EF_C2T">COM_EF_C2T</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Engine Failure Current/Throttle Threshold</p><p><strong>Comment:</strong> Engine failure triggers only below this current value</p>
 
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">50.0</td><td style="vertical-align: top;">5.0</td><td style="vertical-align: top;">1</td><td style="vertical-align: top;">A/%</td></tr>
 <tr><td style="vertical-align: top;"><strong id="COM_EF_TIME">COM_EF_TIME</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Engine Failure Time Threshold</p><p><strong>Comment:</strong> Engine failure triggers only if the throttle threshold and the current to throttle threshold are violated for this time</p>
 
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">60.0</td><td style="vertical-align: top;">10.0</td><td style="vertical-align: top;">1</td><td style="vertical-align: top;">s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="COM_RC_LOSS_T">COM_RC_LOSS_T</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC loss time threshold</p><p><strong>Comment:</strong> After this amount of seconds without RC connection the rc lost flag is set to true</p>
 
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">35</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">0.1</td><td style="vertical-align: top;">s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="COM_HOME_H_T">COM_HOME_H_T</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Home set horizontal threshold</p><p><strong>Comment:</strong> The home position will be set if the estimated positioning accuracy is below the threshold.</p>
 
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">2</td><td style="vertical-align: top;">15</td><td style="vertical-align: top;">5.0</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">m</td></tr>
 <tr><td style="vertical-align: top;"><strong id="COM_HOME_V_T">COM_HOME_V_T</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Home set vertical threshold</p><p><strong>Comment:</strong> The home position will be set if the estimated positioning accuracy is below the threshold.</p>
 
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">5</td><td style="vertical-align: top;">25</td><td style="vertical-align: top;">10.0</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">m</td></tr>
 <tr><td style="vertical-align: top;"><strong id="COM_AUTOS_PAR">COM_AUTOS_PAR</strong> (INT32)</td><td style="vertical-align: top;"><p>Autosaving of params</p><p><strong>Comment:</strong> If not equal to zero the commander will automatically save parameters to persistent storage once changed. Default is on, as the interoperability with currently deployed GCS solutions depends on parameters being sticky. Developers can default it to off.</p>
 
@@ -440,7 +411,6 @@ Scope (for all values) is: *src/modules/commander*.
 <tr><td style="vertical-align: top;"><strong id="COM_DISARM_LAND">COM_DISARM_LAND</strong> (INT32)</td><td style="vertical-align: top;"><p>Time-out for auto disarm after landing</p><p><strong>Comment:</strong> A non-zero, positive value specifies the time-out period in seconds after which the vehicle will be automatically disarmed in case a landing situation has been detected during this period. The vehicle will also auto-disarm right after arming if it has not even flown, however the time will be longer by a factor of 5. A value of zero means that automatic disarming is disabled.</p>
 
 
-<p><b>Decimal:</b> 0</p>
      </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">20</td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">1</td><td style="vertical-align: top;">s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="COM_ARM_WO_GPS">COM_ARM_WO_GPS</strong> (INT32)</td><td style="vertical-align: top;"><p>Allow arming without GPS</p><p><strong>Comment:</strong> The default allows to arm the vehicle without GPS signal.</p>
 
@@ -469,7 +439,6 @@ Scope (for all values) is: *src/modules/commander*.
 
 <li><strong>3:</strong> Return to land at critically low level, land at current position if reaching dangerously low levels</li> 
 </ul>
-<p><b>Decimal:</b> 0</p>
      </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">1</td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="COM_OF_LOSS_T">COM_OF_LOSS_T</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Time-out to wait when offboard connection is lost before triggering offboard lost action.
 See COM_OBL_ACT and COM_OBL_RC_ACT to configure action</p>
@@ -477,42 +446,34 @@ See COM_OBL_ACT and COM_OBL_RC_ACT to configure action</p>
      </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">60</td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">1</td><td style="vertical-align: top;">second</td></tr>
 <tr><td style="vertical-align: top;"><strong id="COM_ARM_EKF_POS">COM_ARM_EKF_POS</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Maximum EKF position innovation test ratio that will allow arming</p>
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">0.1</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">0.05</td><td style="vertical-align: top;">m</td></tr>
 <tr><td style="vertical-align: top;"><strong id="COM_ARM_EKF_VEL">COM_ARM_EKF_VEL</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Maximum EKF velocity innovation test ratio that will allow arming</p>
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">0.1</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">0.05</td><td style="vertical-align: top;">m/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="COM_ARM_EKF_HGT">COM_ARM_EKF_HGT</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Maximum EKF height innovation test ratio that will allow arming</p>
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">0.1</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">0.05</td><td style="vertical-align: top;">m</td></tr>
 <tr><td style="vertical-align: top;"><strong id="COM_ARM_EKF_YAW">COM_ARM_EKF_YAW</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Maximum EKF yaw innovation test ratio that will allow arming</p>
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">0.1</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">0.05</td><td style="vertical-align: top;">rad</td></tr>
 <tr><td style="vertical-align: top;"><strong id="COM_ARM_EKF_AB">COM_ARM_EKF_AB</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Maximum value of EKF accelerometer delta velocity bias estimate that will allow arming</p>
 
-<p><b>Decimal:</b> 4</p>
      </td><td style="vertical-align: top;">0.001</td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;">5.0e-3</td><td style="vertical-align: top;">0.0005</td><td style="vertical-align: top;">m/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="COM_ARM_EKF_GB">COM_ARM_EKF_GB</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Maximum value of EKF gyro delta angle bias estimate that will allow arming</p>
 
-<p><b>Decimal:</b> 5</p>
      </td><td style="vertical-align: top;">0.0001</td><td style="vertical-align: top;">0.0017</td><td style="vertical-align: top;">8.7e-4</td><td style="vertical-align: top;">0.0001</td><td style="vertical-align: top;">rad</td></tr>
 <tr><td style="vertical-align: top;"><strong id="COM_ARM_IMU_ACC">COM_ARM_IMU_ACC</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Maximum accelerometer inconsistency between IMU units that will allow arming</p>
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">0.1</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">0.7</td><td style="vertical-align: top;">0.05</td><td style="vertical-align: top;">m/s/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="COM_ARM_IMU_GYR">COM_ARM_IMU_GYR</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Maximum rate gyro inconsistency between IMU units that will allow arming</p>
 
-<p><b>Decimal:</b> 3</p>
      </td><td style="vertical-align: top;">0.02</td><td style="vertical-align: top;">0.2</td><td style="vertical-align: top;">0.15</td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;">rad/s</td></tr>
 </tbody></table>
 
 ## Data Link Loss
 
 
-Scope (for all values) is: *src/modules/navigator*.
+The module where these parameters are defined is: *src/modules/navigator*.
 
 <table style="width: 100%;">
 <colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
@@ -522,7 +483,6 @@ Scope (for all values) is: *src/modules/navigator*.
 <tr><td style="vertical-align: top;"><strong id="NAV_DLL_CH_T">NAV_DLL_CH_T</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Comms hold wait time</p><p><strong>Comment:</strong> The amount of time in seconds the system should wait at the comms hold waypoint</p>
 
 
-<p><b>Decimal:</b> 0</p>
      </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">3600.0</td><td style="vertical-align: top;">120.0</td><td style="vertical-align: top;">1</td><td style="vertical-align: top;">s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="NAV_DLL_CH_LAT">NAV_DLL_CH_LAT</strong> (INT32)</td><td style="vertical-align: top;"><p>Comms hold Lat</p><p><strong>Comment:</strong> Latitude of comms hold waypoint</p>
 
@@ -535,12 +495,10 @@ Scope (for all values) is: *src/modules/navigator*.
 <tr><td style="vertical-align: top;"><strong id="NAV_DLL_CH_ALT">NAV_DLL_CH_ALT</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Comms hold alt</p><p><strong>Comment:</strong> Altitude of comms hold waypoint</p>
 
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;">-50</td><td style="vertical-align: top;">30000</td><td style="vertical-align: top;">600.0</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">m</td></tr>
 <tr><td style="vertical-align: top;"><strong id="NAV_DLL_AH_T">NAV_DLL_AH_T</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Airfield home wait time</p><p><strong>Comment:</strong> The amount of time in seconds the system should wait at the airfield home waypoint</p>
 
 
-<p><b>Decimal:</b> 0</p>
      </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">3600.0</td><td style="vertical-align: top;">120.0</td><td style="vertical-align: top;">1</td><td style="vertical-align: top;">s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="NAV_DLL_N">NAV_DLL_N</strong> (INT32)</td><td style="vertical-align: top;"><p>Number of allowed Datalink timeouts</p><p><strong>Comment:</strong> After more than this number of data link timeouts the aircraft returns home directly</p>
 
@@ -561,14 +519,13 @@ Scope (for all values) is: *src/modules/navigator*.
 <tr><td style="vertical-align: top;"><strong id="NAV_AH_ALT">NAV_AH_ALT</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Airfield home alt</p><p><strong>Comment:</strong> Altitude of airfield home waypoint</p>
 
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;">-50</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">600.0</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">m</td></tr>
 </tbody></table>
 
 ## EKF2
 
 
-Scope (for all values) is: *src/modules/ekf2*.
+The module where these parameters are defined is: *src/modules/ekf2*.
 
 <table style="width: 100%;">
 <colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
@@ -581,32 +538,25 @@ Baro and Magnetometer data will be averaged before downsampling, other data will
      </td><td style="vertical-align: top;">10</td><td style="vertical-align: top;">50</td><td style="vertical-align: top;">20</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">ms</td></tr>
 <tr><td style="vertical-align: top;"><strong id="EKF2_MAG_DELAY">EKF2_MAG_DELAY</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Magnetometer measurement delay relative to IMU measurements</p>
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">300</td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">ms</td></tr>
 <tr><td style="vertical-align: top;"><strong id="EKF2_BARO_DELAY">EKF2_BARO_DELAY</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Barometer measurement delay relative to IMU measurements</p>
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">300</td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">ms</td></tr>
 <tr><td style="vertical-align: top;"><strong id="EKF2_GPS_DELAY">EKF2_GPS_DELAY</strong> (FLOAT)</td><td style="vertical-align: top;"><p>GPS measurement delay relative to IMU measurements</p>
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">300</td><td style="vertical-align: top;">200</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">ms</td></tr>
 <tr><td style="vertical-align: top;"><strong id="EKF2_OF_DELAY">EKF2_OF_DELAY</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Optical flow measurement delay relative to IMU measurements
 Assumes measurement is timestamped at trailing edge of integration period</p>
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">300</td><td style="vertical-align: top;">5</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">ms</td></tr>
 <tr><td style="vertical-align: top;"><strong id="EKF2_RNG_DELAY">EKF2_RNG_DELAY</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Range finder measurement delay relative to IMU measurements</p>
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">300</td><td style="vertical-align: top;">5</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">ms</td></tr>
 <tr><td style="vertical-align: top;"><strong id="EKF2_ASP_DELAY">EKF2_ASP_DELAY</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Airspeed measurement delay relative to IMU measurements</p>
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">300</td><td style="vertical-align: top;">200</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">ms</td></tr>
 <tr><td style="vertical-align: top;"><strong id="EKF2_EV_DELAY">EKF2_EV_DELAY</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Vision Position Estimator delay relative to IMU measurements</p>
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">300</td><td style="vertical-align: top;">175</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">ms</td></tr>
 <tr><td style="vertical-align: top;"><strong id="EKF2_GPS_CHECK">EKF2_GPS_CHECK</strong> (INT32)</td><td style="vertical-align: top;"><p>Integer bitmask controlling GPS checks</p><p><strong>Comment:</strong> Set bits to 1 to enable checks. Checks enabled by the following bit positions 0 : Minimum required sat count set by EKF2_REQ_NSATS 1 : Minimum required GDoP set by EKF2_REQ_GDOP 2 : Maximum allowed horizontal position error set by EKF2_REQ_EPH 3 : Maximum allowed vertical position error set by EKF2_REQ_EPV 4 : Maximum allowed speed error set by EKF2_REQ_SACC 5 : Maximum allowed horizontal position rate set by EKF2_REQ_HDRIFT. This check can only be used if the vehicle is stationary during alignment. 6 : Maximum allowed vertical position rate set by EKF2_REQ_VDRIFT. This check can only be used if the vehicle is stationary during alignment. 7 : Maximum allowed horizontal speed set by EKF2_REQ_HDRIFT. This check can only be used if the vehicle is stationary during alignment. 8 : Maximum allowed vertical velocity discrepancy set by EKF2_REQ_VDRIFT</p>
 
@@ -625,102 +575,78 @@ Assumes measurement is timestamped at trailing edge of integration period</p>
 </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">511</td><td style="vertical-align: top;">21</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="EKF2_REQ_EPH">EKF2_REQ_EPH</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Required EPH to use GPS</p>
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;">2</td><td style="vertical-align: top;">100</td><td style="vertical-align: top;">5.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m</td></tr>
 <tr><td style="vertical-align: top;"><strong id="EKF2_REQ_EPV">EKF2_REQ_EPV</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Required EPV to use GPS</p>
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;">2</td><td style="vertical-align: top;">100</td><td style="vertical-align: top;">8.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m</td></tr>
 <tr><td style="vertical-align: top;"><strong id="EKF2_REQ_SACC">EKF2_REQ_SACC</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Required speed accuracy to use GPS</p>
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">5.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="EKF2_REQ_NSATS">EKF2_REQ_NSATS</strong> (INT32)</td><td style="vertical-align: top;"><p>Required satellite count to use GPS</p>
 
      </td><td style="vertical-align: top;">4</td><td style="vertical-align: top;">12</td><td style="vertical-align: top;">6</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="EKF2_REQ_GDOP">EKF2_REQ_GDOP</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Required GDoP to use GPS</p>
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;">1.5</td><td style="vertical-align: top;">5.0</td><td style="vertical-align: top;">2.5</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="EKF2_REQ_HDRIFT">EKF2_REQ_HDRIFT</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Maximum horizontal drift speed to use GPS</p>
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">0.1</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">0.3</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="EKF2_REQ_VDRIFT">EKF2_REQ_VDRIFT</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Maximum vertical drift speed to use GPS</p>
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">0.1</td><td style="vertical-align: top;">1.5</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="EKF2_GYR_NOISE">EKF2_GYR_NOISE</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Rate gyro noise for covariance prediction</p>
 
-<p><b>Decimal:</b> 4</p>
      </td><td style="vertical-align: top;">0.0001</td><td style="vertical-align: top;">0.1</td><td style="vertical-align: top;">1.5e-2</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">rad/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="EKF2_ACC_NOISE">EKF2_ACC_NOISE</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Accelerometer noise for covariance prediction</p>
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">3.5e-1</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m/s/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="EKF2_GYR_B_NOISE">EKF2_GYR_B_NOISE</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Process noise for IMU rate gyro bias prediction</p>
 
-<p><b>Decimal:</b> 6</p>
      </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;">1.0e-3</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">rad/s**2</td></tr>
 <tr><td style="vertical-align: top;"><strong id="EKF2_ACC_B_NOISE">EKF2_ACC_B_NOISE</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Process noise for IMU accelerometer bias prediction</p>
 
-<p><b>Decimal:</b> 6</p>
      </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;">3.0e-3</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m/s**3</td></tr>
 <tr><td style="vertical-align: top;"><strong id="EKF2_MAG_B_NOISE">EKF2_MAG_B_NOISE</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Process noise for body magnetic field prediction</p>
 
-<p><b>Decimal:</b> 6</p>
      </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">0.1</td><td style="vertical-align: top;">1.0e-4</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">Gauss/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="EKF2_MAG_E_NOISE">EKF2_MAG_E_NOISE</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Process noise for earth magnetic field prediction</p>
 
-<p><b>Decimal:</b> 6</p>
      </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">0.1</td><td style="vertical-align: top;">1.0e-3</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">Gauss/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="EKF2_WIND_NOISE">EKF2_WIND_NOISE</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Process noise for wind velocity prediction</p>
 
-<p><b>Decimal:</b> 3</p>
      </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">1.0e-1</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m/s/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="EKF2_GPS_V_NOISE">EKF2_GPS_V_NOISE</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Measurement noise for gps horizontal velocity</p>
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;">5.0</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="EKF2_GPS_P_NOISE">EKF2_GPS_P_NOISE</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Measurement noise for gps position</p>
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;">10.0</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m</td></tr>
 <tr><td style="vertical-align: top;"><strong id="EKF2_NOAID_NOISE">EKF2_NOAID_NOISE</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Measurement noise for non-aiding position hold</p>
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">50.0</td><td style="vertical-align: top;">10.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m</td></tr>
 <tr><td style="vertical-align: top;"><strong id="EKF2_BARO_NOISE">EKF2_BARO_NOISE</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Measurement noise for barometric altitude</p>
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;">15.0</td><td style="vertical-align: top;">2.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m</td></tr>
 <tr><td style="vertical-align: top;"><strong id="EKF2_HEAD_NOISE">EKF2_HEAD_NOISE</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Measurement noise for magnetic heading fusion</p>
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">0.3</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">rad</td></tr>
 <tr><td style="vertical-align: top;"><strong id="EKF2_MAG_NOISE">EKF2_MAG_NOISE</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Measurement noise for magnetometer 3-axis fusion</p>
 
-<p><b>Decimal:</b> 3</p>
      </td><td style="vertical-align: top;">0.001</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">5.0e-2</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">Gauss</td></tr>
 <tr><td style="vertical-align: top;"><strong id="EKF2_EAS_NOISE">EKF2_EAS_NOISE</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Measurement noise for airspeed fusion</p>
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">5.0</td><td style="vertical-align: top;">1.4</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="EKF2_BETA_NOISE">EKF2_BETA_NOISE</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Noise for synthetic sideslip fusion</p>
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">0.1</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">0.3</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="EKF2_MAG_DECL">EKF2_MAG_DECL</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Magnetic declination</p>
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">deg</td></tr>
 <tr><td style="vertical-align: top;"><strong id="EKF2_HDG_GATE">EKF2_HDG_GATE</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Gate size for magnetic heading fusion</p>
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">2.6</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">SD</td></tr>
 <tr><td style="vertical-align: top;"><strong id="EKF2_MAG_GATE">EKF2_MAG_GATE</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Gate size for magnetometer XYZ component fusion</p>
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">3.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">SD</td></tr>
 <tr><td style="vertical-align: top;"><strong id="EKF2_DECL_TYPE">EKF2_DECL_TYPE</strong> (INT32)</td><td style="vertical-align: top;"><p>Integer bitmask controlling handling of magnetic declination</p><p><strong>Comment:</strong> Set bits in the following positions to enable functions. 0 : Set to true to use the declination from the geo_lookup library when the GPS position becomes available, set to false to always use the EKF2_MAG_DECL value. 1 : Set to true to save the EKF2_MAG_DECL parameter to the value returned by the EKF when the vehicle disarms. 2 : Set to true to always use the declination as an observation when 3-axis magnetometer fusion is being used.</p>
 
@@ -745,19 +671,15 @@ Assumes measurement is timestamped at trailing edge of integration period</p>
      </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="EKF2_BARO_GATE">EKF2_BARO_GATE</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Gate size for barometric height fusion</p>
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">5.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">SD</td></tr>
 <tr><td style="vertical-align: top;"><strong id="EKF2_GPS_P_GATE">EKF2_GPS_P_GATE</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Gate size for GPS horizontal position fusion</p>
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">5.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">SD</td></tr>
 <tr><td style="vertical-align: top;"><strong id="EKF2_GPS_V_GATE">EKF2_GPS_V_GATE</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Gate size for GPS velocity fusion</p>
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">5.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">SD</td></tr>
 <tr><td style="vertical-align: top;"><strong id="EKF2_TAS_GATE">EKF2_TAS_GATE</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Gate size for TAS fusion</p>
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">3.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">SD</td></tr>
 <tr><td style="vertical-align: top;"><strong id="EKF2_REC_RPL">EKF2_REC_RPL</strong> (INT32)</td><td style="vertical-align: top;"><p>Replay mode</p><p><strong>Comment:</strong> A value of 1 indicates that the ekf2 module will publish replay messages for logging.</p>
 
@@ -788,124 +710,95 @@ Assumes measurement is timestamped at trailing edge of integration period</p>
      </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="EKF2_RNG_NOISE">EKF2_RNG_NOISE</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Measurement noise for range finder fusion</p>
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0.1</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m</td></tr>
 <tr><td style="vertical-align: top;"><strong id="EKF2_RNG_GATE">EKF2_RNG_GATE</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Gate size for range finder fusion</p>
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">5.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">SD</td></tr>
 <tr><td style="vertical-align: top;"><strong id="EKF2_MIN_RNG">EKF2_MIN_RNG</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Minimum valid range for the range finder</p>
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0.1</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m</td></tr>
 <tr><td style="vertical-align: top;"><strong id="EKF2_EVP_NOISE">EKF2_EVP_NOISE</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Measurement noise for vision position observations used when the vision system does not supply error estimates</p>
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0.05</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m</td></tr>
 <tr><td style="vertical-align: top;"><strong id="EKF2_EVA_NOISE">EKF2_EVA_NOISE</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Measurement noise for vision angle observations used when the vision system does not supply error estimates</p>
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0.05</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">rad</td></tr>
 <tr><td style="vertical-align: top;"><strong id="EKF2_EV_GATE">EKF2_EV_GATE</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Gate size for vision estimate fusion</p>
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">5.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">SD</td></tr>
 <tr><td style="vertical-align: top;"><strong id="EKF2_MIN_EV">EKF2_MIN_EV</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Minimum valid range for the vision estimate</p>
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m</td></tr>
 <tr><td style="vertical-align: top;"><strong id="EKF2_OF_N_MIN">EKF2_OF_N_MIN</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Measurement noise for the optical flow sensor when it's reported quality metric is at the maximum</p>
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">0.05</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0.15</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">rad/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="EKF2_OF_N_MAX">EKF2_OF_N_MAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Measurement noise for the optical flow sensor</p><p><strong>Comment:</strong> (when it's reported quality metric is at the minimum set by EKF2_OF_QMIN). The following condition must be met: EKF2_OF_N_MAXN >= EKF2_OF_N_MIN</p>
 
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">0.05</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">rad/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="EKF2_OF_QMIN">EKF2_OF_QMIN</strong> (INT32)</td><td style="vertical-align: top;"><p>Optical Flow data will only be used if the sensor reports a quality metric >= EKF2_OF_QMIN</p>
 
      </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">255</td><td style="vertical-align: top;">1</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="EKF2_OF_GATE">EKF2_OF_GATE</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Gate size for optical flow fusion</p>
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">3.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">SD</td></tr>
 <tr><td style="vertical-align: top;"><strong id="EKF2_OF_RMAX">EKF2_OF_RMAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Optical Flow data will not fused if the magnitude of the flow rate > EKF2_OF_RMAX</p>
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">2.5</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">rad/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="EKF2_TERR_NOISE">EKF2_TERR_NOISE</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Terrain altitude process noise - accounts for instability in vehicle height estimate</p>
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">5.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="EKF2_TERR_GRAD">EKF2_TERR_GRAD</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Magnitude of terrain gradient</p>
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m/m</td></tr>
 <tr><td style="vertical-align: top;"><strong id="EKF2_IMU_POS_X">EKF2_IMU_POS_X</strong> (FLOAT)</td><td style="vertical-align: top;"><p>X position of IMU in body frame</p>
 
-<p><b>Decimal:</b> 3</p>
      </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m</td></tr>
 <tr><td style="vertical-align: top;"><strong id="EKF2_IMU_POS_Y">EKF2_IMU_POS_Y</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Y position of IMU in body frame</p>
 
-<p><b>Decimal:</b> 3</p>
      </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m</td></tr>
 <tr><td style="vertical-align: top;"><strong id="EKF2_IMU_POS_Z">EKF2_IMU_POS_Z</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Z position of IMU in body frame</p>
 
-<p><b>Decimal:</b> 3</p>
      </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m</td></tr>
 <tr><td style="vertical-align: top;"><strong id="EKF2_GPS_POS_X">EKF2_GPS_POS_X</strong> (FLOAT)</td><td style="vertical-align: top;"><p>X position of GPS antenna in body frame</p>
 
-<p><b>Decimal:</b> 3</p>
      </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m</td></tr>
 <tr><td style="vertical-align: top;"><strong id="EKF2_GPS_POS_Y">EKF2_GPS_POS_Y</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Y position of GPS antenna in body frame</p>
 
-<p><b>Decimal:</b> 3</p>
      </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m</td></tr>
 <tr><td style="vertical-align: top;"><strong id="EKF2_GPS_POS_Z">EKF2_GPS_POS_Z</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Z position of GPS antenna in body frame</p>
 
-<p><b>Decimal:</b> 3</p>
      </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m</td></tr>
 <tr><td style="vertical-align: top;"><strong id="EKF2_RNG_POS_X">EKF2_RNG_POS_X</strong> (FLOAT)</td><td style="vertical-align: top;"><p>X position of range finder origin in body frame</p>
 
-<p><b>Decimal:</b> 3</p>
      </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m</td></tr>
 <tr><td style="vertical-align: top;"><strong id="EKF2_RNG_POS_Y">EKF2_RNG_POS_Y</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Y position of range finder origin in body frame</p>
 
-<p><b>Decimal:</b> 3</p>
      </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m</td></tr>
 <tr><td style="vertical-align: top;"><strong id="EKF2_RNG_POS_Z">EKF2_RNG_POS_Z</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Z position of range finder origin in body frame</p>
 
-<p><b>Decimal:</b> 3</p>
      </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m</td></tr>
 <tr><td style="vertical-align: top;"><strong id="EKF2_OF_POS_X">EKF2_OF_POS_X</strong> (FLOAT)</td><td style="vertical-align: top;"><p>X position of optical flow focal point in body frame</p>
 
-<p><b>Decimal:</b> 3</p>
      </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m</td></tr>
 <tr><td style="vertical-align: top;"><strong id="EKF2_OF_POS_Y">EKF2_OF_POS_Y</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Y position of optical flow focal point in body frame</p>
 
-<p><b>Decimal:</b> 3</p>
      </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m</td></tr>
 <tr><td style="vertical-align: top;"><strong id="EKF2_OF_POS_Z">EKF2_OF_POS_Z</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Z position of optical flow focal point in body frame</p>
 
-<p><b>Decimal:</b> 3</p>
      </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m</td></tr>
 <tr><td style="vertical-align: top;"><strong id="EKF2_EV_POS_X">EKF2_EV_POS_X</strong> (FLOAT)</td><td style="vertical-align: top;"><p>X position of VI sensor focal point in body frame</p>
 
-<p><b>Decimal:</b> 3</p>
      </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m</td></tr>
 <tr><td style="vertical-align: top;"><strong id="EKF2_EV_POS_Y">EKF2_EV_POS_Y</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Y position of VI sensor focal point in body frame</p>
 
-<p><b>Decimal:</b> 3</p>
      </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m</td></tr>
 <tr><td style="vertical-align: top;"><strong id="EKF2_EV_POS_Z">EKF2_EV_POS_Z</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Z position of VI sensor focal point in body frame</p>
 
-<p><b>Decimal:</b> 3</p>
      </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m</td></tr>
 <tr><td style="vertical-align: top;"><strong id="EKF2_ARSP_THR">EKF2_ARSP_THR</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Airspeed fusion threshold. A value of zero will deactivate airspeed fusion. Any other positive
 value will determine the minimum airspeed which will still be fused</p>
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="EKF2_FUSE_BETA">EKF2_FUSE_BETA</strong> (INT32)</td><td style="vertical-align: top;"><p>Boolean determining if synthetic sideslip measurements should fused</p><p><strong>Comment:</strong> A value of 1 indicates that fusion is active</p>
 
@@ -913,34 +806,28 @@ value will determine the minimum airspeed which will still be fused</p>
      </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="EKF2_TAU_VEL">EKF2_TAU_VEL</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Time constant of the velocity output prediction and smoothing filter</p>
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;"></td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">0.25</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="EKF2_TAU_POS">EKF2_TAU_POS</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Time constant of the position output prediction and smoothing filter. Controls how tightly the output track the EKF states</p>
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">0.1</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">0.25</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="EKF2_GBIAS_INIT">EKF2_GBIAS_INIT</strong> (FLOAT)</td><td style="vertical-align: top;"><p>1-sigma IMU gyro switch-on bias</p>
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">0.2</td><td style="vertical-align: top;">0.1</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">rad/sec</td></tr>
 <tr><td style="vertical-align: top;"><strong id="EKF2_ABIAS_INIT">EKF2_ABIAS_INIT</strong> (FLOAT)</td><td style="vertical-align: top;"><p>1-sigma IMU accelerometer switch-on bias</p>
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">0.2</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m/s/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="EKF2_ANGERR_INIT">EKF2_ANGERR_INIT</strong> (FLOAT)</td><td style="vertical-align: top;"><p>1-sigma tilt angle uncertainty after gravity vector alignment</p>
 
-<p><b>Decimal:</b> 3</p>
      </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">0.1</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">rad</td></tr>
 <tr><td style="vertical-align: top;"><strong id="EKF2_RNG_PITCH">EKF2_RNG_PITCH</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Range sensor pitch offset</p>
 
-<p><b>Decimal:</b> 3</p>
      </td><td style="vertical-align: top;">-0.75</td><td style="vertical-align: top;">0.75</td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">rad</td></tr>
 </tbody></table>
 
 ## FW Attitude Control
 
 
-Scope (for all values) is: *src/modules/fw_att_control*.
+The module where these parameters are defined is: *src/modules/fw_att_control*.
 
 <table style="width: 100%;">
 <colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
@@ -950,82 +837,66 @@ Scope (for all values) is: *src/modules/fw_att_control*.
 <tr><td style="vertical-align: top;"><strong id="FW_R_TC">FW_R_TC</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Attitude Roll Time Constant</p><p><strong>Comment:</strong> This defines the latency between a roll step input and the achieved setpoint (inverse to a P gain). Half a second is a good start value and fits for most average systems. Smaller systems may require smaller values, but as this will wear out servos faster, the value should only be decreased as needed.</p>
 
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">0.4</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">0.4</td><td style="vertical-align: top;">0.05</td><td style="vertical-align: top;">s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="FW_P_TC">FW_P_TC</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Attitude Pitch Time Constant</p><p><strong>Comment:</strong> This defines the latency between a pitch step input and the achieved setpoint (inverse to a P gain). Half a second is a good start value and fits for most average systems. Smaller systems may require smaller values, but as this will wear out servos faster, the value should only be decreased as needed.</p>
 
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">0.2</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">0.4</td><td style="vertical-align: top;">0.05</td><td style="vertical-align: top;">s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="FW_PR_P">FW_PR_P</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Pitch rate proportional gain</p><p><strong>Comment:</strong> This defines how much the elevator input will be commanded depending on the current body angular rate error.</p>
 
 
-<p><b>Decimal:</b> 3</p>
      </td><td style="vertical-align: top;">0.005</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">0.08</td><td style="vertical-align: top;">0.005</td><td style="vertical-align: top;">%/rad/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="FW_PR_I">FW_PR_I</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Pitch rate integrator gain</p><p><strong>Comment:</strong> This gain defines how much control response will result out of a steady state error. It trims any constant error.</p>
 
 
-<p><b>Decimal:</b> 3</p>
      </td><td style="vertical-align: top;">0.005</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">0.02</td><td style="vertical-align: top;">0.005</td><td style="vertical-align: top;">%/rad</td></tr>
 <tr><td style="vertical-align: top;"><strong id="FW_P_RMAX_POS">FW_P_RMAX_POS</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Maximum positive / up pitch rate</p><p><strong>Comment:</strong> This limits the maximum pitch up angular rate the controller will output (in degrees per second). Setting a value of zero disables the limit.</p>
 
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">90.0</td><td style="vertical-align: top;">60.0</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">deg/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="FW_P_RMAX_NEG">FW_P_RMAX_NEG</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Maximum negative / down pitch rate</p><p><strong>Comment:</strong> This limits the maximum pitch down up angular rate the controller will output (in degrees per second). Setting a value of zero disables the limit.</p>
 
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">90.0</td><td style="vertical-align: top;">60.0</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">deg/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="FW_PR_IMAX">FW_PR_IMAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Pitch rate integrator limit</p><p><strong>Comment:</strong> The portion of the integrator part in the control surface deflection is limited to this value</p>
 
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">0.4</td><td style="vertical-align: top;">0.05</td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="FW_RR_P">FW_RR_P</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Roll rate proportional Gain</p><p><strong>Comment:</strong> This defines how much the aileron input will be commanded depending on the current body angular rate error.</p>
 
 
-<p><b>Decimal:</b> 3</p>
      </td><td style="vertical-align: top;">0.005</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">0.05</td><td style="vertical-align: top;">0.005</td><td style="vertical-align: top;">%/rad/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="FW_RR_I">FW_RR_I</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Roll rate integrator Gain</p><p><strong>Comment:</strong> This gain defines how much control response will result out of a steady state error. It trims any constant error.</p>
 
 
-<p><b>Decimal:</b> 3</p>
      </td><td style="vertical-align: top;">0.005</td><td style="vertical-align: top;">0.2</td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;">0.005</td><td style="vertical-align: top;">%/rad</td></tr>
 <tr><td style="vertical-align: top;"><strong id="FW_RR_IMAX">FW_RR_IMAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Roll Integrator Anti-Windup</p><p><strong>Comment:</strong> The portion of the integrator part in the control surface deflection is limited to this value.</p>
 
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">0.2</td><td style="vertical-align: top;">0.05</td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="FW_R_RMAX">FW_R_RMAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Maximum Roll Rate</p><p><strong>Comment:</strong> This limits the maximum roll rate the controller will output (in degrees per second). Setting a value of zero disables the limit.</p>
 
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">90.0</td><td style="vertical-align: top;">70.0</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">deg/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="FW_YR_P">FW_YR_P</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Yaw rate proportional gain</p><p><strong>Comment:</strong> This defines how much the rudder input will be commanded depending on the current body angular rate error.</p>
 
 
-<p><b>Decimal:</b> 3</p>
      </td><td style="vertical-align: top;">0.005</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">0.05</td><td style="vertical-align: top;">0.005</td><td style="vertical-align: top;">%/rad/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="FW_YR_I">FW_YR_I</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Yaw rate integrator gain</p><p><strong>Comment:</strong> This gain defines how much control response will result out of a steady state error. It trims any constant error.</p>
 
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">50.0</td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">%/rad</td></tr>
 <tr><td style="vertical-align: top;"><strong id="FW_YR_IMAX">FW_YR_IMAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Yaw rate integrator limit</p><p><strong>Comment:</strong> The portion of the integrator part in the control surface deflection is limited to this value</p>
 
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">0.2</td><td style="vertical-align: top;">0.05</td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="FW_Y_RMAX">FW_Y_RMAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Maximum Yaw Rate</p><p><strong>Comment:</strong> This limits the maximum yaw rate the controller will output (in degrees per second). Setting a value of zero disables the limit.</p>
 
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">90.0</td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">deg/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="FW_RLL_TO_YAW_FF">FW_RLL_TO_YAW_FF</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Roll control to yaw control feedforward gain</p><p><strong>Comment:</strong> This gain can be used to counteract the "adverse yaw" effect for fixed wings. When the plane enters a roll it will tend to yaw the nose out of the turn. This gain enables the use of a yaw actuator (rudder, airbrakes, ...) to counteract this effect.</p>
 
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="FW_W_EN">FW_W_EN</strong> (INT32)</td><td style="vertical-align: top;"><p>Enable wheel steering controller</p>
 
@@ -1033,47 +904,38 @@ Scope (for all values) is: *src/modules/fw_att_control*.
 <tr><td style="vertical-align: top;"><strong id="FW_WR_P">FW_WR_P</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Wheel steering rate proportional gain</p><p><strong>Comment:</strong> This defines how much the wheel steering input will be commanded depending on the current body angular rate error.</p>
 
 
-<p><b>Decimal:</b> 3</p>
      </td><td style="vertical-align: top;">0.005</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">0.005</td><td style="vertical-align: top;">%/rad/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="FW_WR_I">FW_WR_I</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Wheel steering rate integrator gain</p><p><strong>Comment:</strong> This gain defines how much control response will result out of a steady state error. It trims any constant error.</p>
 
 
-<p><b>Decimal:</b> 3</p>
      </td><td style="vertical-align: top;">0.005</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">0.1</td><td style="vertical-align: top;">0.005</td><td style="vertical-align: top;">%/rad</td></tr>
 <tr><td style="vertical-align: top;"><strong id="FW_WR_IMAX">FW_WR_IMAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Wheel steering rate integrator limit</p><p><strong>Comment:</strong> The portion of the integrator part in the control surface deflection is limited to this value</p>
 
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">0.05</td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="FW_W_RMAX">FW_W_RMAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Maximum wheel steering rate</p><p><strong>Comment:</strong> This limits the maximum wheel steering rate the controller will output (in degrees per second). Setting a value of zero disables the limit.</p>
 
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">90.0</td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">deg/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="FW_RR_FF">FW_RR_FF</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Roll rate feed forward</p><p><strong>Comment:</strong> Direct feed forward from rate setpoint to control surface output. Use this to obtain a tigher response of the controller without introducing noise amplification.</p>
 
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">10.0</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">0.05</td><td style="vertical-align: top;">%/rad/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="FW_PR_FF">FW_PR_FF</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Pitch rate feed forward</p><p><strong>Comment:</strong> Direct feed forward from rate setpoint to control surface output</p>
 
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">10.0</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">0.05</td><td style="vertical-align: top;">%/rad/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="FW_YR_FF">FW_YR_FF</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Yaw rate feed forward</p><p><strong>Comment:</strong> Direct feed forward from rate setpoint to control surface output</p>
 
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">10.0</td><td style="vertical-align: top;">0.3</td><td style="vertical-align: top;">0.05</td><td style="vertical-align: top;">%/rad/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="FW_WR_FF">FW_WR_FF</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Wheel steering rate feed forward</p><p><strong>Comment:</strong> Direct feed forward from rate setpoint to control surface output</p>
 
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">10.0</td><td style="vertical-align: top;">0.2</td><td style="vertical-align: top;">0.05</td><td style="vertical-align: top;">%/rad/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="FW_YCO_VMIN">FW_YCO_VMIN</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Minimal speed for yaw coordination</p><p><strong>Comment:</strong> For airspeeds above this value, the yaw rate is calculated for a coordinated turn. Set to a very high value to disable.</p>
 
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">1000.0</td><td style="vertical-align: top;">1000.0</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">m/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="FW_YCO_METHOD">FW_YCO_METHOD</strong> (INT32)</td><td style="vertical-align: top;"><p>Method used for yaw coordination</p><p><strong>Comment:</strong> The param value sets the method used to calculate the yaw rate 0: open-loop zero lateral acceleration based on kinematic constraints 1: closed-loop: try to reduce lateral acceleration to 0 by measuring the acceleration</p>
 
@@ -1086,30 +948,24 @@ Scope (for all values) is: *src/modules/fw_att_control*.
 <tr><td style="vertical-align: top;"><strong id="FW_RSP_OFF">FW_RSP_OFF</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Roll Setpoint Offset</p><p><strong>Comment:</strong> An airframe specific offset of the roll setpoint in degrees, the value is added to the roll setpoint and should correspond to the typical cruise speed of the airframe.</p>
 
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;">-90.0</td><td style="vertical-align: top;">90.0</td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">deg</td></tr>
 <tr><td style="vertical-align: top;"><strong id="FW_PSP_OFF">FW_PSP_OFF</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Pitch Setpoint Offset</p><p><strong>Comment:</strong> An airframe specific offset of the pitch setpoint in degrees, the value is added to the pitch setpoint and should correspond to the typical cruise speed of the airframe.</p>
 
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;">-90.0</td><td style="vertical-align: top;">90.0</td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">deg</td></tr>
 <tr><td style="vertical-align: top;"><strong id="FW_MAN_R_MAX">FW_MAN_R_MAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Max Manual Roll</p><p><strong>Comment:</strong> Max roll for manual control in attitude stabilized mode</p>
 
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">90.0</td><td style="vertical-align: top;">45.0</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">deg</td></tr>
 <tr><td style="vertical-align: top;"><strong id="FW_MAN_P_MAX">FW_MAN_P_MAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Max Manual Pitch</p><p><strong>Comment:</strong> Max pitch for manual control in attitude stabilized mode</p>
 
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">90.0</td><td style="vertical-align: top;">45.0</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">deg</td></tr>
 <tr><td style="vertical-align: top;"><strong id="FW_FLAPS_SCL">FW_FLAPS_SCL</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Scale factor for flaps</p>
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;">norm</td></tr>
 <tr><td style="vertical-align: top;"><strong id="FW_FLAPERON_SCL">FW_FLAPERON_SCL</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Scale factor for flaperons</p>
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;">norm</td></tr>
 <tr><td style="vertical-align: top;"><strong id="FW_ARSP_MODE">FW_ARSP_MODE</strong> (INT32)</td><td style="vertical-align: top;"><p>Airspeed mode</p><p><strong>Comment:</strong> The param value sets the method used to publish the control state airspeed. For small wings or VTOL without airspeed sensor this parameter can be used to enable flying without an airspeed reading</p>
 
@@ -1124,17 +980,14 @@ Scope (for all values) is: *src/modules/fw_att_control*.
 <tr><td style="vertical-align: top;"><strong id="FW_MAN_R_SC">FW_MAN_R_SC</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Manual roll scale</p><p><strong>Comment:</strong> Scale factor applied to the desired roll actuator command in full manual mode. This parameter allows to adjust the throws of the control surfaces.</p>
 
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;">norm</td></tr>
 <tr><td style="vertical-align: top;"><strong id="FW_MAN_P_SC">FW_MAN_P_SC</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Manual pitch scale</p><p><strong>Comment:</strong> Scale factor applied to the desired pitch actuator command in full manual mode. This parameter allows to adjust the throws of the control surfaces.</p>
 
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;">norm</td></tr>
 <tr><td style="vertical-align: top;"><strong id="FW_MAN_Y_SC">FW_MAN_Y_SC</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Manual yaw scale</p><p><strong>Comment:</strong> Scale factor applied to the desired yaw actuator command in full manual mode. This parameter allows to adjust the throws of the control surfaces.</p>
 
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;">norm</td></tr>
 <tr><td style="vertical-align: top;"><strong id="FW_BAT_SCALE_EN">FW_BAT_SCALE_EN</strong> (INT32)</td><td style="vertical-align: top;"><p>Whether to scale throttle by battery power level</p><p><strong>Comment:</strong> This compensates for voltage drop of the battery over time by attempting to normalize performance across the operating range of the battery. The fixed wing should constantly behave as if it was fully charged with reduced max thrust at lower battery percentages. i.e. if cruise speed is at 0.5 throttle at 100% battery, it will still be 0.5 at 60% battery.</p>
 
@@ -1155,14 +1008,13 @@ Scope (for all values) is: *src/modules/fw_att_control*.
 <tr><td style="vertical-align: top;"><strong id="FW_RATT_TH">FW_RATT_TH</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Threshold for Rattitude mode</p><p><strong>Comment:</strong> Manual input needed in order to override attitude control rate setpoints and instead pass manual stick inputs as rate setpoints</p>
 
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">0.8</td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;"></td></tr>
 </tbody></table>
 
 ## FW L1 Control
 
 
-Scope (for all values) is: *src/modules/fw_pos_control_l1*.
+The module where these parameters are defined is: *src/modules/fw_pos_control_l1*.
 
 <table style="width: 100%;">
 <colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
@@ -1172,17 +1024,14 @@ Scope (for all values) is: *src/modules/fw_pos_control_l1*.
 <tr><td style="vertical-align: top;"><strong id="FW_L1_PERIOD">FW_L1_PERIOD</strong> (FLOAT)</td><td style="vertical-align: top;"><p>L1 period</p><p><strong>Comment:</strong> This is the L1 distance and defines the tracking point ahead of the aircraft its following. A value of 18-25 meters works for most aircraft. Shorten slowly during tuning until response is sharp without oscillation.</p>
 
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;">12.0</td><td style="vertical-align: top;">50.0</td><td style="vertical-align: top;">20.0</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">m</td></tr>
 <tr><td style="vertical-align: top;"><strong id="FW_L1_DAMPING">FW_L1_DAMPING</strong> (FLOAT)</td><td style="vertical-align: top;"><p>L1 damping</p><p><strong>Comment:</strong> Damping factor for L1 control.</p>
 
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">0.6</td><td style="vertical-align: top;">0.9</td><td style="vertical-align: top;">0.75</td><td style="vertical-align: top;">0.05</td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="FW_THR_CRUISE">FW_THR_CRUISE</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Cruise throttle</p><p><strong>Comment:</strong> This is the throttle setting required to achieve the desired cruise speed. Most airframes have a value of 0.5-0.7.</p>
 
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">0.6</td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;">norm</td></tr>
 <tr><td style="vertical-align: top;"><strong id="FW_THR_SLEW_MAX">FW_THR_SLEW_MAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Throttle max slew rate</p><p><strong>Comment:</strong> Maximum slew rate for the commanded throttle</p>
 
@@ -1191,63 +1040,50 @@ Scope (for all values) is: *src/modules/fw_pos_control_l1*.
 <tr><td style="vertical-align: top;"><strong id="FW_P_LIM_MIN">FW_P_LIM_MIN</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Negative pitch limit</p><p><strong>Comment:</strong> The minimum negative pitch the controller will output.</p>
 
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;">-60.0</td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">-45.0</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">deg</td></tr>
 <tr><td style="vertical-align: top;"><strong id="FW_P_LIM_MAX">FW_P_LIM_MAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Positive pitch limit</p><p><strong>Comment:</strong> The maximum positive pitch the controller will output.</p>
 
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">60.0</td><td style="vertical-align: top;">45.0</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">deg</td></tr>
 <tr><td style="vertical-align: top;"><strong id="FW_R_LIM">FW_R_LIM</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Controller roll limit</p><p><strong>Comment:</strong> The maximum roll the controller will output.</p>
 
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;">35.0</td><td style="vertical-align: top;">65.0</td><td style="vertical-align: top;">50.0</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">deg</td></tr>
 <tr><td style="vertical-align: top;"><strong id="FW_THR_MAX">FW_THR_MAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Throttle limit max</p><p><strong>Comment:</strong> This is the maximum throttle % that can be used by the controller. For overpowered aircraft, this should be reduced to a value that provides sufficient thrust to climb at the maximum pitch angle PTCH_MAX.</p>
 
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;">norm</td></tr>
 <tr><td style="vertical-align: top;"><strong id="FW_THR_MIN">FW_THR_MIN</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Throttle limit min</p><p><strong>Comment:</strong> This is the minimum throttle % that can be used by the controller. For electric aircraft this will normally be set to zero, but can be set to a small non-zero value if a folding prop is fitted to prevent the prop from folding and unfolding repeatedly in-flight or to provide some aerodynamic drag from a turning prop to improve the descent rate. For aircraft with internal combustion engine this parameter should be set for desired idle rpm.</p>
 
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;">norm</td></tr>
 <tr><td style="vertical-align: top;"><strong id="FW_THR_IDLE">FW_THR_IDLE</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Idle throttle</p><p><strong>Comment:</strong> This is the minimum throttle while on the ground For aircraft with internal combustion engine this parameter should be set above desired idle rpm.</p>
 
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">0.4</td><td style="vertical-align: top;">0.15</td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;">norm</td></tr>
 <tr><td style="vertical-align: top;"><strong id="FW_THR_LND_MAX">FW_THR_LND_MAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Throttle limit value before flare</p><p><strong>Comment:</strong> This throttle value will be set as throttle limit at FW_LND_TLALT, before aircraft will flare.</p>
 
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;">norm</td></tr>
 <tr><td style="vertical-align: top;"><strong id="FW_CLMBOUT_DIFF">FW_CLMBOUT_DIFF</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Climbout Altitude difference</p><p><strong>Comment:</strong> If the altitude error exceeds this parameter, the system will climb out with maximum throttle and minimum airspeed until it is closer than this distance to the desired altitude. Mostly used for takeoff waypoints / modes. Set to 0 to disable climbout mode (not recommended).</p>
 
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">150.0</td><td style="vertical-align: top;">10.0</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">m</td></tr>
 <tr><td style="vertical-align: top;"><strong id="FW_LND_ANG">FW_LND_ANG</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Landing slope angle</p>
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">15.0</td><td style="vertical-align: top;">5.0</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">deg</td></tr>
 <tr><td style="vertical-align: top;"><strong id="FW_LND_HVIRT">FW_LND_HVIRT</strong> (FLOAT)</td><td style="vertical-align: top;"><p></p>
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">15.0</td><td style="vertical-align: top;">10.0</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">m</td></tr>
 <tr><td style="vertical-align: top;"><strong id="FW_LND_FLALT">FW_LND_FLALT</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Landing flare altitude (relative to landing altitude)</p>
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">25.0</td><td style="vertical-align: top;">8.0</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">m</td></tr>
 <tr><td style="vertical-align: top;"><strong id="FW_LND_TLALT">FW_LND_TLALT</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Landing throttle limit altitude (relative landing altitude)</p><p><strong>Comment:</strong> Default of -1.0 lets the system default to applying throttle limiting at 2/3 of the flare altitude.</p>
 
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;">-1.0</td><td style="vertical-align: top;">30.0</td><td style="vertical-align: top;">-1.0</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">m</td></tr>
 <tr><td style="vertical-align: top;"><strong id="FW_LND_HHDIST">FW_LND_HHDIST</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Landing heading hold horizontal distance</p>
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">30.0</td><td style="vertical-align: top;">15.0</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">m</td></tr>
 <tr><td style="vertical-align: top;"><strong id="FW_LND_USETER">FW_LND_USETER</strong> (INT32)</td><td style="vertical-align: top;"><p>Use terrain estimate during landing</p>
 
@@ -1255,17 +1091,14 @@ Scope (for all values) is: *src/modules/fw_pos_control_l1*.
 <tr><td style="vertical-align: top;"><strong id="FW_LND_FL_PMIN">FW_LND_FL_PMIN</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Flare, minimum pitch</p><p><strong>Comment:</strong> Minimum pitch during flare, a positive sign means nose up Applied once FW_LND_TLALT is reached</p>
 
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">15.0</td><td style="vertical-align: top;">2.5</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">deg</td></tr>
 <tr><td style="vertical-align: top;"><strong id="FW_LND_FL_PMAX">FW_LND_FL_PMAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Flare, maximum pitch</p><p><strong>Comment:</strong> Maximum pitch during flare, a positive sign means nose up Applied once FW_LND_TLALT is reached</p>
 
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">45.0</td><td style="vertical-align: top;">15.0</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">deg</td></tr>
 <tr><td style="vertical-align: top;"><strong id="FW_LND_AIRSPD_SC">FW_LND_AIRSPD_SC</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Min. airspeed scaling factor for landing</p><p><strong>Comment:</strong> Multiplying this factor with the minimum airspeed of the plane gives the target airspeed the landing approach. FW_AIRSPD_MIN * FW_LND_AIRSPD_SC</p>
 
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">1.5</td><td style="vertical-align: top;">1.3</td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;">norm</td></tr>
 </tbody></table>
 
@@ -1279,120 +1112,101 @@ Scope (for all values) is: *src/modules/fw_pos_control_l1*.
 <tr><td style="vertical-align: top;"><strong id="FW_AIRSPD_MIN">FW_AIRSPD_MIN</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Minimum Airspeed</p><p><strong>Comment:</strong> If the airspeed falls below this value, the TECS controller will try to increase airspeed more aggressively.</p>
 
 
-<p><b>Decimal:</b> 1</p>
-   <p><b>Scope:</b> src/modules/fw_pos_control_l1</p>
+   <p><b>Module:</b> src/modules/fw_pos_control_l1</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">40</td><td style="vertical-align: top;">10.0</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">m/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="FW_AIRSPD_MAX">FW_AIRSPD_MAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Maximum Airspeed</p><p><strong>Comment:</strong> If the airspeed is above this value, the TECS controller will try to decrease airspeed more aggressively.</p>
 
 
-<p><b>Decimal:</b> 1</p>
-   <p><b>Scope:</b> src/modules/fw_pos_control_l1</p>
+   <p><b>Module:</b> src/modules/fw_pos_control_l1</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">40</td><td style="vertical-align: top;">20.0</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">m/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="FW_T_CLMB_MAX">FW_T_CLMB_MAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Maximum climb rate</p><p><strong>Comment:</strong> This is the best climb rate that the aircraft can achieve with the throttle set to THR_MAX and the airspeed set to the default value. For electric aircraft make sure this number can be achieved towards the end of flight when the battery voltage has reduced. The setting of this parameter can be checked by commanding a positive altitude change of 100m in loiter, RTL or guided mode. If the throttle required to climb is close to THR_MAX and the aircraft is maintaining airspeed, then this parameter is set correctly. If the airspeed starts to reduce, then the parameter is set to high, and if the throttle demand required to climb and maintain speed is noticeably less than FW_THR_MAX, then either FW_T_CLMB_MAX should be increased or FW_THR_MAX reduced.</p>
 
 
-<p><b>Decimal:</b> 1</p>
-   <p><b>Scope:</b> src/modules/fw_pos_control_l1</p>
+   <p><b>Module:</b> src/modules/fw_pos_control_l1</p>
   </td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">15.0</td><td style="vertical-align: top;">5.0</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">m/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="FW_T_SINK_MIN">FW_T_SINK_MIN</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Minimum descent rate</p><p><strong>Comment:</strong> This is the sink rate of the aircraft with the throttle set to THR_MIN and flown at the same airspeed as used to measure FW_T_CLMB_MAX.</p>
 
 
-<p><b>Decimal:</b> 1</p>
-   <p><b>Scope:</b> src/modules/fw_pos_control_l1</p>
+   <p><b>Module:</b> src/modules/fw_pos_control_l1</p>
   </td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">5.0</td><td style="vertical-align: top;">2.0</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">m/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="FW_T_SINK_MAX">FW_T_SINK_MAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Maximum descent rate</p><p><strong>Comment:</strong> This sets the maximum descent rate that the controller will use. If this value is too large, the aircraft can over-speed on descent. This should be set to a value that can be achieved without exceeding the lower pitch angle limit and without over-speeding the aircraft.</p>
 
 
-<p><b>Decimal:</b> 1</p>
-   <p><b>Scope:</b> src/modules/fw_pos_control_l1</p>
+   <p><b>Module:</b> src/modules/fw_pos_control_l1</p>
   </td><td style="vertical-align: top;">2.0</td><td style="vertical-align: top;">15.0</td><td style="vertical-align: top;">5.0</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">m/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="FW_T_TIME_CONST">FW_T_TIME_CONST</strong> (FLOAT)</td><td style="vertical-align: top;"><p>TECS time constant</p><p><strong>Comment:</strong> This is the time constant of the TECS control algorithm (in seconds). Smaller values make it faster to respond, larger values make it slower to respond.</p>
 
 
-<p><b>Decimal:</b> 1</p>
-   <p><b>Scope:</b> src/modules/fw_pos_control_l1</p>
+   <p><b>Module:</b> src/modules/fw_pos_control_l1</p>
   </td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">10.0</td><td style="vertical-align: top;">5.0</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="FW_T_THRO_CONST">FW_T_THRO_CONST</strong> (FLOAT)</td><td style="vertical-align: top;"><p>TECS Throttle time constant</p><p><strong>Comment:</strong> This is the time constant of the TECS throttle control algorithm (in seconds). Smaller values make it faster to respond, larger values make it slower to respond.</p>
 
 
-<p><b>Decimal:</b> 1</p>
-   <p><b>Scope:</b> src/modules/fw_pos_control_l1</p>
+   <p><b>Module:</b> src/modules/fw_pos_control_l1</p>
   </td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">10.0</td><td style="vertical-align: top;">8.0</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="FW_T_THR_DAMP">FW_T_THR_DAMP</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Throttle damping factor</p><p><strong>Comment:</strong> This is the damping gain for the throttle demand loop. Increase to add damping to correct for oscillations in speed and height.</p>
 
 
-<p><b>Decimal:</b> 1</p>
-   <p><b>Scope:</b> src/modules/fw_pos_control_l1</p>
+   <p><b>Module:</b> src/modules/fw_pos_control_l1</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">2.0</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">0.1</td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="FW_T_INTEG_GAIN">FW_T_INTEG_GAIN</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Integrator gain</p><p><strong>Comment:</strong> This is the integrator gain on the control loop. Increasing this gain increases the speed at which speed and height offsets are trimmed out, but reduces damping and increases overshoot.</p>
 
 
-<p><b>Decimal:</b> 2</p>
-   <p><b>Scope:</b> src/modules/fw_pos_control_l1</p>
+   <p><b>Module:</b> src/modules/fw_pos_control_l1</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">2.0</td><td style="vertical-align: top;">0.1</td><td style="vertical-align: top;">0.05</td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="FW_T_VERT_ACC">FW_T_VERT_ACC</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Maximum vertical acceleration</p><p><strong>Comment:</strong> This is the maximum vertical acceleration (in m/s/s) either up or down that the controller will use to correct speed or height errors. The default value of 7 m/s/s (equivalent to +- 0.7 g) allows for reasonably aggressive pitch changes if required to recover from under-speed conditions.</p>
 
 
-<p><b>Decimal:</b> 1</p>
-   <p><b>Scope:</b> src/modules/fw_pos_control_l1</p>
+   <p><b>Module:</b> src/modules/fw_pos_control_l1</p>
   </td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">10.0</td><td style="vertical-align: top;">7.0</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">m/s/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="FW_T_HGT_OMEGA">FW_T_HGT_OMEGA</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Complementary filter "omega" parameter for height</p><p><strong>Comment:</strong> This is the cross-over frequency (in radians/second) of the complementary filter used to fuse vertical acceleration and barometric height to obtain an estimate of height rate and height. Increasing this frequency weights the solution more towards use of the barometer, whilst reducing it weights the solution more towards use of the accelerometer data.</p>
 
 
-<p><b>Decimal:</b> 1</p>
-   <p><b>Scope:</b> src/modules/fw_pos_control_l1</p>
+   <p><b>Module:</b> src/modules/fw_pos_control_l1</p>
   </td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">10.0</td><td style="vertical-align: top;">3.0</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">rad/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="FW_T_SPD_OMEGA">FW_T_SPD_OMEGA</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Complementary filter "omega" parameter for speed</p><p><strong>Comment:</strong> This is the cross-over frequency (in radians/second) of the complementary filter used to fuse longitudinal acceleration and airspeed to obtain an improved airspeed estimate. Increasing this frequency weights the solution more towards use of the airspeed sensor, whilst reducing it weights the solution more towards use of the accelerometer data.</p>
 
 
-<p><b>Decimal:</b> 1</p>
-   <p><b>Scope:</b> src/modules/fw_pos_control_l1</p>
+   <p><b>Module:</b> src/modules/fw_pos_control_l1</p>
   </td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">10.0</td><td style="vertical-align: top;">2.0</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">rad/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="FW_T_RLL2THR">FW_T_RLL2THR</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Roll -> Throttle feedforward</p><p><strong>Comment:</strong> Increasing this gain turn increases the amount of throttle that will be used to compensate for the additional drag created by turning. Ideally this should be set to  approximately 10 x the extra sink rate in m/s created by a 45 degree bank turn. Increase this gain if the aircraft initially loses energy in turns and reduce if the aircraft initially gains energy in turns. Efficient high aspect-ratio aircraft (eg powered sailplanes) can use a lower value, whereas inefficient low aspect-ratio models (eg delta wings) can use a higher value.</p>
 
 
-<p><b>Decimal:</b> 1</p>
-   <p><b>Scope:</b> src/modules/fw_pos_control_l1</p>
+   <p><b>Module:</b> src/modules/fw_pos_control_l1</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">20.0</td><td style="vertical-align: top;">15.0</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="FW_T_SPDWEIGHT">FW_T_SPDWEIGHT</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Speed <--> Altitude priority</p><p><strong>Comment:</strong> This parameter adjusts the amount of weighting that the pitch control applies to speed vs height errors. Setting it to 0.0 will cause the pitch control to control height and ignore speed errors. This will normally improve height accuracy but give larger airspeed errors. Setting it to 2.0 will cause the pitch control loop to control speed and ignore height errors. This will normally reduce airspeed errors, but give larger height errors. The default value of 1.0 allows the pitch control to simultaneously control height and speed. Note to Glider Pilots - set this parameter to 2.0 (The glider will adjust its pitch angle to maintain airspeed, ignoring changes in height).</p>
 
 
-<p><b>Decimal:</b> 1</p>
-   <p><b>Scope:</b> src/modules/fw_pos_control_l1</p>
+   <p><b>Module:</b> src/modules/fw_pos_control_l1</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">2.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="FW_T_PTCH_DAMP">FW_T_PTCH_DAMP</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Pitch damping factor</p><p><strong>Comment:</strong> This is the damping gain for the pitch demand loop. Increase to add damping to correct for oscillations in height. The default value of 0.0 will work well provided the pitch to servo controller has been tuned properly.</p>
 
 
-<p><b>Decimal:</b> 1</p>
-   <p><b>Scope:</b> src/modules/fw_pos_control_l1</p>
+   <p><b>Module:</b> src/modules/fw_pos_control_l1</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">2.0</td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">0.1</td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="FW_T_HRATE_P">FW_T_HRATE_P</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Height rate proportional factor</p>
 
-<p><b>Decimal:</b> 2</p>
-   <p><b>Scope:</b> src/modules/fw_pos_control_l1</p>
+   <p><b>Module:</b> src/modules/fw_pos_control_l1</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">0.05</td><td style="vertical-align: top;">0.05</td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="FW_T_HRATE_FF">FW_T_HRATE_FF</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Height rate feed forward</p>
 
-<p><b>Decimal:</b> 2</p>
-   <p><b>Scope:</b> src/modules/fw_pos_control_l1</p>
+   <p><b>Module:</b> src/modules/fw_pos_control_l1</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">0.8</td><td style="vertical-align: top;">0.05</td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="FW_T_SRATE_P">FW_T_SRATE_P</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Speed rate P factor</p>
 
-<p><b>Decimal:</b> 2</p>
-   <p><b>Scope:</b> src/modules/fw_pos_control_l1</p>
+   <p><b>Module:</b> src/modules/fw_pos_control_l1</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">2.0</td><td style="vertical-align: top;">0.02</td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="FW_AIRSPD_TRIM">FW_AIRSPD_TRIM</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Cruise Airspeed</p><p><strong>Comment:</strong> The fixed wing controller tries to fly at this airspeed.</p>
 
 
-<p><b>Decimal:</b> 1</p>
-   <p><b>Scope:</b> src/modules/navigator</p>
+   <p><b>Module:</b> src/modules/navigator</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">40</td><td style="vertical-align: top;">15.0</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">m/s</td></tr>
 </tbody></table>
 
 ## Follow target
 
 
-Scope (for all values) is: *src/modules/navigator*.
+The module where these parameters are defined is: *src/modules/navigator*.
 
 <table style="width: 100%;">
 <colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
@@ -1415,14 +1229,13 @@ Scope (for all values) is: *src/modules/navigator*.
 lower numbers increase the responsiveness to changing long lat
 but also ignore less noise</p>
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">n/a</td></tr>
 </tbody></table>
 
 ## GPS
 
 
-Scope (for all values) is: *src/drivers/gps*.
+The module where these parameters are defined is: *src/drivers/gps*.
 
 <table style="width: 100%;">
 <colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
@@ -1442,7 +1255,7 @@ Scope (for all values) is: *src/drivers/gps*.
 ## GPS Failure Navigation
 
 
-Scope (for all values) is: *src/modules/navigator*.
+The module where these parameters are defined is: *src/modules/navigator*.
 
 <table style="width: 100%;">
 <colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
@@ -1452,29 +1265,25 @@ Scope (for all values) is: *src/modules/navigator*.
 <tr><td style="vertical-align: top;"><strong id="NAV_GPSF_LT">NAV_GPSF_LT</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Loiter time</p><p><strong>Comment:</strong> The amount of time in seconds the system should do open loop loiter and wait for gps recovery before it goes into flight termination.</p>
 
 
-<p><b>Decimal:</b> 0</p>
      </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">3600.0</td><td style="vertical-align: top;">30.0</td><td style="vertical-align: top;">1</td><td style="vertical-align: top;">s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="NAV_GPSF_R">NAV_GPSF_R</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Open loop loiter roll</p><p><strong>Comment:</strong> Roll in degrees during the open loop loiter</p>
 
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">30.0</td><td style="vertical-align: top;">15.0</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">deg</td></tr>
 <tr><td style="vertical-align: top;"><strong id="NAV_GPSF_P">NAV_GPSF_P</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Open loop loiter pitch</p><p><strong>Comment:</strong> Pitch in degrees during the open loop loiter</p>
 
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;">-30.0</td><td style="vertical-align: top;">30.0</td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">deg</td></tr>
 <tr><td style="vertical-align: top;"><strong id="NAV_GPSF_TR">NAV_GPSF_TR</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Open loop loiter thrust</p><p><strong>Comment:</strong> Thrust value which is set during the open loop loiter</p>
 
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">0.7</td><td style="vertical-align: top;">0.05</td><td style="vertical-align: top;">norm</td></tr>
 </tbody></table>
 
 ## Geofence
 
 
-Scope (for all values) is: *src/modules/navigator*.
+The module where these parameters are defined is: *src/modules/navigator*.
 
 <table style="width: 100%;">
 <colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
@@ -1528,7 +1337,7 @@ Scope (for all values) is: *src/modules/navigator*.
 ## Iridium SBD
 
 
-Scope (for all values) is: *src/drivers/iridiumsbd*.
+The module where these parameters are defined is: *src/drivers/iridiumsbd*.
 
 <table style="width: 100%;">
 <colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
@@ -1543,7 +1352,7 @@ Scope (for all values) is: *src/drivers/iridiumsbd*.
 ## Land Detector
 
 
-Scope (for all values) is: *src/modules/land_detector*.
+The module where these parameters are defined is: *src/modules/land_detector*.
 
 <table style="width: 100%;">
 <colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
@@ -1553,62 +1362,50 @@ Scope (for all values) is: *src/modules/land_detector*.
 <tr><td style="vertical-align: top;"><strong id="LNDMC_Z_VEL_MAX">LNDMC_Z_VEL_MAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Multicopter max climb rate</p><p><strong>Comment:</strong> Maximum vertical velocity allowed in the landed state (m/s up and down)</p>
 
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0.70</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="LNDMC_XY_VEL_MAX">LNDMC_XY_VEL_MAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Multicopter max horizontal velocity</p><p><strong>Comment:</strong> Maximum horizontal velocity allowed in the landed state (m/s)</p>
 
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">1.50</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="LNDMC_ROT_MAX">LNDMC_ROT_MAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Multicopter max rotation</p><p><strong>Comment:</strong> Maximum allowed angular velocity around each axis allowed in the landed state.</p>
 
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">20.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">deg/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="LNDMC_FFALL_THR">LNDMC_FFALL_THR</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Multicopter specific force threshold</p><p><strong>Comment:</strong> Multicopter threshold on the specific force measured by accelerometers in m/s^2 for free-fall detection</p>
 
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">0.1</td><td style="vertical-align: top;">10</td><td style="vertical-align: top;">2.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m/s^2</td></tr>
 <tr><td style="vertical-align: top;"><strong id="LNDMC_THR_RANGE">LNDMC_THR_RANGE</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Multicopter sub-hover throttle scaling</p><p><strong>Comment:</strong> The range between throttle_min and throttle_hover is scaled by this parameter to define how close to minimum throttle the current throttle value needs to be in order to get accepted as landed.</p>
 
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">0.05</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">0.1</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="LNDMC_FFALL_TTRI">LNDMC_FFALL_TTRI</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Multicopter free-fall trigger time</p><p><strong>Comment:</strong> Seconds (decimal) that freefall conditions have to met before triggering a freefall. Minimal value is limited by LAND_DETECTOR_UPDATE_RATE=50Hz in landDetector.h</p>
 
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">0.02</td><td style="vertical-align: top;">5</td><td style="vertical-align: top;">0.3</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="LNDMC_MAN_DWNTHR">LNDMC_MAN_DWNTHR</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Manual flight stick down threshold for landing</p><p><strong>Comment:</strong> When controlling manually the throttle stick value (0 to 1) has to be bellow this threshold in order to pass the check for landing. So if set to 1 it's allowed to land with any stick position.</p>
 
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">1</td><td style="vertical-align: top;">0.15</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">norm</td></tr>
 <tr><td style="vertical-align: top;"><strong id="LNDMC_POS_UPTHR">LNDMC_POS_UPTHR</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Manual position flight stick up threshold for taking off</p><p><strong>Comment:</strong> When controlling manually in position mode the throttle stick value (0 to 1) has to get above this threshold after arming in order to take off.</p>
 
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">1</td><td style="vertical-align: top;">0.65</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">norm</td></tr>
 <tr><td style="vertical-align: top;"><strong id="LNDFW_VEL_XY_MAX">LNDFW_VEL_XY_MAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Fixedwing max horizontal velocity</p><p><strong>Comment:</strong> Maximum horizontal velocity allowed in the landed state (m/s)</p>
 
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">10</td><td style="vertical-align: top;">5.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="LNDFW_VEL_Z_MAX">LNDFW_VEL_Z_MAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Fixedwing max climb rate</p><p><strong>Comment:</strong> Maximum vertical velocity allowed in the landed state (m/s up and down)</p>
 
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;">5</td><td style="vertical-align: top;">20</td><td style="vertical-align: top;">10.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="LNDFW_VELI_MAX">LNDFW_VELI_MAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Fixedwing max short-term velocity</p><p><strong>Comment:</strong> Maximum velocity integral in flight direction allowed in the landed state (m/s)</p>
 
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;">2</td><td style="vertical-align: top;">10</td><td style="vertical-align: top;">4.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="LNDFW_AIRSPD_MAX">LNDFW_AIRSPD_MAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Airspeed max</p><p><strong>Comment:</strong> Maximum airspeed allowed in the landed state (m/s)</p>
 
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;">4</td><td style="vertical-align: top;">20</td><td style="vertical-align: top;">8.00</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="LND_FLIGHT_T_HI">LND_FLIGHT_T_HI</strong> (INT32)</td><td style="vertical-align: top;"><p>Total flight time in microseconds</p><p><strong>Comment:</strong> Total flight time of this autopilot. Higher 32 bits of the value. Flight time in microseconds = (LND_FLIGHT_T_HI << 32) | LND_FLIGHT_T_LO.</p>
 
@@ -1620,14 +1417,13 @@ Scope (for all values) is: *src/modules/land_detector*.
      </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="LNDMC_ALT_MAX">LNDMC_ALT_MAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Maximum altitude that can be reached prior to subconditions</p>
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">10</td><td style="vertical-align: top;">150</td><td style="vertical-align: top;">100.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m</td></tr>
 </tbody></table>
 
 ## Launch detection
 
 
-Scope (for all values) is: *src/lib/launchdetection*.
+The module where these parameters are defined is: *src/lib/launchdetection*.
 
 <table style="width: 100%;">
 <colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
@@ -1640,29 +1436,25 @@ Scope (for all values) is: *src/lib/launchdetection*.
 <tr><td style="vertical-align: top;"><strong id="LAUN_CAT_A">LAUN_CAT_A</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Catapult accelerometer threshold</p><p><strong>Comment:</strong> LAUN_CAT_A for LAUN_CAT_T serves as threshold to trigger launch detection.</p>
 
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">30.0</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">m/s/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="LAUN_CAT_T">LAUN_CAT_T</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Catapult time threshold</p><p><strong>Comment:</strong> LAUN_CAT_A for LAUN_CAT_T serves as threshold to trigger launch detection.</p>
 
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">5.0</td><td style="vertical-align: top;">0.05</td><td style="vertical-align: top;">0.05</td><td style="vertical-align: top;">s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="LAUN_CAT_MDEL">LAUN_CAT_MDEL</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Motor delay</p><p><strong>Comment:</strong> Delay between starting attitude control and powering up the throttle (giving throttle control to the controller) Before this timespan is up the throttle will be set to FW_THR_IDLE, set to 0 to deactivate</p>
 
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">10.0</td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="LAUN_CAT_PMAX">LAUN_CAT_PMAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Maximum pitch before the throttle is powered up (during motor delay phase)</p><p><strong>Comment:</strong> This is an extra limit for the maximum pitch which is imposed in the phase before the throttle turns on. This allows to limit the maximum pitch angle during a bungee launch (make the launch less steep).</p>
 
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">45.0</td><td style="vertical-align: top;">30.0</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">deg</td></tr>
 </tbody></table>
 
 ## Local Position Estimator
 
 
-Scope (for all values) is: *src/modules/local_position_estimator*.
+The module where these parameters are defined is: *src/modules/local_position_estimator*.
 
 <table style="width: 100%;">
 <colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
@@ -1671,126 +1463,97 @@ Scope (for all values) is: *src/modules/local_position_estimator*.
 <tbody>
 <tr><td style="vertical-align: top;"><strong id="LPE_FLW_OFF_Z">LPE_FLW_OFF_Z</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Optical flow z offset from center</p>
 
-<p><b>Decimal:</b> 3</p>
      </td><td style="vertical-align: top;">-1</td><td style="vertical-align: top;">1</td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m</td></tr>
 <tr><td style="vertical-align: top;"><strong id="LPE_FLW_SCALE">LPE_FLW_SCALE</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Optical flow scale</p>
 
-<p><b>Decimal:</b> 3</p>
      </td><td style="vertical-align: top;">0.1</td><td style="vertical-align: top;">10.0</td><td style="vertical-align: top;">1.3</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m</td></tr>
 <tr><td style="vertical-align: top;"><strong id="LPE_FLW_R">LPE_FLW_R</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Optical flow rotation (roll/pitch) noise gain</p>
 
-<p><b>Decimal:</b> 3</p>
      </td><td style="vertical-align: top;">0.1</td><td style="vertical-align: top;">10.0</td><td style="vertical-align: top;">7.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m/s / (rad)</td></tr>
 <tr><td style="vertical-align: top;"><strong id="LPE_FLW_RR">LPE_FLW_RR</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Optical flow angular velocity noise gain</p>
 
-<p><b>Decimal:</b> 3</p>
      </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">10.0</td><td style="vertical-align: top;">7.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m/s / (rad/s)</td></tr>
 <tr><td style="vertical-align: top;"><strong id="LPE_FLW_QMIN">LPE_FLW_QMIN</strong> (INT32)</td><td style="vertical-align: top;"><p>Optical flow minimum quality threshold</p>
 
-<p><b>Decimal:</b> 0</p>
      </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">255</td><td style="vertical-align: top;">150</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="LPE_SNR_Z">LPE_SNR_Z</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Sonar z standard deviation</p>
 
-<p><b>Decimal:</b> 3</p>
      </td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;">1</td><td style="vertical-align: top;">0.05</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m</td></tr>
 <tr><td style="vertical-align: top;"><strong id="LPE_SNR_OFF_Z">LPE_SNR_OFF_Z</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Sonar z offset from center of vehicle +down</p>
 
-<p><b>Decimal:</b> 3</p>
      </td><td style="vertical-align: top;">-1</td><td style="vertical-align: top;">1</td><td style="vertical-align: top;">0.00</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m</td></tr>
 <tr><td style="vertical-align: top;"><strong id="LPE_LDR_Z">LPE_LDR_Z</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Lidar z standard deviation</p>
 
-<p><b>Decimal:</b> 3</p>
      </td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;">1</td><td style="vertical-align: top;">0.03</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m</td></tr>
 <tr><td style="vertical-align: top;"><strong id="LPE_LDR_OFF_Z">LPE_LDR_OFF_Z</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Lidar z offset from center of vehicle +down</p>
 
-<p><b>Decimal:</b> 3</p>
      </td><td style="vertical-align: top;">-1</td><td style="vertical-align: top;">1</td><td style="vertical-align: top;">0.00</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m</td></tr>
 <tr><td style="vertical-align: top;"><strong id="LPE_ACC_XY">LPE_ACC_XY</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Accelerometer xy noise density</p><p><strong>Comment:</strong> Data sheet noise density = 150ug/sqrt(Hz) = 0.0015 m/s^2/sqrt(Hz) Larger than data sheet to account for tilt error.</p>
 
 
-<p><b>Decimal:</b> 4</p>
      </td><td style="vertical-align: top;">0.00001</td><td style="vertical-align: top;">2</td><td style="vertical-align: top;">0.012</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m/s^2/srqt(Hz)</td></tr>
 <tr><td style="vertical-align: top;"><strong id="LPE_ACC_Z">LPE_ACC_Z</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Accelerometer z noise density</p><p><strong>Comment:</strong> Data sheet noise density = 150ug/sqrt(Hz) = 0.0015 m/s^2/sqrt(Hz)</p>
 
 
-<p><b>Decimal:</b> 4</p>
      </td><td style="vertical-align: top;">0.00001</td><td style="vertical-align: top;">2</td><td style="vertical-align: top;">0.02</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m/s^2/srqt(Hz)</td></tr>
 <tr><td style="vertical-align: top;"><strong id="LPE_BAR_Z">LPE_BAR_Z</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Barometric presssure altitude z standard deviation</p>
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;">100</td><td style="vertical-align: top;">3.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m</td></tr>
 <tr><td style="vertical-align: top;"><strong id="LPE_GPS_DELAY">LPE_GPS_DELAY</strong> (FLOAT)</td><td style="vertical-align: top;"><p>GPS delay compensaton</p>
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">0.4</td><td style="vertical-align: top;">0.29</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">sec</td></tr>
 <tr><td style="vertical-align: top;"><strong id="LPE_GPS_XY">LPE_GPS_XY</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Minimum GPS xy standard deviation, uses reported EPH if greater</p>
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;">5</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m</td></tr>
 <tr><td style="vertical-align: top;"><strong id="LPE_GPS_Z">LPE_GPS_Z</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Minimum GPS z standard deviation, uses reported EPV if greater</p>
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;">200</td><td style="vertical-align: top;">3.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m</td></tr>
 <tr><td style="vertical-align: top;"><strong id="LPE_GPS_VXY">LPE_GPS_VXY</strong> (FLOAT)</td><td style="vertical-align: top;"><p>GPS xy velocity standard deviation.
 EPV used if greater than this value</p>
 
-<p><b>Decimal:</b> 3</p>
      </td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;">2</td><td style="vertical-align: top;">0.25</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="LPE_GPS_VZ">LPE_GPS_VZ</strong> (FLOAT)</td><td style="vertical-align: top;"><p>GPS z velocity standard deviation</p>
 
-<p><b>Decimal:</b> 3</p>
      </td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;">2</td><td style="vertical-align: top;">0.25</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="LPE_EPH_MAX">LPE_EPH_MAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Max EPH allowed for GPS initialization</p>
 
-<p><b>Decimal:</b> 3</p>
      </td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">5.0</td><td style="vertical-align: top;">3.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m</td></tr>
 <tr><td style="vertical-align: top;"><strong id="LPE_EPV_MAX">LPE_EPV_MAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Max EPV allowed for GPS initialization</p>
 
-<p><b>Decimal:</b> 3</p>
      </td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">5.0</td><td style="vertical-align: top;">5.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m</td></tr>
 <tr><td style="vertical-align: top;"><strong id="LPE_VIS_DELAY">LPE_VIS_DELAY</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Vision delay compensaton</p><p><strong>Comment:</strong> Set to zero to enable automatic compensation from measurement timestamps</p>
 
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">0.1</td><td style="vertical-align: top;">0.1</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">sec</td></tr>
 <tr><td style="vertical-align: top;"><strong id="LPE_VIS_XY">LPE_VIS_XY</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Vision xy standard deviation</p>
 
-<p><b>Decimal:</b> 3</p>
      </td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;">1</td><td style="vertical-align: top;">0.1</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m</td></tr>
 <tr><td style="vertical-align: top;"><strong id="LPE_VIS_Z">LPE_VIS_Z</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Vision z standard deviation</p>
 
-<p><b>Decimal:</b> 3</p>
      </td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;">100</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m</td></tr>
 <tr><td style="vertical-align: top;"><strong id="LPE_VIC_P">LPE_VIC_P</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Vicon position standard deviation</p>
 
-<p><b>Decimal:</b> 4</p>
      </td><td style="vertical-align: top;">0.0001</td><td style="vertical-align: top;">1</td><td style="vertical-align: top;">0.001</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m</td></tr>
 <tr><td style="vertical-align: top;"><strong id="LPE_PN_P">LPE_PN_P</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Position propagation noise density</p><p><strong>Comment:</strong> Increase to trust measurements more. Decrease to trust model more.</p>
 
 
-<p><b>Decimal:</b> 8</p>
      </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">1</td><td style="vertical-align: top;">0.1</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m/s/sqrt(Hz)</td></tr>
 <tr><td style="vertical-align: top;"><strong id="LPE_PN_V">LPE_PN_V</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Velocity propagation noise density</p><p><strong>Comment:</strong> Increase to trust measurements more. Decrease to trust model more.</p>
 
 
-<p><b>Decimal:</b> 8</p>
      </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">1</td><td style="vertical-align: top;">0.1</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">(m/s)/s/sqrt(Hz)</td></tr>
 <tr><td style="vertical-align: top;"><strong id="LPE_PN_B">LPE_PN_B</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Accel bias propagation noise density</p>
 
-<p><b>Decimal:</b> 8</p>
      </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">1</td><td style="vertical-align: top;">1e-3</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">(m/s^2)/s/sqrt(Hz)</td></tr>
 <tr><td style="vertical-align: top;"><strong id="LPE_PN_T">LPE_PN_T</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Terrain random walk noise density, hilly/outdoor (0.1), flat/Indoor (0.001)</p>
 
-<p><b>Decimal:</b> 3</p>
      </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">1</td><td style="vertical-align: top;">0.001</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">(m/s)/(sqrt(hz))</td></tr>
 <tr><td style="vertical-align: top;"><strong id="LPE_T_MAX_GRADE">LPE_T_MAX_GRADE</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Terrain maximum percent grade, hilly/outdoor (100 = 45 deg), flat/Indoor (0 = 0 deg)
 Used to calculate increased terrain random walk nosie due to movement</p>
 
-<p><b>Decimal:</b> 3</p>
      </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">100</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">%</td></tr>
 <tr><td style="vertical-align: top;"><strong id="LPE_FGYRO_HP">LPE_FGYRO_HP</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Flow gyro high pass filter cut off frequency</p>
 
-<p><b>Decimal:</b> 3</p>
      </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">2</td><td style="vertical-align: top;">0.001</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">Hz</td></tr>
 <tr><td style="vertical-align: top;"><strong id="LPE_FAKE_ORIGIN">LPE_FAKE_ORIGIN</strong> (INT32)</td><td style="vertical-align: top;"><p>Enable publishing of a fake global position (e.g for AUTO missions using Optical Flow)
 by initializing the estimator to the LPE_LAT/LON parameters when global information is unavailable</p>
@@ -1798,31 +1561,24 @@ by initializing the estimator to the LPE_LAT/LON parameters when global informat
      </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">1</td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="LPE_LAT">LPE_LAT</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Local origin latitude for nav w/o GPS</p>
 
-<p><b>Decimal:</b> 8</p>
      </td><td style="vertical-align: top;">-90</td><td style="vertical-align: top;">90</td><td style="vertical-align: top;">47.397742</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">deg</td></tr>
 <tr><td style="vertical-align: top;"><strong id="LPE_LON">LPE_LON</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Local origin longitude for nav w/o GPS</p>
 
-<p><b>Decimal:</b> 8</p>
      </td><td style="vertical-align: top;">-180</td><td style="vertical-align: top;">180</td><td style="vertical-align: top;">8.545594</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">deg</td></tr>
 <tr><td style="vertical-align: top;"><strong id="LPE_X_LP">LPE_X_LP</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Cut frequency for state publication</p>
 
-<p><b>Decimal:</b> 0</p>
      </td><td style="vertical-align: top;">5</td><td style="vertical-align: top;">1000</td><td style="vertical-align: top;">5.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">Hz</td></tr>
 <tr><td style="vertical-align: top;"><strong id="LPE_VXY_PUB">LPE_VXY_PUB</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Required velocity xy standard deviation to publish position</p>
 
-<p><b>Decimal:</b> 3</p>
      </td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">0.3</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="LPE_Z_PUB">LPE_Z_PUB</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Required z standard deviation to publish altitude/ terrain</p>
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;">0.3</td><td style="vertical-align: top;">5.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m</td></tr>
 <tr><td style="vertical-align: top;"><strong id="LPE_LAND_Z">LPE_LAND_Z</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Land detector z standard deviation</p>
 
-<p><b>Decimal:</b> 3</p>
      </td><td style="vertical-align: top;">0.001</td><td style="vertical-align: top;">10.0</td><td style="vertical-align: top;">0.03</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m</td></tr>
 <tr><td style="vertical-align: top;"><strong id="LPE_LAND_VXY">LPE_LAND_VXY</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Land detector xy velocity standard deviation</p>
 
-<p><b>Decimal:</b> 3</p>
      </td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;">10.0</td><td style="vertical-align: top;">0.05</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="LPE_FUSION">LPE_FUSION</strong> (INT32)</td><td style="vertical-align: top;"><p>Integer bitmask controlling data fusion</p><p><strong>Comment:</strong> Set bits in the following positions to enable: 0 : Set to true to fuse GPS data if available, also requires GPS for altitude init 1 : Set to true to fuse optical flow data if available 2 : Set to true to fuse vision position 3 : Set to true to fuse vision yaw 4 : Set to true to fuse land detector 5 : Set to true to publish AGL as local position down component 6 : Set to true to enable flow gyro compensation 7 : Set to true to enable baro fusion default (145 - GPS only)</p>
 
@@ -1843,7 +1599,7 @@ by initializing the estimator to the LPE_LAT/LON parameters when global informat
 ## MAVLink
 
 
-Scope (for all values) is: *src/modules/mavlink*.
+The module where these parameters are defined is: *src/modules/mavlink*.
 
 <table style="width: 100%;">
 <colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
@@ -1897,7 +1653,7 @@ Scope (for all values) is: *src/modules/mavlink*.
 ## MKBLCTRL Testmode
 
 
-Scope (for all values) is: *src/drivers/mkblctrl*.
+The module where these parameters are defined is: *src/drivers/mkblctrl*.
 
 <table style="width: 100%;">
 <colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
@@ -1912,7 +1668,7 @@ Scope (for all values) is: *src/drivers/mkblctrl*.
 ## MPU9x50 Configuration
 
 
-Scope (for all values) is: *src/platforms/qurt/fc_addon/mpu_spi*.
+The module where these parameters are defined is: *src/platforms/qurt/fc_addon/mpu_spi*.
 
 <table style="width: 100%;">
 <colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
@@ -1986,7 +1742,7 @@ Scope (for all values) is: *src/platforms/qurt/fc_addon/mpu_spi*.
 
 <li><strong>2:</strong> Return to Land</li> 
 </ul>
-   <p><b>Scope:</b> src/modules/commander</p>
+   <p><b>Module:</b> src/modules/commander</p>
   </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="COM_OBL_RC_ACT">COM_OBL_RC_ACT</strong> (INT32)</td><td style="vertical-align: top;"><p>Set offboard loss failsafe mode when RC is available</p><p><strong>Comment:</strong> The offboard loss failsafe will only be entered after a timeout, set by COM_OF_LOSS_T in seconds.</p>
 
@@ -2001,30 +1757,27 @@ Scope (for all values) is: *src/platforms/qurt/fc_addon/mpu_spi*.
 
 <li><strong>4:</strong> Land at current position</li> 
 </ul>
-   <p><b>Scope:</b> src/modules/commander</p>
+   <p><b>Module:</b> src/modules/commander</p>
   </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="MIS_TAKEOFF_ALT">MIS_TAKEOFF_ALT</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Take-off altitude</p><p><strong>Comment:</strong> This is the minimum altitude the system will take off to.</p>
 
 
-<p><b>Decimal:</b> 1</p>
-   <p><b>Scope:</b> src/modules/navigator</p>
+   <p><b>Module:</b> src/modules/navigator</p>
   </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">80</td><td style="vertical-align: top;">2.5</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">m</td></tr>
 <tr><td style="vertical-align: top;"><strong id="MIS_LTRMIN_ALT">MIS_LTRMIN_ALT</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Minimum Loiter altitude</p><p><strong>Comment:</strong> This is the minimum altitude the system will always obey. The intent is to stay out of ground effect.</p>
 
 
-<p><b>Decimal:</b> 1</p>
-   <p><b>Scope:</b> src/modules/navigator</p>
+   <p><b>Module:</b> src/modules/navigator</p>
   </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">80</td><td style="vertical-align: top;">1.2</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">m</td></tr>
 <tr><td style="vertical-align: top;"><strong id="MIS_ONBOARD_EN">MIS_ONBOARD_EN</strong> (INT32)</td><td style="vertical-align: top;"><p>Persistent onboard mission storage</p><p><strong>Comment:</strong> When enabled, missions that have been uploaded by the GCS are stored and reloaded after reboot persistently.</p>
 
 
-   <p><b>Scope:</b> src/modules/navigator</p>
+   <p><b>Module:</b> src/modules/navigator</p>
   </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">1</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="MIS_DIST_1WP">MIS_DIST_1WP</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Maximal horizontal distance from home to first waypoint</p><p><strong>Comment:</strong> Failsafe check to prevent running mission stored from previous flight at a new takeoff location. Set a value of zero or less to disable. The mission will not be started if the current waypoint is more distant than MIS_DIS_1WP from the current position.</p>
 
 
-<p><b>Decimal:</b> 1</p>
-   <p><b>Scope:</b> src/modules/navigator</p>
+   <p><b>Module:</b> src/modules/navigator</p>
   </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">1000</td><td style="vertical-align: top;">900</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">m</td></tr>
 <tr><td style="vertical-align: top;"><strong id="MIS_ALTMODE">MIS_ALTMODE</strong> (INT32)</td><td style="vertical-align: top;"><p>Altitude setpoint mode</p><p><strong>Comment:</strong> 0: the system will follow a zero order hold altitude setpoint 1: the system will follow a first order hold altitude setpoint values follow the definition in enum mission_altitude_mode</p>
 
@@ -2033,7 +1786,7 @@ Scope (for all values) is: *src/platforms/qurt/fc_addon/mpu_spi*.
 
 <li><strong>1:</strong> First Order Hold</li> 
 </ul>
-   <p><b>Scope:</b> src/modules/navigator</p>
+   <p><b>Module:</b> src/modules/navigator</p>
   </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">1</td><td style="vertical-align: top;">1</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="MIS_YAWMODE">MIS_YAWMODE</strong> (INT32)</td><td style="vertical-align: top;"><p>Multirotor only. Yaw setpoint mode</p><p><strong>Comment:</strong> The values are defined in the enum mission_altitude_mode</p>
 
@@ -2046,54 +1799,48 @@ Scope (for all values) is: *src/platforms/qurt/fc_addon/mpu_spi*.
 
 <li><strong>3:</strong> Heading away from home</li> 
 </ul>
-   <p><b>Scope:</b> src/modules/navigator</p>
+   <p><b>Module:</b> src/modules/navigator</p>
   </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">3</td><td style="vertical-align: top;">1</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="MIS_YAW_TMT">MIS_YAW_TMT</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Time in seconds we wait on reaching target heading at a waypoint if it is forced</p><p><strong>Comment:</strong> If set > 0 it will ignore the target heading for normal waypoint acceptance. If the waypoint forces the heading the timeout will matter. For example on VTOL forwards transiton. Mainly useful for VTOLs that have less yaw authority and might not reach target yaw in wind. Disabled by default.</p>
 
 
-<p><b>Decimal:</b> 1</p>
-   <p><b>Scope:</b> src/modules/navigator</p>
+   <p><b>Module:</b> src/modules/navigator</p>
   </td><td style="vertical-align: top;">-1</td><td style="vertical-align: top;">20</td><td style="vertical-align: top;">-1.0</td><td style="vertical-align: top;">1</td><td style="vertical-align: top;">s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="MIS_YAW_ERR">MIS_YAW_ERR</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Max yaw error in degrees needed for waypoint heading acceptance</p>
 
-<p><b>Decimal:</b> 1</p>
-   <p><b>Scope:</b> src/modules/navigator</p>
+   <p><b>Module:</b> src/modules/navigator</p>
   </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">90</td><td style="vertical-align: top;">12.0</td><td style="vertical-align: top;">1</td><td style="vertical-align: top;">deg</td></tr>
 <tr><td style="vertical-align: top;"><strong id="VT_WV_LND_EN">VT_WV_LND_EN</strong> (INT32)</td><td style="vertical-align: top;"><p>Weather-vane mode landings for missions</p>
 
-   <p><b>Scope:</b> src/modules/navigator</p>
+   <p><b>Module:</b> src/modules/navigator</p>
   </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="VT_WV_TKO_EN">VT_WV_TKO_EN</strong> (INT32)</td><td style="vertical-align: top;"><p>Enable weather-vane mode takeoff for missions</p>
 
-   <p><b>Scope:</b> src/modules/navigator</p>
+   <p><b>Module:</b> src/modules/navigator</p>
   </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="VT_WV_LTR_EN">VT_WV_LTR_EN</strong> (INT32)</td><td style="vertical-align: top;"><p>Weather-vane mode for loiter</p>
 
-   <p><b>Scope:</b> src/modules/navigator</p>
+   <p><b>Module:</b> src/modules/navigator</p>
   </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="NAV_LOITER_RAD">NAV_LOITER_RAD</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Loiter radius (FW only)</p><p><strong>Comment:</strong> Default value of loiter radius for missions, loiter, RTL, etc. (fixedwing only).</p>
 
 
-<p><b>Decimal:</b> 1</p>
-   <p><b>Scope:</b> src/modules/navigator</p>
+   <p><b>Module:</b> src/modules/navigator</p>
   </td><td style="vertical-align: top;">25</td><td style="vertical-align: top;">1000</td><td style="vertical-align: top;">50.0</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">m</td></tr>
 <tr><td style="vertical-align: top;"><strong id="NAV_ACC_RAD">NAV_ACC_RAD</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Acceptance Radius</p><p><strong>Comment:</strong> Default acceptance radius, overridden by acceptance radius of waypoint if set. For fixed wing the L1 turning distance is used for horizontal acceptance.</p>
 
 
-<p><b>Decimal:</b> 1</p>
-   <p><b>Scope:</b> src/modules/navigator</p>
+   <p><b>Module:</b> src/modules/navigator</p>
   </td><td style="vertical-align: top;">0.05</td><td style="vertical-align: top;">200.0</td><td style="vertical-align: top;">10.0</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">m</td></tr>
 <tr><td style="vertical-align: top;"><strong id="NAV_FW_ALT_RAD">NAV_FW_ALT_RAD</strong> (FLOAT)</td><td style="vertical-align: top;"><p>FW Altitude Acceptance Radius</p><p><strong>Comment:</strong> Acceptance radius for fixedwing altitude.</p>
 
 
-<p><b>Decimal:</b> 1</p>
-   <p><b>Scope:</b> src/modules/navigator</p>
+   <p><b>Module:</b> src/modules/navigator</p>
   </td><td style="vertical-align: top;">0.05</td><td style="vertical-align: top;">200.0</td><td style="vertical-align: top;">10.0</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">m</td></tr>
 <tr><td style="vertical-align: top;"><strong id="NAV_MC_ALT_RAD">NAV_MC_ALT_RAD</strong> (FLOAT)</td><td style="vertical-align: top;"><p>MC Altitude Acceptance Radius</p><p><strong>Comment:</strong> Acceptance radius for multicopter altitude.</p>
 
 
-<p><b>Decimal:</b> 1</p>
-   <p><b>Scope:</b> src/modules/navigator</p>
+   <p><b>Module:</b> src/modules/navigator</p>
   </td><td style="vertical-align: top;">0.05</td><td style="vertical-align: top;">200.0</td><td style="vertical-align: top;">3.0</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">m</td></tr>
 <tr><td style="vertical-align: top;"><strong id="NAV_DLL_ACT">NAV_DLL_ACT</strong> (INT32)</td><td style="vertical-align: top;"><p>Set data link loss failsafe mode</p><p><strong>Comment:</strong> The data link loss failsafe will only be entered after a timeout, set by COM_DL_LOSS_T in seconds. Once the timeout occurs the selected action will be executed. Setting this parameter to 4 will enable CASA Outback Challenge rules, which are only recommended to participants of that competition.</p>
 
@@ -2112,7 +1859,7 @@ Scope (for all values) is: *src/platforms/qurt/fc_addon/mpu_spi*.
 
 <li><strong>6:</strong> Lockdown</li> 
 </ul>
-   <p><b>Scope:</b> src/modules/navigator</p>
+   <p><b>Module:</b> src/modules/navigator</p>
   </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="NAV_RCL_ACT">NAV_RCL_ACT</strong> (INT32)</td><td style="vertical-align: top;"><p>Set RC loss failsafe mode</p><p><strong>Comment:</strong> The RC loss failsafe will only be entered after a timeout, set by COM_RC_LOSS_T in seconds. If RC input checks have been disabled by setting the COM_RC_IN_MODE param it will not be triggered. Setting this parameter to 4 will enable CASA Outback Challenge rules, which are only recommended to participants of that competition.</p>
 
@@ -2131,18 +1878,18 @@ Scope (for all values) is: *src/platforms/qurt/fc_addon/mpu_spi*.
 
 <li><strong>6:</strong> Lockdown</li> 
 </ul>
-   <p><b>Scope:</b> src/modules/navigator</p>
+   <p><b>Module:</b> src/modules/navigator</p>
   </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">2</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="NAV_FORCE_VT">NAV_FORCE_VT</strong> (INT32)</td><td style="vertical-align: top;"><p>Force VTOL mode takeoff and land</p>
 
-   <p><b>Scope:</b> src/modules/navigator</p>
+   <p><b>Module:</b> src/modules/navigator</p>
   </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">1</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 </tbody></table>
 
 ## Mount
 
 
-Scope (for all values) is: *src/drivers/vmount*.
+The module where these parameters are defined is: *src/drivers/vmount*.
 
 <table style="width: 100%;">
 <colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
@@ -2182,12 +1929,10 @@ to control a mount (set MNT_MAV_SYSID & MNT_MAV_COMPID)</p>
 <tr><td style="vertical-align: top;"><strong id="MNT_OB_NORM_MODE">MNT_OB_NORM_MODE</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Mixer value for selecting normal mode
 if required by the gimbal (only in AUX output mode)</p>
 
-<p><b>Decimal:</b> 3</p>
      </td><td style="vertical-align: top;">-1.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">-1.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="MNT_OB_LOCK_MODE">MNT_OB_LOCK_MODE</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Mixer value for selecting a locking mode
 if required for the gimbal (only in AUX output mode)</p>
 
-<p><b>Decimal:</b> 3</p>
      </td><td style="vertical-align: top;">-1.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="MNT_MAN_CONTROL">MNT_MAN_CONTROL</strong> (INT32)</td><td style="vertical-align: top;"><p>This enables the mount to be manually controlled when no ROI is set</p><p><strong>Comment:</strong> If set to 1, the mount will be controlled by the AUX channels below when no ROI is set.</p>
 
@@ -2250,308 +1995,273 @@ if required for the gimbal (only in AUX output mode)</p>
 <tr><td style="vertical-align: top;"><strong id="MP_ROLL_P">MP_ROLL_P</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Roll P gain</p><p><strong>Comment:</strong> Roll proportional gain, i.e. desired angular speed in rad/s for error 1 rad.</p>
 
 
-   <p><b>Scope:</b> src/examples/mc_att_control_multiplatform</p>
+   <p><b>Module:</b> src/examples/mc_att_control_multiplatform</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">6.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="MP_ROLLRATE_P">MP_ROLLRATE_P</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Roll rate P gain</p><p><strong>Comment:</strong> Roll rate proportional gain, i.e. control output for angular speed error 1 rad/s.</p>
 
 
-   <p><b>Scope:</b> src/examples/mc_att_control_multiplatform</p>
+   <p><b>Module:</b> src/examples/mc_att_control_multiplatform</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0.1</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="MP_ROLLRATE_I">MP_ROLLRATE_I</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Roll rate I gain</p><p><strong>Comment:</strong> Roll rate integral gain. Can be set to compensate static thrust difference or gravity center offset.</p>
 
 
-   <p><b>Scope:</b> src/examples/mc_att_control_multiplatform</p>
+   <p><b>Module:</b> src/examples/mc_att_control_multiplatform</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="MP_ROLLRATE_D">MP_ROLLRATE_D</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Roll rate D gain</p><p><strong>Comment:</strong> Roll rate differential gain. Small values help reduce fast oscillations. If value is too big oscillations will appear again.</p>
 
 
-   <p><b>Scope:</b> src/examples/mc_att_control_multiplatform</p>
+   <p><b>Module:</b> src/examples/mc_att_control_multiplatform</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0.002</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="MP_PITCH_P">MP_PITCH_P</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Pitch P gain</p><p><strong>Comment:</strong> Pitch proportional gain, i.e. desired angular speed in rad/s for error 1 rad.</p>
 
 
-   <p><b>Scope:</b> src/examples/mc_att_control_multiplatform</p>
+   <p><b>Module:</b> src/examples/mc_att_control_multiplatform</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">6.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">1/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="MP_PITCHRATE_P">MP_PITCHRATE_P</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Pitch rate P gain</p><p><strong>Comment:</strong> Pitch rate proportional gain, i.e. control output for angular speed error 1 rad/s.</p>
 
 
-   <p><b>Scope:</b> src/examples/mc_att_control_multiplatform</p>
+   <p><b>Module:</b> src/examples/mc_att_control_multiplatform</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0.1</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="MP_PITCHRATE_I">MP_PITCHRATE_I</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Pitch rate I gain</p><p><strong>Comment:</strong> Pitch rate integral gain. Can be set to compensate static thrust difference or gravity center offset.</p>
 
 
-   <p><b>Scope:</b> src/examples/mc_att_control_multiplatform</p>
+   <p><b>Module:</b> src/examples/mc_att_control_multiplatform</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="MP_PITCHRATE_D">MP_PITCHRATE_D</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Pitch rate D gain</p><p><strong>Comment:</strong> Pitch rate differential gain. Small values help reduce fast oscillations. If value is too big oscillations will appear again.</p>
 
 
-   <p><b>Scope:</b> src/examples/mc_att_control_multiplatform</p>
+   <p><b>Module:</b> src/examples/mc_att_control_multiplatform</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0.002</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="MP_YAW_P">MP_YAW_P</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Yaw P gain</p><p><strong>Comment:</strong> Yaw proportional gain, i.e. desired angular speed in rad/s for error 1 rad.</p>
 
 
-   <p><b>Scope:</b> src/examples/mc_att_control_multiplatform</p>
+   <p><b>Module:</b> src/examples/mc_att_control_multiplatform</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">2.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">1/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="MP_YAWRATE_P">MP_YAWRATE_P</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Yaw rate P gain</p><p><strong>Comment:</strong> Yaw rate proportional gain, i.e. control output for angular speed error 1 rad/s.</p>
 
 
-   <p><b>Scope:</b> src/examples/mc_att_control_multiplatform</p>
+   <p><b>Module:</b> src/examples/mc_att_control_multiplatform</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0.3</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="MP_YAWRATE_I">MP_YAWRATE_I</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Yaw rate I gain</p><p><strong>Comment:</strong> Yaw rate integral gain. Can be set to compensate static thrust difference or gravity center offset.</p>
 
 
-   <p><b>Scope:</b> src/examples/mc_att_control_multiplatform</p>
+   <p><b>Module:</b> src/examples/mc_att_control_multiplatform</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="MP_YAWRATE_D">MP_YAWRATE_D</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Yaw rate D gain</p><p><strong>Comment:</strong> Yaw rate differential gain. Small values help reduce fast oscillations. If value is too big oscillations will appear again.</p>
 
 
-   <p><b>Scope:</b> src/examples/mc_att_control_multiplatform</p>
+   <p><b>Module:</b> src/examples/mc_att_control_multiplatform</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="MP_YAW_FF">MP_YAW_FF</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Yaw feed forward</p><p><strong>Comment:</strong> Feed forward weight for manual yaw control. 0 will give slow responce and no overshot, 1 - fast responce and big overshot.</p>
 
 
-   <p><b>Scope:</b> src/examples/mc_att_control_multiplatform</p>
+   <p><b>Module:</b> src/examples/mc_att_control_multiplatform</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="MP_YAWRATE_MAX">MP_YAWRATE_MAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Max yaw rate</p><p><strong>Comment:</strong> Limit for yaw rate, has effect for large rotations in autonomous mode, to avoid large control output and mixer saturation.</p>
 
 
-   <p><b>Scope:</b> src/examples/mc_att_control_multiplatform</p>
+   <p><b>Module:</b> src/examples/mc_att_control_multiplatform</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">360.0</td><td style="vertical-align: top;">60.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">deg/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="MP_ACRO_R_MAX">MP_ACRO_R_MAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Max acro roll rate</p>
 
-   <p><b>Scope:</b> src/examples/mc_att_control_multiplatform</p>
+   <p><b>Module:</b> src/examples/mc_att_control_multiplatform</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">360.0</td><td style="vertical-align: top;">35.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">deg/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="MP_ACRO_P_MAX">MP_ACRO_P_MAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Max acro pitch rate</p>
 
-   <p><b>Scope:</b> src/examples/mc_att_control_multiplatform</p>
+   <p><b>Module:</b> src/examples/mc_att_control_multiplatform</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">360.0</td><td style="vertical-align: top;">35.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">deg/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="MP_ACRO_Y_MAX">MP_ACRO_Y_MAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Max acro yaw rate</p>
 
-   <p><b>Scope:</b> src/examples/mc_att_control_multiplatform</p>
+   <p><b>Module:</b> src/examples/mc_att_control_multiplatform</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">120.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">deg/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="MPP_MAN_R_MAX">MPP_MAN_R_MAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Max manual roll</p>
 
-   <p><b>Scope:</b> src/examples/mc_pos_control_multiplatform</p>
+   <p><b>Module:</b> src/examples/mc_pos_control_multiplatform</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">90.0</td><td style="vertical-align: top;">35.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">deg</td></tr>
 <tr><td style="vertical-align: top;"><strong id="MPP_MAN_P_MAX">MPP_MAN_P_MAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Max manual pitch</p>
 
-   <p><b>Scope:</b> src/examples/mc_pos_control_multiplatform</p>
+   <p><b>Module:</b> src/examples/mc_pos_control_multiplatform</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">90.0</td><td style="vertical-align: top;">35.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">deg</td></tr>
 <tr><td style="vertical-align: top;"><strong id="MPP_MAN_Y_MAX">MPP_MAN_Y_MAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Max manual yaw rate</p>
 
-   <p><b>Scope:</b> src/examples/mc_pos_control_multiplatform</p>
+   <p><b>Module:</b> src/examples/mc_pos_control_multiplatform</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">120.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">deg/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="MC_ROLL_TC">MC_ROLL_TC</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Roll time constant</p><p><strong>Comment:</strong> Reduce if the system is too twitchy, increase if the response is too slow and sluggish.</p>
 
 
-<p><b>Decimal:</b> 2</p>
-   <p><b>Scope:</b> src/modules/mc_att_control</p>
+   <p><b>Module:</b> src/modules/mc_att_control</p>
   </td><td style="vertical-align: top;">0.15</td><td style="vertical-align: top;">0.25</td><td style="vertical-align: top;">0.2</td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;">s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="MC_PITCH_TC">MC_PITCH_TC</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Pitch time constant</p><p><strong>Comment:</strong> Reduce if the system is too twitchy, increase if the response is too slow and sluggish.</p>
 
 
-<p><b>Decimal:</b> 2</p>
-   <p><b>Scope:</b> src/modules/mc_att_control</p>
+   <p><b>Module:</b> src/modules/mc_att_control</p>
   </td><td style="vertical-align: top;">0.15</td><td style="vertical-align: top;">0.25</td><td style="vertical-align: top;">0.2</td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;">s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="MC_ROLL_P">MC_ROLL_P</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Roll P gain</p><p><strong>Comment:</strong> Roll proportional gain, i.e. desired angular speed in rad/s for error 1 rad.</p>
 
 
-<p><b>Decimal:</b> 2</p>
-   <p><b>Scope:</b> src/modules/mc_att_control</p>
+   <p><b>Module:</b> src/modules/mc_att_control</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">8</td><td style="vertical-align: top;">6.5</td><td style="vertical-align: top;">0.1</td><td style="vertical-align: top;">1/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="MC_ROLLRATE_P">MC_ROLLRATE_P</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Roll rate P gain</p><p><strong>Comment:</strong> Roll rate proportional gain, i.e. control output for angular speed error 1 rad/s.</p>
 
 
-<p><b>Decimal:</b> 3</p>
-   <p><b>Scope:</b> src/modules/mc_att_control</p>
+   <p><b>Module:</b> src/modules/mc_att_control</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">0.15</td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="MC_ROLLRATE_I">MC_ROLLRATE_I</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Roll rate I gain</p><p><strong>Comment:</strong> Roll rate integral gain. Can be set to compensate static thrust difference or gravity center offset.</p>
 
 
-<p><b>Decimal:</b> 3</p>
-   <p><b>Scope:</b> src/modules/mc_att_control</p>
+   <p><b>Module:</b> src/modules/mc_att_control</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0.05</td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="MC_RR_INT_LIM">MC_RR_INT_LIM</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Roll rate integrator limit</p><p><strong>Comment:</strong> Roll rate integrator limit. Can be set to increase the amount of integrator available to counteract disturbances or reduced to improve settling time after large roll moment trim changes.</p>
 
 
-<p><b>Decimal:</b> 2</p>
-   <p><b>Scope:</b> src/modules/mc_att_control</p>
+   <p><b>Module:</b> src/modules/mc_att_control</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0.30</td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="MC_ROLLRATE_D">MC_ROLLRATE_D</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Roll rate D gain</p><p><strong>Comment:</strong> Roll rate differential gain. Small values help reduce fast oscillations. If value is too big oscillations will appear again.</p>
 
 
-<p><b>Decimal:</b> 4</p>
-   <p><b>Scope:</b> src/modules/mc_att_control</p>
+   <p><b>Module:</b> src/modules/mc_att_control</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;">0.003</td><td style="vertical-align: top;">0.0005</td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="MC_ROLLRATE_FF">MC_ROLLRATE_FF</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Roll rate feedforward</p><p><strong>Comment:</strong> Improves tracking performance.</p>
 
 
-<p><b>Decimal:</b> 4</p>
-   <p><b>Scope:</b> src/modules/mc_att_control</p>
+   <p><b>Module:</b> src/modules/mc_att_control</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="MC_PITCH_P">MC_PITCH_P</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Pitch P gain</p><p><strong>Comment:</strong> Pitch proportional gain, i.e. desired angular speed in rad/s for error 1 rad.</p>
 
 
-<p><b>Decimal:</b> 2</p>
-   <p><b>Scope:</b> src/modules/mc_att_control</p>
+   <p><b>Module:</b> src/modules/mc_att_control</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">10</td><td style="vertical-align: top;">6.5</td><td style="vertical-align: top;">0.1</td><td style="vertical-align: top;">1/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="MC_PITCHRATE_P">MC_PITCHRATE_P</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Pitch rate P gain</p><p><strong>Comment:</strong> Pitch rate proportional gain, i.e. control output for angular speed error 1 rad/s.</p>
 
 
-<p><b>Decimal:</b> 3</p>
-   <p><b>Scope:</b> src/modules/mc_att_control</p>
+   <p><b>Module:</b> src/modules/mc_att_control</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">0.6</td><td style="vertical-align: top;">0.15</td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="MC_PITCHRATE_I">MC_PITCHRATE_I</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Pitch rate I gain</p><p><strong>Comment:</strong> Pitch rate integral gain. Can be set to compensate static thrust difference or gravity center offset.</p>
 
 
-<p><b>Decimal:</b> 3</p>
-   <p><b>Scope:</b> src/modules/mc_att_control</p>
+   <p><b>Module:</b> src/modules/mc_att_control</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0.05</td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="MC_PR_INT_LIM">MC_PR_INT_LIM</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Pitch rate integrator limit</p><p><strong>Comment:</strong> Pitch rate integrator limit. Can be set to increase the amount of integrator available to counteract disturbances or reduced to improve settling time after large pitch moment trim changes.</p>
 
 
-<p><b>Decimal:</b> 2</p>
-   <p><b>Scope:</b> src/modules/mc_att_control</p>
+   <p><b>Module:</b> src/modules/mc_att_control</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0.30</td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="MC_PITCHRATE_D">MC_PITCHRATE_D</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Pitch rate D gain</p><p><strong>Comment:</strong> Pitch rate differential gain. Small values help reduce fast oscillations. If value is too big oscillations will appear again.</p>
 
 
-<p><b>Decimal:</b> 4</p>
-   <p><b>Scope:</b> src/modules/mc_att_control</p>
+   <p><b>Module:</b> src/modules/mc_att_control</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0.003</td><td style="vertical-align: top;">0.0005</td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="MC_PITCHRATE_FF">MC_PITCHRATE_FF</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Pitch rate feedforward</p><p><strong>Comment:</strong> Improves tracking performance.</p>
 
 
-<p><b>Decimal:</b> 4</p>
-   <p><b>Scope:</b> src/modules/mc_att_control</p>
+   <p><b>Module:</b> src/modules/mc_att_control</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="MC_YAW_P">MC_YAW_P</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Yaw P gain</p><p><strong>Comment:</strong> Yaw proportional gain, i.e. desired angular speed in rad/s for error 1 rad.</p>
 
 
-<p><b>Decimal:</b> 2</p>
-   <p><b>Scope:</b> src/modules/mc_att_control</p>
+   <p><b>Module:</b> src/modules/mc_att_control</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">5</td><td style="vertical-align: top;">2.8</td><td style="vertical-align: top;">0.1</td><td style="vertical-align: top;">1/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="MC_YAWRATE_P">MC_YAWRATE_P</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Yaw rate P gain</p><p><strong>Comment:</strong> Yaw rate proportional gain, i.e. control output for angular speed error 1 rad/s.</p>
 
 
-<p><b>Decimal:</b> 2</p>
-   <p><b>Scope:</b> src/modules/mc_att_control</p>
+   <p><b>Module:</b> src/modules/mc_att_control</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">0.6</td><td style="vertical-align: top;">0.2</td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="MC_YAWRATE_I">MC_YAWRATE_I</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Yaw rate I gain</p><p><strong>Comment:</strong> Yaw rate integral gain. Can be set to compensate static thrust difference or gravity center offset.</p>
 
 
-<p><b>Decimal:</b> 2</p>
-   <p><b>Scope:</b> src/modules/mc_att_control</p>
+   <p><b>Module:</b> src/modules/mc_att_control</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0.1</td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="MC_YR_INT_LIM">MC_YR_INT_LIM</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Yaw rate integrator limit</p><p><strong>Comment:</strong> Yaw rate integrator limit. Can be set to increase the amount of integrator available to counteract disturbances or reduced to improve settling time after large yaw moment trim changes.</p>
 
 
-<p><b>Decimal:</b> 2</p>
-   <p><b>Scope:</b> src/modules/mc_att_control</p>
+   <p><b>Module:</b> src/modules/mc_att_control</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0.30</td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="MC_YAWRATE_D">MC_YAWRATE_D</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Yaw rate D gain</p><p><strong>Comment:</strong> Yaw rate differential gain. Small values help reduce fast oscillations. If value is too big oscillations will appear again.</p>
 
 
-<p><b>Decimal:</b> 2</p>
-   <p><b>Scope:</b> src/modules/mc_att_control</p>
+   <p><b>Module:</b> src/modules/mc_att_control</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="MC_YAWRATE_FF">MC_YAWRATE_FF</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Yaw rate feedforward</p><p><strong>Comment:</strong> Improves tracking performance.</p>
 
 
-<p><b>Decimal:</b> 4</p>
-   <p><b>Scope:</b> src/modules/mc_att_control</p>
+   <p><b>Module:</b> src/modules/mc_att_control</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="MC_YAW_FF">MC_YAW_FF</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Yaw feed forward</p><p><strong>Comment:</strong> Feed forward weight for manual yaw control. 0 will give slow responce and no overshot, 1 - fast responce and big overshot.</p>
 
 
-<p><b>Decimal:</b> 2</p>
-   <p><b>Scope:</b> src/modules/mc_att_control</p>
+   <p><b>Module:</b> src/modules/mc_att_control</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="MC_ROLLRATE_MAX">MC_ROLLRATE_MAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Max roll rate</p><p><strong>Comment:</strong> Limit for roll rate, has effect for large rotations in autonomous mode, to avoid large control output and mixer saturation.</p>
 
 
-<p><b>Decimal:</b> 1</p>
-   <p><b>Scope:</b> src/modules/mc_att_control</p>
+   <p><b>Module:</b> src/modules/mc_att_control</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">360.0</td><td style="vertical-align: top;">220.0</td><td style="vertical-align: top;">5</td><td style="vertical-align: top;">deg/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="MC_PITCHRATE_MAX">MC_PITCHRATE_MAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Max pitch rate</p><p><strong>Comment:</strong> Limit for pitch rate, has effect for large rotations in autonomous mode, to avoid large control output and mixer saturation.</p>
 
 
-<p><b>Decimal:</b> 1</p>
-   <p><b>Scope:</b> src/modules/mc_att_control</p>
+   <p><b>Module:</b> src/modules/mc_att_control</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">360.0</td><td style="vertical-align: top;">220.0</td><td style="vertical-align: top;">5</td><td style="vertical-align: top;">deg/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="MC_YAWRATE_MAX">MC_YAWRATE_MAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Max yaw rate</p><p><strong>Comment:</strong> A value of significantly over 120 degrees per second can already lead to mixer saturation.</p>
 
 
-<p><b>Decimal:</b> 1</p>
-   <p><b>Scope:</b> src/modules/mc_att_control</p>
+   <p><b>Module:</b> src/modules/mc_att_control</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">360.0</td><td style="vertical-align: top;">200.0</td><td style="vertical-align: top;">5</td><td style="vertical-align: top;">deg/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="MC_YAWRAUTO_MAX">MC_YAWRAUTO_MAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Max yaw rate in auto mode</p><p><strong>Comment:</strong> Limit for yaw rate, has effect for large rotations in autonomous mode, to avoid large control output and mixer saturation. A value of significantly over 60 degrees per second can already lead to mixer saturation. A value of 30 degrees / second is recommended to avoid very audible twitches.</p>
 
 
-<p><b>Decimal:</b> 1</p>
-   <p><b>Scope:</b> src/modules/mc_att_control</p>
+   <p><b>Module:</b> src/modules/mc_att_control</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">120.0</td><td style="vertical-align: top;">45.0</td><td style="vertical-align: top;">5</td><td style="vertical-align: top;">deg/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="MC_ACRO_R_MAX">MC_ACRO_R_MAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Max acro roll rate</p>
 
-<p><b>Decimal:</b> 1</p>
-   <p><b>Scope:</b> src/modules/mc_att_control</p>
+   <p><b>Module:</b> src/modules/mc_att_control</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">1000.0</td><td style="vertical-align: top;">360.0</td><td style="vertical-align: top;">5</td><td style="vertical-align: top;">deg/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="MC_ACRO_P_MAX">MC_ACRO_P_MAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Max acro pitch rate</p>
 
-<p><b>Decimal:</b> 1</p>
-   <p><b>Scope:</b> src/modules/mc_att_control</p>
+   <p><b>Module:</b> src/modules/mc_att_control</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">1000.0</td><td style="vertical-align: top;">360.0</td><td style="vertical-align: top;">5</td><td style="vertical-align: top;">deg/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="MC_ACRO_Y_MAX">MC_ACRO_Y_MAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Max acro yaw rate</p>
 
-<p><b>Decimal:</b> 1</p>
-   <p><b>Scope:</b> src/modules/mc_att_control</p>
+   <p><b>Module:</b> src/modules/mc_att_control</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">1000.0</td><td style="vertical-align: top;">360.0</td><td style="vertical-align: top;">5</td><td style="vertical-align: top;">deg/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="MC_RATT_TH">MC_RATT_TH</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Threshold for Rattitude mode</p><p><strong>Comment:</strong> Manual input needed in order to override attitude control rate setpoints and instead pass manual stick inputs as rate setpoints</p>
 
 
-<p><b>Decimal:</b> 2</p>
-   <p><b>Scope:</b> src/modules/mc_att_control</p>
+   <p><b>Module:</b> src/modules/mc_att_control</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">0.8</td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="MC_BAT_SCALE_EN">MC_BAT_SCALE_EN</strong> (INT32)</td><td style="vertical-align: top;"><p>Battery power level scaler</p><p><strong>Comment:</strong> This compensates for voltage drop of the battery over time by attempting to normalize performance across the operating range of the battery. The copter should constantly behave as if it was fully charged with reduced max acceleration at lower battery percentages. i.e. if hover is at 0.5 throttle at 100% battery, it will still be 0.5 at 60% battery.</p>
 
 
-   <p><b>Scope:</b> src/modules/mc_att_control</p>
+   <p><b>Module:</b> src/modules/mc_att_control</p>
   </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="MC_TPA_BREAK_P">MC_TPA_BREAK_P</strong> (FLOAT)</td><td style="vertical-align: top;"><p>TPA P Breakpoint</p><p><strong>Comment:</strong> Throttle PID Attenuation (TPA) Magnitude of throttle setpoint at which to begin attenuating roll/pitch P gain</p>
 
 
-<p><b>Decimal:</b> 2</p>
-   <p><b>Scope:</b> src/modules/mc_att_control</p>
+   <p><b>Module:</b> src/modules/mc_att_control</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">0.1</td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="MC_TPA_BREAK_I">MC_TPA_BREAK_I</strong> (FLOAT)</td><td style="vertical-align: top;"><p>TPA I Breakpoint</p><p><strong>Comment:</strong> Throttle PID Attenuation (TPA) Magnitude of throttle setpoint at which to begin attenuating roll/pitch I gain</p>
 
 
-<p><b>Decimal:</b> 2</p>
-   <p><b>Scope:</b> src/modules/mc_att_control</p>
+   <p><b>Module:</b> src/modules/mc_att_control</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">0.1</td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="MC_TPA_BREAK_D">MC_TPA_BREAK_D</strong> (FLOAT)</td><td style="vertical-align: top;"><p>TPA D Breakpoint</p><p><strong>Comment:</strong> Throttle PID Attenuation (TPA) Magnitude of throttle setpoint at which to begin attenuating roll/pitch D gain</p>
 
 
-<p><b>Decimal:</b> 2</p>
-   <p><b>Scope:</b> src/modules/mc_att_control</p>
+   <p><b>Module:</b> src/modules/mc_att_control</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">0.1</td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="MC_TPA_RATE_P">MC_TPA_RATE_P</strong> (FLOAT)</td><td style="vertical-align: top;"><p>TPA Rate P</p><p><strong>Comment:</strong> Throttle PID Attenuation (TPA) Rate at which to attenuate roll/pitch P gain Attenuation factor is 1.0 when throttle magnitude is below the setpoint Above the setpoint, the attenuation factor is (1 - rate * (throttle - breakpoint) / (1.0 - breakpoint))</p>
 
 
-<p><b>Decimal:</b> 2</p>
-   <p><b>Scope:</b> src/modules/mc_att_control</p>
+   <p><b>Module:</b> src/modules/mc_att_control</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">0.05</td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="MC_TPA_RATE_I">MC_TPA_RATE_I</strong> (FLOAT)</td><td style="vertical-align: top;"><p>TPA Rate I</p><p><strong>Comment:</strong> Throttle PID Attenuation (TPA) Rate at which to attenuate roll/pitch I gain Attenuation factor is 1.0 when throttle magnitude is below the setpoint Above the setpoint, the attenuation factor is (1 - rate * (throttle - breakpoint) / (1.0 - breakpoint))</p>
 
 
-<p><b>Decimal:</b> 2</p>
-   <p><b>Scope:</b> src/modules/mc_att_control</p>
+   <p><b>Module:</b> src/modules/mc_att_control</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">0.05</td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="MC_TPA_RATE_D">MC_TPA_RATE_D</strong> (FLOAT)</td><td style="vertical-align: top;"><p>TPA Rate D</p><p><strong>Comment:</strong> Throttle PID Attenuation (TPA) Rate at which to attenuate roll/pitch D gain Attenuation factor is 1.0 when throttle magnitude is below the setpoint Above the setpoint, the attenuation factor is (1 - rate * (throttle - breakpoint) / (1.0 - breakpoint))</p>
 
 
-<p><b>Decimal:</b> 2</p>
-   <p><b>Scope:</b> src/modules/mc_att_control</p>
+   <p><b>Module:</b> src/modules/mc_att_control</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">0.05</td><td style="vertical-align: top;"></td></tr>
 </tbody></table>
 
@@ -2565,270 +2275,236 @@ if required for the gimbal (only in AUX output mode)</p>
 <tr><td style="vertical-align: top;"><strong id="MPP_THR_MIN">MPP_THR_MIN</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Minimum thrust</p><p><strong>Comment:</strong> Minimum vertical thrust. It's recommended to set it > 0 to avoid free fall with zero thrust.</p>
 
 
-   <p><b>Scope:</b> src/examples/mc_pos_control_multiplatform</p>
+   <p><b>Module:</b> src/examples/mc_pos_control_multiplatform</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">0.1</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="MPP_THR_MAX">MPP_THR_MAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Maximum thrust</p><p><strong>Comment:</strong> Limit max allowed thrust.</p>
 
 
-   <p><b>Scope:</b> src/examples/mc_pos_control_multiplatform</p>
+   <p><b>Module:</b> src/examples/mc_pos_control_multiplatform</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="MPP_Z_P">MPP_Z_P</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Proportional gain for vertical position error</p>
 
-   <p><b>Scope:</b> src/examples/mc_pos_control_multiplatform</p>
+   <p><b>Module:</b> src/examples/mc_pos_control_multiplatform</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="MPP_Z_VEL_P">MPP_Z_VEL_P</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Proportional gain for vertical velocity error</p>
 
-   <p><b>Scope:</b> src/examples/mc_pos_control_multiplatform</p>
+   <p><b>Module:</b> src/examples/mc_pos_control_multiplatform</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0.1</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="MPP_Z_VEL_I">MPP_Z_VEL_I</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Integral gain for vertical velocity error</p><p><strong>Comment:</strong> Non zero value allows hovering thrust estimation on stabilized or autonomous takeoff.</p>
 
 
-   <p><b>Scope:</b> src/examples/mc_pos_control_multiplatform</p>
+   <p><b>Module:</b> src/examples/mc_pos_control_multiplatform</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0.02</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="MPP_Z_VEL_D">MPP_Z_VEL_D</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Differential gain for vertical velocity error</p>
 
-   <p><b>Scope:</b> src/examples/mc_pos_control_multiplatform</p>
+   <p><b>Module:</b> src/examples/mc_pos_control_multiplatform</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="MPP_Z_VEL_MAX">MPP_Z_VEL_MAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Maximum vertical velocity</p><p><strong>Comment:</strong> Maximum vertical velocity in AUTO mode and endpoint for stabilized modes (ALTCTRL).</p>
 
 
-   <p><b>Scope:</b> src/examples/mc_pos_control_multiplatform</p>
+   <p><b>Module:</b> src/examples/mc_pos_control_multiplatform</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">5.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="MPP_Z_FF">MPP_Z_FF</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Vertical velocity feed forward</p><p><strong>Comment:</strong> Feed forward weight for altitude control in stabilized modes (ALTCTRL). 0 will give slow responce and no overshot, 1 - fast responce and big overshot.</p>
 
 
-   <p><b>Scope:</b> src/examples/mc_pos_control_multiplatform</p>
+   <p><b>Module:</b> src/examples/mc_pos_control_multiplatform</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="MPP_XY_P">MPP_XY_P</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Proportional gain for horizontal position error</p>
 
-   <p><b>Scope:</b> src/examples/mc_pos_control_multiplatform</p>
+   <p><b>Module:</b> src/examples/mc_pos_control_multiplatform</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="MPP_XY_VEL_P">MPP_XY_VEL_P</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Proportional gain for horizontal velocity error</p>
 
-   <p><b>Scope:</b> src/examples/mc_pos_control_multiplatform</p>
+   <p><b>Module:</b> src/examples/mc_pos_control_multiplatform</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0.1</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="MPP_XY_VEL_I">MPP_XY_VEL_I</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Integral gain for horizontal velocity error</p><p><strong>Comment:</strong> Non-zero value allows to resist wind.</p>
 
 
-   <p><b>Scope:</b> src/examples/mc_pos_control_multiplatform</p>
+   <p><b>Module:</b> src/examples/mc_pos_control_multiplatform</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0.02</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="MPP_XY_VEL_D">MPP_XY_VEL_D</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Differential gain for horizontal velocity error. Small values help reduce fast oscillations. If value is too big oscillations will appear again</p>
 
-   <p><b>Scope:</b> src/examples/mc_pos_control_multiplatform</p>
+   <p><b>Module:</b> src/examples/mc_pos_control_multiplatform</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="MPP_XY_VEL_MAX">MPP_XY_VEL_MAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Maximum horizontal velocity</p><p><strong>Comment:</strong> Maximum horizontal velocity in AUTO mode and endpoint for position stabilized mode (POSCTRL).</p>
 
 
-   <p><b>Scope:</b> src/examples/mc_pos_control_multiplatform</p>
+   <p><b>Module:</b> src/examples/mc_pos_control_multiplatform</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">5.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="MPP_XY_FF">MPP_XY_FF</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Horizontal velocity feed forward</p><p><strong>Comment:</strong> Feed forward weight for position control in position control mode (POSCTRL). 0 will give slow responce and no overshot, 1 - fast responce and big overshot.</p>
 
 
-   <p><b>Scope:</b> src/examples/mc_pos_control_multiplatform</p>
+   <p><b>Module:</b> src/examples/mc_pos_control_multiplatform</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="MPP_TILTMAX_AIR">MPP_TILTMAX_AIR</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Maximum tilt angle in air</p><p><strong>Comment:</strong> Limits maximum tilt in AUTO and POSCTRL modes during flight.</p>
 
 
-   <p><b>Scope:</b> src/examples/mc_pos_control_multiplatform</p>
+   <p><b>Module:</b> src/examples/mc_pos_control_multiplatform</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">90.0</td><td style="vertical-align: top;">45.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">deg</td></tr>
 <tr><td style="vertical-align: top;"><strong id="MPP_TILTMAX_LND">MPP_TILTMAX_LND</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Maximum tilt during landing</p><p><strong>Comment:</strong> Limits maximum tilt angle on landing.</p>
 
 
-   <p><b>Scope:</b> src/examples/mc_pos_control_multiplatform</p>
+   <p><b>Module:</b> src/examples/mc_pos_control_multiplatform</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">90.0</td><td style="vertical-align: top;">15.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">deg</td></tr>
 <tr><td style="vertical-align: top;"><strong id="MPP_LAND_SPEED">MPP_LAND_SPEED</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Landing descend rate</p>
 
-   <p><b>Scope:</b> src/examples/mc_pos_control_multiplatform</p>
+   <p><b>Module:</b> src/examples/mc_pos_control_multiplatform</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="MPC_THR_MIN">MPC_THR_MIN</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Minimum thrust in auto thrust control</p><p><strong>Comment:</strong> It's recommended to set it > 0 to avoid free fall with zero thrust.</p>
 
 
-<p><b>Decimal:</b> 2</p>
-   <p><b>Scope:</b> src/modules/mc_pos_control</p>
+   <p><b>Module:</b> src/modules/mc_pos_control</p>
   </td><td style="vertical-align: top;">0.05</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">0.12</td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;">norm</td></tr>
 <tr><td style="vertical-align: top;"><strong id="MPC_THR_HOVER">MPC_THR_HOVER</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Hover thrust</p><p><strong>Comment:</strong> Vertical thrust required to hover. This value is mapped to center stick for manual throttle control. With this value set to the thrust required to hover, transition from manual to ALTCTL mode while hovering will occur with the throttle stick near center, which is then interpreted as (near) zero demand for vertical speed.</p>
 
 
-<p><b>Decimal:</b> 2</p>
-   <p><b>Scope:</b> src/modules/mc_pos_control</p>
+   <p><b>Module:</b> src/modules/mc_pos_control</p>
   </td><td style="vertical-align: top;">0.2</td><td style="vertical-align: top;">0.8</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;">norm</td></tr>
 <tr><td style="vertical-align: top;"><strong id="MPC_THR_MAX">MPC_THR_MAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Maximum thrust in auto thrust control</p><p><strong>Comment:</strong> Limit max allowed thrust. Setting a value of one can put the system into actuator saturation as no spread between the motors is possible any more. A value of 0.8 - 0.9 is recommended.</p>
 
 
-<p><b>Decimal:</b> 2</p>
-   <p><b>Scope:</b> src/modules/mc_pos_control</p>
+   <p><b>Module:</b> src/modules/mc_pos_control</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">0.95</td><td style="vertical-align: top;">0.9</td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;">norm</td></tr>
 <tr><td style="vertical-align: top;"><strong id="MPC_MANTHR_MIN">MPC_MANTHR_MIN</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Minimum manual thrust</p><p><strong>Comment:</strong> Minimum vertical thrust. It's recommended to set it > 0 to avoid free fall with zero thrust.</p>
 
 
-<p><b>Decimal:</b> 2</p>
-   <p><b>Scope:</b> src/modules/mc_pos_control</p>
+   <p><b>Module:</b> src/modules/mc_pos_control</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">0.08</td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;">norm</td></tr>
 <tr><td style="vertical-align: top;"><strong id="MPC_MANTHR_MAX">MPC_MANTHR_MAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Maximum manual thrust</p><p><strong>Comment:</strong> Limit max allowed thrust. Setting a value of one can put the system into actuator saturation as no spread between the motors is possible any more. A value of 0.8 - 0.9 is recommended.</p>
 
 
-<p><b>Decimal:</b> 2</p>
-   <p><b>Scope:</b> src/modules/mc_pos_control</p>
+   <p><b>Module:</b> src/modules/mc_pos_control</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">0.9</td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;">norm</td></tr>
 <tr><td style="vertical-align: top;"><strong id="MPC_Z_P">MPC_Z_P</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Proportional gain for vertical position error</p>
 
-<p><b>Decimal:</b> 2</p>
-   <p><b>Scope:</b> src/modules/mc_pos_control</p>
+   <p><b>Module:</b> src/modules/mc_pos_control</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">1.5</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="MPC_Z_VEL_P">MPC_Z_VEL_P</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Proportional gain for vertical velocity error</p>
 
-<p><b>Decimal:</b> 2</p>
-   <p><b>Scope:</b> src/modules/mc_pos_control</p>
+   <p><b>Module:</b> src/modules/mc_pos_control</p>
   </td><td style="vertical-align: top;">0.1</td><td style="vertical-align: top;">0.4</td><td style="vertical-align: top;">0.2</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="MPC_Z_VEL_I">MPC_Z_VEL_I</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Integral gain for vertical velocity error</p><p><strong>Comment:</strong> Non zero value allows hovering thrust estimation on stabilized or autonomous takeoff.</p>
 
 
-<p><b>Decimal:</b> 3</p>
-   <p><b>Scope:</b> src/modules/mc_pos_control</p>
+   <p><b>Module:</b> src/modules/mc_pos_control</p>
   </td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;">0.1</td><td style="vertical-align: top;">0.02</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="MPC_Z_VEL_D">MPC_Z_VEL_D</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Differential gain for vertical velocity error</p>
 
-<p><b>Decimal:</b> 3</p>
-   <p><b>Scope:</b> src/modules/mc_pos_control</p>
+   <p><b>Module:</b> src/modules/mc_pos_control</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">0.1</td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="MPC_Z_VEL_MAX_UP">MPC_Z_VEL_MAX_UP</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Maximum vertical ascent velocity</p><p><strong>Comment:</strong> Maximum vertical velocity in AUTO mode and endpoint for stabilized modes (ALTCTRL, POSCTRL).</p>
 
 
-<p><b>Decimal:</b> 1</p>
-   <p><b>Scope:</b> src/modules/mc_pos_control</p>
+   <p><b>Module:</b> src/modules/mc_pos_control</p>
   </td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">8.0</td><td style="vertical-align: top;">3.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="MPC_Z_VEL_MAX_DN">MPC_Z_VEL_MAX_DN</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Maximum vertical descent velocity</p><p><strong>Comment:</strong> Maximum vertical velocity in AUTO mode and endpoint for stabilized modes (ALTCTRL, POSCTRL).</p>
 
 
-   <p><b>Scope:</b> src/modules/mc_pos_control</p>
+   <p><b>Module:</b> src/modules/mc_pos_control</p>
   </td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">4.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="MPC_Z_FF">MPC_Z_FF</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Vertical velocity feed forward</p><p><strong>Comment:</strong> Feed forward weight for altitude control in stabilized modes (ALTCTRL, POSCTRL). 0 will give slow responce and no overshot, 1 - fast responce and big overshot.</p>
 
 
-<p><b>Decimal:</b> 2</p>
-   <p><b>Scope:</b> src/modules/mc_pos_control</p>
+   <p><b>Module:</b> src/modules/mc_pos_control</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="MPC_XY_P">MPC_XY_P</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Proportional gain for horizontal position error</p>
 
-<p><b>Decimal:</b> 2</p>
-   <p><b>Scope:</b> src/modules/mc_pos_control</p>
+   <p><b>Module:</b> src/modules/mc_pos_control</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">2.0</td><td style="vertical-align: top;">0.95</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="MPC_XY_VEL_P">MPC_XY_VEL_P</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Proportional gain for horizontal velocity error</p>
 
-<p><b>Decimal:</b> 2</p>
-   <p><b>Scope:</b> src/modules/mc_pos_control</p>
+   <p><b>Module:</b> src/modules/mc_pos_control</p>
   </td><td style="vertical-align: top;">0.06</td><td style="vertical-align: top;">0.15</td><td style="vertical-align: top;">0.09</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="MPC_XY_VEL_I">MPC_XY_VEL_I</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Integral gain for horizontal velocity error</p><p><strong>Comment:</strong> Non-zero value allows to resist wind.</p>
 
 
-<p><b>Decimal:</b> 3</p>
-   <p><b>Scope:</b> src/modules/mc_pos_control</p>
+   <p><b>Module:</b> src/modules/mc_pos_control</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">0.1</td><td style="vertical-align: top;">0.02</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="MPC_XY_VEL_D">MPC_XY_VEL_D</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Differential gain for horizontal velocity error. Small values help reduce fast oscillations. If value is too big oscillations will appear again</p>
 
-<p><b>Decimal:</b> 3</p>
-   <p><b>Scope:</b> src/modules/mc_pos_control</p>
+   <p><b>Module:</b> src/modules/mc_pos_control</p>
   </td><td style="vertical-align: top;">0.005</td><td style="vertical-align: top;">0.1</td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="MPC_XY_CRUISE">MPC_XY_CRUISE</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Nominal horizontal velocity</p><p><strong>Comment:</strong> Normal horizontal velocity in AUTO modes (includes also RTL / hold / etc.) and endpoint for position stabilized mode (POSCTRL).</p>
 
 
-<p><b>Decimal:</b> 2</p>
-   <p><b>Scope:</b> src/modules/mc_pos_control</p>
+   <p><b>Module:</b> src/modules/mc_pos_control</p>
   </td><td style="vertical-align: top;">3.0</td><td style="vertical-align: top;">20.0</td><td style="vertical-align: top;">5.0</td><td style="vertical-align: top;">1</td><td style="vertical-align: top;">m/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="MPC_TARGET_THRE">MPC_TARGET_THRE</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Distance Threshold Horizontal Auto</p><p><strong>Comment:</strong> The distance defines at which point the vehicle has to slow down to reach target if no direct passing to the next target is desired</p>
 
 
-<p><b>Decimal:</b> 2</p>
-   <p><b>Scope:</b> src/modules/mc_pos_control</p>
+   <p><b>Module:</b> src/modules/mc_pos_control</p>
   </td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">50.0</td><td style="vertical-align: top;">15.0</td><td style="vertical-align: top;">1</td><td style="vertical-align: top;">m</td></tr>
 <tr><td style="vertical-align: top;"><strong id="MPC_XY_VEL_MAX">MPC_XY_VEL_MAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Maximum horizontal velocity</p><p><strong>Comment:</strong> Maximum horizontal velocity in AUTO mode. If higher speeds are commanded in a mission they will be capped to this velocity.</p>
 
 
-<p><b>Decimal:</b> 2</p>
-   <p><b>Scope:</b> src/modules/mc_pos_control</p>
+   <p><b>Module:</b> src/modules/mc_pos_control</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">20.0</td><td style="vertical-align: top;">8.0</td><td style="vertical-align: top;">1</td><td style="vertical-align: top;">m/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="MPC_XY_FF">MPC_XY_FF</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Horizontal velocity feed forward</p><p><strong>Comment:</strong> Feed forward weight for position control in position control mode (POSCTRL). 0 will give slow responce and no overshot, 1 - fast responce and big overshot.</p>
 
 
-<p><b>Decimal:</b> 2</p>
-   <p><b>Scope:</b> src/modules/mc_pos_control</p>
+   <p><b>Module:</b> src/modules/mc_pos_control</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="MPC_TILTMAX_AIR">MPC_TILTMAX_AIR</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Maximum tilt angle in air</p><p><strong>Comment:</strong> Limits maximum tilt in AUTO and POSCTRL modes during flight.</p>
 
 
-<p><b>Decimal:</b> 1</p>
-   <p><b>Scope:</b> src/modules/mc_pos_control</p>
+   <p><b>Module:</b> src/modules/mc_pos_control</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">90.0</td><td style="vertical-align: top;">45.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">deg</td></tr>
 <tr><td style="vertical-align: top;"><strong id="MPC_TILTMAX_LND">MPC_TILTMAX_LND</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Maximum tilt during landing</p><p><strong>Comment:</strong> Limits maximum tilt angle on landing.</p>
 
 
-<p><b>Decimal:</b> 1</p>
-   <p><b>Scope:</b> src/modules/mc_pos_control</p>
+   <p><b>Module:</b> src/modules/mc_pos_control</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">90.0</td><td style="vertical-align: top;">12.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">deg</td></tr>
 <tr><td style="vertical-align: top;"><strong id="MPC_LAND_SPEED">MPC_LAND_SPEED</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Landing descend rate</p>
 
-<p><b>Decimal:</b> 1</p>
-   <p><b>Scope:</b> src/modules/mc_pos_control</p>
+   <p><b>Module:</b> src/modules/mc_pos_control</p>
   </td><td style="vertical-align: top;">0.2</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="MPC_TKO_SPEED">MPC_TKO_SPEED</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Takeoff climb rate</p>
 
-<p><b>Decimal:</b> 2</p>
-   <p><b>Scope:</b> src/modules/mc_pos_control</p>
+   <p><b>Module:</b> src/modules/mc_pos_control</p>
   </td><td style="vertical-align: top;">1</td><td style="vertical-align: top;">5</td><td style="vertical-align: top;">1.5</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="MPC_MAN_R_MAX">MPC_MAN_R_MAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Max manual roll</p>
 
-<p><b>Decimal:</b> 1</p>
-   <p><b>Scope:</b> src/modules/mc_pos_control</p>
+   <p><b>Module:</b> src/modules/mc_pos_control</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">90.0</td><td style="vertical-align: top;">35.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">deg</td></tr>
 <tr><td style="vertical-align: top;"><strong id="MPC_MAN_P_MAX">MPC_MAN_P_MAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Max manual pitch</p>
 
-<p><b>Decimal:</b> 1</p>
-   <p><b>Scope:</b> src/modules/mc_pos_control</p>
+   <p><b>Module:</b> src/modules/mc_pos_control</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">90.0</td><td style="vertical-align: top;">35.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">deg</td></tr>
 <tr><td style="vertical-align: top;"><strong id="MPC_MAN_Y_MAX">MPC_MAN_Y_MAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Max manual yaw rate</p>
 
-<p><b>Decimal:</b> 1</p>
-   <p><b>Scope:</b> src/modules/mc_pos_control</p>
+   <p><b>Module:</b> src/modules/mc_pos_control</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">400</td><td style="vertical-align: top;">200.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">deg/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="MPC_HOLD_DZ">MPC_HOLD_DZ</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Deadzone of sticks where position hold is enabled</p>
 
-<p><b>Decimal:</b> 2</p>
-   <p><b>Scope:</b> src/modules/mc_pos_control</p>
+   <p><b>Module:</b> src/modules/mc_pos_control</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">0.1</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="MPC_HOLD_MAX_XY">MPC_HOLD_MAX_XY</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Maximum horizontal velocity for which position hold is enabled (use 0 to disable check)</p>
 
-<p><b>Decimal:</b> 2</p>
-   <p><b>Scope:</b> src/modules/mc_pos_control</p>
+   <p><b>Module:</b> src/modules/mc_pos_control</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">3.0</td><td style="vertical-align: top;">0.8</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="MPC_HOLD_MAX_Z">MPC_HOLD_MAX_Z</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Maximum vertical velocity for which position hold is enabled (use 0 to disable check)</p>
 
-<p><b>Decimal:</b> 2</p>
-   <p><b>Scope:</b> src/modules/mc_pos_control</p>
+   <p><b>Module:</b> src/modules/mc_pos_control</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">3.0</td><td style="vertical-align: top;">0.6</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="MPC_VELD_LP">MPC_VELD_LP</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Low pass filter cut freq. for numerical velocity derivative</p>
 
-<p><b>Decimal:</b> 2</p>
-   <p><b>Scope:</b> src/modules/mc_pos_control</p>
+   <p><b>Module:</b> src/modules/mc_pos_control</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">10</td><td style="vertical-align: top;">5.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">Hz</td></tr>
 <tr><td style="vertical-align: top;"><strong id="MPC_ACC_HOR_MAX">MPC_ACC_HOR_MAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Maximum horizonal acceleration in velocity controlled modes</p>
 
-<p><b>Decimal:</b> 2</p>
-   <p><b>Scope:</b> src/modules/mc_pos_control</p>
+   <p><b>Module:</b> src/modules/mc_pos_control</p>
   </td><td style="vertical-align: top;">2.0</td><td style="vertical-align: top;">15.0</td><td style="vertical-align: top;">5.0</td><td style="vertical-align: top;">1</td><td style="vertical-align: top;">m/s/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="MPC_DEC_HOR_MAX">MPC_DEC_HOR_MAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Maximum horizonal braking deceleration in velocity controlled modes</p>
 
-<p><b>Decimal:</b> 2</p>
-   <p><b>Scope:</b> src/modules/mc_pos_control</p>
+   <p><b>Module:</b> src/modules/mc_pos_control</p>
   </td><td style="vertical-align: top;">2.0</td><td style="vertical-align: top;">15.0</td><td style="vertical-align: top;">10.0</td><td style="vertical-align: top;">1</td><td style="vertical-align: top;">m/s/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="MPC_ACC_UP_MAX">MPC_ACC_UP_MAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Maximum vertical acceleration in velocity controlled modes upward</p>
 
-<p><b>Decimal:</b> 2</p>
-   <p><b>Scope:</b> src/modules/mc_pos_control</p>
+   <p><b>Module:</b> src/modules/mc_pos_control</p>
   </td><td style="vertical-align: top;">2.0</td><td style="vertical-align: top;">15.0</td><td style="vertical-align: top;">5.0</td><td style="vertical-align: top;">1</td><td style="vertical-align: top;">m/s/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="MPC_ACC_DOWN_MAX">MPC_ACC_DOWN_MAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Maximum vertical acceleration in velocity controlled modes down</p>
 
-<p><b>Decimal:</b> 2</p>
-   <p><b>Scope:</b> src/modules/mc_pos_control</p>
+   <p><b>Module:</b> src/modules/mc_pos_control</p>
   </td><td style="vertical-align: top;">2.0</td><td style="vertical-align: top;">15.0</td><td style="vertical-align: top;">5.0</td><td style="vertical-align: top;">1</td><td style="vertical-align: top;">m/s/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="MPC_ALT_MODE">MPC_ALT_MODE</strong> (INT32)</td><td style="vertical-align: top;"><p>Altitude control mode, note mode 1 only tested with LPE</p>
 <strong>Values:</strong><ul>
@@ -2836,31 +2512,27 @@ if required for the gimbal (only in AUX output mode)</p>
 
 <li><strong>1:</strong> Terrain following</li> 
 </ul>
-   <p><b>Scope:</b> src/modules/mc_pos_control</p>
+   <p><b>Module:</b> src/modules/mc_pos_control</p>
   </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">1</td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="MPC_XY_MAN_EXPO">MPC_XY_MAN_EXPO</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Manual control stick exponential curve sensitivity attenuation with small velocity setpoints</p><p><strong>Comment:</strong> The higher the value the less sensitivity the stick has around zero while still reaching the maximum value with full stick deflection. 0 Purely linear input curve (default) 1 Purely cubic input curve</p>
 
 
-<p><b>Decimal:</b> 2</p>
-   <p><b>Scope:</b> src/modules/mc_pos_control</p>
+   <p><b>Module:</b> src/modules/mc_pos_control</p>
   </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">1</td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="MPC_Z_MAN_EXPO">MPC_Z_MAN_EXPO</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Manual control stick vertical exponential curve</p><p><strong>Comment:</strong> The higher the value the less sensitivity the stick has around zero while still reaching the maximum value with full stick deflection. 0 Purely linear input curve (default) 1 Purely cubic input curve</p>
 
 
-<p><b>Decimal:</b> 2</p>
-   <p><b>Scope:</b> src/modules/mc_pos_control</p>
+   <p><b>Module:</b> src/modules/mc_pos_control</p>
   </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">1</td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="MPC_LAND_ALT1">MPC_LAND_ALT1</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Altitude for 1. step of slow landing (descend)</p><p><strong>Comment:</strong> Below this altitude descending velocity gets limited to a value between "MPC_Z_VEL_MAX" and "MPC_LAND_SPEED" to enable a smooth descent experience Value needs to be higher than "MPC_LAND_ALT2"</p>
 
 
-<p><b>Decimal:</b> 1</p>
-   <p><b>Scope:</b> src/modules/mc_pos_control</p>
+   <p><b>Module:</b> src/modules/mc_pos_control</p>
   </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">122</td><td style="vertical-align: top;">10.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m</td></tr>
 <tr><td style="vertical-align: top;"><strong id="MPC_LAND_ALT2">MPC_LAND_ALT2</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Altitude for 2. step of slow landing (landing)</p><p><strong>Comment:</strong> Below this altitude descending velocity gets limited to "MPC_LAND_SPEED" Value needs to be lower than "MPC_LAND_ALT1"</p>
 
 
-<p><b>Decimal:</b> 1</p>
-   <p><b>Scope:</b> src/modules/mc_pos_control</p>
+   <p><b>Module:</b> src/modules/mc_pos_control</p>
   </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">122</td><td style="vertical-align: top;">5.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">m</td></tr>
 </tbody></table>
 
@@ -2875,233 +2547,219 @@ if required for the gimbal (only in AUX output mode)</p>
 
 
  <p><b>Reboot required:</b> true</p>
-  <p><b>Scope:</b> src/drivers/px4fmu</p>
+  <p><b>Module:</b> src/drivers/px4fmu</p>
   </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="PWM_AUX_REV2">PWM_AUX_REV2</strong> (INT32)</td><td style="vertical-align: top;"><p>Invert direction of aux output channel 2</p><p><strong>Comment:</strong> Set to 1 to invert the channel, 0 for default direction.</p>
 
 
  <p><b>Reboot required:</b> true</p>
-  <p><b>Scope:</b> src/drivers/px4fmu</p>
+  <p><b>Module:</b> src/drivers/px4fmu</p>
   </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="PWM_AUX_REV3">PWM_AUX_REV3</strong> (INT32)</td><td style="vertical-align: top;"><p>Invert direction of aux output channel 3</p><p><strong>Comment:</strong> Set to 1 to invert the channel, 0 for default direction.</p>
 
 
  <p><b>Reboot required:</b> true</p>
-  <p><b>Scope:</b> src/drivers/px4fmu</p>
+  <p><b>Module:</b> src/drivers/px4fmu</p>
   </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="PWM_AUX_REV4">PWM_AUX_REV4</strong> (INT32)</td><td style="vertical-align: top;"><p>Invert direction of aux output channel 4</p><p><strong>Comment:</strong> Set to 1 to invert the channel, 0 for default direction.</p>
 
 
  <p><b>Reboot required:</b> true</p>
-  <p><b>Scope:</b> src/drivers/px4fmu</p>
+  <p><b>Module:</b> src/drivers/px4fmu</p>
   </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="PWM_AUX_REV5">PWM_AUX_REV5</strong> (INT32)</td><td style="vertical-align: top;"><p>Invert direction of aux output channel 5</p><p><strong>Comment:</strong> Set to 1 to invert the channel, 0 for default direction.</p>
 
 
  <p><b>Reboot required:</b> true</p>
-  <p><b>Scope:</b> src/drivers/px4fmu</p>
+  <p><b>Module:</b> src/drivers/px4fmu</p>
   </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="PWM_AUX_REV6">PWM_AUX_REV6</strong> (INT32)</td><td style="vertical-align: top;"><p>Invert direction of aux output channel 6</p><p><strong>Comment:</strong> Set to 1 to invert the channel, 0 for default direction.</p>
 
 
  <p><b>Reboot required:</b> true</p>
-  <p><b>Scope:</b> src/drivers/px4fmu</p>
+  <p><b>Module:</b> src/drivers/px4fmu</p>
   </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="PWM_AUX_TRIM1">PWM_AUX_TRIM1</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Trim value for FMU PWM output channel 1</p><p><strong>Comment:</strong> Set to normalized offset</p>
 
 
-<p><b>Decimal:</b> 2</p>
-   <p><b>Scope:</b> src/drivers/px4fmu</p>
+   <p><b>Module:</b> src/drivers/px4fmu</p>
   </td><td style="vertical-align: top;">-0.2</td><td style="vertical-align: top;">0.2</td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="PWM_AUX_TRIM2">PWM_AUX_TRIM2</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Trim value for FMU PWM output channel 2</p><p><strong>Comment:</strong> Set to normalized offset</p>
 
 
-<p><b>Decimal:</b> 2</p>
-   <p><b>Scope:</b> src/drivers/px4fmu</p>
+   <p><b>Module:</b> src/drivers/px4fmu</p>
   </td><td style="vertical-align: top;">-0.2</td><td style="vertical-align: top;">0.2</td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="PWM_AUX_TRIM3">PWM_AUX_TRIM3</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Trim value for FMU PWM output channel 3</p><p><strong>Comment:</strong> Set to normalized offset</p>
 
 
-<p><b>Decimal:</b> 2</p>
-   <p><b>Scope:</b> src/drivers/px4fmu</p>
+   <p><b>Module:</b> src/drivers/px4fmu</p>
   </td><td style="vertical-align: top;">-0.2</td><td style="vertical-align: top;">0.2</td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="PWM_AUX_TRIM4">PWM_AUX_TRIM4</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Trim value for FMU PWM output channel 4</p><p><strong>Comment:</strong> Set to normalized offset</p>
 
 
-<p><b>Decimal:</b> 2</p>
-   <p><b>Scope:</b> src/drivers/px4fmu</p>
+   <p><b>Module:</b> src/drivers/px4fmu</p>
   </td><td style="vertical-align: top;">-0.2</td><td style="vertical-align: top;">0.2</td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="PWM_AUX_TRIM5">PWM_AUX_TRIM5</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Trim value for FMU PWM output channel 5</p><p><strong>Comment:</strong> Set to normalized offset</p>
 
 
-<p><b>Decimal:</b> 2</p>
-   <p><b>Scope:</b> src/drivers/px4fmu</p>
+   <p><b>Module:</b> src/drivers/px4fmu</p>
   </td><td style="vertical-align: top;">-0.2</td><td style="vertical-align: top;">0.2</td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="PWM_AUX_TRIM6">PWM_AUX_TRIM6</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Trim value for FMU PWM output channel 6</p><p><strong>Comment:</strong> Set to normalized offset</p>
 
 
-<p><b>Decimal:</b> 2</p>
-   <p><b>Scope:</b> src/drivers/px4fmu</p>
+   <p><b>Module:</b> src/drivers/px4fmu</p>
   </td><td style="vertical-align: top;">-0.2</td><td style="vertical-align: top;">0.2</td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="PWM_MAIN_REV1">PWM_MAIN_REV1</strong> (INT32)</td><td style="vertical-align: top;"><p>Invert direction of main output channel 1</p><p><strong>Comment:</strong> Set to 1 to invert the channel, 0 for default direction.</p>
 
 
  <p><b>Reboot required:</b> true</p>
-  <p><b>Scope:</b> src/drivers/px4io</p>
+  <p><b>Module:</b> src/drivers/px4io</p>
   </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="PWM_MAIN_REV2">PWM_MAIN_REV2</strong> (INT32)</td><td style="vertical-align: top;"><p>Invert direction of main output channel 2</p><p><strong>Comment:</strong> Set to 1 to invert the channel, 0 for default direction.</p>
 
 
  <p><b>Reboot required:</b> true</p>
-  <p><b>Scope:</b> src/drivers/px4io</p>
+  <p><b>Module:</b> src/drivers/px4io</p>
   </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="PWM_MAIN_REV3">PWM_MAIN_REV3</strong> (INT32)</td><td style="vertical-align: top;"><p>Invert direction of main output channel 3</p><p><strong>Comment:</strong> Set to 1 to invert the channel, 0 for default direction.</p>
 
 
  <p><b>Reboot required:</b> true</p>
-  <p><b>Scope:</b> src/drivers/px4io</p>
+  <p><b>Module:</b> src/drivers/px4io</p>
   </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="PWM_MAIN_REV4">PWM_MAIN_REV4</strong> (INT32)</td><td style="vertical-align: top;"><p>Invert direction of main output channel 4</p><p><strong>Comment:</strong> Set to 1 to invert the channel, 0 for default direction.</p>
 
 
  <p><b>Reboot required:</b> true</p>
-  <p><b>Scope:</b> src/drivers/px4io</p>
+  <p><b>Module:</b> src/drivers/px4io</p>
   </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="PWM_MAIN_REV5">PWM_MAIN_REV5</strong> (INT32)</td><td style="vertical-align: top;"><p>Invert direction of main output channel 5</p><p><strong>Comment:</strong> Set to 1 to invert the channel, 0 for default direction.</p>
 
 
  <p><b>Reboot required:</b> true</p>
-  <p><b>Scope:</b> src/drivers/px4io</p>
+  <p><b>Module:</b> src/drivers/px4io</p>
   </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="PWM_MAIN_REV6">PWM_MAIN_REV6</strong> (INT32)</td><td style="vertical-align: top;"><p>Invert direction of main output channel 6</p><p><strong>Comment:</strong> Set to 1 to invert the channel, 0 for default direction.</p>
 
 
  <p><b>Reboot required:</b> true</p>
-  <p><b>Scope:</b> src/drivers/px4io</p>
+  <p><b>Module:</b> src/drivers/px4io</p>
   </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="PWM_MAIN_REV7">PWM_MAIN_REV7</strong> (INT32)</td><td style="vertical-align: top;"><p>Invert direction of main output channel 7</p><p><strong>Comment:</strong> Set to 1 to invert the channel, 0 for default direction.</p>
 
 
  <p><b>Reboot required:</b> true</p>
-  <p><b>Scope:</b> src/drivers/px4io</p>
+  <p><b>Module:</b> src/drivers/px4io</p>
   </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="PWM_MAIN_REV8">PWM_MAIN_REV8</strong> (INT32)</td><td style="vertical-align: top;"><p>Invert direction of main output channel 8</p><p><strong>Comment:</strong> Set to 1 to invert the channel, 0 for default direction.</p>
 
 
  <p><b>Reboot required:</b> true</p>
-  <p><b>Scope:</b> src/drivers/px4io</p>
+  <p><b>Module:</b> src/drivers/px4io</p>
   </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="PWM_MAIN_TRIM1">PWM_MAIN_TRIM1</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Trim value for main output channel 1</p><p><strong>Comment:</strong> Set to normalized offset</p>
 
 
-<p><b>Decimal:</b> 2</p>
-   <p><b>Scope:</b> src/drivers/px4io</p>
+   <p><b>Module:</b> src/drivers/px4io</p>
   </td><td style="vertical-align: top;">-0.2</td><td style="vertical-align: top;">0.2</td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="PWM_MAIN_TRIM2">PWM_MAIN_TRIM2</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Trim value for main output channel 2</p><p><strong>Comment:</strong> Set to normalized offset</p>
 
 
-<p><b>Decimal:</b> 2</p>
-   <p><b>Scope:</b> src/drivers/px4io</p>
+   <p><b>Module:</b> src/drivers/px4io</p>
   </td><td style="vertical-align: top;">-0.2</td><td style="vertical-align: top;">0.2</td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="PWM_MAIN_TRIM3">PWM_MAIN_TRIM3</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Trim value for main output channel 3</p><p><strong>Comment:</strong> Set to normalized offset</p>
 
 
-<p><b>Decimal:</b> 2</p>
-   <p><b>Scope:</b> src/drivers/px4io</p>
+   <p><b>Module:</b> src/drivers/px4io</p>
   </td><td style="vertical-align: top;">-0.2</td><td style="vertical-align: top;">0.2</td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="PWM_MAIN_TRIM4">PWM_MAIN_TRIM4</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Trim value for main output channel 4</p><p><strong>Comment:</strong> Set to normalized offset</p>
 
 
-<p><b>Decimal:</b> 2</p>
-   <p><b>Scope:</b> src/drivers/px4io</p>
+   <p><b>Module:</b> src/drivers/px4io</p>
   </td><td style="vertical-align: top;">-0.2</td><td style="vertical-align: top;">0.2</td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="PWM_MAIN_TRIM5">PWM_MAIN_TRIM5</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Trim value for main output channel 5</p><p><strong>Comment:</strong> Set to normalized offset</p>
 
 
-<p><b>Decimal:</b> 2</p>
-   <p><b>Scope:</b> src/drivers/px4io</p>
+   <p><b>Module:</b> src/drivers/px4io</p>
   </td><td style="vertical-align: top;">-0.2</td><td style="vertical-align: top;">0.2</td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="PWM_MAIN_TRIM6">PWM_MAIN_TRIM6</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Trim value for main output channel 6</p><p><strong>Comment:</strong> Set to normalized offset</p>
 
 
-<p><b>Decimal:</b> 2</p>
-   <p><b>Scope:</b> src/drivers/px4io</p>
+   <p><b>Module:</b> src/drivers/px4io</p>
   </td><td style="vertical-align: top;">-0.2</td><td style="vertical-align: top;">0.2</td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="PWM_MAIN_TRIM7">PWM_MAIN_TRIM7</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Trim value for main output channel 7</p><p><strong>Comment:</strong> Set to normalized offset</p>
 
 
-<p><b>Decimal:</b> 2</p>
-   <p><b>Scope:</b> src/drivers/px4io</p>
+   <p><b>Module:</b> src/drivers/px4io</p>
   </td><td style="vertical-align: top;">-0.2</td><td style="vertical-align: top;">0.2</td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="PWM_MAIN_TRIM8">PWM_MAIN_TRIM8</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Trim value for main output channel 8</p><p><strong>Comment:</strong> Set to normalized offset</p>
 
 
-<p><b>Decimal:</b> 2</p>
-   <p><b>Scope:</b> src/drivers/px4io</p>
+   <p><b>Module:</b> src/drivers/px4io</p>
   </td><td style="vertical-align: top;">-0.2</td><td style="vertical-align: top;">0.2</td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="PWM_SBUS_MODE">PWM_SBUS_MODE</strong> (INT32)</td><td style="vertical-align: top;"><p>S.BUS out</p><p><strong>Comment:</strong> Set to 1 to enable S.BUS version 1 output instead of RSSI.</p>
 
 
-   <p><b>Scope:</b> src/drivers/px4io</p>
+   <p><b>Module:</b> src/drivers/px4io</p>
   </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="PWM_RATE">PWM_RATE</strong> (INT32)</td><td style="vertical-align: top;"><p>Set the PWM output frequency for the main outputs</p><p><strong>Comment:</strong> IMPORTANT: CHANGING THIS PARAMETER REQUIRES A COMPLETE SYSTEM REBOOT IN ORDER TO APPLY THE CHANGES. Set to 400 for industry default or 1000 for high frequency ESCs.</p>
 
 
  <p><b>Reboot required:</b> true</p>
-  <p><b>Scope:</b> src/modules/sensors</p>
+  <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">-1</td><td style="vertical-align: top;">2000</td><td style="vertical-align: top;">400</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">Hz</td></tr>
 <tr><td style="vertical-align: top;"><strong id="PWM_MIN">PWM_MIN</strong> (INT32)</td><td style="vertical-align: top;"><p>Set the minimum PWM for the main outputs</p><p><strong>Comment:</strong> IMPORTANT: CHANGING THIS PARAMETER REQUIRES A COMPLETE SYSTEM REBOOT IN ORDER TO APPLY THE CHANGES. Set to 1000 for industry default or 900 to increase servo travel.</p>
 
 
  <p><b>Reboot required:</b> true</p>
-  <p><b>Scope:</b> src/modules/sensors</p>
+  <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">800</td><td style="vertical-align: top;">1400</td><td style="vertical-align: top;">1000</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">us</td></tr>
 <tr><td style="vertical-align: top;"><strong id="PWM_MAX">PWM_MAX</strong> (INT32)</td><td style="vertical-align: top;"><p>Set the maximum PWM for the main outputs</p><p><strong>Comment:</strong> IMPORTANT: CHANGING THIS PARAMETER REQUIRES A COMPLETE SYSTEM REBOOT IN ORDER TO APPLY THE CHANGES. Set to 2000 for industry default or 2100 to increase servo travel.</p>
 
 
  <p><b>Reboot required:</b> true</p>
-  <p><b>Scope:</b> src/modules/sensors</p>
+  <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">1600</td><td style="vertical-align: top;">2200</td><td style="vertical-align: top;">2000</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">us</td></tr>
 <tr><td style="vertical-align: top;"><strong id="PWM_DISARMED">PWM_DISARMED</strong> (INT32)</td><td style="vertical-align: top;"><p>Set the disarmed PWM for the main outputs</p><p><strong>Comment:</strong> IMPORTANT: CHANGING THIS PARAMETER REQUIRES A COMPLETE SYSTEM REBOOT IN ORDER TO APPLY THE CHANGES. This is the PWM pulse the autopilot is outputting if not armed. The main use of this parameter is to silence ESCs when they are disarmed.</p>
 
 
  <p><b>Reboot required:</b> true</p>
-  <p><b>Scope:</b> src/modules/sensors</p>
+  <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">2200</td><td style="vertical-align: top;">900</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">us</td></tr>
 <tr><td style="vertical-align: top;"><strong id="PWM_AUX_MIN">PWM_AUX_MIN</strong> (INT32)</td><td style="vertical-align: top;"><p>Set the minimum PWM for the auxiliary outputs</p><p><strong>Comment:</strong> IMPORTANT: CHANGING THIS PARAMETER REQUIRES A COMPLETE SYSTEM REBOOT IN ORDER TO APPLY THE CHANGES. Set to 1000 for default or 900 to increase servo travel</p>
 
 
  <p><b>Reboot required:</b> true</p>
-  <p><b>Scope:</b> src/modules/sensors</p>
+  <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">800</td><td style="vertical-align: top;">1400</td><td style="vertical-align: top;">1000</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">us</td></tr>
 <tr><td style="vertical-align: top;"><strong id="PWM_AUX_MAX">PWM_AUX_MAX</strong> (INT32)</td><td style="vertical-align: top;"><p>Set the maximum PWM for the auxiliary outputs</p><p><strong>Comment:</strong> IMPORTANT: CHANGING THIS PARAMETER REQUIRES A COMPLETE SYSTEM REBOOT IN ORDER TO APPLY THE CHANGES. Set to 2000 for default or 2100 to increase servo travel</p>
 
 
  <p><b>Reboot required:</b> true</p>
-  <p><b>Scope:</b> src/modules/sensors</p>
+  <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">1600</td><td style="vertical-align: top;">2200</td><td style="vertical-align: top;">2000</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">us</td></tr>
 <tr><td style="vertical-align: top;"><strong id="PWM_AUX_DISARMED">PWM_AUX_DISARMED</strong> (INT32)</td><td style="vertical-align: top;"><p>Set the disarmed PWM for auxiliary outputs</p><p><strong>Comment:</strong> IMPORTANT: CHANGING THIS PARAMETER REQUIRES A COMPLETE SYSTEM REBOOT IN ORDER TO APPLY THE CHANGES. This is the PWM pulse the autopilot is outputting if not armed. The main use of this parameter is to silence ESCs when they are disarmed.</p>
 
 
  <p><b>Reboot required:</b> true</p>
-  <p><b>Scope:</b> src/modules/sensors</p>
+  <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">2200</td><td style="vertical-align: top;">1500</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">us</td></tr>
 <tr><td style="vertical-align: top;"><strong id="THR_MDL_FAC">THR_MDL_FAC</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Thrust to PWM model parameter</p><p><strong>Comment:</strong> Parameter used to model the relationship between static thrust and motor input PWM. Model is: thrust = (1-factor)*PWM + factor * PWM^2</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="MOT_SLEW_MAX">MOT_SLEW_MAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Minimum motor rise time (slew rate limit)</p><p><strong>Comment:</strong> Minimum time allowed for the motor input signal to pass through a range of 1000 PWM units. A value x means that the motor signal can only go from 1000 to 2000 PWM in maximum x seconds. Zero means that slew rate limiting is disabled.</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">s/(1000*PWM)</td></tr>
 </tbody></table>
 
 ## Payload drop
 
 
-Scope (for all values) is: *src/modules/bottle_drop*.
+The module where these parameters are defined is: *src/modules/bottle_drop*.
 
 <table style="width: 100%;">
 <colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
@@ -3137,7 +2795,7 @@ Scope (for all values) is: *src/modules/bottle_drop*.
 ## Position Estimator
 
 
-Scope (for all values) is: *src/examples/ekf_att_pos_estimator*.
+The module where these parameters are defined is: *src/examples/ekf_att_pos_estimator*.
 
 <table style="width: 100%;">
 <colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
@@ -3237,7 +2895,7 @@ Scope (for all values) is: *src/examples/ekf_att_pos_estimator*.
 ## Position Estimator INAV
 
 
-Scope (for all values) is: *src/modules/position_estimator_inav*.
+The module where these parameters are defined is: *src/modules/position_estimator_inav*.
 
 <table style="width: 100%;">
 <colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
@@ -3361,7 +3019,7 @@ Scope (for all values) is: *src/modules/position_estimator_inav*.
 ## RC Receiver Configuration
 
 
-Scope (for all values) is: *src/platforms/qurt/fc_addon/rc_receiver*.
+The module where these parameters are defined is: *src/platforms/qurt/fc_addon/rc_receiver*.
 
 <table style="width: 100%;">
 <colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
@@ -3384,470 +3042,467 @@ Scope (for all values) is: *src/platforms/qurt/fc_addon/rc_receiver*.
 <tr><td style="vertical-align: top;"><strong id="TRIM_ROLL">TRIM_ROLL</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Roll trim</p><p><strong>Comment:</strong> The trim value is the actuator control value the system needs for straight and level flight. It can be calibrated by flying manually straight and level using the RC trims and copying them using the GCS.</p>
 
 
-<p><b>Decimal:</b> 2</p>
-   <p><b>Scope:</b> src/modules/commander</p>
+   <p><b>Module:</b> src/modules/commander</p>
   </td><td style="vertical-align: top;">-0.25</td><td style="vertical-align: top;">0.25</td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="TRIM_PITCH">TRIM_PITCH</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Pitch trim</p><p><strong>Comment:</strong> The trim value is the actuator control value the system needs for straight and level flight. It can be calibrated by flying manually straight and level using the RC trims and copying them using the GCS.</p>
 
 
-<p><b>Decimal:</b> 2</p>
-   <p><b>Scope:</b> src/modules/commander</p>
+   <p><b>Module:</b> src/modules/commander</p>
   </td><td style="vertical-align: top;">-0.25</td><td style="vertical-align: top;">0.25</td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="TRIM_YAW">TRIM_YAW</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Yaw trim</p><p><strong>Comment:</strong> The trim value is the actuator control value the system needs for straight and level flight. It can be calibrated by flying manually straight and level using the RC trims and copying them using the GCS.</p>
 
 
-<p><b>Decimal:</b> 2</p>
-   <p><b>Scope:</b> src/modules/commander</p>
+   <p><b>Module:</b> src/modules/commander</p>
   </td><td style="vertical-align: top;">-0.25</td><td style="vertical-align: top;">0.25</td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC1_MIN">RC1_MIN</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 1 Minimum</p><p><strong>Comment:</strong> Minimum value for RC channel 1</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">800.0</td><td style="vertical-align: top;">1500.0</td><td style="vertical-align: top;">1000.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">us</td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC1_TRIM">RC1_TRIM</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 1 Trim</p><p><strong>Comment:</strong> Mid point value (same as min for throttle)</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">800.0</td><td style="vertical-align: top;">2200.0</td><td style="vertical-align: top;">1500.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">us</td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC1_MAX">RC1_MAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 1 Maximum</p><p><strong>Comment:</strong> Maximum value for RC channel 1</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">1500.0</td><td style="vertical-align: top;">2200.0</td><td style="vertical-align: top;">2000.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">us</td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC1_REV">RC1_REV</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 1 Reverse</p><p><strong>Comment:</strong> Set to -1 to reverse channel.</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">-1.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC1_DZ">RC1_DZ</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 1 dead zone</p><p><strong>Comment:</strong> The +- range of this value around the trim value will be considered as zero.</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">100.0</td><td style="vertical-align: top;">10.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">us</td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC2_MIN">RC2_MIN</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 2 Minimum</p><p><strong>Comment:</strong> Minimum value for this channel.</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">800.0</td><td style="vertical-align: top;">1500.0</td><td style="vertical-align: top;">1000.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">us</td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC2_TRIM">RC2_TRIM</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 2 Trim</p><p><strong>Comment:</strong> Mid point value (has to be set to the same as min for throttle channel).</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">800.0</td><td style="vertical-align: top;">2200.0</td><td style="vertical-align: top;">1500.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">us</td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC2_MAX">RC2_MAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 2 Maximum</p><p><strong>Comment:</strong> Maximum value for this channel.</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">1500.0</td><td style="vertical-align: top;">2200.0</td><td style="vertical-align: top;">2000.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">us</td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC2_REV">RC2_REV</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 2 Reverse</p><p><strong>Comment:</strong> Set to -1 to reverse channel.</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">-1.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC2_DZ">RC2_DZ</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 2 dead zone</p><p><strong>Comment:</strong> The +- range of this value around the trim value will be considered as zero.</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">100.0</td><td style="vertical-align: top;">10.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">us</td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC3_MIN">RC3_MIN</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 3 Minimum</p><p><strong>Comment:</strong> Minimum value for this channel.</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">800.0</td><td style="vertical-align: top;">1500.0</td><td style="vertical-align: top;">1000</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">us</td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC3_TRIM">RC3_TRIM</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 3 Trim</p><p><strong>Comment:</strong> Mid point value (has to be set to the same as min for throttle channel).</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">800.0</td><td style="vertical-align: top;">2200.0</td><td style="vertical-align: top;">1500</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">us</td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC3_MAX">RC3_MAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 3 Maximum</p><p><strong>Comment:</strong> Maximum value for this channel.</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">1500.0</td><td style="vertical-align: top;">2200.0</td><td style="vertical-align: top;">2000</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">us</td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC3_REV">RC3_REV</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 3 Reverse</p><p><strong>Comment:</strong> Set to -1 to reverse channel.</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">-1.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC3_DZ">RC3_DZ</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 3 dead zone</p><p><strong>Comment:</strong> The +- range of this value around the trim value will be considered as zero.</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">100.0</td><td style="vertical-align: top;">10.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">us</td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC4_MIN">RC4_MIN</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 4 Minimum</p><p><strong>Comment:</strong> Minimum value for this channel.</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">800.0</td><td style="vertical-align: top;">1500.0</td><td style="vertical-align: top;">1000</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">us</td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC4_TRIM">RC4_TRIM</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 4 Trim</p><p><strong>Comment:</strong> Mid point value (has to be set to the same as min for throttle channel).</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">800.0</td><td style="vertical-align: top;">2200.0</td><td style="vertical-align: top;">1500</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">us</td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC4_MAX">RC4_MAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 4 Maximum</p><p><strong>Comment:</strong> Maximum value for this channel.</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">1500.0</td><td style="vertical-align: top;">2200.0</td><td style="vertical-align: top;">2000</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">us</td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC4_REV">RC4_REV</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 4 Reverse</p><p><strong>Comment:</strong> Set to -1 to reverse channel.</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">-1.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC4_DZ">RC4_DZ</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 4 dead zone</p><p><strong>Comment:</strong> The +- range of this value around the trim value will be considered as zero.</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">100.0</td><td style="vertical-align: top;">10.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">us</td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC5_MIN">RC5_MIN</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 5 Minimum</p><p><strong>Comment:</strong> Minimum value for this channel.</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">800.0</td><td style="vertical-align: top;">1500.0</td><td style="vertical-align: top;">1000</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">us</td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC5_TRIM">RC5_TRIM</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 5 Trim</p><p><strong>Comment:</strong> Mid point value (has to be set to the same as min for throttle channel).</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">800.0</td><td style="vertical-align: top;">2200.0</td><td style="vertical-align: top;">1500</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">us</td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC5_MAX">RC5_MAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 5 Maximum</p><p><strong>Comment:</strong> Maximum value for this channel.</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">1500.0</td><td style="vertical-align: top;">2200.0</td><td style="vertical-align: top;">2000</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">us</td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC5_REV">RC5_REV</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 5 Reverse</p><p><strong>Comment:</strong> Set to -1 to reverse channel.</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">-1.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC5_DZ">RC5_DZ</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 5 dead zone</p><p><strong>Comment:</strong> The +- range of this value around the trim value will be considered as zero.</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">100.0</td><td style="vertical-align: top;">10.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC6_MIN">RC6_MIN</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 6 Minimum</p><p><strong>Comment:</strong> Minimum value for this channel.</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">800.0</td><td style="vertical-align: top;">1500.0</td><td style="vertical-align: top;">1000</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">us</td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC6_TRIM">RC6_TRIM</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 6 Trim</p><p><strong>Comment:</strong> Mid point value (has to be set to the same as min for throttle channel).</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">800.0</td><td style="vertical-align: top;">2200.0</td><td style="vertical-align: top;">1500</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">us</td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC6_MAX">RC6_MAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 6 Maximum</p><p><strong>Comment:</strong> Maximum value for this channel.</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">1500.0</td><td style="vertical-align: top;">2200.0</td><td style="vertical-align: top;">2000</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">us</td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC6_REV">RC6_REV</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 6 Reverse</p><p><strong>Comment:</strong> Set to -1 to reverse channel.</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">-1.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC6_DZ">RC6_DZ</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 6 dead zone</p><p><strong>Comment:</strong> The +- range of this value around the trim value will be considered as zero.</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">100.0</td><td style="vertical-align: top;">10.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC7_MIN">RC7_MIN</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 7 Minimum</p><p><strong>Comment:</strong> Minimum value for this channel.</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">800.0</td><td style="vertical-align: top;">1500.0</td><td style="vertical-align: top;">1000</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">us</td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC7_TRIM">RC7_TRIM</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 7 Trim</p><p><strong>Comment:</strong> Mid point value (has to be set to the same as min for throttle channel).</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">800.0</td><td style="vertical-align: top;">2200.0</td><td style="vertical-align: top;">1500</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">us</td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC7_MAX">RC7_MAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 7 Maximum</p><p><strong>Comment:</strong> Maximum value for this channel.</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">1500.0</td><td style="vertical-align: top;">2200.0</td><td style="vertical-align: top;">2000</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">us</td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC7_REV">RC7_REV</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 7 Reverse</p><p><strong>Comment:</strong> Set to -1 to reverse channel.</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">-1.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC7_DZ">RC7_DZ</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 7 dead zone</p><p><strong>Comment:</strong> The +- range of this value around the trim value will be considered as zero.</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">100.0</td><td style="vertical-align: top;">10.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC8_MIN">RC8_MIN</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 8 Minimum</p><p><strong>Comment:</strong> Minimum value for this channel.</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">800.0</td><td style="vertical-align: top;">1500.0</td><td style="vertical-align: top;">1000</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">us</td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC8_TRIM">RC8_TRIM</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 8 Trim</p><p><strong>Comment:</strong> Mid point value (has to be set to the same as min for throttle channel).</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">800.0</td><td style="vertical-align: top;">2200.0</td><td style="vertical-align: top;">1500</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">us</td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC8_MAX">RC8_MAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 8 Maximum</p><p><strong>Comment:</strong> Maximum value for this channel.</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">1500.0</td><td style="vertical-align: top;">2200.0</td><td style="vertical-align: top;">2000</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">us</td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC8_REV">RC8_REV</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 8 Reverse</p><p><strong>Comment:</strong> Set to -1 to reverse channel.</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">-1.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC8_DZ">RC8_DZ</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 8 dead zone</p><p><strong>Comment:</strong> The +- range of this value around the trim value will be considered as zero.</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">100.0</td><td style="vertical-align: top;">10.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC9_MIN">RC9_MIN</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 9 Minimum</p><p><strong>Comment:</strong> Minimum value for this channel.</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">800.0</td><td style="vertical-align: top;">1500.0</td><td style="vertical-align: top;">1000</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">us</td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC9_TRIM">RC9_TRIM</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 9 Trim</p><p><strong>Comment:</strong> Mid point value (has to be set to the same as min for throttle channel).</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">800.0</td><td style="vertical-align: top;">2200.0</td><td style="vertical-align: top;">1500</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">us</td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC9_MAX">RC9_MAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 9 Maximum</p><p><strong>Comment:</strong> Maximum value for this channel.</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">1500.0</td><td style="vertical-align: top;">2200.0</td><td style="vertical-align: top;">2000</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">us</td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC9_REV">RC9_REV</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 9 Reverse</p><p><strong>Comment:</strong> Set to -1 to reverse channel.</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">-1.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC9_DZ">RC9_DZ</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 9 dead zone</p><p><strong>Comment:</strong> The +- range of this value around the trim value will be considered as zero.</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">100.0</td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC10_MIN">RC10_MIN</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 10 Minimum</p><p><strong>Comment:</strong> Minimum value for this channel.</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">800.0</td><td style="vertical-align: top;">1500.0</td><td style="vertical-align: top;">1000</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">us</td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC10_TRIM">RC10_TRIM</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 10 Trim</p><p><strong>Comment:</strong> Mid point value (has to be set to the same as min for throttle channel).</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">800.0</td><td style="vertical-align: top;">2200.0</td><td style="vertical-align: top;">1500</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">us</td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC10_MAX">RC10_MAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 10 Maximum</p><p><strong>Comment:</strong> Maximum value for this channel.</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">1500.0</td><td style="vertical-align: top;">2200.0</td><td style="vertical-align: top;">2000</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">us</td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC10_REV">RC10_REV</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 10 Reverse</p><p><strong>Comment:</strong> Set to -1 to reverse channel.</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">-1.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC10_DZ">RC10_DZ</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 10 dead zone</p><p><strong>Comment:</strong> The +- range of this value around the trim value will be considered as zero.</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">100.0</td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC11_MIN">RC11_MIN</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 11 Minimum</p><p><strong>Comment:</strong> Minimum value for this channel.</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">800.0</td><td style="vertical-align: top;">1500.0</td><td style="vertical-align: top;">1000</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">us</td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC11_TRIM">RC11_TRIM</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 11 Trim</p><p><strong>Comment:</strong> Mid point value (has to be set to the same as min for throttle channel).</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">800.0</td><td style="vertical-align: top;">2200.0</td><td style="vertical-align: top;">1500</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">us</td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC11_MAX">RC11_MAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 11 Maximum</p><p><strong>Comment:</strong> Maximum value for this channel.</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">1500.0</td><td style="vertical-align: top;">2200.0</td><td style="vertical-align: top;">2000</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">us</td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC11_REV">RC11_REV</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 11 Reverse</p><p><strong>Comment:</strong> Set to -1 to reverse channel.</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">-1.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC11_DZ">RC11_DZ</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 11 dead zone</p><p><strong>Comment:</strong> The +- range of this value around the trim value will be considered as zero.</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">100.0</td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC12_MIN">RC12_MIN</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 12 Minimum</p><p><strong>Comment:</strong> Minimum value for this channel.</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">800.0</td><td style="vertical-align: top;">1500.0</td><td style="vertical-align: top;">1000</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">us</td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC12_TRIM">RC12_TRIM</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 12 Trim</p><p><strong>Comment:</strong> Mid point value (has to be set to the same as min for throttle channel).</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">800.0</td><td style="vertical-align: top;">2200.0</td><td style="vertical-align: top;">1500</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">us</td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC12_MAX">RC12_MAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 12 Maximum</p><p><strong>Comment:</strong> Maximum value for this channel.</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">1500.0</td><td style="vertical-align: top;">2200.0</td><td style="vertical-align: top;">2000</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">us</td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC12_REV">RC12_REV</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 12 Reverse</p><p><strong>Comment:</strong> Set to -1 to reverse channel.</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">-1.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC12_DZ">RC12_DZ</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 12 dead zone</p><p><strong>Comment:</strong> The +- range of this value around the trim value will be considered as zero.</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">100.0</td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC13_MIN">RC13_MIN</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 13 Minimum</p><p><strong>Comment:</strong> Minimum value for this channel.</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">800.0</td><td style="vertical-align: top;">1500.0</td><td style="vertical-align: top;">1000</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">us</td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC13_TRIM">RC13_TRIM</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 13 Trim</p><p><strong>Comment:</strong> Mid point value (has to be set to the same as min for throttle channel).</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">800.0</td><td style="vertical-align: top;">2200.0</td><td style="vertical-align: top;">1500</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">us</td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC13_MAX">RC13_MAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 13 Maximum</p><p><strong>Comment:</strong> Maximum value for this channel.</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">1500.0</td><td style="vertical-align: top;">2200.0</td><td style="vertical-align: top;">2000</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">us</td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC13_REV">RC13_REV</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 13 Reverse</p><p><strong>Comment:</strong> Set to -1 to reverse channel.</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">-1.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC13_DZ">RC13_DZ</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 13 dead zone</p><p><strong>Comment:</strong> The +- range of this value around the trim value will be considered as zero.</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">100.0</td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC14_MIN">RC14_MIN</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 14 Minimum</p><p><strong>Comment:</strong> Minimum value for this channel.</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">800.0</td><td style="vertical-align: top;">1500.0</td><td style="vertical-align: top;">1000</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">us</td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC14_TRIM">RC14_TRIM</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 14 Trim</p><p><strong>Comment:</strong> Mid point value (has to be set to the same as min for throttle channel).</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">800.0</td><td style="vertical-align: top;">2200.0</td><td style="vertical-align: top;">1500</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">us</td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC14_MAX">RC14_MAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 14 Maximum</p><p><strong>Comment:</strong> Maximum value for this channel.</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">1500.0</td><td style="vertical-align: top;">2200.0</td><td style="vertical-align: top;">2000</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">us</td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC14_REV">RC14_REV</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 14 Reverse</p><p><strong>Comment:</strong> Set to -1 to reverse channel.</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">-1.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC14_DZ">RC14_DZ</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 14 dead zone</p><p><strong>Comment:</strong> The +- range of this value around the trim value will be considered as zero.</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">100.0</td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC15_MIN">RC15_MIN</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 15 Minimum</p><p><strong>Comment:</strong> Minimum value for this channel.</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">800.0</td><td style="vertical-align: top;">1500.0</td><td style="vertical-align: top;">1000</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">us</td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC15_TRIM">RC15_TRIM</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 15 Trim</p><p><strong>Comment:</strong> Mid point value (has to be set to the same as min for throttle channel).</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">800.0</td><td style="vertical-align: top;">2200.0</td><td style="vertical-align: top;">1500</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">us</td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC15_MAX">RC15_MAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 15 Maximum</p><p><strong>Comment:</strong> Maximum value for this channel.</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">1500.0</td><td style="vertical-align: top;">2200.0</td><td style="vertical-align: top;">2000</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">us</td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC15_REV">RC15_REV</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 15 Reverse</p><p><strong>Comment:</strong> Set to -1 to reverse channel.</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">-1.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC15_DZ">RC15_DZ</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 15 dead zone</p><p><strong>Comment:</strong> The +- range of this value around the trim value will be considered as zero.</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">100.0</td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC16_MIN">RC16_MIN</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 16 Minimum</p><p><strong>Comment:</strong> Minimum value for this channel.</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">800.0</td><td style="vertical-align: top;">1500.0</td><td style="vertical-align: top;">1000</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">us</td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC16_TRIM">RC16_TRIM</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 16 Trim</p><p><strong>Comment:</strong> Mid point value (has to be set to the same as min for throttle channel).</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">800.0</td><td style="vertical-align: top;">2200.0</td><td style="vertical-align: top;">1500</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">us</td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC16_MAX">RC16_MAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 16 Maximum</p><p><strong>Comment:</strong> Maximum value for this channel.</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">1500.0</td><td style="vertical-align: top;">2200.0</td><td style="vertical-align: top;">2000</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">us</td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC16_REV">RC16_REV</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 16 Reverse</p><p><strong>Comment:</strong> Set to -1 to reverse channel.</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">-1.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC16_DZ">RC16_DZ</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 16 dead zone</p><p><strong>Comment:</strong> The +- range of this value around the trim value will be considered as zero.</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">100.0</td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC17_MIN">RC17_MIN</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 17 Minimum</p><p><strong>Comment:</strong> Minimum value for this channel.</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">800.0</td><td style="vertical-align: top;">1500.0</td><td style="vertical-align: top;">1000</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">us</td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC17_TRIM">RC17_TRIM</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 17 Trim</p><p><strong>Comment:</strong> Mid point value (has to be set to the same as min for throttle channel).</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">800.0</td><td style="vertical-align: top;">2200.0</td><td style="vertical-align: top;">1500</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">us</td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC17_MAX">RC17_MAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 17 Maximum</p><p><strong>Comment:</strong> Maximum value for this channel.</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">1500.0</td><td style="vertical-align: top;">2200.0</td><td style="vertical-align: top;">2000</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">us</td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC17_REV">RC17_REV</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 17 Reverse</p><p><strong>Comment:</strong> Set to -1 to reverse channel.</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">-1.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC17_DZ">RC17_DZ</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 17 dead zone</p><p><strong>Comment:</strong> The +- range of this value around the trim value will be considered as zero.</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">100.0</td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC18_MIN">RC18_MIN</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 18 Minimum</p><p><strong>Comment:</strong> Minimum value for this channel.</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">800.0</td><td style="vertical-align: top;">1500.0</td><td style="vertical-align: top;">1000</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">us</td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC18_TRIM">RC18_TRIM</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 18 Trim</p><p><strong>Comment:</strong> Mid point value (has to be set to the same as min for throttle channel).</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">800.0</td><td style="vertical-align: top;">2200.0</td><td style="vertical-align: top;">1500</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">us</td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC18_MAX">RC18_MAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 18 Maximum</p><p><strong>Comment:</strong> Maximum value for this channel.</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">1500.0</td><td style="vertical-align: top;">2200.0</td><td style="vertical-align: top;">2000</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">us</td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC18_REV">RC18_REV</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 18 Reverse</p><p><strong>Comment:</strong> Set to -1 to reverse channel.</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">-1.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC18_DZ">RC18_DZ</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RC Channel 18 dead zone</p><p><strong>Comment:</strong> The +- range of this value around the trim value will be considered as zero.</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">100.0</td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC_RL1_DSM_VCC">RC_RL1_DSM_VCC</strong> (INT32)</td><td style="vertical-align: top;"><p>Relay control of relay 1 mapped to the Spektrum receiver power supply</p>
 <strong>Values:</strong><ul>
@@ -3855,7 +3510,7 @@ Scope (for all values) is: *src/platforms/qurt/fc_addon/rc_receiver*.
 
 <li><strong>1:</strong> Relay controls DSM power</li> 
 </ul>
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">1</td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC_DSM_BIND">RC_DSM_BIND</strong> (INT32)</td><td style="vertical-align: top;"><p>DSM binding trigger</p>
 <strong>Values:</strong><ul>
@@ -3865,17 +3520,17 @@ Scope (for all values) is: *src/platforms/qurt/fc_addon/rc_receiver*.
 
 <li><strong>1:</strong> Start DSMX bind</li> 
 </ul>
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">-1</td><td style="vertical-align: top;">1</td><td style="vertical-align: top;">-1</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC_CHAN_CNT">RC_CHAN_CNT</strong> (INT32)</td><td style="vertical-align: top;"><p>RC channel count</p><p><strong>Comment:</strong> This parameter is used by Ground Station software to save the number of channels which were used during RC calibration. It is only meant for ground station use.</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">18</td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC_TH_USER">RC_TH_USER</strong> (INT32)</td><td style="vertical-align: top;"><p>RC mode switch threshold automatic distribution</p><p><strong>Comment:</strong> This parameter is used by Ground Station software to specify whether the threshold values for flight mode switches were automatically calculated. 0 indicates that the threshold values were set by the user. Any other value indicates that the threshold value where automatically set by the ground station software. It is only meant for ground station use.</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">1</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC_MAP_ROLL">RC_MAP_ROLL</strong> (INT32)</td><td style="vertical-align: top;"><p>Roll control channel mapping</p><p><strong>Comment:</strong> The channel index (starting from 1 for channel 1) indicates which channel should be used for reading roll inputs from. A value of zero indicates the switch is not assigned.</p>
 
@@ -3918,7 +3573,7 @@ Scope (for all values) is: *src/platforms/qurt/fc_addon/rc_receiver*.
 
 <li><strong>18:</strong> Channel 18</li> 
 </ul>
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">18</td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC_MAP_PITCH">RC_MAP_PITCH</strong> (INT32)</td><td style="vertical-align: top;"><p>Pitch control channel mapping</p><p><strong>Comment:</strong> The channel index (starting from 1 for channel 1) indicates which channel should be used for reading pitch inputs from. A value of zero indicates the switch is not assigned.</p>
 
@@ -3961,7 +3616,7 @@ Scope (for all values) is: *src/platforms/qurt/fc_addon/rc_receiver*.
 
 <li><strong>18:</strong> Channel 18</li> 
 </ul>
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">18</td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC_MAP_THROTTLE">RC_MAP_THROTTLE</strong> (INT32)</td><td style="vertical-align: top;"><p>Throttle control channel mapping</p><p><strong>Comment:</strong> The channel index (starting from 1 for channel 1) indicates which channel should be used for reading throttle inputs from. A value of zero indicates the switch is not assigned.</p>
 
@@ -4004,7 +3659,7 @@ Scope (for all values) is: *src/platforms/qurt/fc_addon/rc_receiver*.
 
 <li><strong>18:</strong> Channel 18</li> 
 </ul>
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">18</td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC_MAP_YAW">RC_MAP_YAW</strong> (INT32)</td><td style="vertical-align: top;"><p>Yaw control channel mapping</p><p><strong>Comment:</strong> The channel index (starting from 1 for channel 1) indicates which channel should be used for reading yaw inputs from. A value of zero indicates the switch is not assigned.</p>
 
@@ -4047,7 +3702,7 @@ Scope (for all values) is: *src/platforms/qurt/fc_addon/rc_receiver*.
 
 <li><strong>18:</strong> Channel 18</li> 
 </ul>
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">18</td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC_MAP_AUX1">RC_MAP_AUX1</strong> (INT32)</td><td style="vertical-align: top;"><p>AUX1 Passthrough RC Channel</p><p><strong>Comment:</strong> Default function: Camera pitch</p>
 
@@ -4090,7 +3745,7 @@ Scope (for all values) is: *src/platforms/qurt/fc_addon/rc_receiver*.
 
 <li><strong>18:</strong> Channel 18</li> 
 </ul>
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">18</td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC_MAP_AUX2">RC_MAP_AUX2</strong> (INT32)</td><td style="vertical-align: top;"><p>AUX2 Passthrough RC Channel</p><p><strong>Comment:</strong> Default function: Camera roll</p>
 
@@ -4133,7 +3788,7 @@ Scope (for all values) is: *src/platforms/qurt/fc_addon/rc_receiver*.
 
 <li><strong>18:</strong> Channel 18</li> 
 </ul>
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">18</td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC_MAP_AUX3">RC_MAP_AUX3</strong> (INT32)</td><td style="vertical-align: top;"><p>AUX3 Passthrough RC Channel</p><p><strong>Comment:</strong> Default function: Camera azimuth / yaw</p>
 
@@ -4176,7 +3831,7 @@ Scope (for all values) is: *src/platforms/qurt/fc_addon/rc_receiver*.
 
 <li><strong>18:</strong> Channel 18</li> 
 </ul>
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">18</td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC_MAP_AUX4">RC_MAP_AUX4</strong> (INT32)</td><td style="vertical-align: top;"><p>AUX4 Passthrough RC Channel</p>
 <strong>Values:</strong><ul>
@@ -4218,7 +3873,7 @@ Scope (for all values) is: *src/platforms/qurt/fc_addon/rc_receiver*.
 
 <li><strong>18:</strong> Channel 18</li> 
 </ul>
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">18</td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC_MAP_AUX5">RC_MAP_AUX5</strong> (INT32)</td><td style="vertical-align: top;"><p>AUX5 Passthrough RC Channel</p>
 <strong>Values:</strong><ul>
@@ -4260,7 +3915,7 @@ Scope (for all values) is: *src/platforms/qurt/fc_addon/rc_receiver*.
 
 <li><strong>18:</strong> Channel 18</li> 
 </ul>
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">18</td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC_MAP_PARAM1">RC_MAP_PARAM1</strong> (INT32)</td><td style="vertical-align: top;"><p>PARAM1 tuning channel</p><p><strong>Comment:</strong> Can be used for parameter tuning with the RC. This one is further referenced as the 1st parameter channel. Set to 0 to deactivate *</p>
 
@@ -4303,7 +3958,7 @@ Scope (for all values) is: *src/platforms/qurt/fc_addon/rc_receiver*.
 
 <li><strong>18:</strong> Channel 18</li> 
 </ul>
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">18</td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC_MAP_PARAM2">RC_MAP_PARAM2</strong> (INT32)</td><td style="vertical-align: top;"><p>PARAM2 tuning channel</p><p><strong>Comment:</strong> Can be used for parameter tuning with the RC. This one is further referenced as the 2nd parameter channel. Set to 0 to deactivate *</p>
 
@@ -4346,7 +4001,7 @@ Scope (for all values) is: *src/platforms/qurt/fc_addon/rc_receiver*.
 
 <li><strong>18:</strong> Channel 18</li> 
 </ul>
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">18</td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC_MAP_PARAM3">RC_MAP_PARAM3</strong> (INT32)</td><td style="vertical-align: top;"><p>PARAM3 tuning channel</p><p><strong>Comment:</strong> Can be used for parameter tuning with the RC. This one is further referenced as the 3th parameter channel. Set to 0 to deactivate *</p>
 
@@ -4389,12 +4044,12 @@ Scope (for all values) is: *src/platforms/qurt/fc_addon/rc_receiver*.
 
 <li><strong>18:</strong> Channel 18</li> 
 </ul>
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">18</td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC_FAILS_THR">RC_FAILS_THR</strong> (INT32)</td><td style="vertical-align: top;"><p>Failsafe channel PWM threshold</p><p><strong>Comment:</strong> Set to a value slightly above the PWM value assumed by throttle in a failsafe event, but ensure it is below the PWM value assumed by throttle during normal operation.</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">2200</td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">us</td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC_RSSI_PWM_CHAN">RC_RSSI_PWM_CHAN</strong> (INT32)</td><td style="vertical-align: top;"><p>PWM input channel that provides RSSI</p><p><strong>Comment:</strong> 0: do not read RSSI from input channel 1-18: read RSSI from specified input channel Specify the range for RSSI input with RC_RSSI_PWM_MIN and RC_RSSI_PWM_MAX parameters.</p>
 
@@ -4437,34 +4092,34 @@ Scope (for all values) is: *src/platforms/qurt/fc_addon/rc_receiver*.
 
 <li><strong>18:</strong> Channel 18</li> 
 </ul>
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">18</td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC_RSSI_PWM_MAX">RC_RSSI_PWM_MAX</strong> (INT32)</td><td style="vertical-align: top;"><p>Max input value for RSSI reading</p><p><strong>Comment:</strong> Only used if RC_RSSI_PWM_CHAN > 0</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">2000</td><td style="vertical-align: top;">1000</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC_RSSI_PWM_MIN">RC_RSSI_PWM_MIN</strong> (INT32)</td><td style="vertical-align: top;"><p>Min input value for RSSI reading</p><p><strong>Comment:</strong> Only used if RC_RSSI_PWM_CHAN > 0</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">2000</td><td style="vertical-align: top;">2000</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC_FLT_SMP_RATE">RC_FLT_SMP_RATE</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Sample rate of the remote control values for the low pass filter on roll,pitch, yaw and throttle</p><p><strong>Comment:</strong> Has an influence on the cutoff frequency precision.</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">50.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">Hz</td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC_FLT_CUTOFF">RC_FLT_CUTOFF</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Cutoff frequency for the low pass filter on roll,pitch, yaw and throttle</p><p><strong>Comment:</strong> Does not get set unless below RC_FLT_SMP_RATE/2 because of filter instability characteristics.</p>
 
 
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">0.1</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">10.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">Hz</td></tr>
 </tbody></table>
 
 ## Radio Signal Loss
 
 
-Scope (for all values) is: *src/modules/navigator*.
+The module where these parameters are defined is: *src/modules/navigator*.
 
 <table style="width: 100%;">
 <colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
@@ -4474,14 +4129,13 @@ Scope (for all values) is: *src/modules/navigator*.
 <tr><td style="vertical-align: top;"><strong id="NAV_RCL_LT">NAV_RCL_LT</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Loiter Time</p><p><strong>Comment:</strong> The amount of time in seconds the system should loiter at current position before termination Set to -1 to make the system skip loitering</p>
 
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;">-1.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">120.0</td><td style="vertical-align: top;">0.1</td><td style="vertical-align: top;">s</td></tr>
 </tbody></table>
 
 ## Radio Switches
 
 
-Scope (for all values) is: *src/modules/sensors*.
+The module where these parameters are defined is: *src/modules/sensors*.
 
 <table style="width: 100%;">
 <colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
@@ -5166,7 +4820,7 @@ Scope (for all values) is: *src/modules/sensors*.
 ## Return To Land
 
 
-Scope (for all values) is: *src/modules/navigator*.
+The module where these parameters are defined is: *src/modules/navigator*.
 
 <table style="width: 100%;">
 <colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
@@ -5176,29 +4830,25 @@ Scope (for all values) is: *src/modules/navigator*.
 <tr><td style="vertical-align: top;"><strong id="RTL_RETURN_ALT">RTL_RETURN_ALT</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RTL altitude</p><p><strong>Comment:</strong> Altitude to fly back in RTL in meters</p>
 
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">150</td><td style="vertical-align: top;">60</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">m</td></tr>
 <tr><td style="vertical-align: top;"><strong id="RTL_DESCEND_ALT">RTL_DESCEND_ALT</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RTL loiter altitude</p><p><strong>Comment:</strong> Stay at this altitude above home position after RTL descending. Land (i.e. slowly descend) from this altitude if autolanding allowed.</p>
 
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;">2</td><td style="vertical-align: top;">100</td><td style="vertical-align: top;">30</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">m</td></tr>
 <tr><td style="vertical-align: top;"><strong id="RTL_LAND_DELAY">RTL_LAND_DELAY</strong> (FLOAT)</td><td style="vertical-align: top;"><p>RTL delay</p><p><strong>Comment:</strong> Delay after descend before landing in RTL mode. If set to -1 the system will not land but loiter at RTL_DESCEND_ALT.</p>
 
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;">-1</td><td style="vertical-align: top;">300</td><td style="vertical-align: top;">-1.0</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="RTL_MIN_DIST">RTL_MIN_DIST</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Minimum distance to trigger rising to a safe altitude</p><p><strong>Comment:</strong> If the system is horizontally closer than this distance to home it will land straight on home instead of raising to the return altitude first.</p>
 
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">20</td><td style="vertical-align: top;">5.0</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">m</td></tr>
 </tbody></table>
 
 ## Runway Takeoff
 
 
-Scope (for all values) is: *src/lib/runway_takeoff*.
+The module where these parameters are defined is: *src/lib/runway_takeoff*.
 
 <table style="width: 100%;">
 <colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
@@ -5221,37 +4871,31 @@ Until RWTO_NAV_ALT is reached the plane is held level and only
 rudder is used to keep the heading (see RWTO_HDG). This should be below
 FW_CLMBOUT_DIFF if FW_CLMBOUT_DIFF > 0</p>
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">100.0</td><td style="vertical-align: top;">5.0</td><td style="vertical-align: top;">1</td><td style="vertical-align: top;">m</td></tr>
 <tr><td style="vertical-align: top;"><strong id="RWTO_MAX_THR">RWTO_MAX_THR</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Max throttle during runway takeoff.
 (Can be used to test taxi on runway)</p>
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;">norm</td></tr>
 <tr><td style="vertical-align: top;"><strong id="RWTO_PSP">RWTO_PSP</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Pitch setpoint during taxi / before takeoff airspeed is reached.
 A taildragger with stearable wheel might need to pitch up
 a little to keep it's wheel on the ground before airspeed
 to takeoff is reached</p>
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">20.0</td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">deg</td></tr>
 <tr><td style="vertical-align: top;"><strong id="RWTO_MAX_PITCH">RWTO_MAX_PITCH</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Max pitch during takeoff.
 Fixed-wing settings are used if set to 0. Note that there is also a minimum
 pitch of 10 degrees during takeoff, so this must be larger if set</p>
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">60.0</td><td style="vertical-align: top;">20.0</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">deg</td></tr>
 <tr><td style="vertical-align: top;"><strong id="RWTO_MAX_ROLL">RWTO_MAX_ROLL</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Max roll during climbout.
 Roll is limited during climbout to ensure enough lift and prevents aggressive
 navigation before we're on a safe height</p>
 
-<p><b>Decimal:</b> 1</p>
      </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">60.0</td><td style="vertical-align: top;">25.0</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">deg</td></tr>
 <tr><td style="vertical-align: top;"><strong id="RWTO_AIRSPD_SCL">RWTO_AIRSPD_SCL</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Min. airspeed scaling factor for takeoff.
 Pitch up will be commanded when the following airspeed is reached:
 FW_AIRSPD_MIN * RWTO_AIRSPD_SCL</p>
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">2.0</td><td style="vertical-align: top;">1.3</td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;">norm</td></tr>
 </tbody></table>
 
@@ -5265,7 +4909,7 @@ FW_AIRSPD_MIN * RWTO_AIRSPD_SCL</p>
 <tr><td style="vertical-align: top;"><strong id="SDLOG_UTC_OFFSET">SDLOG_UTC_OFFSET</strong> (INT32)</td><td style="vertical-align: top;"><p>UTC offset (unit: min)</p><p><strong>Comment:</strong> the difference in hours and minutes from Coordinated Universal Time (UTC) for a your place and date. for example, In case of South Korea(UTC+09:00), UTC offset is 540 min (9*60) refer to https://en.wikipedia.org/wiki/List_of_UTC_time_offsets</p>
 
 
-   <p><b>Scope:</b> src/modules/logger</p>
+   <p><b>Module:</b> src/modules/logger</p>
   </td><td style="vertical-align: top;">-1000</td><td style="vertical-align: top;">1000</td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">min</td></tr>
 <tr><td style="vertical-align: top;"><strong id="SDLOG_MODE">SDLOG_MODE</strong> (INT32)</td><td style="vertical-align: top;"><p>Logging Mode</p><p><strong>Comment:</strong> Determines when to start and stop logging. By default, logging is started when arming the system, and stopped when disarming. This parameter is only for the new logger (SYS_LOGGER=1).</p>
 
@@ -5279,17 +4923,17 @@ FW_AIRSPD_MIN * RWTO_AIRSPD_SCL</p>
 <li><strong>3:</strong> from boot until shutdown - IMU and Baro data only (used for thermal calibration)</li> 
 </ul>
  <p><b>Reboot required:</b> true</p>
-  <p><b>Scope:</b> src/modules/logger</p>
+  <p><b>Module:</b> src/modules/logger</p>
   </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">3</td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="SDLOG_UUID">SDLOG_UUID</strong> (INT32)</td><td style="vertical-align: top;"><p>Log UUID</p><p><strong>Comment:</strong> If set to 1, add an ID to the log, which uniquely identifies the vehicle</p>
 
 
-   <p><b>Scope:</b> src/modules/logger</p>
+   <p><b>Module:</b> src/modules/logger</p>
   </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">1</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="SDLOG_RATE">SDLOG_RATE</strong> (INT32)</td><td style="vertical-align: top;"><p>Logging rate</p><p><strong>Comment:</strong> A value of -1 indicates the commandline argument should be obeyed. A value of 0 sets the minimum rate, any other value is interpreted as rate in Hertz. This parameter is only read out before logging starts (which commonly is before arming).</p>
 
 
-   <p><b>Scope:</b> src/modules/sdlog2</p>
+   <p><b>Module:</b> src/modules/sdlog2</p>
   </td><td style="vertical-align: top;">-1</td><td style="vertical-align: top;">250</td><td style="vertical-align: top;">-1</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">Hz</td></tr>
 <tr><td style="vertical-align: top;"><strong id="SDLOG_EXT">SDLOG_EXT</strong> (INT32)</td><td style="vertical-align: top;"><p>Extended logging mode</p><p><strong>Comment:</strong> A value of -1 indicates the command line argument should be obeyed. A value of 0 disables extended logging mode, a value of 1 enables it. This parameter is only read out before logging starts (which commonly is before arming).</p>
 
@@ -5300,12 +4944,12 @@ FW_AIRSPD_MIN * RWTO_AIRSPD_SCL</p>
 
 <li><strong>1:</strong> Enable</li> 
 </ul>
-   <p><b>Scope:</b> src/modules/sdlog2</p>
+   <p><b>Module:</b> src/modules/sdlog2</p>
   </td><td style="vertical-align: top;">-1</td><td style="vertical-align: top;">1</td><td style="vertical-align: top;">-1</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="SDLOG_GPSTIME">SDLOG_GPSTIME</strong> (INT32)</td><td style="vertical-align: top;"><p>Use timestamps only if GPS 3D fix is available</p><p><strong>Comment:</strong> Constrain the log folder creation to only use the time stamp if a 3D GPS lock is present.</p>
 
 
-   <p><b>Scope:</b> src/modules/sdlog2</p>
+   <p><b>Module:</b> src/modules/sdlog2</p>
   </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">1</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="SDLOG_PRIO_BOOST">SDLOG_PRIO_BOOST</strong> (INT32)</td><td style="vertical-align: top;"><p>Give logging app higher thread priority to avoid data loss.
 This is used for gathering replay logs for the ekf2 module</p><p><strong>Comment:</strong> A value of 0 indicates that the default priority is used. Increasing the parameter in steps of one increases the priority.</p>
@@ -5319,14 +4963,14 @@ This is used for gathering replay logs for the ekf2 module</p><p><strong>Comment
 
 <li><strong>3:</strong> Max priority</li> 
 </ul>
-   <p><b>Scope:</b> src/modules/sdlog2</p>
+   <p><b>Module:</b> src/modules/sdlog2</p>
   </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">3</td><td style="vertical-align: top;">2</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 </tbody></table>
 
 ## Sensor Calibration
 
 
-Scope (for all values) is: *src/modules/sensors*.
+The module where these parameters are defined is: *src/modules/sensors*.
 
 <table style="width: 100%;">
 <colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
@@ -5887,14 +5531,13 @@ Scope (for all values) is: *src/modules/sensors*.
      </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">2</td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="ATT_VIBE_THRESH">ATT_VIBE_THRESH</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Threshold (of RMS) to warn about high vibration levels</p>
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;">10</td><td style="vertical-align: top;">0.2</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 </tbody></table>
 
 ## Sensor Enable
 
 
-Scope (for all values) is: *src/modules/sensors*.
+The module where these parameters are defined is: *src/modules/sensors*.
 
 <table style="width: 100%;">
 <colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
@@ -5955,7 +5598,7 @@ Scope (for all values) is: *src/modules/sensors*.
 ## Sensor Thermal Compensation
 
 
-Scope (for all values) is: *src/modules/sensors*.
+The module where these parameters are defined is: *src/modules/sensors*.
 
 <table style="width: 100%;">
 <colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
@@ -6417,7 +6060,7 @@ Scope (for all values) is: *src/modules/sensors*.
 ## Snapdragon UART ESC
 
 
-Scope (for all values) is: *src/platforms/qurt/fc_addon/uart_esc*.
+The module where these parameters are defined is: *src/platforms/qurt/fc_addon/uart_esc*.
 
 <table style="width: 100%;">
 <colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
@@ -6455,7 +6098,7 @@ Scope (for all values) is: *src/platforms/qurt/fc_addon/uart_esc*.
 ## Subscriber Example
 
 
-Scope (for all values) is: *src/examples/subscriber*.
+The module where these parameters are defined is: *src/examples/subscriber*.
 
 <table style="width: 100%;">
 <colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
@@ -6473,7 +6116,7 @@ Scope (for all values) is: *src/examples/subscriber*.
 ## Syslink
 
 
-Scope (for all values) is: *src/modules/syslink*.
+The module where these parameters are defined is: *src/modules/syslink*.
 
 <table style="width: 100%;">
 <colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
@@ -6504,13 +6147,13 @@ Scope (for all values) is: *src/modules/syslink*.
 <tr><td style="vertical-align: top;"><strong id="LED_RGB_MAXBRT">LED_RGB_MAXBRT</strong> (INT32)</td><td style="vertical-align: top;"><p>RGB Led brightness limit</p><p><strong>Comment:</strong> Set to 0 to disable, 1 for minimum brightness up to 15 (max)</p>
 
 
-   <p><b>Scope:</b> src/drivers/rgbled</p>
+   <p><b>Module:</b> src/drivers/rgbled</p>
   </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">15</td><td style="vertical-align: top;">15</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="SYS_AUTOSTART">SYS_AUTOSTART</strong> (INT32)</td><td style="vertical-align: top;"><p>Auto-start script index</p><p><strong>Comment:</strong> CHANGING THIS VALUE REQUIRES A RESTART. Defines the auto-start script used to bootstrap the system.</p>
 
 
  <p><b>Reboot required:</b> true</p>
-  <p><b>Scope:</b> src/modules/systemlib</p>
+  <p><b>Module:</b> src/modules/systemlib</p>
   </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">99999</td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="SYS_AUTOCONFIG">SYS_AUTOCONFIG</strong> (INT32)</td><td style="vertical-align: top;"><p>Automatically configure default values</p><p><strong>Comment:</strong> Set to 1 to reset parameters on next system startup (setting defaults). Platform-specific values are used if available. RC* parameters are preserved.</p>
 
@@ -6519,12 +6162,12 @@ Scope (for all values) is: *src/modules/syslink*.
 
 <li><strong>1:</strong> Reset parameters</li> 
 </ul>
-   <p><b>Scope:</b> src/modules/systemlib</p>
+   <p><b>Module:</b> src/modules/systemlib</p>
   </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">1</td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="SYS_USE_IO">SYS_USE_IO</strong> (INT32)</td><td style="vertical-align: top;"><p>Set usage of IO board</p><p><strong>Comment:</strong> Can be used to use a standard startup script but with a FMU only set-up. Set to 0 to force the FMU only set-up.</p>
 
 
-   <p><b>Scope:</b> src/modules/systemlib</p>
+   <p><b>Module:</b> src/modules/systemlib</p>
   </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">1</td><td style="vertical-align: top;">1</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="SYS_RESTART_TYPE">SYS_RESTART_TYPE</strong> (INT32)</td><td style="vertical-align: top;"><p>Set restart type</p><p><strong>Comment:</strong> Set by px4io to indicate type of restart</p>
 
@@ -6535,7 +6178,7 @@ Scope (for all values) is: *src/modules/syslink*.
 
 <li><strong>2:</strong> Data does not survive reset</li> 
 </ul>
-   <p><b>Scope:</b> src/modules/systemlib</p>
+   <p><b>Module:</b> src/modules/systemlib</p>
   </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">2</td><td style="vertical-align: top;">2</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="SYS_MC_EST_GROUP">SYS_MC_EST_GROUP</strong> (INT32)</td><td style="vertical-align: top;"><p>Set multicopter estimator group</p><p><strong>Comment:</strong> Set the group of estimators used for multicopters and VTOLs</p>
 
@@ -6545,7 +6188,7 @@ Scope (for all values) is: *src/modules/syslink*.
 <li><strong>2:</strong> ekf2</li> 
 </ul>
  <p><b>Reboot required:</b> true</p>
-  <p><b>Scope:</b> src/modules/systemlib</p>
+  <p><b>Module:</b> src/modules/systemlib</p>
   </td><td style="vertical-align: top;">1</td><td style="vertical-align: top;">2</td><td style="vertical-align: top;">2</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="SYS_COMPANION">SYS_COMPANION</strong> (INT32)</td><td style="vertical-align: top;"><p>TELEM2 as companion computer link</p><p><strong>Comment:</strong> CHANGING THIS VALUE REQUIRES A RESTART. Configures the baud rate of the TELEM2 connector as companion computer interface.</p>
 
@@ -6577,12 +6220,12 @@ Scope (for all values) is: *src/modules/syslink*.
 <li><strong>3115200:</strong> Normal Telemetry (115200 baud, 8N1)</li> 
 </ul>
  <p><b>Reboot required:</b> true</p>
-  <p><b>Scope:</b> src/modules/systemlib</p>
+  <p><b>Module:</b> src/modules/systemlib</p>
   </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">1921600</td><td style="vertical-align: top;">157600</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="SYS_PARAM_VER">SYS_PARAM_VER</strong> (INT32)</td><td style="vertical-align: top;"><p>Parameter version</p><p><strong>Comment:</strong> This monotonically increasing number encodes the parameter compatibility set. whenever it increases parameters might not be backwards compatible and ground control stations should suggest a fresh configuration.</p>
 
 
-   <p><b>Scope:</b> src/modules/systemlib</p>
+   <p><b>Module:</b> src/modules/systemlib</p>
   </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">1</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="SYS_LOGGER">SYS_LOGGER</strong> (INT32)</td><td style="vertical-align: top;"><p>SD logger</p>
 <strong>Values:</strong><ul>
@@ -6591,41 +6234,41 @@ Scope (for all values) is: *src/modules/syslink*.
 <li><strong>1:</strong> new logger</li> 
 </ul>
  <p><b>Reboot required:</b> true</p>
-  <p><b>Scope:</b> src/modules/systemlib</p>
+  <p><b>Module:</b> src/modules/systemlib</p>
   </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">1</td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="SYS_STCK_EN">SYS_STCK_EN</strong> (INT32)</td><td style="vertical-align: top;"><p>Enable stack checking</p>
 
-   <p><b>Scope:</b> src/modules/systemlib</p>
+   <p><b>Module:</b> src/modules/systemlib</p>
   </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">1</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="SYS_CAL_GYRO">SYS_CAL_GYRO</strong> (INT32)</td><td style="vertical-align: top;"><p>Enable auto start of rate gyro thermal calibration at the next power up</p><p><strong>Comment:</strong> 0 : Set to 0 to do nothing 1 : Set to 1 to start a calibration at next boot This parameter is reset to zero when the the temperature calibration starts. default (0, no calibration)</p>
 
 
-   <p><b>Scope:</b> src/modules/systemlib</p>
+   <p><b>Module:</b> src/modules/systemlib</p>
   </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">1</td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="SYS_CAL_ACCEL">SYS_CAL_ACCEL</strong> (INT32)</td><td style="vertical-align: top;"><p>Enable auto start of accelerometer thermal calibration at the next power up</p><p><strong>Comment:</strong> 0 : Set to 0 to do nothing 1 : Set to 1 to start a calibration at next boot This parameter is reset to zero when the the temperature calibration starts. default (0, no calibration)</p>
 
 
-   <p><b>Scope:</b> src/modules/systemlib</p>
+   <p><b>Module:</b> src/modules/systemlib</p>
   </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">1</td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="SYS_CAL_BARO">SYS_CAL_BARO</strong> (INT32)</td><td style="vertical-align: top;"><p>Enable auto start of barometer thermal calibration at the next power up</p><p><strong>Comment:</strong> 0 : Set to 0 to do nothing 1 : Set to 1 to start a calibration at next boot This parameter is reset to zero when the the temperature calibration starts. default (0, no calibration)</p>
 
 
-   <p><b>Scope:</b> src/modules/systemlib</p>
+   <p><b>Module:</b> src/modules/systemlib</p>
   </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">1</td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="SYS_CAL_TDEL">SYS_CAL_TDEL</strong> (INT32)</td><td style="vertical-align: top;"><p>Required temperature rise during thermal calibration</p><p><strong>Comment:</strong> A temperature increase greater than this value is required during calibration. Calibration will complete for each sensor when the temperature increase above the starting temeprature exceeds the value set by SYS_CAL_TDEL. If the temperature rise is insufficient, the calibration will continue indefinitely and the board will need to be repowered to exit.</p>
 
 
-   <p><b>Scope:</b> src/modules/systemlib</p>
+   <p><b>Module:</b> src/modules/systemlib</p>
   </td><td style="vertical-align: top;">10</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">24</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">deg C</td></tr>
 <tr><td style="vertical-align: top;"><strong id="SYS_CAL_TMIN">SYS_CAL_TMIN</strong> (INT32)</td><td style="vertical-align: top;"><p>Minimum starting temperature for thermal calibration</p><p><strong>Comment:</strong> Temperature calibration for each sensor will ignore data if the temperature is lower than the value set by SYS_CAL_TMIN.</p>
 
 
-   <p><b>Scope:</b> src/modules/systemlib</p>
+   <p><b>Module:</b> src/modules/systemlib</p>
   </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">5</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">deg C</td></tr>
 <tr><td style="vertical-align: top;"><strong id="SYS_CAL_TMAX">SYS_CAL_TMAX</strong> (INT32)</td><td style="vertical-align: top;"><p>Maximum starting temperature for thermal calibration</p><p><strong>Comment:</strong> Temperature calibration will not start if the temperature of any sensor is higher than the value set by SYS_CAL_TMAX.</p>
 
 
-   <p><b>Scope:</b> src/modules/systemlib</p>
+   <p><b>Module:</b> src/modules/systemlib</p>
   </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">10</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">deg C</td></tr>
 </tbody></table>
 
@@ -6638,55 +6281,55 @@ Scope (for all values) is: *src/modules/syslink*.
 <tbody>
 <tr><td style="vertical-align: top;"><strong id="TEST_MIN">TEST_MIN</strong> (FLOAT)</td><td style="vertical-align: top;"><p></p>
 
-   <p><b>Scope:</b> src/modules/controllib_test</p>
+   <p><b>Module:</b> src/modules/controllib_test</p>
   </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">-1.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="TEST_MAX">TEST_MAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p></p>
 
-   <p><b>Scope:</b> src/modules/controllib_test</p>
+   <p><b>Module:</b> src/modules/controllib_test</p>
   </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="TEST_TRIM">TEST_TRIM</strong> (FLOAT)</td><td style="vertical-align: top;"><p></p>
 
-   <p><b>Scope:</b> src/modules/controllib_test</p>
+   <p><b>Module:</b> src/modules/controllib_test</p>
   </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="TEST_HP">TEST_HP</strong> (FLOAT)</td><td style="vertical-align: top;"><p></p>
 
-   <p><b>Scope:</b> src/modules/controllib_test</p>
+   <p><b>Module:</b> src/modules/controllib_test</p>
   </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">10.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="TEST_LP">TEST_LP</strong> (FLOAT)</td><td style="vertical-align: top;"><p></p>
 
-   <p><b>Scope:</b> src/modules/controllib_test</p>
+   <p><b>Module:</b> src/modules/controllib_test</p>
   </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">10.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="TEST_P">TEST_P</strong> (FLOAT)</td><td style="vertical-align: top;"><p></p>
 
-   <p><b>Scope:</b> src/modules/controllib_test</p>
+   <p><b>Module:</b> src/modules/controllib_test</p>
   </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0.2</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="TEST_I">TEST_I</strong> (FLOAT)</td><td style="vertical-align: top;"><p></p>
 
-   <p><b>Scope:</b> src/modules/controllib_test</p>
+   <p><b>Module:</b> src/modules/controllib_test</p>
   </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0.1</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="TEST_I_MAX">TEST_I_MAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p></p>
 
-   <p><b>Scope:</b> src/modules/controllib_test</p>
+   <p><b>Module:</b> src/modules/controllib_test</p>
   </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="TEST_D">TEST_D</strong> (FLOAT)</td><td style="vertical-align: top;"><p></p>
 
-   <p><b>Scope:</b> src/modules/controllib_test</p>
+   <p><b>Module:</b> src/modules/controllib_test</p>
   </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="TEST_D_LP">TEST_D_LP</strong> (FLOAT)</td><td style="vertical-align: top;"><p></p>
 
-   <p><b>Scope:</b> src/modules/controllib_test</p>
+   <p><b>Module:</b> src/modules/controllib_test</p>
   </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">10.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="TEST_MEAN">TEST_MEAN</strong> (FLOAT)</td><td style="vertical-align: top;"><p></p>
 
-   <p><b>Scope:</b> src/modules/controllib_test</p>
+   <p><b>Module:</b> src/modules/controllib_test</p>
   </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="TEST_DEV">TEST_DEV</strong> (FLOAT)</td><td style="vertical-align: top;"><p></p>
 
-   <p><b>Scope:</b> src/modules/controllib_test</p>
+   <p><b>Module:</b> src/modules/controllib_test</p>
   </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">2.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="TEST_PARAMS">TEST_PARAMS</strong> (INT32)</td><td style="vertical-align: top;"><p></p>
 
-   <p><b>Scope:</b> src/systemcmds/tests</p>
+   <p><b>Module:</b> src/systemcmds/tests</p>
   </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">12345678</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 </tbody></table>
 
@@ -6706,46 +6349,46 @@ Scope (for all values) is: *src/modules/syslink*.
 
 <li><strong>3:</strong> Sensors and Motors</li> 
 </ul>
-   <p><b>Scope:</b> src/modules/uavcan</p>
+   <p><b>Module:</b> src/modules/uavcan</p>
   </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">3</td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="UAVCAN_NODE_ID">UAVCAN_NODE_ID</strong> (INT32)</td><td style="vertical-align: top;"><p>UAVCAN Node ID</p><p><strong>Comment:</strong> Read the specs at http://uavcan.org to learn more about Node ID.</p>
 
 
-   <p><b>Scope:</b> src/modules/uavcan</p>
+   <p><b>Module:</b> src/modules/uavcan</p>
   </td><td style="vertical-align: top;">1</td><td style="vertical-align: top;">125</td><td style="vertical-align: top;">1</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="UAVCAN_BITRATE">UAVCAN_BITRATE</strong> (INT32)</td><td style="vertical-align: top;"><p>UAVCAN CAN bus bitrate</p>
 
-   <p><b>Scope:</b> src/modules/uavcan</p>
+   <p><b>Module:</b> src/modules/uavcan</p>
   </td><td style="vertical-align: top;">20000</td><td style="vertical-align: top;">1000000</td><td style="vertical-align: top;">1000000</td><td style="vertical-align: top;"></td><td style="vertical-align: top;">bit/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="UAVCAN_ESC_IDLT">UAVCAN_ESC_IDLT</strong> (INT32)</td><td style="vertical-align: top;"><p>UAVCAN ESC will spin at idle throttle when armed, even if the mixer outputs zero setpoints</p>
 
  <p><b>Reboot required:</b> true</p>
-  <p><b>Scope:</b> src/modules/uavcan</p>
+  <p><b>Module:</b> src/modules/uavcan</p>
   </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">1</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="ESC_NODE_ID">ESC_NODE_ID</strong> (INT32)</td><td style="vertical-align: top;"><p>UAVCAN Node ID</p><p><strong>Comment:</strong> Read the specs at http://uavcan.org to learn more about Node ID.</p>
 
 
-   <p><b>Scope:</b> src/modules/uavcanesc</p>
+   <p><b>Module:</b> src/modules/uavcanesc</p>
   </td><td style="vertical-align: top;">1</td><td style="vertical-align: top;">125</td><td style="vertical-align: top;">120</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="ESC_BITRATE">ESC_BITRATE</strong> (INT32)</td><td style="vertical-align: top;"><p>UAVCAN CAN bus bitrate</p>
 
-   <p><b>Scope:</b> src/modules/uavcanesc</p>
+   <p><b>Module:</b> src/modules/uavcanesc</p>
   </td><td style="vertical-align: top;">20000</td><td style="vertical-align: top;">1000000</td><td style="vertical-align: top;">1000000</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="CANNODE_NODE_ID">CANNODE_NODE_ID</strong> (INT32)</td><td style="vertical-align: top;"><p>UAVCAN Node ID</p><p><strong>Comment:</strong> Read the specs at http://uavcan.org to learn more about Node ID.</p>
 
 
-   <p><b>Scope:</b> src/modules/uavcannode</p>
+   <p><b>Module:</b> src/modules/uavcannode</p>
   </td><td style="vertical-align: top;">1</td><td style="vertical-align: top;">125</td><td style="vertical-align: top;">120</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="CANNODE_BITRATE">CANNODE_BITRATE</strong> (INT32)</td><td style="vertical-align: top;"><p>UAVCAN CAN bus bitrate</p>
 
-   <p><b>Scope:</b> src/modules/uavcannode</p>
+   <p><b>Module:</b> src/modules/uavcannode</p>
   </td><td style="vertical-align: top;">20000</td><td style="vertical-align: top;">1000000</td><td style="vertical-align: top;">1000000</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 </tbody></table>
 
 ## VTOL Attitude Control
 
 
-Scope (for all values) is: *src/modules/vtol_att_control*.
+The module where these parameters are defined is: *src/modules/vtol_att_control*.
 
 <table style="width: 100%;">
 <colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
@@ -6754,7 +6397,6 @@ Scope (for all values) is: *src/modules/vtol_att_control*.
 <tbody>
 <tr><td style="vertical-align: top;"><strong id="VT_TRANS_THR">VT_TRANS_THR</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Target throttle value for pusher/puller motor during the transition to fw mode</p>
 
-<p><b>Decimal:</b> 3</p>
      </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">0.6</td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="VT_DWN_PITCH_MAX">VT_DWN_PITCH_MAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Maximum allowed down-pitch the controller is able to demand. This prevents large, negative
 lift values being created when facing strong winds. The vehicle will use the pusher motor
@@ -6767,57 +6409,45 @@ to accelerate forward if necessary</p>
      </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">2.0</td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="VT_TILT_MC">VT_TILT_MC</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Position of tilt servo in mc mode</p>
 
-<p><b>Decimal:</b> 3</p>
      </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="VT_TILT_TRANS">VT_TILT_TRANS</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Position of tilt servo in transition mode</p>
 
-<p><b>Decimal:</b> 3</p>
      </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">0.3</td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="VT_TILT_FW">VT_TILT_FW</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Position of tilt servo in fw mode</p>
 
-<p><b>Decimal:</b> 3</p>
      </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="VT_TRANS_P2_DUR">VT_TRANS_P2_DUR</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Duration of front transition phase 2</p><p><strong>Comment:</strong> Time in seconds it should take for the rotors to rotate forward completely from the point when the plane has picked up enough airspeed and is ready to go into fixed wind mode.</p>
 
 
-<p><b>Decimal:</b> 3</p>
      </td><td style="vertical-align: top;">0.1</td><td style="vertical-align: top;">5.0</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;">s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="VT_FW_MOT_OFFID">VT_FW_MOT_OFFID</strong> (INT32)</td><td style="vertical-align: top;"><p>The channel number of motors that must be turned off in fixed wing mode</p>
 
-<p><b>Decimal:</b> 0</p>
      </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">12345678</td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">1</td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="VT_FW_DIFTHR_EN">VT_FW_DIFTHR_EN</strong> (INT32)</td><td style="vertical-align: top;"><p>Differential thrust in forwards flight</p><p><strong>Comment:</strong> Set to 1 to enable differential thrust in fixed-wing flight.</p>
 
 
-<p><b>Decimal:</b> 0</p>
      </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">1</td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="VT_FW_DIFTHR_SC">VT_FW_DIFTHR_SC</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Differential thrust scaling factor</p><p><strong>Comment:</strong> This factor specifies how the yaw input gets mapped to differential thrust in forwards flight.</p>
 
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">0.1</td><td style="vertical-align: top;">0.1</td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="VT_MOT_COUNT">VT_MOT_COUNT</strong> (INT32)</td><td style="vertical-align: top;"><p>VTOL number of engines</p>
 
-<p><b>Decimal:</b> 0</p>
      </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">8</td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">1</td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="VT_IDLE_PWM_MC">VT_IDLE_PWM_MC</strong> (INT32)</td><td style="vertical-align: top;"><p>Idle speed of VTOL when in multicopter mode</p>
 
-<p><b>Decimal:</b> 0</p>
      </td><td style="vertical-align: top;">900</td><td style="vertical-align: top;">2000</td><td style="vertical-align: top;">900</td><td style="vertical-align: top;">1</td><td style="vertical-align: top;">us</td></tr>
 <tr><td style="vertical-align: top;"><strong id="VT_MC_ARSPD_MIN">VT_MC_ARSPD_MIN</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Minimum airspeed in multicopter mode</p><p><strong>Comment:</strong> This is the minimum speed of the air flowing over the control surfaces.</p>
 
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">30.0</td><td style="vertical-align: top;">10.0</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">m/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="VT_MC_ARSPD_MAX">VT_MC_ARSPD_MAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Maximum airspeed in multicopter mode</p><p><strong>Comment:</strong> This is the maximum speed of the air flowing over the control surfaces.</p>
 
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">30.0</td><td style="vertical-align: top;">30.0</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">m/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="VT_MC_ARSPD_TRIM">VT_MC_ARSPD_TRIM</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Trim airspeed when in multicopter mode</p><p><strong>Comment:</strong> This is the airflow over the control surfaces for which no airspeed scaling is applied in multicopter mode.</p>
 
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">30.0</td><td style="vertical-align: top;">10.0</td><td style="vertical-align: top;">0.5</td><td style="vertical-align: top;">m/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="VT_FW_PERM_STAB">VT_FW_PERM_STAB</strong> (INT32)</td><td style="vertical-align: top;"><p>Permanent stabilization in fw mode</p><p><strong>Comment:</strong> If set to one this parameter will cause permanent attitude stabilization in fw mode. This parameter has been introduced for pure convenience sake.</p>
 
@@ -6826,22 +6456,18 @@ to accelerate forward if necessary</p>
 <tr><td style="vertical-align: top;"><strong id="VT_FW_PITCH_TRIM">VT_FW_PITCH_TRIM</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Fixed wing pitch trim</p><p><strong>Comment:</strong> This parameter allows to adjust the neutral elevon position in fixed wing mode.</p>
 
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">-1.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="VT_POWER_MAX">VT_POWER_MAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Motor max power</p><p><strong>Comment:</strong> Indicates the maximum power the motor is able to produce. Used to calculate propeller efficiency map.</p>
 
 
-<p><b>Decimal:</b> 0</p>
      </td><td style="vertical-align: top;">1</td><td style="vertical-align: top;">10000</td><td style="vertical-align: top;">120.0</td><td style="vertical-align: top;">1</td><td style="vertical-align: top;">W</td></tr>
 <tr><td style="vertical-align: top;"><strong id="VT_PROP_EFF">VT_PROP_EFF</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Propeller efficiency parameter</p><p><strong>Comment:</strong> Influences propeller efficiency at different power settings. Should be tuned beforehand.</p>
 
 
-<p><b>Decimal:</b> 3</p>
      </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="VT_ARSP_LP_GAIN">VT_ARSP_LP_GAIN</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Total airspeed estimate low-pass filter gain</p><p><strong>Comment:</strong> Gain for tuning the low-pass filter for the total airspeed estimate</p>
 
 
-<p><b>Decimal:</b> 3</p>
      </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">0.3</td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="VT_TYPE">VT_TYPE</strong> (INT32)</td><td style="vertical-align: top;"><p>VTOL Type (Tailsitter=0, Tiltrotor=1, Standard=2)</p>
 <strong>Values:</strong><ul>
@@ -6851,7 +6477,6 @@ to accelerate forward if necessary</p>
 
 <li><strong>2:</strong> Standard</li> 
 </ul>
-<p><b>Decimal:</b> 0</p>
      </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">2</td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="VT_ELEV_MC_LOCK">VT_ELEV_MC_LOCK</strong> (INT32)</td><td style="vertical-align: top;"><p>Lock elevons in multicopter mode</p><p><strong>Comment:</strong> If set to 1 the elevons are locked in multicopter mode</p>
 
@@ -6860,22 +6485,18 @@ to accelerate forward if necessary</p>
 <tr><td style="vertical-align: top;"><strong id="VT_F_TRANS_DUR">VT_F_TRANS_DUR</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Duration of a front transition</p><p><strong>Comment:</strong> Time in seconds used for a transition</p>
 
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">0.00</td><td style="vertical-align: top;">20.00</td><td style="vertical-align: top;">5.0</td><td style="vertical-align: top;">1</td><td style="vertical-align: top;">s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="VT_B_TRANS_DUR">VT_B_TRANS_DUR</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Duration of a back transition</p><p><strong>Comment:</strong> Time in seconds used for a back transition</p>
 
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">0.00</td><td style="vertical-align: top;">20.00</td><td style="vertical-align: top;">4.0</td><td style="vertical-align: top;">1</td><td style="vertical-align: top;">s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="VT_ARSP_BLEND">VT_ARSP_BLEND</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Transition blending airspeed</p><p><strong>Comment:</strong> Airspeed at which we can start blending both fw and mc controls. Set to 0 to disable.</p>
 
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">0.00</td><td style="vertical-align: top;">30.00</td><td style="vertical-align: top;">8.0</td><td style="vertical-align: top;">1</td><td style="vertical-align: top;">m/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="VT_ARSP_TRANS">VT_ARSP_TRANS</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Transition airspeed</p><p><strong>Comment:</strong> Airspeed at which we can switch to fw mode</p>
 
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">0.00</td><td style="vertical-align: top;">30.00</td><td style="vertical-align: top;">10.0</td><td style="vertical-align: top;">1</td><td style="vertical-align: top;">m/s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="VT_OPT_RECOV_EN">VT_OPT_RECOV_EN</strong> (INT32)</td><td style="vertical-align: top;"><p>Optimal recovery strategy for pitch-weak tailsitters</p>
 
@@ -6883,12 +6504,10 @@ to accelerate forward if necessary</p>
 <tr><td style="vertical-align: top;"><strong id="VT_WV_YAWR_SCL">VT_WV_YAWR_SCL</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Weather-vane yaw rate scale</p><p><strong>Comment:</strong> The desired yawrate from the controller will be scaled in order to avoid yaw fighting against the wind.</p>
 
 
-<p><b>Decimal:</b> 3</p>
      </td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;">0.15</td><td style="vertical-align: top;">0.01</td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="VT_TRANS_TIMEOUT">VT_TRANS_TIMEOUT</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Front transition timeout</p><p><strong>Comment:</strong> Time in seconds after which transition will be cancelled. Disabled if set to 0.</p>
 
 
-<p><b>Decimal:</b> 2</p>
      </td><td style="vertical-align: top;">0.00</td><td style="vertical-align: top;">30.00</td><td style="vertical-align: top;">15.0</td><td style="vertical-align: top;">1</td><td style="vertical-align: top;">s</td></tr>
 <tr><td style="vertical-align: top;"><strong id="VT_TRANS_MIN_TM">VT_TRANS_MIN_TM</strong> (FLOAT)</td><td style="vertical-align: top;"><p>Front transition minimum time</p><p><strong>Comment:</strong> Minimum time in seconds for front transition.</p>
 
@@ -6915,7 +6534,7 @@ to accelerate forward if necessary</p>
 ## mTECS
 
 
-Scope (for all values) is: *src/modules/fw_pos_control_l1/mtecs*.
+The module where these parameters are defined is: *src/modules/fw_pos_control_l1/mtecs*.
 
 <table style="width: 100%;">
 <colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
@@ -7066,39 +6685,39 @@ Maps the change of airspeed error to the acceleration setpoint</p>
 <tbody>
 <tr><td style="vertical-align: top;"><strong id="EXFW_HDNG_P">EXFW_HDNG_P</strong> (FLOAT)</td><td style="vertical-align: top;"><p></p>
 
-   <p><b>Scope:</b> src/examples/fixedwing_control</p>
+   <p><b>Module:</b> src/examples/fixedwing_control</p>
   </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0.1</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="EXFW_ROLL_P">EXFW_ROLL_P</strong> (FLOAT)</td><td style="vertical-align: top;"><p></p>
 
-   <p><b>Scope:</b> src/examples/fixedwing_control</p>
+   <p><b>Module:</b> src/examples/fixedwing_control</p>
   </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0.2</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="EXFW_PITCH_P">EXFW_PITCH_P</strong> (FLOAT)</td><td style="vertical-align: top;"><p></p>
 
-   <p><b>Scope:</b> src/examples/fixedwing_control</p>
+   <p><b>Module:</b> src/examples/fixedwing_control</p>
   </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0.2</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="RV_YAW_P">RV_YAW_P</strong> (FLOAT)</td><td style="vertical-align: top;"><p></p>
 
-   <p><b>Scope:</b> src/examples/rover_steering_control</p>
+   <p><b>Module:</b> src/examples/rover_steering_control</p>
   </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0.1</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="SEG_TH2V_P">SEG_TH2V_P</strong> (FLOAT)</td><td style="vertical-align: top;"><p></p>
 
-   <p><b>Scope:</b> src/examples/segway</p>
+   <p><b>Module:</b> src/examples/segway</p>
   </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">10.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="SEG_TH2V_I">SEG_TH2V_I</strong> (FLOAT)</td><td style="vertical-align: top;"><p></p>
 
-   <p><b>Scope:</b> src/examples/segway</p>
+   <p><b>Module:</b> src/examples/segway</p>
   </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="SEG_TH2V_I_MAX">SEG_TH2V_I_MAX</strong> (FLOAT)</td><td style="vertical-align: top;"><p></p>
 
-   <p><b>Scope:</b> src/examples/segway</p>
+   <p><b>Module:</b> src/examples/segway</p>
   </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">0.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="SEG_Q2V">SEG_Q2V</strong> (FLOAT)</td><td style="vertical-align: top;"><p></p>
 
-   <p><b>Scope:</b> src/examples/segway</p>
+   <p><b>Module:</b> src/examples/segway</p>
   </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">1.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="COM_RC_STICK_OV">COM_RC_STICK_OV</strong> (FLOAT)</td><td style="vertical-align: top;"><p></p>
 
-   <p><b>Scope:</b> src/modules/commander</p>
+   <p><b>Module:</b> src/modules/commander</p>
   </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">12.0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="COM_FLTMODE1">COM_FLTMODE1</strong> (INT32)</td><td style="vertical-align: top;"><p>First flightmode slot (1000-1160)</p><p><strong>Comment:</strong> If the main switch channel is in this range the selected flight mode will be applied.</p>
 
@@ -7131,7 +6750,7 @@ Maps the change of airspeed error to the acceleration setpoint</p>
 
 <li><strong>12:</strong> Follow Me</li> 
 </ul>
-   <p><b>Scope:</b> src/modules/commander</p>
+   <p><b>Module:</b> src/modules/commander</p>
   </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">-1</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="COM_FLTMODE2">COM_FLTMODE2</strong> (INT32)</td><td style="vertical-align: top;"><p>Second flightmode slot (1160-1320)</p><p><strong>Comment:</strong> If the main switch channel is in this range the selected flight mode will be applied.</p>
 
@@ -7164,7 +6783,7 @@ Maps the change of airspeed error to the acceleration setpoint</p>
 
 <li><strong>12:</strong> Follow Me</li> 
 </ul>
-   <p><b>Scope:</b> src/modules/commander</p>
+   <p><b>Module:</b> src/modules/commander</p>
   </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">-1</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="COM_FLTMODE3">COM_FLTMODE3</strong> (INT32)</td><td style="vertical-align: top;"><p>Third flightmode slot (1320-1480)</p><p><strong>Comment:</strong> If the main switch channel is in this range the selected flight mode will be applied.</p>
 
@@ -7197,7 +6816,7 @@ Maps the change of airspeed error to the acceleration setpoint</p>
 
 <li><strong>12:</strong> Follow Me</li> 
 </ul>
-   <p><b>Scope:</b> src/modules/commander</p>
+   <p><b>Module:</b> src/modules/commander</p>
   </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">-1</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="COM_FLTMODE4">COM_FLTMODE4</strong> (INT32)</td><td style="vertical-align: top;"><p>Fourth flightmode slot (1480-1640)</p><p><strong>Comment:</strong> If the main switch channel is in this range the selected flight mode will be applied.</p>
 
@@ -7230,7 +6849,7 @@ Maps the change of airspeed error to the acceleration setpoint</p>
 
 <li><strong>12:</strong> Follow Me</li> 
 </ul>
-   <p><b>Scope:</b> src/modules/commander</p>
+   <p><b>Module:</b> src/modules/commander</p>
   </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">-1</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="COM_FLTMODE5">COM_FLTMODE5</strong> (INT32)</td><td style="vertical-align: top;"><p>Fifth flightmode slot (1640-1800)</p><p><strong>Comment:</strong> If the main switch channel is in this range the selected flight mode will be applied.</p>
 
@@ -7263,7 +6882,7 @@ Maps the change of airspeed error to the acceleration setpoint</p>
 
 <li><strong>12:</strong> Follow Me</li> 
 </ul>
-   <p><b>Scope:</b> src/modules/commander</p>
+   <p><b>Module:</b> src/modules/commander</p>
   </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">-1</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="COM_FLTMODE6">COM_FLTMODE6</strong> (INT32)</td><td style="vertical-align: top;"><p>Sixth flightmode slot (1800-2000)</p><p><strong>Comment:</strong> If the main switch channel is in this range the selected flight mode will be applied.</p>
 
@@ -7296,7 +6915,7 @@ Maps the change of airspeed error to the acceleration setpoint</p>
 
 <li><strong>12:</strong> Follow Me</li> 
 </ul>
-   <p><b>Scope:</b> src/modules/commander</p>
+   <p><b>Module:</b> src/modules/commander</p>
   </td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td><td style="vertical-align: top;">-1</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 <tr><td style="vertical-align: top;"><strong id="RC_MAP_FAILSAFE">RC_MAP_FAILSAFE</strong> (INT32)</td><td style="vertical-align: top;"><p>Failsafe channel mapping</p><p><strong>Comment:</strong> The RC mapping index indicates which channel is used for failsafe If 0, whichever channel is mapped to throttle is used otherwise the value indicates the specific rc channel to use</p>
 
@@ -7339,7 +6958,7 @@ Maps the change of airspeed error to the acceleration setpoint</p>
 
 <li><strong>18:</strong> Channel 18</li> 
 </ul>
-   <p><b>Scope:</b> src/modules/sensors</p>
+   <p><b>Module:</b> src/modules/sensors</p>
   </td><td style="vertical-align: top;">0</td><td style="vertical-align: top;">18</td><td style="vertical-align: top;">0</td><td style="vertical-align: top;"></td><td style="vertical-align: top;"></td></tr>
 </tbody></table>
 
