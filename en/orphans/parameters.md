@@ -6,8 +6,8 @@
 
 The module where these parameters are defined is: *src/examples/attitude_estimator_ekf*.
 
-<table style="width: 100%;">
-<colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
+<table style="width: 100%; table-layout:fixed">
+<colgroup><col style="width: 20%"><col style="width: 40%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"></colgroup>
 <thead><tr><th>Name</th><th>Description</th><th>Min</th><th>Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
@@ -52,8 +52,8 @@ The module where these parameters are defined is: *src/examples/attitude_estimat
 
 The module where these parameters are defined is: *src/modules/attitude_estimator_q*.
 
-<table style="width: 100%;">
-<colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
+<table style="width: 100%; table-layout:fixed">
+<colgroup><col style="width: 20%"><col style="width: 40%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"></colgroup>
 <thead><tr><th>Name</th><th>Description</th><th>Min</th><th>Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
@@ -98,8 +98,8 @@ velocity</p>
 
 ## Battery Calibration
 
-<table style="width: 100%;">
-<colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
+<table style="width: 100%; table-layout:fixed">
+<colgroup><col style="width: 20%"><col style="width: 40%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"></colgroup>
 <thead><tr><th>Name</th><th>Description</th><th>Min</th><th>Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
@@ -234,8 +234,8 @@ velocity</p>
 
 The module where these parameters are defined is: *src/drivers/camera_trigger*.
 
-<table style="width: 100%;">
-<colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
+<table style="width: 100%; table-layout:fixed">
+<colgroup><col style="width: 20%"><col style="width: 40%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"></colgroup>
 <thead><tr><th>Name</th><th>Description</th><th>Min</th><th>Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
@@ -296,8 +296,8 @@ The module where these parameters are defined is: *src/drivers/camera_trigger*.
 
 The module where these parameters are defined is: *src/modules/systemlib*.
 
-<table style="width: 100%;">
-<colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
+<table style="width: 100%; table-layout:fixed">
+<colgroup><col style="width: 20%"><col style="width: 40%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"></colgroup>
 <thead><tr><th>Name</th><th>Description</th><th>Min</th><th>Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
@@ -353,8 +353,8 @@ The module where these parameters are defined is: *src/modules/systemlib*.
 
 The module where these parameters are defined is: *src/modules/commander*.
 
-<table style="width: 100%;">
-<colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
+<table style="width: 100%; table-layout:fixed">
+<colgroup><col style="width: 20%"><col style="width: 40%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"></colgroup>
 <thead><tr><th>Name</th><th>Description</th><th>Min</th><th>Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
@@ -475,8 +475,8 @@ See COM_OBL_ACT and COM_OBL_RC_ACT to configure action</p>
 
 The module where these parameters are defined is: *src/modules/navigator*.
 
-<table style="width: 100%;">
-<colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
+<table style="width: 100%; table-layout:fixed">
+<colgroup><col style="width: 20%"><col style="width: 40%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"></colgroup>
 <thead><tr><th>Name</th><th>Description</th><th>Min</th><th>Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
@@ -527,8 +527,8 @@ The module where these parameters are defined is: *src/modules/navigator*.
 
 The module where these parameters are defined is: *src/modules/ekf2*.
 
-<table style="width: 100%;">
-<colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
+<table style="width: 100%; table-layout:fixed">
+<colgroup><col style="width: 20%"><col style="width: 40%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"></colgroup>
 <thead><tr><th>Name</th><th>Description</th><th>Min</th><th>Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
@@ -829,8 +829,8 @@ value will determine the minimum airspeed which will still be fused</p>
 
 The module where these parameters are defined is: *src/modules/fw_att_control*.
 
-<table style="width: 100%;">
-<colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
+<table style="width: 100%; table-layout:fixed">
+<colgroup><col style="width: 20%"><col style="width: 40%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"></colgroup>
 <thead><tr><th>Name</th><th>Description</th><th>Min</th><th>Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
@@ -1016,8 +1016,8 @@ The module where these parameters are defined is: *src/modules/fw_att_control*.
 
 The module where these parameters are defined is: *src/modules/fw_pos_control_l1*.
 
-<table style="width: 100%;">
-<colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
+<table style="width: 100%; table-layout:fixed">
+<colgroup><col style="width: 20%"><col style="width: 40%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"></colgroup>
 <thead><tr><th>Name</th><th>Description</th><th>Min</th><th>Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
@@ -1104,8 +1104,8 @@ The module where these parameters are defined is: *src/modules/fw_pos_control_l1
 
 ## FW TECS
 
-<table style="width: 100%;">
-<colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
+<table style="width: 100%; table-layout:fixed">
+<colgroup><col style="width: 20%"><col style="width: 40%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"></colgroup>
 <thead><tr><th>Name</th><th>Description</th><th>Min</th><th>Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
@@ -1208,8 +1208,8 @@ The module where these parameters are defined is: *src/modules/fw_pos_control_l1
 
 The module where these parameters are defined is: *src/modules/navigator*.
 
-<table style="width: 100%;">
-<colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
+<table style="width: 100%; table-layout:fixed">
+<colgroup><col style="width: 20%"><col style="width: 40%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"></colgroup>
 <thead><tr><th>Name</th><th>Description</th><th>Min</th><th>Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
@@ -1237,8 +1237,8 @@ but also ignore less noise</p>
 
 The module where these parameters are defined is: *src/drivers/gps*.
 
-<table style="width: 100%;">
-<colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
+<table style="width: 100%; table-layout:fixed">
+<colgroup><col style="width: 20%"><col style="width: 40%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"></colgroup>
 <thead><tr><th>Name</th><th>Description</th><th>Min</th><th>Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
@@ -1257,8 +1257,8 @@ The module where these parameters are defined is: *src/drivers/gps*.
 
 The module where these parameters are defined is: *src/modules/navigator*.
 
-<table style="width: 100%;">
-<colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
+<table style="width: 100%; table-layout:fixed">
+<colgroup><col style="width: 20%"><col style="width: 40%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"></colgroup>
 <thead><tr><th>Name</th><th>Description</th><th>Min</th><th>Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
@@ -1285,8 +1285,8 @@ The module where these parameters are defined is: *src/modules/navigator*.
 
 The module where these parameters are defined is: *src/modules/navigator*.
 
-<table style="width: 100%;">
-<colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
+<table style="width: 100%; table-layout:fixed">
+<colgroup><col style="width: 20%"><col style="width: 40%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"></colgroup>
 <thead><tr><th>Name</th><th>Description</th><th>Min</th><th>Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
@@ -1339,8 +1339,8 @@ The module where these parameters are defined is: *src/modules/navigator*.
 
 The module where these parameters are defined is: *src/drivers/iridiumsbd*.
 
-<table style="width: 100%;">
-<colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
+<table style="width: 100%; table-layout:fixed">
+<colgroup><col style="width: 20%"><col style="width: 40%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"></colgroup>
 <thead><tr><th>Name</th><th>Description</th><th>Min</th><th>Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
@@ -1354,8 +1354,8 @@ The module where these parameters are defined is: *src/drivers/iridiumsbd*.
 
 The module where these parameters are defined is: *src/modules/land_detector*.
 
-<table style="width: 100%;">
-<colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
+<table style="width: 100%; table-layout:fixed">
+<colgroup><col style="width: 20%"><col style="width: 40%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"></colgroup>
 <thead><tr><th>Name</th><th>Description</th><th>Min</th><th>Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
@@ -1425,8 +1425,8 @@ The module where these parameters are defined is: *src/modules/land_detector*.
 
 The module where these parameters are defined is: *src/lib/launchdetection*.
 
-<table style="width: 100%;">
-<colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
+<table style="width: 100%; table-layout:fixed">
+<colgroup><col style="width: 20%"><col style="width: 40%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"></colgroup>
 <thead><tr><th>Name</th><th>Description</th><th>Min</th><th>Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
@@ -1456,8 +1456,8 @@ The module where these parameters are defined is: *src/lib/launchdetection*.
 
 The module where these parameters are defined is: *src/modules/local_position_estimator*.
 
-<table style="width: 100%;">
-<colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
+<table style="width: 100%; table-layout:fixed">
+<colgroup><col style="width: 20%"><col style="width: 40%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"></colgroup>
 <thead><tr><th>Name</th><th>Description</th><th>Min</th><th>Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
@@ -1601,8 +1601,8 @@ by initializing the estimator to the LPE_LAT/LON parameters when global informat
 
 The module where these parameters are defined is: *src/modules/mavlink*.
 
-<table style="width: 100%;">
-<colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
+<table style="width: 100%; table-layout:fixed">
+<colgroup><col style="width: 20%"><col style="width: 40%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"></colgroup>
 <thead><tr><th>Name</th><th>Description</th><th>Min</th><th>Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
@@ -1655,8 +1655,8 @@ The module where these parameters are defined is: *src/modules/mavlink*.
 
 The module where these parameters are defined is: *src/drivers/mkblctrl*.
 
-<table style="width: 100%;">
-<colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
+<table style="width: 100%; table-layout:fixed">
+<colgroup><col style="width: 20%"><col style="width: 40%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"></colgroup>
 <thead><tr><th>Name</th><th>Description</th><th>Min</th><th>Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
@@ -1670,8 +1670,8 @@ The module where these parameters are defined is: *src/drivers/mkblctrl*.
 
 The module where these parameters are defined is: *src/platforms/qurt/fc_addon/mpu_spi*.
 
-<table style="width: 100%;">
-<colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
+<table style="width: 100%; table-layout:fixed">
+<colgroup><col style="width: 20%"><col style="width: 40%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"></colgroup>
 <thead><tr><th>Name</th><th>Description</th><th>Min</th><th>Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
@@ -1728,8 +1728,8 @@ The module where these parameters are defined is: *src/platforms/qurt/fc_addon/m
 
 ## Mission
 
-<table style="width: 100%;">
-<colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
+<table style="width: 100%; table-layout:fixed">
+<colgroup><col style="width: 20%"><col style="width: 40%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"></colgroup>
 <thead><tr><th>Name</th><th>Description</th><th>Min</th><th>Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
@@ -1891,8 +1891,8 @@ The module where these parameters are defined is: *src/platforms/qurt/fc_addon/m
 
 The module where these parameters are defined is: *src/drivers/vmount*.
 
-<table style="width: 100%;">
-<colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
+<table style="width: 100%; table-layout:fixed">
+<colgroup><col style="width: 20%"><col style="width: 40%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"></colgroup>
 <thead><tr><th>Name</th><th>Description</th><th>Min</th><th>Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
@@ -1987,8 +1987,8 @@ if required for the gimbal (only in AUX output mode)</p>
 
 ## Multicopter Attitude Control
 
-<table style="width: 100%;">
-<colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
+<table style="width: 100%; table-layout:fixed">
+<colgroup><col style="width: 20%"><col style="width: 40%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"></colgroup>
 <thead><tr><th>Name</th><th>Description</th><th>Min</th><th>Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
@@ -2267,8 +2267,8 @@ if required for the gimbal (only in AUX output mode)</p>
 
 ## Multicopter Position Control
 
-<table style="width: 100%;">
-<colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
+<table style="width: 100%; table-layout:fixed">
+<colgroup><col style="width: 20%"><col style="width: 40%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"></colgroup>
 <thead><tr><th>Name</th><th>Description</th><th>Min</th><th>Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
@@ -2538,8 +2538,8 @@ if required for the gimbal (only in AUX output mode)</p>
 
 ## PWM Outputs
 
-<table style="width: 100%;">
-<colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
+<table style="width: 100%; table-layout:fixed">
+<colgroup><col style="width: 20%"><col style="width: 40%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"></colgroup>
 <thead><tr><th>Name</th><th>Description</th><th>Min</th><th>Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
@@ -2761,8 +2761,8 @@ if required for the gimbal (only in AUX output mode)</p>
 
 The module where these parameters are defined is: *src/modules/bottle_drop*.
 
-<table style="width: 100%;">
-<colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
+<table style="width: 100%; table-layout:fixed">
+<colgroup><col style="width: 20%"><col style="width: 40%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"></colgroup>
 <thead><tr><th>Name</th><th>Description</th><th>Min</th><th>Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
@@ -2797,8 +2797,8 @@ The module where these parameters are defined is: *src/modules/bottle_drop*.
 
 The module where these parameters are defined is: *src/examples/ekf_att_pos_estimator*.
 
-<table style="width: 100%;">
-<colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
+<table style="width: 100%; table-layout:fixed">
+<colgroup><col style="width: 20%"><col style="width: 40%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"></colgroup>
 <thead><tr><th>Name</th><th>Description</th><th>Min</th><th>Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
@@ -2897,8 +2897,8 @@ The module where these parameters are defined is: *src/examples/ekf_att_pos_esti
 
 The module where these parameters are defined is: *src/modules/position_estimator_inav*.
 
-<table style="width: 100%;">
-<colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
+<table style="width: 100%; table-layout:fixed">
+<colgroup><col style="width: 20%"><col style="width: 40%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"></colgroup>
 <thead><tr><th>Name</th><th>Description</th><th>Min</th><th>Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
@@ -3021,8 +3021,8 @@ The module where these parameters are defined is: *src/modules/position_estimato
 
 The module where these parameters are defined is: *src/platforms/qurt/fc_addon/rc_receiver*.
 
-<table style="width: 100%;">
-<colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
+<table style="width: 100%; table-layout:fixed">
+<colgroup><col style="width: 20%"><col style="width: 40%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"></colgroup>
 <thead><tr><th>Name</th><th>Description</th><th>Min</th><th>Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
@@ -3034,8 +3034,8 @@ The module where these parameters are defined is: *src/platforms/qurt/fc_addon/r
 
 ## Radio Calibration
 
-<table style="width: 100%;">
-<colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
+<table style="width: 100%; table-layout:fixed">
+<colgroup><col style="width: 20%"><col style="width: 40%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"></colgroup>
 <thead><tr><th>Name</th><th>Description</th><th>Min</th><th>Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
@@ -4121,8 +4121,8 @@ The module where these parameters are defined is: *src/platforms/qurt/fc_addon/r
 
 The module where these parameters are defined is: *src/modules/navigator*.
 
-<table style="width: 100%;">
-<colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
+<table style="width: 100%; table-layout:fixed">
+<colgroup><col style="width: 20%"><col style="width: 40%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"></colgroup>
 <thead><tr><th>Name</th><th>Description</th><th>Min</th><th>Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
@@ -4137,8 +4137,8 @@ The module where these parameters are defined is: *src/modules/navigator*.
 
 The module where these parameters are defined is: *src/modules/sensors*.
 
-<table style="width: 100%;">
-<colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
+<table style="width: 100%; table-layout:fixed">
+<colgroup><col style="width: 20%"><col style="width: 40%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"></colgroup>
 <thead><tr><th>Name</th><th>Description</th><th>Min</th><th>Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
@@ -4822,8 +4822,8 @@ The module where these parameters are defined is: *src/modules/sensors*.
 
 The module where these parameters are defined is: *src/modules/navigator*.
 
-<table style="width: 100%;">
-<colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
+<table style="width: 100%; table-layout:fixed">
+<colgroup><col style="width: 20%"><col style="width: 40%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"></colgroup>
 <thead><tr><th>Name</th><th>Description</th><th>Min</th><th>Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
@@ -4850,8 +4850,8 @@ The module where these parameters are defined is: *src/modules/navigator*.
 
 The module where these parameters are defined is: *src/lib/runway_takeoff*.
 
-<table style="width: 100%;">
-<colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
+<table style="width: 100%; table-layout:fixed">
+<colgroup><col style="width: 20%"><col style="width: 40%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"></colgroup>
 <thead><tr><th>Name</th><th>Description</th><th>Min</th><th>Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
@@ -4901,8 +4901,8 @@ FW_AIRSPD_MIN * RWTO_AIRSPD_SCL</p>
 
 ## SD Logging
 
-<table style="width: 100%;">
-<colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
+<table style="width: 100%; table-layout:fixed">
+<colgroup><col style="width: 20%"><col style="width: 40%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"></colgroup>
 <thead><tr><th>Name</th><th>Description</th><th>Min</th><th>Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
@@ -4972,8 +4972,8 @@ This is used for gathering replay logs for the ekf2 module</p><p><strong>Comment
 
 The module where these parameters are defined is: *src/modules/sensors*.
 
-<table style="width: 100%;">
-<colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
+<table style="width: 100%; table-layout:fixed">
+<colgroup><col style="width: 20%"><col style="width: 40%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"></colgroup>
 <thead><tr><th>Name</th><th>Description</th><th>Min</th><th>Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
@@ -5539,8 +5539,8 @@ The module where these parameters are defined is: *src/modules/sensors*.
 
 The module where these parameters are defined is: *src/modules/sensors*.
 
-<table style="width: 100%;">
-<colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
+<table style="width: 100%; table-layout:fixed">
+<colgroup><col style="width: 20%"><col style="width: 40%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"></colgroup>
 <thead><tr><th>Name</th><th>Description</th><th>Min</th><th>Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
@@ -5600,8 +5600,8 @@ The module where these parameters are defined is: *src/modules/sensors*.
 
 The module where these parameters are defined is: *src/modules/sensors*.
 
-<table style="width: 100%;">
-<colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
+<table style="width: 100%; table-layout:fixed">
+<colgroup><col style="width: 20%"><col style="width: 40%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"></colgroup>
 <thead><tr><th>Name</th><th>Description</th><th>Min</th><th>Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
@@ -6062,8 +6062,8 @@ The module where these parameters are defined is: *src/modules/sensors*.
 
 The module where these parameters are defined is: *src/platforms/qurt/fc_addon/uart_esc*.
 
-<table style="width: 100%;">
-<colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
+<table style="width: 100%; table-layout:fixed">
+<colgroup><col style="width: 20%"><col style="width: 40%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"></colgroup>
 <thead><tr><th>Name</th><th>Description</th><th>Min</th><th>Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
@@ -6100,8 +6100,8 @@ The module where these parameters are defined is: *src/platforms/qurt/fc_addon/u
 
 The module where these parameters are defined is: *src/examples/subscriber*.
 
-<table style="width: 100%;">
-<colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
+<table style="width: 100%; table-layout:fixed">
+<colgroup><col style="width: 20%"><col style="width: 40%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"></colgroup>
 <thead><tr><th>Name</th><th>Description</th><th>Min</th><th>Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
@@ -6118,8 +6118,8 @@ The module where these parameters are defined is: *src/examples/subscriber*.
 
 The module where these parameters are defined is: *src/modules/syslink*.
 
-<table style="width: 100%;">
-<colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
+<table style="width: 100%; table-layout:fixed">
+<colgroup><col style="width: 20%"><col style="width: 40%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"></colgroup>
 <thead><tr><th>Name</th><th>Description</th><th>Min</th><th>Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
@@ -6139,8 +6139,8 @@ The module where these parameters are defined is: *src/modules/syslink*.
 
 ## System
 
-<table style="width: 100%;">
-<colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
+<table style="width: 100%; table-layout:fixed">
+<colgroup><col style="width: 20%"><col style="width: 40%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"></colgroup>
 <thead><tr><th>Name</th><th>Description</th><th>Min</th><th>Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
@@ -6274,8 +6274,8 @@ The module where these parameters are defined is: *src/modules/syslink*.
 
 ## Testing
 
-<table style="width: 100%;">
-<colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
+<table style="width: 100%; table-layout:fixed">
+<colgroup><col style="width: 20%"><col style="width: 40%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"></colgroup>
 <thead><tr><th>Name</th><th>Description</th><th>Min</th><th>Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
@@ -6335,8 +6335,8 @@ The module where these parameters are defined is: *src/modules/syslink*.
 
 ## UAVCAN
 
-<table style="width: 100%;">
-<colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
+<table style="width: 100%; table-layout:fixed">
+<colgroup><col style="width: 20%"><col style="width: 40%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"></colgroup>
 <thead><tr><th>Name</th><th>Description</th><th>Min</th><th>Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
@@ -6390,8 +6390,8 @@ The module where these parameters are defined is: *src/modules/syslink*.
 
 The module where these parameters are defined is: *src/modules/vtol_att_control*.
 
-<table style="width: 100%;">
-<colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
+<table style="width: 100%; table-layout:fixed">
+<colgroup><col style="width: 20%"><col style="width: 40%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"></colgroup>
 <thead><tr><th>Name</th><th>Description</th><th>Min</th><th>Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
@@ -6536,8 +6536,8 @@ to accelerate forward if necessary</p>
 
 The module where these parameters are defined is: *src/modules/fw_pos_control_l1/mtecs*.
 
-<table style="width: 100%;">
-<colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
+<table style="width: 100%; table-layout:fixed">
+<colgroup><col style="width: 20%"><col style="width: 40%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"></colgroup>
 <thead><tr><th>Name</th><th>Description</th><th>Min</th><th>Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
@@ -6678,8 +6678,8 @@ Maps the change of airspeed error to the acceleration setpoint</p>
 
 ## Miscellaneous
 
-<table style="width: 100%;">
-<colgroup><col style="width: 25%"><col style="width: 45%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"><col style="width: 5%"></colgroup>
+<table style="width: 100%; table-layout:fixed">
+<colgroup><col style="width: 20%"><col style="width: 40%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"><col style="width: 8%"></colgroup>
 <thead><tr><th>Name</th><th>Description</th><th>Min</th><th>Max</th><th>Def.</th><th>Inc.</th><th>Units</th></tr>
 </thead>
 <tbody>
