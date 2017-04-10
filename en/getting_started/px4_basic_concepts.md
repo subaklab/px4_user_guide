@@ -6,7 +6,7 @@ In this chapter we will introduce you to the most basic concepts of setting up a
 
 PX4 is platform independent autopilot software (or a software stack/firmware) that can fly or drive Unmanned Aerial or Ground Vehicles (UAV/UGV). It is loaded (flashed) on certain [vehicle control hardware](flight_controller_selection.md) and together with Ground Control Station it makes a fully autonomous autopilot system. 
 
-The PX4 ground control station is called  [QGroundControl](http://qgroundcontrol.com/) and is integral part of the PX4 Autopilot System. [QGroundControl](http://qgroundcontrol.com/) can run on [Windows, OS X or Linux](http://qgroundcontrol.com/downloads/). With the help of  QGroundControl you can load (flash) the PX4 on to the  [vehicle control hardware](flight_controller_selection.md), you can setup the vehicle, change different parameters, get real-time flight information and create and execute fully autonomous missions.
+The PX4 ground control station is called  [QGroundControl](http://qgroundcontrol.com/) and is integral part of the PX4 Autopilot System. [QGroundControl](http://qgroundcontrol.com/) can run on [Windows, OS X or Linux](http://qgroundcontrol.com/downloads/). With the help of  QGroundControl you can load (flash) the PX4 on to the [vehicle control hardware](flight_controller_selection.md), you can setup the vehicle, change different parameters, get real-time flight information and create and execute fully autonomous missions.
 
 ![QGC Main Screen](../../images/qgc_main_screen.jpg)
 
@@ -40,4 +40,4 @@ A remote control (RC) radio system is required if you want to *manually* control
 
 ![Taranis X9D Transmitter](../../images/frsky_taranis_x9d_transmitter.jpg)
 
-To pick an radio system see: [RC System Selection](../getting_started/rc_transmitter_receiver.md). To learn more about flying with an RC transmitter see: [Flying 101](../flying/basic_flying.md).
+To pick a radio system see: [RC System Selection](../getting_started/rc_transmitter_receiver.md). To learn more about flying with an RC transmitter see: [Flying 101](../flying/basic_flying.md).
