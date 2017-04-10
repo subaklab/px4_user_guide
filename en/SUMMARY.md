@@ -64,6 +64,5 @@
   * [Intel Aero Series](flight_controller/intel_aero_series.md)  
   
 * [Development](development/development.md)
-* [Parameters - TEST ONLY](orphans/parameters.md)
 
 
