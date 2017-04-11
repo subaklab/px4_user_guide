@@ -1,25 +1,19 @@
 # BirdsEyeView FireFly Y6 Tiltrotor VTOL (Pixhawk)
 
-The [BirdsEyeView FireFly Y6](https://www.birdseyeview.aero/products/firefly6-diy-25) Tiltrotor VTOL is a mapping, sports and cargo aircraft. This topic provides build
-and configuration instructions for using the frame with the *Pixhawk* flight controller, including how to install and configure the PX4 autopilot using *QGroundControl*.
+[BirdsEyeView FireFly Y6](https://www.birdseyeview.aero/products/firefly6-diy-25) Tiltrotor VTOL는 매핑, 스포츠, 화물 비행기입니다. 여기서는 *Pixhawk*을 사용하는 프레임에 대해서 만들고 설정하는 방법을 다룹니다. *QGroundControl*을 사용해서 PX4 오토파일롯을 설정하는 방법도 포함하고 있습니다.
 
-Key information:
+핵심 정보:
 
-- **Frame:** [BirdsEyeView FireFly Y6](https://www.birdseyeview.aero/products/firefly6-diy-25) DIY
+- **프레임:** [BirdsEyeView FireFly Y6](https://www.birdseyeview.aero/products/firefly6-diy-25) DIY
 - **Flight controller:** Pixhawk
 
 ![BirdsEyeView Firefly Y6](../../images/birdseyeview_firefly_y6_vtol_props.jpg)
 
-## Airframe Setup
+## Airframe 셋업
 
-### Propeller orientation
+### Propeller 방향
 
-Make sure that the propellers are installed correctly. These photos show
-the direction and orientation of each prop. The top motors should spin
-in a CCW direction while the motors at the bottom should spin in a CW
-direction. The ESCs come pre-soldered to the motors so the direction of
-rotation is fixed (counter clockwise on top and clockwise on the
-bottom).
+프로펠러가 제대로 설치되어 있는지 확인합니다. 여기 사진은 각 프로펠러의 방향을 보여줍니다. 위에 있는 모터는 CCW 방향으로 회전해야합니다. 반면에 바닥에 있는 모터는 CW 방향으로 회전해야 합니다. ESC는 모터에 이미 납땜이 된 상태이므로 회전 방향은 고정입니다.(위는 CCW고 바닥은 CW입니다.)
 
 ![BirdsEyeView Firefly Y6](../../images/birdseyeview_firefly_y6_vtol_props.jpg)
 
@@ -27,51 +21,40 @@ bottom).
 ![](../../images/birdseyeview_firefly_y6_vtol_props_2.jpg)
 ![](../../images/birdseyeview_firefly_y6_vtol_props_3.jpg)
 
-### Autopilot and peripherals wiring
+### 오토파일롯과 주변장치와 연결
 
-The picture below shows one way of installing the Pixhawk, telemetry
-radio and GPS. Note that if you place the GPS on top of the power
-distribution board you probably should not use it as the external
-magnetometer.
+아래 사진은 Pixhawk, telemetry 라디오, GPS를 설치하는 방법 중에 하나를 보여줍니다. GPS를 전원분배보드(power distribution board) 위에 둔다면, 외부 magnetometer로 사용하기 어려울 수 있습니다.
 
 ![](../../images/birdseyeview_firefly_y6_vtol_firefly_internals.jpg)
 
-With the above there was significant magnetic disturbances on the
-in-build magnetometer. If a bench test shows a drifting heading as you
-throttle up (props on to get enough current flowing) you may need to use
-the external GPS magnetometer and move it out onto the wing as shown in
-this photo. Of course the cabling should be improved.
+위의 경우 내장 magnetometer에 심각한 자기 방해가 발생했습니다. 벤치 테스트에서 스로틀을 올리는 경우(프로펠러는 current flowing을 감당할 수 있어야) 드리프팅 헤딩(drifting heading)이 나타나면 외부 GPS magnetometer를 사용하고 사진과 같이 날개쪽으로 옮겨야 할 수도 있습니다. 물론 케이블 연결도 개선시켜야 합니다.
 
 ![](../../images/birdseyeview_firefly_y6_vtol_firefly_ext_mag.jpg)
 
-### Motor and Servo Setup
+### 모터와 Servo 셋업
 
-- Connect the motors to the main out rail (MAIN OUT) of the Pixhawk according to the scheme seen below
-- Connect the tilt-rotor servo into AUX OUT1
-- Connect the two elevon servos into AUX OUT2-3
-- Connect the servo cable of the landing gear into AUX OUT4
+- 모터를 Pixhawk의 메인 출력(MAIN OUT)에 연결
+- tilt-rotor servo를 AUX OUT1에 연결
+- 2개 elevon servo를 AUX OUT2-3에 연결
+- 랜딩 기어의 servo 케이블을 AUX OUT4에 연결
 
 ![](../../images/birdseyeview_firefly_y6_vtol_firefly_motor_connections.jpg)
 
-## Firmware & Settings
+## 펌웨어 & 셋팅
 
 
-Flash the stable firmware using *QGroundControl*. In *QGroundControl*
-select the airframe configuration “**BirdsEyeView Aerobotics FireFly6**”
-under “**VTOL Tiltrotor**” and then restart.
+*QGroundControl*를 사용해서 안정버전의 펌웨어를 설치합니다. *QGroundControl*에서 “**VTOL Tiltrotor**” 아래에 있는 “**BirdsEyeView Aerobotics FireFly6**” airfrmae 설정을 선택하고 재시작합니다.
 
-![QGC - Select firmware for BirdsEyeView Firefly y6](../../images/qgc_firmware_tiltrotor_firefly_y6.png)
+![QGC - BirdsEyeView Firefly y6의 펌웨어 선택](../../images/qgc_firmware_tiltrotor_firefly_y6.png)
 
 ----
 
-Should the airframe not be available you could set the following parameters and restart:
+airframe이 유효하지 않는 경우 다음 파라미터를 설정하고 재시작합니다. :
 
 -   SYS\_AUTOSTART to 13002
 -   SYS\_AUTOCONFIG to 1
 
-After the reboot the configuration values will match the Standard Power
-Pack. The following table serves as a guide when using the high
-efficiency setup.
+리부팅 후에 설정값은 표준 파워 팩과 매치합니다. 다음 테이블은 높은 효율 셋업을 이용할 때 가이드로 사용할 수 있습니다.
 
 
 Parameter | Standard | High-Efficiency
@@ -94,15 +77,11 @@ MC_YAWRATE_P | 0.22 | 0.35
 MC_YAW_P | 4.0 | 2.6
 
 
-The system should now be ready for sensor calibration, at the end of which it should allow arming.
+이제 시스템은 센서 칼리브레이션 준비가 되었으며 과정을 마치면 arming이 가능합니다.
 
-Notes:
+노트:
 
--   Remember to assign the transition switch for switching to
-    fixed-wing.
--   By default permanent stabilization is enabled. If you like fully
-    manual flying in fixed-wing, set VT\_FW\_PERM\_STAB to 0.
+-   fixed-wing으로 전환시키는데 필요한 전환 스위치를 할당해야 함
+-   기본적으로 stabilization으로 되어 있음. fixed-wing에서 완전 수동 비행을 하고 싶은 경우, VT\_FW\_PERM\_STAB을 0으로 설정.
 
-The first thing to do is to try out the multicopter mode and get used to
-the vehicle. Also the PID attitude controllers of the vehicle should be
-tuned via *QGroundControl* before you proceed.
+가장 먼저 해야할 일은 멀티콥터 모드로 시작하고 비행체에 익숙해지는 것입니다. 비행체의 PID 자세 제어기는 *QGroundControl* 로 튜닝이 가능합니다.
