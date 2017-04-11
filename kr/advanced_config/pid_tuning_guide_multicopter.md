@@ -1,51 +1,39 @@
-# Multicopter PID Tuning Guide
+# 멀티콥터 PID 튜닝 가이드
 
-## Multicopter Flight Controller Tuning Guide
+## 멀티콥터 Flight Controller 튜닝 가이드
 
-> **Warning** This guide is for advanced users / experts only. If you don’t understand
-  what a PID tuning is you might crash your aircraft.
-
-&nbsp;
-> **Warning** NEVER do multirotor tuning with carbon fiber or
-carbon fiber reinforced blades. NEVER use damaged blades.
+> **경고** 이 가이드는 고급 사용자와 전문가를 위한 내용입니다. PID 튜닝에 대한 지식이 없다면 비행체가 추락시킬 수 있습니다.
 
 &nbsp;
-> **Note** For SAFETY reason, the default gains are set to
-small value. You HAVE TO increase the gains before you can expect any
-control responses. 
+> **경고** 카본 파이버 프로펠러를 장착한 상태에서는 절대로 튜닝을 하면 안됩니다. 손상된 프로펠러는 절대로 사용하지 않도록 합니다.
 
-This tutorial is valid for all multi rotor setups (AR.Drone, PWM Quads /
-Hexa / Octo setups). **P**roportional, **I**ntegral, **D**erivative
-controllers are the most widespread control technique. There are
-substantially better performing control techniques (LQR/LQG) from the
-model predictive control, since these techniques require a more or less
-accurate model of the system, they not as widely used. The goal of all
-PX4 control infrastructure is move as soon as possible on MPC, since not
-for all supported systems models are available, PID tuning is very
-relevant (and PID control sufficient for many cases).
+&nbsp;
+> **노트** 안전상 이유로 기본 gain은 작은 값으로 설정합니다. 원하는 제어 반응에 이르기 전까지 gain을 증가시켜 나갑니다.
 
-## Introduction 
+이 튜토리얼은 모든 멀티로터 셋업에 가능합니다.(AR.Drone, PWM Quads / Hexa / Octo 셋업) **P**roportional, **I**ntegral, **D**erivative 제어기는 가장 널리 알려진 제어 기술입니다. model predictive control기반의 좀더 나은 성능을 보여주는 제어 기술(LQR/LQG)이 있습니다. 이런 기술들은 시스템의 정확한 모델이 필요하므로 널리 사용되지는 않습니다. 모든 PX4 제어의 목표는 가능한 빨리 MPC로 옮겨가는 것인데 지원하는 모든 시스템 모델이 유효하지 않을 수 있기 때문에 PID 튜닝이 가장 적절합니다.(PID 제어로 충분한 경우들)
 
-The PX4 `multirotor_att_control` app executes an outer loop of
-orientation controller, controlled by parameters:
+## 소개
+
+PX4의 `multirotor_att_control` app은 orientation controller의 아우터 루프(outer loop)를 실행하고 파라미터로 제어됩니다 :
 
 - Roll control (MC_ROLL_P)
 - Pitch control (MC_PITCH_P)
 - Yaw control (MC_YAW_P)
 
-And an inner loop with three independent PID controllers to control the
-attitude rates:
+3개 독립 PID 컨트롤러를 가지는 이너 루프(inner loop)로 attitude rate 제어 :
 
 - Roll rate control (MC_ROLLRATE_P, MC_ROLLRATE_I, MC_ROLLRATE_D)
 - Pitch rate control (MC_PITCHRATE_P, MC_PITCHRATE_I, MC_PITCHRATE_D)
 - Yaw rate control (MC_YAWRATE_P, MC_YAWRATE_I, MC_YAWRATE_D)
 
+아우터 루프의 출력이 원하는 body rate입니다.(만약 멀터로터가 현재 30도 roll, 제어 출력이 초당 60도로 회전하게 됩니다.) inner rate control loop은 로터 모터 출력을 변경해서 콥터 회전이 원하는 각속도가 되도록 합니다.
 The outer loop's output are desired body rates (e.g. if the multirotor
 should be level but currently has 30 degrees roll, the control output
 will be e.g. a rotation speed of 60 degrees per second). The inner rate
 control loop changes the rotor motor outputs so that the copter rotates
 with the desired angular speed.
 
+gain은 실제로 직관적인 의미를 가집니다. MC_ROLL_P gain이 6.0이면 콥터는 attitude(\~30 degrees)에서 0.5 radian offset을 보상하기 위해 6배 각속도가 됩니다. 3 radians/s나  \~170 degrees/s가 됩니다. 다음으로 만약 inner loop MC_ROLLRATE_P에 대해서 gain이 0.1이면 roll에 대한 thrust 제어 출력은 3 \* 0.1 = 0.3이 됩니다. 이는 로터의 속도를 느려지게 
 The gains actually have an intuitive meaning, e.g.: if the MC_ROLL_P
 gain is 6.0, the copter will try to compensate 0.5 radian offset in
 attitude (\~30 degrees) with 6 times the angular speed, i.e. 3 radians/s

@@ -1,4 +1,3 @@
-# Advanced Features
+# 고급 기능
 
-This section contains topics related to some of the more advanced features of the PX4 autopilot, 
-including support for RTK GPS.
+이 섹션에서는 PX4 오토파일롯의 고급 기능과 관련된 내용에 대해서 알아봅니다. (RTK GPS 지원 포함)

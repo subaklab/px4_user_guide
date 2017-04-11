@@ -1,5 +1,5 @@
-# Advanced Configuration
+# 고급 설정
 
-This section contains advanced configuration topics, covering less-common sensors and peripherals, and vehicle tuning.
+이 섹션은 고급 설정에 대해 알아봅니다. 일반적이지 않은 센서와 주변장치 그리고 튜닝을 대한 내용을 다룹니다.  
 
-For the standard configuration appropriate to every vehicle see: [Basic Configuration](../config/README.md).
+모든 비행체에 적합한 표준 설정은 : [기본 설정](../config/README.md)

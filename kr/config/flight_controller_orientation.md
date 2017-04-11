@@ -1,4 +1,4 @@
-# Flight Controller Orientation Configuration
+# Flight Controller 방향 설정
 
 By default the flight controller should be placed on the frame top-side up, oriented so that the arrow points towards the front of the vehicle. If the board is mounted in another orientation (upside down, on its side, perpendicular to the heading direction etc) then you will need configure this in the firmware.
 
@@ -7,7 +7,7 @@ By default the flight controller should be placed on the frame top-side up, orie
 
 1. Start *QGroundControl* and connect the vehicle.
 2. Open the menu: **Settings > Sensors**.
-3. Choose the *Autopilot Orientation* value that matches your vehicle. 
+3. Choose the *Autopilot Orientation* value that matches your vehicle.
 
 ![FC Orientation QGC v1](../../images/fc_orientation_qgc_v1.png)
 
